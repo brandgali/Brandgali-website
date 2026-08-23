@@ -1,0 +1,36 @@
+name: Check brand sales daily
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check-sales:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run the sale checker
+        run: node scraper.js
+
+      - name: Commit and push sales-status.json if it changed
+        run: |
+          git config user.name "BrandGali Sale Checker"
+          git config user.email "actions@github.com"
+          git add sales-status.json
+          if git diff --cached --quiet; then
+            echo "No changes to sales-status.json today — nothing to commit."
+          else
+            git commit -m "Daily sale check: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
