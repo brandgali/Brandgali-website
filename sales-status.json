@@ -1,0 +1,66 @@
+{
+  "khaadi": {
+    "status": "sale",
+    "live": {
+      "off": "Up to 50% Off",
+      "ends": "Ends tonight, 11:59 PM",
+      "percent": 78
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "sapphire": {
+    "status": "sale",
+    "live": {
+      "off": "Flat 30% Off",
+      "ends": "Ends in 5 hours",
+      "percent": 92
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "sanasafinaz": {
+    "status": "sale",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "outfitters": {
+    "status": "new",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "stylo": {
+    "status": "sale",
+    "live": {
+      "off": "Buy 1 Get 1",
+      "ends": "Ends in 2 days",
+      "percent": 45
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "borjan": {
+    "status": "new",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "interwood": {
+    "status": "sale",
+    "live": {
+      "off": "Up to 40% Off",
+      "ends": "Ends in 3 days",
+      "percent": 30
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "chenone": {
+    "status": "new",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  }
+}
