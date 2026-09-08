@@ -1,0 +1,101 @@
+{
+  "khaadi": {
+    "status": "sale",
+    "live": {
+      "off": "Up to 50% Off",
+      "ends": "Ends tonight, 11:59 PM",
+      "percent": 78
+    },
+    "sale": {
+      "headline": "Up to 50% Off",
+      "sourceUrl": "https://www.khaadi.com/",
+      "products": [],
+      "productsFound": 0,
+      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "sapphire": {
+    "status": "sale",
+    "live": {
+      "off": "Flat 30% Off",
+      "ends": "Ends in 5 hours",
+      "percent": 92
+    },
+    "sale": {
+      "headline": "Flat 30% Off",
+      "sourceUrl": "https://pk.sapphireonline.pk/",
+      "products": [],
+      "productsFound": 0,
+      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "sanasafinaz": {
+    "status": "sale",
+    "live": null,
+    "sale": {
+      "headline": "Sale live now",
+      "sourceUrl": "https://www.sanasafinaz.com/",
+      "products": [],
+      "productsFound": 0,
+      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "outfitters": {
+    "status": "new",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "stylo": {
+    "status": "sale",
+    "live": {
+      "off": "Buy 1 Get 1",
+      "ends": "Ends in 2 days",
+      "percent": 45
+    },
+    "sale": {
+      "headline": "Buy 1 Get 1",
+      "sourceUrl": "https://stylo.pk/",
+      "products": [],
+      "productsFound": 0,
+      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "borjan": {
+    "status": "new",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "interwood": {
+    "status": "sale",
+    "live": {
+      "off": "Up to 40% Off",
+      "ends": "Ends in 3 days",
+      "percent": 30
+    },
+    "sale": {
+      "headline": "Up to 40% Off",
+      "sourceUrl": "https://interwood.pk/",
+      "products": [],
+      "productsFound": 0,
+      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+    },
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  },
+  "chenone": {
+    "status": "new",
+    "live": null,
+    "checkedAt": "2026-08-23T09:00:00Z",
+    "source": "manual"
+  }
+}
