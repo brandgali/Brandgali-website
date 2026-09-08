@@ -1,101 +1,1990 @@
 {
-  "khaadi": {
+  "charizma": {
     "status": "sale",
     "live": {
-      "off": "Up to 50% Off",
-      "ends": "Ends tonight, 11:59 PM",
-      "percent": 78
+      "off": "A Virsa Meeral Emilie MI-AMOR SALE Log in Cart 0 0 items Search Log in…",
+      "ends": "Check site for current details",
+      "percent": 60
     },
     "sale": {
-      "headline": "Up to 50% Off",
-      "sourceUrl": "https://www.khaadi.com/",
-      "products": [],
-      "productsFound": 0,
-      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+      "headline": "SALE",
+      "sourceUrl": "https://houseofcharizma.com/collections/sale",
+      "products": [
+        {
+          "name": "2-Piece Printed Lawn CRD-6-04",
+          "url": "https://houseofcharizma.com/products/crd-6-04",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC03559.jpg?v=1784029434",
+          "originalPrice": "Rs 7,500",
+          "currentPrice": "Rs 5,250",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-Piece Printed Lawn CRD-6-02",
+          "url": "https://houseofcharizma.com/products/crd-6-02",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC05657.jpg?v=1784028869",
+          "originalPrice": "Rs 7,500",
+          "currentPrice": "Rs 5,250",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-Piece Printed Lawn CRD-6-01",
+          "url": "https://houseofcharizma.com/products/crd-6-01",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC05421.jpg?v=1784028829",
+          "originalPrice": "Rs 7,500",
+          "currentPrice": "Rs 5,250",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-Piece Printed Lawn CRD-6-06",
+          "url": "https://houseofcharizma.com/products/crd-6-06",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A9251.jpg?v=1782731319",
+          "originalPrice": "Rs 8,950",
+          "currentPrice": "Rs 6,265",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-Piece Printed Lawn CRD-6-05",
+          "url": "https://houseofcharizma.com/products/crd-6-05",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A9138_b6e031b5-506e-46ca-a278-394f73da61c1.jpg?v=1782731246",
+          "originalPrice": "Rs 8,950",
+          "currentPrice": "Rs 6,265",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-PC CPM-6-212",
+          "url": "https://houseofcharizma.com/products/cpm-6-212",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC01688.jpg?v=1781177057",
+          "originalPrice": "Rs 7,500",
+          "currentPrice": "Rs 5,250",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-PC CPM-6-203",
+          "url": "https://houseofcharizma.com/products/cpm-6-203",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC01835.jpg?v=1781175746",
+          "originalPrice": "Rs 7,500",
+          "currentPrice": "Rs 5,250",
+          "discount": "-30%"
+        },
+        {
+          "name": "2-PC CNP-6-250",
+          "url": "https://houseofcharizma.com/products/cnp-6-250",
+          "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC01602.jpg?v=1781176543",
+          "originalPrice": "Rs 8,950",
+          "currentPrice": "Rs 6,265",
+          "discount": "-30%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
     },
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+    "checkedAt": "2026-09-08T07:12:17.418Z",
+    "source": "auto"
   },
-  "sapphire": {
+  "dceast": {
     "status": "sale",
     "live": {
-      "off": "Flat 30% Off",
-      "ends": "Ends in 5 hours",
-      "percent": 92
+      "off": "ARCHIVE SALE LIVE NOW | UP TO 50% OFF THE ARCHIVE SALE THE ARCHIVE SAL…",
+      "ends": "Check site for current details",
+      "percent": 60
     },
     "sale": {
-      "headline": "Flat 30% Off",
-      "sourceUrl": "https://pk.sapphireonline.pk/",
+      "headline": "50% off",
+      "sourceUrl": "https://divinelycrafted.org/collections/the-archive-sale",
+      "products": [
+        {
+          "name": "Roselle — Ivory Wildflower 3-Piece Set",
+          "url": "https://divinelycrafted.org/products/roselle-ivory-wildflower-3-piece-set",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/Roselle_IvoryWildflower3-PieceSet.webp?v=1784808731",
+          "originalPrice": "Rs 12,490",
+          "currentPrice": "Rs 9,990",
+          "discount": "-20%"
+        },
+        {
+          "name": "Embroidered 3PC | Lilly Blue",
+          "url": "https://divinelycrafted.org/products/embroidered-3pc-lilly-blue",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC09718.png?v=1776537852",
+          "originalPrice": "Rs 13,490",
+          "currentPrice": "Rs 8,000",
+          "discount": "-41%"
+        },
+        {
+          "name": "Misty Blue - 3pc Co-Ord",
+          "url": "https://divinelycrafted.org/products/misty-blue-3pc-set",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC04099.png?v=1770025355",
+          "originalPrice": "Rs 7,299",
+          "currentPrice": "Rs 5,500",
+          "discount": "-25%"
+        },
+        {
+          "name": "Men Shalwar Kameez | Vanilla White",
+          "url": "https://divinelycrafted.org/products/vanilla-white",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/Layer212.jpg?v=1766045359",
+          "originalPrice": "Rs 4,799",
+          "currentPrice": "Rs 4,000",
+          "discount": "-17%"
+        },
+        {
+          "name": "Men Shalwar Kameez | Regal Blue",
+          "url": "https://divinelycrafted.org/products/regal-blue",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC09412.png?v=1765367689",
+          "originalPrice": "Rs 5,290",
+          "currentPrice": "Rs 4,500",
+          "discount": "-15%"
+        },
+        {
+          "name": "Men Shalwar Kameez | Moss Green",
+          "url": "https://divinelycrafted.org/products/shalwar-kameez-for-men-moss-green",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC08571.png?v=1765276060",
+          "originalPrice": "Rs 4,999",
+          "currentPrice": "Rs 4,500",
+          "discount": "-10%"
+        },
+        {
+          "name": "Men - Basic T-Shirt | Navy Blue",
+          "url": "https://divinelycrafted.org/products/basic-navy-blue-t-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/1_d92e1b4c-a0fc-49d9-8f6c-5a93ba80d7a9.png?v=1775210713",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 1,990",
+          "discount": "-33%"
+        },
+        {
+          "name": "Teal Olive - Co-Ord Set",
+          "url": "https://divinelycrafted.org/products/teal-olive-coord-set",
+          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC04638.png?v=1769691927",
+          "originalPrice": "Rs 6,499",
+          "currentPrice": "Rs 5,250",
+          "discount": "-19%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:19.314Z",
+    "source": "auto"
+  },
+  "drappy": {
+    "status": "sale",
+    "live": {
+      "off": "e information. Accept Decline End of Season The Best-Sellers, Reduced…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "End of Season",
+      "sourceUrl": "https://drappy.pk/",
       "products": [],
       "productsFound": 0,
-      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+    "checkedAt": "2026-09-08T07:12:22.212Z",
+    "source": "auto"
+  },
+  "fitted": {
+    "status": "sale",
+    "live": {
+      "off": "SHOES NEW RELEASES MEN WOMEN SALE MEN POLOS SALE SHIRTS SALE CREWS SAL…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "SALE",
+      "sourceUrl": "https://fittedshop.com/collections/sale",
+      "products": [
+        {
+          "name": "Basic Knitted POLO Rustic Maroon",
+          "url": "https://fittedshop.com/products/basic-knitted-polo-rustic-maroon",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/13b_73d665c7-e50d-4ac7-9a5d-4462fd74374b.jpg?v=1783943211",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,290",
+          "discount": "-18%"
+        },
+        {
+          "name": "Olive Green Cable Knit POLO",
+          "url": "https://fittedshop.com/products/olive-green-cable-knit-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/8_4a70385d-40b1-47ca-932e-e48c0ae54eb7.jpg?v=1781691082",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
+        },
+        {
+          "name": "Basic Knitted POLO Rise Blue",
+          "url": "https://fittedshop.com/products/basic-knitted-polo-rise-blue",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/12d_a6af8460-b245-4176-be09-6408f373a01e.jpg?v=1783794232",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,290",
+          "discount": "-18%"
+        },
+        {
+          "name": "Rustic Maroon Basic Mesh knitted POLO",
+          "url": "https://fittedshop.com/products/rustic-maroon-basic-mesh-knitted-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/4c_3a612017-b87f-449e-a449-b2737f0c94ad.jpg?v=1783794796",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
+        },
+        {
+          "name": "Blue Basic Mesh knitted POLO",
+          "url": "https://fittedshop.com/products/blue-basic-mesh-knitted-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/1i_27f0b574-467c-403c-a3bb-3baee2925e4c.jpg?v=1779698733",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
+        },
+        {
+          "name": "Cappuccino Herringbone Knit POLO",
+          "url": "https://fittedshop.com/products/cappuccino-herringbone-knit-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2a_7982bfe1-900c-4b05-9330-b1f49037e4b6.jpg?v=1783795059",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 2,890",
+          "discount": "-17%"
+        },
+        {
+          "name": "LT Olive Twill POLO",
+          "url": "https://fittedshop.com/products/lt-olive-twill-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/14_05732329-fec5-438a-a6a0-29a308035de6.jpg?v=1784195349",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,290",
+          "discount": "-18%"
+        },
+        {
+          "name": "Chocolate Summerline Knitted POLO",
+          "url": "https://fittedshop.com/products/chocolate-summerline-knitted-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/3_c63dc4ed-9506-448e-93d8-36a24c6d862c.jpg?v=1772370833",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:23.344Z",
+    "source": "auto"
+  },
+  "imhaut": {
+    "status": "sale",
+    "live": {
+      "off": "ts/price line 53): divided by 0% OFF From Rs.28,000.00 Regular price U…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "0% off",
+      "sourceUrl": "https://imhaut.com/",
+      "products": [],
+      "productsFound": 0,
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
+    },
+    "checkedAt": "2026-09-08T07:12:26.042Z",
+    "source": "auto"
+  },
+  "kottonfruit": {
+    "status": "sale",
+    "live": {
+      "off": "0 🚚 ⚡ SEASON END SALE ⚡ UPTO 50% OFF 🚨 \"BIGGEST SALE OF THE YEAR\" IS…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://www.kottonfruit.com/",
+      "products": [],
+      "productsFound": 0,
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
+    },
+    "checkedAt": "2026-09-08T07:12:31.338Z",
+    "source": "auto"
+  },
+  "lakhany": {
+    "status": "sale",
+    "live": {
+      "off": "price PKR5,650.00 PKR4,520.00 20% off Unit price / per Sale Quick View…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "20% off",
+      "sourceUrl": "https://lakhanyonline.com/collections/unstitched-sale",
+      "products": [
+        {
+          "name": "03 Piece Unstitched Printed Lawn",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-254",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_50264.jpg?v=1785263710",
+          "originalPrice": "Rs 4,200",
+          "currentPrice": "Rs 3,360",
+          "discount": "-20%"
+        },
+        {
+          "name": "03 Piece Unstitched Dyed Embroidered with Printed Chiffon Dupatta",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-dyed-embroidered-with-printed-chiffon-dupatta-copy",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_70015.jpg?v=1777992423",
+          "originalPrice": "Rs 7,150",
+          "currentPrice": "Rs 5,363",
+          "discount": "-25%"
+        },
+        {
+          "name": "03 Piece Unstitched Printed Embroidered with Printed Lawn Dupatta",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-embroidered-with-printed-lawn-dupatta-13",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_011022.png?v=1776250422",
+          "originalPrice": "Rs 5,750",
+          "currentPrice": "Rs 4,600",
+          "discount": "-20%"
+        },
+        {
+          "name": "03 Piece Unstitched Printed Embroidered with Printed Lawn Dupatta",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-embroidered-with-printed-lawn-dupatta-16",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_011053.png?v=1776250498",
+          "originalPrice": "Rs 5,750",
+          "currentPrice": "Rs 4,600",
+          "discount": "-20%"
+        },
+        {
+          "name": "03 Piece Unstitched Printed Lawn",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-228",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-020108-Copy.jpg?v=1779174151",
+          "originalPrice": "Rs 4,200",
+          "currentPrice": "Rs 3,360",
+          "discount": "-20%"
+        },
+        {
+          "name": "03 Piece Unstitched Monochrome Dyed Embroidered with Embroidered Lawn Dupatta",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-monochrome-dyed-embroidered-with-embroidered-lawn-dupatta-2",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_30215.jpg?v=1780906811",
+          "originalPrice": "Rs 6,250",
+          "currentPrice": "Rs 5,000",
+          "discount": "-20%"
+        },
+        {
+          "name": "03 Piece Unstitched Printed Lawn",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-241",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-802166.jpg?v=1781680047",
+          "originalPrice": "Rs 4,200",
+          "currentPrice": "Rs 3,360",
+          "discount": "-20%"
+        },
+        {
+          "name": "02 Piece Unstitched Embroidered Shirt with Trouser",
+          "url": "https://lakhanyonline.com/products/02-piece-unstitched-embroidered-shirt-with-trouser",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-907_3b1695ee-bbee-4290-98f6-188d8b4369d2.jpg?v=1775800664",
+          "originalPrice": "Rs 4,350",
+          "currentPrice": "Rs 3,480",
+          "discount": "-20%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:33.254Z",
+    "source": "auto"
+  },
+  "limelight": {
+    "status": "sale",
+    "live": {
+      "off": "uit- Embroidered (Unstitched) 22% OFF 3 Piece Lawn Suit- Embroidered (…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "22% off",
+      "sourceUrl": "https://www.limelight.pk/collections/sale",
+      "products": [
+        {
+          "name": "2 Piece Lawn Suit- Embroidered (Pret)",
+          "url": "https://www.limelight.pk/products/a6779st-xsl-002",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6779ST-SML-002-2PieceLawnSuit-Embroidered_Pret_2.jpg?v=1784635241",
+          "originalPrice": "Rs 8,499",
+          "currentPrice": "Rs 6,399",
+          "discount": "-25%"
+        },
+        {
+          "name": "3 Piece Lawn Suit (Pret)",
+          "url": "https://www.limelight.pk/products/a6482su-xsl-227",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6482SU-SML-227-3PieceLawnSuit_Pret_3.jpg?v=1784636023",
+          "originalPrice": "Rs 6,999",
+          "currentPrice": "Rs 5,199",
+          "discount": "-26%"
+        },
+        {
+          "name": "3 Piece Lawn Slub Suit- Embroidered (Pret)",
+          "url": "https://www.limelight.pk/products/a5138su-xsl-014",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5138SU-SML-014-3PieceLawnSlubSuit-Embroidered_Pret_4.jpg?v=1784634905",
+          "originalPrice": "Rs 9,499",
+          "currentPrice": "Rs 6,999",
+          "discount": "-26%"
+        },
+        {
+          "name": "3 Piece Lawn Suit- Embroidered (Pret)",
+          "url": "https://www.limelight.pk/products/a5120su-xsl-627",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5120SU-SML-627-3PieceLawnSuit-Embroidered_Pret_2_c09b0ef0-7f18-4905-a74a-2070caa4cc80.jpg?v=1784704787",
+          "originalPrice": "Rs 8,699",
+          "currentPrice": "Rs 6,499",
+          "discount": "-25%"
+        },
+        {
+          "name": "3 Piece Lawn Suit- Embroidered (Pret)",
+          "url": "https://www.limelight.pk/products/a5117su-xsl-002",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5117SU-SML-002-3PieceLawnSuit-Embroidered_Pret_3.jpg?v=1784637141",
+          "originalPrice": "Rs 8,899",
+          "currentPrice": "Rs 6,699",
+          "discount": "-25%"
+        },
+        {
+          "name": "2 Piece Lawn Suit- Embroidered (Pret)",
+          "url": "https://www.limelight.pk/products/a5086st-xsl-256",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5086ST-SML-256-2PieceLawnSuit-Embroidered_Pret_1.jpg?v=1784635505",
+          "originalPrice": "Rs 5,999",
+          "currentPrice": "Rs 4,499",
+          "discount": "-25%"
+        },
+        {
+          "name": "2 Piece Lawn Suit (Pret)",
+          "url": "https://www.limelight.pk/products/a3070st-xsl-199",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A3070ST-SML-199-2PieceLawnSuit_Pret_4.jpg?v=1784634748",
+          "originalPrice": "Rs 4,999",
+          "currentPrice": "Rs 3,999",
+          "discount": "-20%"
+        },
+        {
+          "name": "2 Piece Lawn Suit (Pret)",
+          "url": "https://www.limelight.pk/products/a6603st-xsl-256",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6603ST-SML-256-2PieceLawnSuit_Pret_4.jpg?v=1784634094",
+          "originalPrice": "Rs 5,499",
+          "currentPrice": "Rs 3,999",
+          "discount": "-27%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:35.134Z",
+    "source": "auto"
+  },
+  "lunaoutlet": {
+    "status": "sale",
+    "live": {
+      "off": "lub Sign up today and receive 10% off your first order E-mail Subscrib…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "10% off",
+      "sourceUrl": "https://luna-outlet.com/collections/sale",
+      "products": [
+        {
+          "name": "Isla Blouse",
+          "url": "https://luna-outlet.com/products/isla",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna423IslaNavyPeony1.webp?v=1786448287",
+          "originalPrice": "Rs 4,499",
+          "currentPrice": "Rs 4,149",
+          "discount": "-8%"
+        },
+        {
+          "name": "Ruben Trouser",
+          "url": "https://luna-outlet.com/products/ruben-bottom",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna408RubenTannin1.webp?v=1786444784",
+          "originalPrice": "Rs 7,099",
+          "currentPrice": "Rs 6,599",
+          "discount": "-7%"
+        },
+        {
+          "name": "Emma Co-ord",
+          "url": "https://luna-outlet.com/products/emma-co-ords",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna404EmmaAppleBlossom1.webp?v=1786444077",
+          "originalPrice": "Rs 8,099",
+          "currentPrice": "Rs 7,499",
+          "discount": "-7%"
+        },
+        {
+          "name": "Zoe Shirt",
+          "url": "https://luna-outlet.com/products/zoe-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna414ZoeAventurine1.webp?v=1786446514",
+          "originalPrice": "Rs 8,499",
+          "currentPrice": "Rs 7,899",
+          "discount": "-7%"
+        },
+        {
+          "name": "Shay Pants",
+          "url": "https://luna-outlet.com/products/shay-pants",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna427ShayJetBlack1.webp?v=1786455515",
+          "originalPrice": "Rs 7,149",
+          "currentPrice": "Rs 6,649",
+          "discount": "-7%"
+        },
+        {
+          "name": "Sophie Blouse",
+          "url": "https://luna-outlet.com/products/sophie-top",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna417SophieSpiceOrange1.webp?v=1786446781",
+          "originalPrice": "Rs 6,249",
+          "currentPrice": "Rs 5,799",
+          "discount": "-7%"
+        },
+        {
+          "name": "Sandy Pants",
+          "url": "https://luna-outlet.com/products/sandy",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna411SandyTrouserLightGreen1.webp?v=1787404413",
+          "originalPrice": "Rs 4,349",
+          "currentPrice": "Rs 3,999",
+          "discount": "-8%"
+        },
+        {
+          "name": "Lume Co-ord",
+          "url": "https://luna-outlet.com/products/lume-co-ords",
+          "image": "https://cdn.shopify.com/s/files/1/0774/7741/2900/files/Luna503LumeJetBlack1.webp?v=1786534950",
+          "originalPrice": "Rs 10,499",
+          "currentPrice": "Rs 9,849",
+          "discount": "-6%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:38.519Z",
+    "source": "auto"
+  },
+  "mabsh": {
+    "status": "sale",
+    "live": {
+      "off": "days Enjoy Biggest Sale upto 50% OFF Free delivery on all online payme…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://mabsh.pk/collections/azadi-sale",
+      "products": [
+        {
+          "name": "TANGO CARGO SHORT (Beige)",
+          "url": "https://mabsh.pk/products/tango-cargo-short-beige",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/12_55182b23-06fd-4844-a225-64d28736e063.jpg?v=1727822553",
+          "originalPrice": "Rs 3,189",
+          "currentPrice": "Rs 1,914",
+          "discount": "-40%"
+        },
+        {
+          "name": "TANGO CARGO SHORT (NAVY BLUE)",
+          "url": "https://mabsh.pk/products/tango-cargo-short-navy-blue",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/Untitled-1_9c07fcd5-9dec-4fd2-a5de-81aab4e459ac.jpg?v=1739280314",
+          "originalPrice": "Rs 3,189",
+          "currentPrice": "Rs 1,914",
+          "discount": "-40%"
+        },
+        {
+          "name": "Alpha Cargo Pant (BEIGE)",
+          "url": "https://mabsh.pk/products/alpha-cargo-pant-beige",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/IMG_9968.jpg?v=1758797651",
+          "originalPrice": "Rs 4,949",
+          "currentPrice": "Rs 4,455",
+          "discount": "-10%"
+        },
+        {
+          "name": "Alpha Cargo Pant (Black)",
+          "url": "https://mabsh.pk/products/alpha-cargo-pant-black",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/Untitled-1_4f2783f6-12f9-4b1c-a6e3-35f9541afe81.jpg?v=1739549659",
+          "originalPrice": "Rs 4,949",
+          "currentPrice": "Rs 4,455",
+          "discount": "-10%"
+        },
+        {
+          "name": "Alpha Cargo Pant (Olive Grey)",
+          "url": "https://mabsh.pk/products/alpha-cargo-pant-olive-grey",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/WhatsAppImage2025-09-24at11.13.43PM_1.jpg?v=1758797770",
+          "originalPrice": "Rs 4,949",
+          "currentPrice": "Rs 4,455",
+          "discount": "-10%"
+        },
+        {
+          "name": "JOHNNY CARGO PANT (Stone)",
+          "url": "https://mabsh.pk/products/johnny-cargo-pant-stone",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/16_2831a25a-c5d4-4a7f-beeb-5f5a9af1390d.jpg?v=1739279949",
+          "originalPrice": "Rs 5,169",
+          "currentPrice": "Rs 3,620",
+          "discount": "-30%"
+        },
+        {
+          "name": "JOHNNY CARGO PANT (NAVY BLUE)",
+          "url": "https://mabsh.pk/products/johnny-cargo-pant-navy-blue",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/Untitled-1_acc8e1ec-08de-40e2-b04d-9584aeefa99b.jpg?v=1739281197",
+          "originalPrice": "Rs 5,169",
+          "currentPrice": "Rs 3,620",
+          "discount": "-30%"
+        },
+        {
+          "name": "JOHNNY CARGO PANT (CAMEL)",
+          "url": "https://mabsh.pk/products/johnny-cargo-pant-camel",
+          "image": "https://cdn.shopify.com/s/files/1/0716/1829/8092/files/Untitled-1_242bca69-b9b6-46e4-a759-54342a11ddd9.jpg?v=1739281175",
+          "originalPrice": "Rs 5,169",
+          "currentPrice": "Rs 3,620",
+          "discount": "-30%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:42.894Z",
+    "source": "auto"
+  },
+  "nayadour": {
+    "status": "sale",
+    "live": {
+      "off": "Locations Subscribe and enjoy 10% off Please enter a valid email addre…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "10% off",
+      "sourceUrl": "https://nayadour.co/collections/season-end-sale-women",
+      "products": [
+        {
+          "name": "CHIC",
+          "url": "https://nayadour.co/products/chic",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/ChatGPTImageAug4_2026_05_24_51PM.png?v=1786024922",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "CHOICE",
+          "url": "https://nayadour.co/products/choice",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/ChatGPTImageAug7_2026_04_26_16PM.png?v=1786362146",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "LITTLE THINGS",
+          "url": "https://nayadour.co/products/little-things",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/ChatGPTImageAug4_2026_05_41_29PM.png?v=1786024735",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "SOMEHWERE ANYWHERE",
+          "url": "https://nayadour.co/products/somehwere-anywhere",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/IMG_9777.png?v=1786024603",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "BE KIND",
+          "url": "https://nayadour.co/products/be-kind",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/ChatGPTImageAug4_2026_06_53_32PM.png?v=1786024482",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "STAND OUT",
+          "url": "https://nayadour.co/products/stand-out-1",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/IMG_9853.png?v=1786024280",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "HAPPINESS",
+          "url": "https://nayadour.co/products/happiness",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/ChatGPTImageAug4_2026_05_54_31PM.png?v=1786023900",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        },
+        {
+          "name": "SOMEWHERE ANYWHERE",
+          "url": "https://nayadour.co/products/somewhere-anywhere",
+          "image": "https://cdn.shopify.com/s/files/1/0625/6538/4273/files/ChatGPTImageAug7_2026_04_25_54PM.png?v=1786361889",
+          "originalPrice": "Rs 3,250",
+          "currentPrice": "Rs 2,275",
+          "discount": "-30%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:49.066Z",
+    "source": "auto"
+  },
+  "ninefigures": {
+    "status": "sale",
+    "live": {
+      "off": "ontent SEASON END SALE | UPTO 50% OFF Men VIEW ALL NEW ARRIVALS AFTER…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://ninefigures.com/collections/season-end-sale-upto-50-off",
+      "products": [
+        {
+          "name": "Printed Shirt",
+          "url": "https://ninefigures.com/products/wip-cs10-ss26-t-pink",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_7994.jpg?v=1778586231",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 2,495",
+          "discount": "-50%"
+        },
+        {
+          "name": "Printed Shirt",
+          "url": "https://ninefigures.com/products/wip-cs10-ss26-green",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_8175.jpg?v=1779280579",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 2,495",
+          "discount": "-50%"
+        },
+        {
+          "name": "Printed Shirt",
+          "url": "https://ninefigures.com/products/wip-cs09-ss26-teal",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_8157_34b85611-0e56-4c97-9db7-dd75f0cf7c56.jpg?v=1779277682",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 2,495",
+          "discount": "-50%"
+        },
+        {
+          "name": "Printed Shirt",
+          "url": "https://ninefigures.com/products/wip-cs09-ss26-black",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_8017_c08bb86c-7c55-4379-afb0-b96fd7c1e9b4.jpg?v=1778586446",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 2,495",
+          "discount": "-50%"
+        },
+        {
+          "name": "Zipper Textured Polo",
+          "url": "https://ninefigures.com/products/mcosp-17-ss26-sand",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/MCOSP-17-SS26-SAND_2.jpg?v=1775319517",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,745",
+          "discount": "-50%"
+        },
+        {
+          "name": "Textured Shorts",
+          "url": "https://ninefigures.com/products/mcoss-17-ss26-sand",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/MCOSS-17-SS26-sand_2.jpg?v=1775323712",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 1,495",
+          "discount": "-50%"
+        },
+        {
+          "name": "Zipper Textured Polo",
+          "url": "https://ninefigures.com/products/mcosp-18-ss26-copper",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/PRO08753_2.jpg?v=1775324197",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,745",
+          "discount": "-50%"
+        },
+        {
+          "name": "Textured Shorts",
+          "url": "https://ninefigures.com/products/mcoss-18-ss26-copper",
+          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/MCOSS-18-SS26-COPPER_2.jpg?v=1775324543",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 1,495",
+          "discount": "-50%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:50.923Z",
+    "source": "auto"
+  },
+  "outfitters": {
+    "status": "sale",
+    "live": {
+      "off": "New IN Further Reduction Flat 50% Off Further Reduction Flat 50% Off V…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% Off",
+      "sourceUrl": "https://outfitters.com.pk/collections/men-t-shirt-sale",
+      "products": [
+        {
+          "name": "Textured Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2118-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2118106808.jpg?v=1781175012",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
+          "name": "Textured T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2102-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
+          "name": "Washed Out Graphic T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2109-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2109106620_2.jpg?v=1780996695",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
+          "name": "Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1998-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1998106720.jpg?v=1781175338",
+          "originalPrice": "Rs 2,490",
+          "currentPrice": "Rs 1,190",
+          "discount": "-52%"
+        },
+        {
+          "name": "Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2007-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2007106817.jpg?v=1787292071",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
+          "name": "Embroidered Slogan T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2101-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2101106001.jpg?v=1779357346",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
+          "name": "Crew Neck T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1754-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1754106907_dc07022a-b993-4980-a6c8-afa26a634f6e.jpg?v=1783577429",
+          "originalPrice": "Rs 2,490",
+          "currentPrice": "Rs 1,190",
+          "discount": "-52%"
+        },
+        {
+          "name": "Basic Textured T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1547-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1547106618.jpg?v=1760697249",
+          "originalPrice": "Rs 2,490",
+          "currentPrice": "Rs 1,190",
+          "discount": "-52%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:54.970Z",
+    "source": "auto"
   },
   "sanasafinaz": {
     "status": "sale",
-    "live": null,
+    "live": {
+      "off": "r Customer Support team. Menu SALE View all SALE FLAT 50 READY TO WEAR…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
     "sale": {
-      "headline": "Sale live now",
-      "sourceUrl": "https://www.sanasafinaz.com/",
+      "headline": "SALE",
+      "sourceUrl": "https://www.sanasafinaz.com/collections/sale",
+      "products": [
+        {
+          "name": "Stitched Printed Basic Viscose Shirt+ Culotte",
+          "url": "https://www.sanasafinaz.com/products/stitched-printed-basic-viscose-shirt-culotte-ss26bsp152p2t",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26BSP152P2T_3_b0e68d70-6d5d-47b5-8475-c7a7a4234e24.jpg?v=1784610238",
+          "originalPrice": "Rs 7,589",
+          "currentPrice": "Rs 5,312",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Embroidered Lawn Shirt+ Shalwar",
+          "url": "https://www.sanasafinaz.com/products/stitched-embroidered-lawn-shirt-shalwar-ss26sge428p3",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26SGE428P3_7.jpg?v=1779205531",
+          "originalPrice": "Rs 27,369",
+          "currentPrice": "Rs 19,158",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Embroidered Lawn Shirt+ Culotte",
+          "url": "https://www.sanasafinaz.com/products/stitched-embroidered-lawn-shirt-culotte-ss26sge414p2t",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26SGE414P2T_b4fec548-0a94-44fa-91bc-0f1f44351a6c.jpg?v=1777975523",
+          "originalPrice": "Rs 20,124",
+          "currentPrice": "Rs 14,087",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Printed Lawn Shirt+ Culotte",
+          "url": "https://www.sanasafinaz.com/products/stitched-printed-lawn-shirt-culotte-5",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26BSP373P2T_1_50c8c090-6e42-4e4d-8436-cfce93a89236.jpg?v=1784611864",
+          "originalPrice": "Rs 7,474",
+          "currentPrice": "Rs 5,232",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Embroidered Monark Suit",
+          "url": "https://www.sanasafinaz.com/products/ss26sge447p3",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26SGE447P3_1.jpg?v=1779262536",
+          "originalPrice": "Rs 25,759",
+          "currentPrice": "Rs 18,031",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Printed Lawn Shirt+ Culotte",
+          "url": "https://www.sanasafinaz.com/products/stitched-printed-lawn-shirt-culotte-ss26bsp176p2t",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26BSP176P2T_1_3dae306a-e34d-49cd-9628-f826f1af909a.jpg?v=1784610313",
+          "originalPrice": "Rs 7,819",
+          "currentPrice": "Rs 5,473",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Printed Lawn Shirt+ Culotte",
+          "url": "https://www.sanasafinaz.com/products/stitched-printed-lawn-shirt-culotte-ss26bsp215p2t",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26BSP215_2_49dbfed0-15ec-4918-b15a-42dce1bd42c9.jpg?v=1784610478",
+          "originalPrice": "Rs 6,324",
+          "currentPrice": "Rs 4,427",
+          "discount": "-30%"
+        },
+        {
+          "name": "Stitched Embroidered Lawn Shirt + Shalwar",
+          "url": "https://www.sanasafinaz.com/products/stitched-embroidered-lawn-shirt-shalwar-ss26ese304p2t",
+          "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26ESE304P2T_1.jpg?v=1778744524",
+          "originalPrice": "Rs 10,119",
+          "currentPrice": "Rs 7,083",
+          "discount": "-30%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:12:58.521Z",
+    "source": "auto"
+  },
+  "wearhype": {
+    "status": "sale",
+    "live": {
+      "off": "Jeans Chinos Trousers Shorts End Of Season Sale 70% 80% Log in instagr…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "End Of Season",
+      "sourceUrl": "https://wearhype.co/collections/sale",
+      "products": [
+        {
+          "name": "Royal Crest Ribbed Sweater",
+          "url": "https://wearhype.co/products/royal-crest-ribbed-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_430be37b-1248-4696-a967-2ac1eebbf2ec.png?v=1788774071",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
+        {
+          "name": "Ivory Tide Ribbed Sweater",
+          "url": "https://wearhype.co/products/ivory-tide-ribbed-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/02_2a5a58d6-171a-4e4b-a6d9-d7d7b14e8c05.png?v=1788773915",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
+        {
+          "name": "Coral Drift Ribbed Sweater",
+          "url": "https://wearhype.co/products/coastal-mist-ribbed-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_f760209c-aab7-473b-9707-caf7bda4e936.png?v=1788769822",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,050",
+          "discount": "-70%"
+        },
+        {
+          "name": "Ribbed Mock Neck",
+          "url": "https://wearhype.co/products/ribbed-mock-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_29d000db-3247-4491-813b-85fade6a1ee7.png?v=1788524819",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 1,199",
+          "discount": "-70%"
+        },
+        {
+          "name": "Coastal Mist Ribbed Sweater",
+          "url": "https://wearhype.co/products/ribbed-ice-blue-mock-neck-copy",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_f8474db1-43ce-43e0-9f2a-4d7faf4cd2b8.png?v=1788773687",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
+        {
+          "name": "Light Gray Ribbed Mock Neck",
+          "url": "https://wearhype.co/products/pink-ribbed-mock-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_31ebecdf-2f98-4871-8d4e-e015b74f13a1.png?v=1788761638",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 1,199",
+          "discount": "-70%"
+        },
+        {
+          "name": "Blue Mock Neck",
+          "url": "https://wearhype.co/products/blue-mock-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_379b20e5-74ef-4445-9d69-71b1b9287049.png?v=1788524580",
+          "originalPrice": "Rs 4,490",
+          "currentPrice": "Rs 1,350",
+          "discount": "-70%"
+        },
+        {
+          "name": "OFF WHITE Ribbed Sweater",
+          "url": "https://wearhype.co/products/off-white-ribbed-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_4c14bdcb-eec3-44d5-a0e7-099de7a4d98b.png?v=1788436824",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:08.793Z",
+    "source": "auto"
+  },
+  "wearlowkey": {
+    "status": "sale",
+    "live": {
+      "off": "friend Refer a friend and get 15% off each other. Secure payment Your…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "15% off",
+      "sourceUrl": "https://lowkeypk.com/collections/bake-sale-upto-30",
+      "products": [
+        {
+          "name": "Lamar Fit – Bootcut Jeans",
+          "url": "https://lowkeypk.com/products/lamar-fit-bootcut-jeans-1",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/hf_20260313_185655_838adf08-723f-4853-b396-7ba715ae7538.jpg?v=1776183472",
+          "originalPrice": null,
+          "currentPrice": "Rs 4,699",
+          "discount": null
+        },
+        {
+          "name": "Lamar Fit – Bootcut Jeans",
+          "url": "https://lowkeypk.com/products/lamar-fit-bootcut-jeans",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/UB10-3.jpg?v=1778830454",
+          "originalPrice": "Rs 4,999",
+          "currentPrice": "Rs 4,699",
+          "discount": "-6%"
+        },
+        {
+          "name": "Not Basic Grey Baggy Jeans",
+          "url": "https://lowkeypk.com/products/signature-storm-grey-wide-leg-denim",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/ChatGPT_Image_Jun_22_2026_03_00_58_PM.png?v=1782122549",
+          "originalPrice": "Rs 4,649",
+          "currentPrice": "Rs 3,799",
+          "discount": "-18%"
+        },
+        {
+          "name": "Dan Fit – Black Baggy Jeans",
+          "url": "https://lowkeypk.com/products/dan-fit-black-baggy-denim",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/UB05-1.jpg?v=1778830133",
+          "originalPrice": "Rs 4,499",
+          "currentPrice": "Rs 3,350",
+          "discount": "-26%"
+        },
+        {
+          "name": "Not Basic Black Baggy Jeans",
+          "url": "https://lowkeypk.com/products/signature-black-wide-leg-denim",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/Not_basic_black_bahhy_jeans.png?v=1782111972",
+          "originalPrice": "Rs 4,649",
+          "currentPrice": "Rs 3,499",
+          "discount": "-25%"
+        },
+        {
+          "name": "Shane Fit – Uni Crop 3/4 Sleeves Shirt",
+          "url": "https://lowkeypk.com/products/shane-fit-uni-crop-3-4-sleeves-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/UT01-1.jpg?v=1776181126",
+          "originalPrice": "Rs 2,999",
+          "currentPrice": "Rs 2,499",
+          "discount": "-17%"
+        },
+        {
+          "name": "Vintage Baggy Jeans",
+          "url": "https://lowkeypk.com/products/vintage-wash-baggy-jeans-the-modern-classic",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/Vintage_Baggy_Jeans.png?v=1781968365",
+          "originalPrice": "Rs 4,649",
+          "currentPrice": "Rs 3,499",
+          "discount": "-25%"
+        },
+        {
+          "name": "Grey Relax Carrot Jeans",
+          "url": "https://lowkeypk.com/products/grey-relax-carrot-jeans-the-effortless-essential",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/Grey_Relax_Carrot_Jeans.png?v=1781968108",
+          "originalPrice": "Rs 4,649",
+          "currentPrice": "Rs 3,255",
+          "discount": "-30%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:11.013Z",
+    "source": "auto"
+  },
+  "zephyrwaleed": {
+    "status": "sale",
+    "live": {
+      "off": "or our newsletter and receive 10% off your first order SIGN UP Main me…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "10% off",
+      "sourceUrl": "https://zephyrbywaleed.com/",
       "products": [],
       "productsFound": 0,
-      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+    "checkedAt": "2026-09-08T07:13:14.955Z",
+    "source": "auto"
   },
-  "outfitters": {
-    "status": "new",
-    "live": null,
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+  "borjan": {
+    "status": "sale",
+    "live": {
+      "off": "Outdoor Formalwear Sale Flat 50% OFF Men's Women's Men Slipper-ESPRESS…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://www.borjan.com.pk/collections/sale",
+      "products": [
+        {
+          "name": "Women Moccasin-BLACK GREY",
+          "url": "https://www.borjan.com.pk/products/bw10986-black-grey-women-moccasin",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_84dcb758-ae49-457d-a2ab-544c9a635157.jpg?v=1766466602",
+          "originalPrice": "Rs 6,300",
+          "currentPrice": "Rs 3,150",
+          "discount": "-50%"
+        },
+        {
+          "name": "Women Moccasin-MAROON",
+          "url": "https://www.borjan.com.pk/products/bw10986-maroon-women-moccasin",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_6c1505d9-12c6-4ea9-994f-0a121ce34dd3.png?v=1766574797",
+          "originalPrice": "Rs 6,300",
+          "currentPrice": "Rs 3,150",
+          "discount": "-50%"
+        },
+        {
+          "name": "Women Shoes-BLACK",
+          "url": "https://www.borjan.com.pk/products/bw10981-black-women-shoes",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_a7395580-9db8-48a7-ae2e-3bc57b26da73.png?v=1766119329",
+          "originalPrice": "Rs 6,200",
+          "currentPrice": "Rs 3,100",
+          "discount": "-50%"
+        },
+        {
+          "name": "Men Slip On-TAN",
+          "url": "https://www.borjan.com.pk/products/bm6768-tan-men-slip-on",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/C01004507-TAN.png?v=1757099169",
+          "originalPrice": "Rs 10,400",
+          "currentPrice": "Rs 6,240",
+          "discount": "-40%"
+        },
+        {
+          "name": "Men Slip On-KHAKI",
+          "url": "https://www.borjan.com.pk/products/bm5061-khaki-men-slip-on",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/D01018292---KHAKI.png?v=1757098643",
+          "originalPrice": "Rs 16,000",
+          "currentPrice": "Rs 9,600",
+          "discount": "-40%"
+        },
+        {
+          "name": "Men Slip On-TAN",
+          "url": "https://www.borjan.com.pk/products/bm6796-tan-men-slip-on",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/D01018353-TAN.png?v=1757098631",
+          "originalPrice": "Rs 18,200",
+          "currentPrice": "Rs 10,920",
+          "discount": "-40%"
+        },
+        {
+          "name": "Men Slip On-BLUE",
+          "url": "https://www.borjan.com.pk/products/bm6797-blue-men-slip-on",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/D01018358---BLUE.png?v=1757098630",
+          "originalPrice": "Rs 19,400",
+          "currentPrice": "Rs 11,640",
+          "discount": "-40%"
+        },
+        {
+          "name": "Men Slip On-BROWN",
+          "url": "https://www.borjan.com.pk/products/bm6810-brown-men-slip-on",
+          "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/D01018350---BROWN.png?v=1757098538",
+          "originalPrice": "Rs 21,300",
+          "currentPrice": "Rs 12,780",
+          "discount": "-40%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:16.303Z",
+    "source": "auto"
+  },
+  "fhsofficial": {
+    "status": "sale",
+    "live": {
+      "off": "om FHS ocean tower Karachi on 50% off..it's very soft and comfortable…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://fhsofficial.com/collections/sale",
+      "products": [
+        {
+          "name": "Snake Embossed Horsebit Loafers - Brown",
+          "url": "https://fhsofficial.com/products/snake-embossed-horsebit-loafers-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/7I_806b6194-1830-4f02-91ef-2bdf44d12c8f.jpg?v=1774941674",
+          "originalPrice": "Rs 19,990",
+          "currentPrice": "Rs 13,990",
+          "discount": "-30%"
+        },
+        {
+          "name": "Crocodile Embossed Leather Sandals - Brown",
+          "url": "https://fhsofficial.com/products/crocodile-embossed-leather-sandals-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/55B_e7a566a3-c237-43cb-8b18-e3cb97780471.jpg?v=1782989466",
+          "originalPrice": "Rs 7,990",
+          "currentPrice": "Rs 5,590",
+          "discount": "-30%"
+        },
+        {
+          "name": "Saffiano Moccasins - Brown",
+          "url": "https://fhsofficial.com/products/saffiano-moccasins-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/11G_a116853f-3277-473d-931a-d45673c7ac0e.jpg?v=1757482030",
+          "originalPrice": "Rs 18,500",
+          "currentPrice": "Rs 11,100",
+          "discount": "-40%"
+        },
+        {
+          "name": "Patent Crocodile Embossed Moccasin - Black",
+          "url": "https://fhsofficial.com/products/patent-crocodile-embossed-moccasin-black",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/15H_6e422c00-7dad-4379-b6d2-c871d160b031.jpg?v=1764936438",
+          "originalPrice": "Rs 17,990",
+          "currentPrice": "Rs 12,590",
+          "discount": "-30%"
+        },
+        {
+          "name": "Crocodile Embossed Leather Sandals - Black",
+          "url": "https://fhsofficial.com/products/crocodile-embossed-leather-sandals-black",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/43B_33ef8ddf-6ffd-4a09-89b2-23eb6515ad73.jpg?v=1782989291",
+          "originalPrice": "Rs 7,990",
+          "currentPrice": "Rs 5,590",
+          "discount": "-30%"
+        },
+        {
+          "name": "Modern Comfort Sneakers - White",
+          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-white",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/49B_5c9393f2-3823-4ff5-a1a9-85d94089b568.jpg?v=1782990859",
+          "originalPrice": "Rs 13,900",
+          "currentPrice": "Rs 9,990",
+          "discount": "-28%"
+        },
+        {
+          "name": "Modern Comfort Sneakers - Brown/White",
+          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-brown-white",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/38B_df2f542e-f8cb-4fd5-a679-7f5b3bc52d00.jpg?v=1782990922",
+          "originalPrice": "Rs 13,900",
+          "currentPrice": "Rs 9,990",
+          "discount": "-28%"
+        },
+        {
+          "name": "Modern Comfort Sneakers - Tan/White",
+          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-tan-white",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/37B_434831b9-bd13-4ca5-a011-edd55d933926.jpg?v=1783078631",
+          "originalPrice": "Rs 13,900",
+          "currentPrice": "Rs 9,990",
+          "discount": "-28%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:18.568Z",
+    "source": "auto"
+  },
+  "jutay": {
+    "status": "sale",
+    "live": {
+      "off": "Soccer Gripper Studs T-shirts Flash Sale My Account Log in Register Se…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "Flash Sale",
+      "sourceUrl": "https://jutay.co/collections/12-12-sale",
+      "products": [
+        {
+          "name": "UB LIGHT 23 - TRIPLE WHITE",
+          "url": "https://jutay.co/products/ub-light-23-triple-white",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/UB_LIGHT_23_-_TRIPLE_WHITE.webp?v=1778481791",
+          "originalPrice": "Rs 17,000",
+          "currentPrice": "Rs 9,999",
+          "discount": "-41%"
+        },
+        {
+          "name": "UB LIGHT 23 - ARCTIC NIGHT",
+          "url": "https://jutay.co/products/ub-light-23-arctic-night",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/UB_LIGHT_23_-_ARCTIC_NIGHT.webp?v=1778480693",
+          "originalPrice": "Rs 17,000",
+          "currentPrice": "Rs 9,999",
+          "discount": "-41%"
+        },
+        {
+          "name": "AIRFORCE 1 MIDS - ROYAL BLUE",
+          "url": "https://jutay.co/products/airforce-1-mids-royal-blue",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/AIRFORCE1MIDS-ROYALBLUE.webp?v=1773126228",
+          "originalPrice": "Rs 18,500",
+          "currentPrice": "Rs 9,999",
+          "discount": "-46%"
+        },
+        {
+          "name": "AIRFORCE 1 MIDS - BLACK WHITE",
+          "url": "https://jutay.co/products/airforce-1-mids-black-white",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/AIRFORCE1MIDS-BLACKWHITE.webp?v=1773126312",
+          "originalPrice": "Rs 18,500",
+          "currentPrice": "Rs 9,999",
+          "discount": "-46%"
+        },
+        {
+          "name": "AIRFORCE 1 MIDS - WHITE RED",
+          "url": "https://jutay.co/products/airforce-1-mids-white-red",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/AIRFORCE1MIDS-WHITERED.webp?v=1773126334",
+          "originalPrice": "Rs 18,500",
+          "currentPrice": "Rs 9,999",
+          "discount": "-46%"
+        },
+        {
+          "name": "UB LIGHT 23 - BLACK DUO ( D.F BATCH )",
+          "url": "https://jutay.co/products/ub-light-23-black-duo-df-batch",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/UB_LIGHT_23_-_BLACK_DUO_D.F_BATCH.webp?v=1778483207",
+          "originalPrice": "Rs 18,500",
+          "currentPrice": "Rs 9,999",
+          "discount": "-46%"
+        },
+        {
+          "name": "UB LIGHT 23 - BLACK WHITE",
+          "url": "https://jutay.co/products/ub-light-23-black-white-1",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/1_1_c5c40e00-3c10-4f42-9be3-59d87421b485.webp?v=1776441654",
+          "originalPrice": "Rs 17,000",
+          "currentPrice": "Rs 9,999",
+          "discount": "-41%"
+        },
+        {
+          "name": "UB LIGHT 23 - ALL BLACK",
+          "url": "https://jutay.co/products/ub-light-23-all-black",
+          "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/1_2_cbf7349e-3dfa-41d4-8d31-14e7024cbaf0.webp?v=1776442098",
+          "originalPrice": "Rs 17,000",
+          "currentPrice": "Rs 9,999",
+          "discount": "-41%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:23.510Z",
+    "source": "auto"
+  },
+  "ndure": {
+    "status": "sale",
+    "live": {
+      "off": "Terms & Conditions Men Women SALE CUSTOMER CARE UAN: 042-35880175 SEND…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "SALE",
+      "sourceUrl": "https://www.ndure.com/collections/sale-men",
+      "products": [
+        {
+          "name": "Men’s Cloud-Step Comfort Slides",
+          "url": "https://www.ndure.com/products/mens-durasoft-slides-m-pl-csb-0010-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/M-PL-CSB-0010-BROWN.jpg?v=1772443427",
+          "originalPrice": "Rs 4,999",
+          "currentPrice": "Rs 3,499",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men’s Anatomic Slides with Arch Support",
+          "url": "https://www.ndure.com/products/mens-softsrtide-slides-m-pl-dia-0015-tan",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_c561a8eb-d99d-49ac-8eec-c5c79618a4a5.jpg?v=1761890934",
+          "originalPrice": "Rs 4,999",
+          "currentPrice": "Rs 3,499",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men’s Cloud-Step Comfort Slides",
+          "url": "https://www.ndure.com/products/mens-structured-slides-m-pl-csb-0016-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/M-PL-CSB-0016-BROWN.jpg?v=1772219526",
+          "originalPrice": "Rs 4,999",
+          "currentPrice": "Rs 3,499",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men's Leisure Sandals",
+          "url": "https://www.ndure.com/products/mens-leisure-sandals-m-pl-iva-0003-espresso",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_73bd7e58-61a7-40b8-8222-dce43d603679.jpg?v=1761032654",
+          "originalPrice": "Rs 4,499",
+          "currentPrice": "Rs 3,149",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men's Trendy Sandals",
+          "url": "https://www.ndure.com/products/mens-trendy-sandals-m-th-arc-0051-espresso",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_0894ba90-def4-4857-98ac-a4be53cc0302.jpg?v=1761907969",
+          "originalPrice": "Rs 3,999",
+          "currentPrice": "Rs 2,799",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men's Light-Padded Slides",
+          "url": "https://www.ndure.com/products/mens-light-padded-chappals-m-pl-gio-0011-coffee",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_9e6626fd-f1a5-4f15-aabf-4b781d7c6566.jpg?v=1761030535",
+          "originalPrice": "Rs 3,299",
+          "currentPrice": "Rs 2,309",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men's Comfort Slides",
+          "url": "https://www.ndure.com/products/mens-grace-chappals-m-pl-aqu-0031-khaki",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_77878f4a-1802-4f1c-9e29-74da2fbbf62f.jpg?v=1761895596",
+          "originalPrice": "Rs 2,999",
+          "currentPrice": "Rs 2,099",
+          "discount": "-30%"
+        },
+        {
+          "name": "Men's Topstitched Sandals",
+          "url": "https://www.ndure.com/products/mens-padded-sandals-m-pl-aqu-0032-khaki",
+          "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_b7f3ce3b-d57e-4fdd-9d0c-dd078a391c8c.jpg?v=1761903319",
+          "originalPrice": "Rs 3,299",
+          "currentPrice": "Rs 2,309",
+          "discount": "-30%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:25.189Z",
+    "source": "auto"
+  },
+  "onedegree": {
+    "status": "sale",
+    "live": {
+      "off": "DEL CLUB JOIN NOW EXCLUSIVELY 10% OFF Limited Edition GEAR UP, GAME ON…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "10% off",
+      "sourceUrl": "https://onedegree.com.pk/",
+      "products": [],
+      "productsFound": 0,
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
+    },
+    "checkedAt": "2026-09-08T07:13:27.354Z",
+    "source": "auto"
+  },
+  "servis": {
+    "status": "sale",
+    "live": {
+      "off": "napchat YouTube Men SALE Flat 40% Off Apparel New Arrivals Shoes Athle…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "40% Off",
+      "sourceUrl": "https://servis.pk/collections/summer-sale",
+      "products": [
+        {
+          "name": "Women Slipper",
+          "url": "https://servis.pk/products/l-ek-0201119-white",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/L-EK-0201119_WHITE.png?v=1771522235",
+          "originalPrice": "Rs 2,799",
+          "currentPrice": "Rs 2,099",
+          "discount": "-25%"
+        },
+        {
+          "name": "Men Sneakers",
+          "url": "https://servis.pk/products/m-ac-0100364-green",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/MAC010036403240.jpg?v=1773295033",
+          "originalPrice": "Rs 3,499",
+          "currentPrice": "Rs 2,624",
+          "discount": "-25%"
+        },
+        {
+          "name": "Women Slipper",
+          "url": "https://servis.pk/products/l-ek-0201124-beige",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/L-EK-0201124_BEIGE.jpg?v=1771561197",
+          "originalPrice": "Rs 2,599",
+          "currentPrice": "Rs 1,949",
+          "discount": "-25%"
+        },
+        {
+          "name": "Men Chappal",
+          "url": "https://servis.pk/products/m-sr-0300189-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/M-SR-0300189_BROWN_ai.jpg?v=1772431246",
+          "originalPrice": "Rs 1,799",
+          "currentPrice": "Rs 1,349",
+          "discount": "-25%"
+        },
+        {
+          "name": "Men's All Day Chappals",
+          "url": "https://servis.pk/products/m-sr-0300137-mustard",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/m-sr-0300137-mustard_ai.jpg?v=1771998407",
+          "originalPrice": "Rs 3,699",
+          "currentPrice": "Rs 2,774",
+          "discount": "-25%"
+        },
+        {
+          "name": "Men's Comfy Chappal",
+          "url": "https://servis.pk/products/m-sr-0300148-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/m-sr-0300148-brown_ai.jpg?v=1771907689",
+          "originalPrice": "Rs 2,599",
+          "currentPrice": "Rs 1,949",
+          "discount": "-25%"
+        },
+        {
+          "name": "Women Slipper",
+          "url": "https://servis.pk/products/l-sr-0300035-maroon",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/L-SR-0300035_MAROON_ai.jpg?v=1773653235",
+          "originalPrice": "Rs 1,699",
+          "currentPrice": "Rs 1,274",
+          "discount": "-25%"
+        },
+        {
+          "name": "Men's Everyday Chappal",
+          "url": "https://servis.pk/products/m-sr-0500015-mustard",
+          "image": "https://cdn.shopify.com/s/files/1/0055/5525/7462/files/m-sr-0500015-mustard_ai.jpg?v=1771998895",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,574",
+          "discount": "-25%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:28.489Z",
+    "source": "auto"
   },
   "stylo": {
     "status": "sale",
     "live": {
-      "off": "Buy 1 Get 1",
-      "ends": "Ends in 2 days",
-      "percent": 45
+      "off": "et 2026 Shop By Discount Flat 51% Off Flat 31% Off Flat 21% Off Flat 1…",
+      "ends": "Check site for current details",
+      "percent": 60
     },
     "sale": {
-      "headline": "Buy 1 Get 1",
-      "sourceUrl": "https://stylo.pk/",
-      "products": [],
-      "productsFound": 0,
-      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+      "headline": "51% Off",
+      "sourceUrl": "https://stylo.pk/collections/sale",
+      "products": [
+        {
+          "name": "Maroon Casual Softy For Ladies CL5556",
+          "url": "https://stylo.pk/products/maroon-casual-softy-for-ladies-cl5556",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL555605_1_1efcdd3d-0078-4587-b42e-90e7899d366c.png?v=1767617920",
+          "originalPrice": "Rs 2,500",
+          "currentPrice": "Rs 1,500",
+          "discount": "-40%"
+        },
+        {
+          "name": "Silver Formal Chappal For Women FR0576",
+          "url": "https://stylo.pk/products/silver-formal-chappal-for-women-fr0576",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/FR057616_2.png?v=1774942591",
+          "originalPrice": "Rs 2,500",
+          "currentPrice": "Rs 1,230",
+          "discount": "-51%"
+        },
+        {
+          "name": "Black Women Pumps WN1246",
+          "url": "https://stylo.pk/products/black-women-pumps-wn1246",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN124601_2_c17acf44-e667-4eb8-bb07-1bcde7afd2bf.jpg?v=1777272921",
+          "originalPrice": "Rs 3,300",
+          "currentPrice": "Rs 2,280",
+          "discount": "-31%"
+        },
+        {
+          "name": "Golden Formal Chappal For Women FR0576",
+          "url": "https://stylo.pk/products/golden-formal-chappal-for-women-fr0576",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/FR057615_2.png?v=1776316875",
+          "originalPrice": "Rs 2,500",
+          "currentPrice": "Rs 1,230",
+          "discount": "-51%"
+        },
+        {
+          "name": "Golden Fancy Sandal For Women FN6203",
+          "url": "https://stylo.pk/products/golden-fancy-sandal-for-women-fn6203",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/FN620315_1_22934fe7-553f-4422-8573-60ba3a5ed4e0.png?v=1770978066",
+          "originalPrice": "Rs 3,800",
+          "currentPrice": "Rs 2,620",
+          "discount": "-31%"
+        },
+        {
+          "name": "Mustard Casual Softy For Women CL5642",
+          "url": "https://stylo.pk/products/mustard-casual-softy-for-women-cl5642",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564206_2.webp?v=1787313744",
+          "originalPrice": "Rs 2,000",
+          "currentPrice": "Rs 999",
+          "discount": "-50%"
+        },
+        {
+          "name": "Blue Casual Softy For Women CL5644",
+          "url": "https://stylo.pk/products/blue-casual-softy-for-women-cl5644",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564412_1.webp?v=1787313742",
+          "originalPrice": "Rs 2,000",
+          "currentPrice": "Rs 999",
+          "discount": "-50%"
+        },
+        {
+          "name": "Green Casual Softy For Women CL5646",
+          "url": "https://stylo.pk/products/green-casual-softy-for-women-cl5646",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564611_1.webp?v=1787313742",
+          "originalPrice": "Rs 2,000",
+          "currentPrice": "Rs 999",
+          "discount": "-50%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
     },
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+    "checkedAt": "2026-09-08T07:13:30.990Z",
+    "source": "auto"
   },
-  "borjan": {
-    "status": "new",
-    "live": null,
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+  "tsmandco": {
+    "status": "sale",
+    "live": {
+      "off": "Belts Bags Wallets Gift Card Clearance Search Oxfords Derbies MonkStra…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "Clearance",
+      "sourceUrl": "https://www.tsmco.com.pk/collections/clearance",
+      "products": [
+        {
+          "name": "Lisbon Black Patent",
+          "url": "https://www.tsmco.com.pk/products/lisbon-black-patent",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/4_e26e3f46-9727-472d-842b-c71107814df0.png?v=1752979614",
+          "originalPrice": "Rs 26,198",
+          "currentPrice": "Rs 20,958",
+          "discount": "-20%"
+        },
+        {
+          "name": "Lisbon Tobacco",
+          "url": "https://www.tsmco.com.pk/products/lisbon-tobacco",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/IMG_6044.jpg?v=1752979515",
+          "originalPrice": "Rs 26,198",
+          "currentPrice": "Rs 20,958",
+          "discount": "-20%"
+        },
+        {
+          "name": "Miami Black",
+          "url": "https://www.tsmco.com.pk/products/miami-black",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/2_6e3fcccd-daba-4e6e-b814-0dd18d1a1e6b.png?v=1752979667",
+          "originalPrice": "Rs 25,148",
+          "currentPrice": "Rs 20,118",
+          "discount": "-20%"
+        },
+        {
+          "name": "Seoul Tobacco Patina",
+          "url": "https://www.tsmco.com.pk/products/seoul-tobacco-patina",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/2_3586e89f-3c68-483d-b6b5-3a38afb0ac6a.png?v=1752979686",
+          "originalPrice": "Rs 26,198",
+          "currentPrice": "Rs 20,958",
+          "discount": "-20%"
+        },
+        {
+          "name": "Bali Black",
+          "url": "https://www.tsmco.com.pk/products/bali-black",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/3_d361986a-207c-4b4d-a420-3b10c7760191.png?v=1752979652",
+          "originalPrice": "Rs 25,148",
+          "currentPrice": "Rs 20,118",
+          "discount": "-20%"
+        },
+        {
+          "name": "Prague Black",
+          "url": "https://www.tsmco.com.pk/products/prague-black",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/2_c25f3a22-3727-4b70-91d1-3513ab59dfa8.png?v=1752979701",
+          "originalPrice": "Rs 25,148",
+          "currentPrice": "Rs 20,118",
+          "discount": "-20%"
+        },
+        {
+          "name": "Chesterfield Black",
+          "url": "https://www.tsmco.com.pk/products/chesterfield-black",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/IMG_6062_129119dd-ef75-4f33-a810-5bb6d6da8c4f.jpg?v=1788773134",
+          "originalPrice": "Rs 25,148",
+          "currentPrice": "Rs 20,118",
+          "discount": "-20%"
+        },
+        {
+          "name": "Belfast Black",
+          "url": "https://www.tsmco.com.pk/products/belfast-black",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/IMG_0540.jpg?v=1752979516",
+          "originalPrice": "Rs 25,148",
+          "currentPrice": "Rs 20,118",
+          "discount": "-20%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:33.090Z",
+    "source": "auto"
+  },
+  "chenone": {
+    "status": "sale",
+    "live": {
+      "off": "EAR WOMEN WINTER WOMEN SUMMER SALE FURNITURE HOME TEXTILE WOMEN MEN KI…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "SALE",
+      "sourceUrl": "https://chenone.com/collections/sale-furniture",
+      "products": [
+        {
+          "name": "Devine End Table",
+          "url": "https://chenone.com/products/devine-end-table",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/vista_Chairs_1_83a74421-52b0-4df2-a0a8-1d7f03d00404.webp?v=1756385444",
+          "originalPrice": "Rs 49,999",
+          "currentPrice": "Rs 34,999",
+          "discount": "-30%"
+        },
+        {
+          "name": "Devine Dresser with Mirror Frame",
+          "url": "https://chenone.com/products/devine-dresser-with-mirror-frame",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/bed_5_1ff44eab-00fc-4f0e-8af8-ecd5ef712421.webp?v=1756385469",
+          "originalPrice": "Rs 134,999",
+          "currentPrice": "Rs 94,499",
+          "discount": "-30%"
+        },
+        {
+          "name": "Devine Bed with Side Tables",
+          "url": "https://chenone.com/products/devine-copy",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/Untitled_design_a7412895-811d-4f32-adab-6c88e849acf1.jpg?v=1786778511",
+          "originalPrice": "Rs 309,999",
+          "currentPrice": "Rs 216,999",
+          "discount": "-30%"
+        },
+        {
+          "name": "Signature Dresser with Mirror Frame",
+          "url": "https://chenone.com/products/signature-bed-set-copy",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/WhatsApp_Image_2026-08-01_at_4.50.18_AM_695331f8-1bd5-4ed1-9906-d33a62d683af.jpg?v=1785585431",
+          "originalPrice": "Rs 124,999",
+          "currentPrice": "Rs 87,499",
+          "discount": "-30%"
+        },
+        {
+          "name": "Signature Bed with Side Tables",
+          "url": "https://chenone.com/products/signature-bed-set",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/WhatsApp_Image_2026-08-01_at_4.50.18_AM_695331f8-1bd5-4ed1-9906-d33a62d683af.jpg?v=1785585431",
+          "originalPrice": "Rs 239,999",
+          "currentPrice": "Rs 167,999",
+          "discount": "-30%"
+        },
+        {
+          "name": "Sable",
+          "url": "https://chenone.com/products/sable",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/WhatsAppImage2026-06-23at5.34.44PM_1.jpg?v=1782218252",
+          "originalPrice": "Rs 399,999",
+          "currentPrice": "Rs 359,999",
+          "discount": "-10%"
+        },
+        {
+          "name": "Emerson",
+          "url": "https://chenone.com/products/emerson",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/1_jpg_f9cff97d-b750-437d-811d-a1a0826d017f.jpg?v=1781856934",
+          "originalPrice": "Rs 399,999",
+          "currentPrice": "Rs 359,999",
+          "discount": "-10%"
+        },
+        {
+          "name": "Empire Brass Table Set Black",
+          "url": "https://chenone.com/products/empire-brass-table-set-black",
+          "image": "https://cdn.shopify.com/s/files/1/0531/3010/0930/files/WhatsApp_Image_2026-06-10_at_11.47.35_AM.jpg?v=1781074104",
+          "originalPrice": "Rs 374,999",
+          "currentPrice": "Rs 337,499",
+          "discount": "-10%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:35.599Z",
+    "source": "auto"
   },
   "interwood": {
     "status": "sale",
     "live": {
-      "off": "Up to 40% Off",
-      "ends": "Ends in 3 days",
-      "percent": 30
+      "off": "elivery! Hot Selling Products 30% off Ready to ship NEW Quest Sliding…",
+      "ends": "Check site for current details",
+      "percent": 60
     },
     "sale": {
-      "headline": "Up to 40% Off",
-      "sourceUrl": "https://interwood.pk/",
+      "headline": "30% off",
+      "sourceUrl": "https://interwood.pk/collections/sale",
+      "products": [
+        {
+          "name": "Wilson Bedside Table (Red & Pine Grey)",
+          "url": "https://interwood.pk/products/bedside-table-candy-in-pine-grey-and-red-colour",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/Wilson_BedSide_Red.webp?v=1770700383",
+          "originalPrice": "Rs 21,000",
+          "currentPrice": "Rs 10,500",
+          "discount": "-50%"
+        },
+        {
+          "name": "Millie Study Chair",
+          "url": "https://interwood.pk/products/millie-study-chair",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/Millie_Study_Chair.png?v=1787132276",
+          "originalPrice": "Rs 7,700",
+          "currentPrice": "Rs 5,390",
+          "discount": "-30%"
+        },
+        {
+          "name": "Millie Study Desk",
+          "url": "https://interwood.pk/products/millie-study-desk",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/WhatsApp_Image_2026-01-06_at_2.59.25_PM_2ad768ea-fa24-40fd-b6ff-3db398adc99e.jpg?v=1786010406",
+          "originalPrice": "Rs 7,800",
+          "currentPrice": "Rs 5,460",
+          "discount": "-30%"
+        },
+        {
+          "name": "Single Box",
+          "url": "https://interwood.pk/products/single-box",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/Single_Box.jpg?v=1758282618",
+          "originalPrice": "Rs 7,800",
+          "currentPrice": "Rs 6,240",
+          "discount": "-20%"
+        },
+        {
+          "name": "Double Box",
+          "url": "https://interwood.pk/products/double-box",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/FG990031074.jpg?v=1757596374",
+          "originalPrice": "Rs 12,600",
+          "currentPrice": "Rs 10,080",
+          "discount": "-20%"
+        },
+        {
+          "name": "Remington Filing Cabinet",
+          "url": "https://interwood.pk/products/remington-filing-cabinet",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/RemingtonFilingCabinet.jpg?v=1757596441",
+          "originalPrice": "Rs 100,000",
+          "currentPrice": "Rs 50,000",
+          "discount": "-50%"
+        },
+        {
+          "name": "Snare Visitor Chair",
+          "url": "https://interwood.pk/products/visitor-chair-jxn-500m",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/products/fg050001391.jpg?v=1757335390",
+          "originalPrice": "Rs 49,900",
+          "currentPrice": "Rs 29,940",
+          "discount": "-40%"
+        },
+        {
+          "name": "Arc Econo Credenza",
+          "url": "https://interwood.pk/products/arc-econo-credenza",
+          "image": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/Arc-Desk-Credenza.jpg?v=1777704839",
+          "originalPrice": "Rs 115,000",
+          "currentPrice": "Rs 69,000",
+          "discount": "-40%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:44.742Z",
+    "source": "auto"
+  },
+  "insignia": {
+    "status": "sale",
+    "live": {
+      "off": "id Orders SALE SALE Sale FLAT 50% OFF FLAT 70% OFF WOMEN WOMEN ONLINE…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://insignia.com.pk/collections/sale",
+      "products": [
+        {
+          "name": "Casual Slip On IC0102-Tea Pink",
+          "url": "https://insignia.com.pk/products/casual-slip-on-ic0102-tea-pink",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_38.png?v=1787911795",
+          "originalPrice": "Rs 5,450",
+          "currentPrice": "Rs 2,725",
+          "discount": "-50%"
+        },
+        {
+          "name": "Comfort Slip On IK0128-Lilac",
+          "url": "https://insignia.com.pk/products/comfort-slip-on-ik0128-lilac",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_7c6f273d-050c-4fdc-8453-2f5e82c10746.jpg?v=1770810345",
+          "originalPrice": "Rs 8,450",
+          "currentPrice": "Rs 4,225",
+          "discount": "-50%"
+        },
+        {
+          "name": "Party Wear Slip On IP0097-Gold",
+          "url": "https://insignia.com.pk/products/party-wear-slip-on-ip0097-gold",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_34.png?v=1787909512",
+          "originalPrice": "Rs 8,950",
+          "currentPrice": "Rs 4,475",
+          "discount": "-50%"
+        },
+        {
+          "name": "Casual Slip On IC0104-Ivory",
+          "url": "https://insignia.com.pk/products/casual-slip-on-ic0104-ivory",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_6760428c-e0af-458d-8891-85b87d4e44e1.jpg?v=1772442501",
+          "originalPrice": "Rs 5,950",
+          "currentPrice": "Rs 2,975",
+          "discount": "-50%"
+        },
+        {
+          "name": "Formal Slip On IF0217-Tan",
+          "url": "https://insignia.com.pk/products/formal-slip-on-if0217-tan",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_36.png?v=1787911454",
+          "originalPrice": "Rs 9,950",
+          "currentPrice": "Rs 2,985",
+          "discount": "-70%"
+        },
+        {
+          "name": "Casual Slip On IC0083-Maroon",
+          "url": "https://insignia.com.pk/products/casual-slip-on-ic0083-maroon",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_85da222e-efdc-4dfd-bf2f-15b720282df2.jpg?v=1771511365",
+          "originalPrice": "Rs 7,950",
+          "currentPrice": "Rs 3,975",
+          "discount": "-50%"
+        },
+        {
+          "name": "Party Wear Sandal IP2072-Black",
+          "url": "https://insignia.com.pk/products/party-wear-sandal-ip2072-black",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_8837269d-eb53-409a-aff8-706354b31f7d.jpg?v=1772114954",
+          "originalPrice": "Rs 6,950",
+          "currentPrice": "Rs 3,475",
+          "discount": "-50%"
+        },
+        {
+          "name": "Formal Sandal IF2077-Light Gold",
+          "url": "https://insignia.com.pk/products/formal-sandal-if2077-light-gold",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_08683e32-88e7-4103-8e38-d35ca58842ee.jpg?v=1778146049",
+          "originalPrice": "Rs 6,950",
+          "currentPrice": "Rs 3,475",
+          "discount": "-50%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-08T07:13:56.291Z",
+    "source": "auto"
+  },
+  "obipelle": {
+    "status": "sale",
+    "live": {
+      "off": "empty Close JOIN THE CLUB FOR 10% OFF GET EXCLUSIVE ACCESS TO SUBSCRIB…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "10% off",
+      "sourceUrl": "https://obipelle.com/",
       "products": [],
       "productsFound": 0,
-      "note": "Product details for this sale were entered by hand, so individual products aren't listed here yet. The daily automatic check will fill them in the next time it finds this sale."
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
-  },
-  "chenone": {
-    "status": "new",
-    "live": null,
-    "checkedAt": "2026-08-23T09:00:00Z",
-    "source": "manual"
+    "checkedAt": "2026-09-08T07:13:58.977Z",
+    "source": "auto"
   }
 }
