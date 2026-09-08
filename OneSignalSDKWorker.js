@@ -2,4 +2,4 @@
    reachable at https://brandgali.com/OneSignalSDKWorker.js — this is a
    fixed requirement from OneSignal, the filename and location cannot be
    changed. You do not need to edit this file's contents, ever. */
-importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDKWorker.js");
+importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");
