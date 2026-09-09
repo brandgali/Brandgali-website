@@ -78,7 +78,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:17.418Z",
+    "checkedAt": "2026-09-09T05:13:27.892Z",
     "source": "auto"
   },
   "dceast": {
@@ -160,7 +160,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:19.314Z",
+    "checkedAt": "2026-09-09T05:13:30.282Z",
     "source": "auto"
   },
   "drappy": {
@@ -177,7 +177,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-08T07:12:22.212Z",
+    "checkedAt": "2026-09-09T05:13:33.622Z",
     "source": "auto"
   },
   "fitted": {
@@ -259,7 +259,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:23.344Z",
+    "checkedAt": "2026-09-09T05:13:34.883Z",
     "source": "auto"
   },
   "imhaut": {
@@ -276,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-08T07:12:26.042Z",
+    "checkedAt": "2026-09-09T05:13:37.506Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -293,7 +293,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-08T07:12:31.338Z",
+    "checkedAt": "2026-09-09T05:13:43.114Z",
     "source": "auto"
   },
   "lakhany": {
@@ -308,74 +308,74 @@
       "sourceUrl": "https://lakhanyonline.com/collections/unstitched-sale",
       "products": [
         {
-          "name": "03 Piece Unstitched Printed Lawn",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-254",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_50264.jpg?v=1785263710",
-          "originalPrice": "Rs 4,200",
-          "currentPrice": "Rs 3,360",
+          "name": "03 Piece Unstitched embroidered With Fancy Embroidered Shawl",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-embroidered-with-fancy-embroidered-shawl-5",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/12A5025.jpg?v=1760505092",
+          "originalPrice": "Rs 7,450",
+          "currentPrice": "Rs 4,843",
+          "discount": "-35%"
+        },
+        {
+          "name": "03 Piece Unstitched Embroidered Fancy Jacquard Peach With Velvet",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-embroidered-fancy-jacquard-peach-with-velvet-3",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/268A8140.jpg?v=1762927011",
+          "originalPrice": "Rs 8,450",
+          "currentPrice": "Rs 5,493",
+          "discount": "-35%"
+        },
+        {
+          "name": "03 Piece Unstitched Embroidered Fancy Jacquard Peach With Velvet",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-embroidered-fancy-jacquard-peach-with-velvet-5",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/268A8388.jpg?v=1762927287",
+          "originalPrice": "Rs 8,450",
+          "currentPrice": "Rs 5,493",
+          "discount": "-35%"
+        },
+        {
+          "name": "03 Piece Unstitched Embroidered Essentials with Printed Chiffon Dupatta",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-embroidered-essentials-with-printed-chiffon-dupatta-1",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_021213.png?v=1769500916",
+          "originalPrice": "Rs 7,250",
+          "currentPrice": "Rs 5,800",
           "discount": "-20%"
         },
         {
-          "name": "03 Piece Unstitched Dyed Embroidered with Printed Chiffon Dupatta",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-dyed-embroidered-with-printed-chiffon-dupatta-copy",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_70015.jpg?v=1777992423",
-          "originalPrice": "Rs 7,150",
-          "currentPrice": "Rs 5,363",
+          "name": "03 Piece Unstitched Printed Lawn",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-235",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-802110.jpg?v=1781679203",
+          "originalPrice": "Rs 4,200",
+          "currentPrice": "Rs 3,150",
           "discount": "-25%"
         },
         {
-          "name": "03 Piece Unstitched Printed Embroidered with Printed Lawn Dupatta",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-embroidered-with-printed-lawn-dupatta-13",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_011022.png?v=1776250422",
-          "originalPrice": "Rs 5,750",
-          "currentPrice": "Rs 4,600",
-          "discount": "-20%"
-        },
-        {
-          "name": "03 Piece Unstitched Printed Embroidered with Printed Lawn Dupatta",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-embroidered-with-printed-lawn-dupatta-16",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_011053.png?v=1776250498",
-          "originalPrice": "Rs 5,750",
-          "currentPrice": "Rs 4,600",
-          "discount": "-20%"
-        },
-        {
           "name": "03 Piece Unstitched Printed Lawn",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-228",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-020108-Copy.jpg?v=1779174151",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-komal-printed-lawn-15",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_822131.png?v=1768909020",
           "originalPrice": "Rs 4,200",
           "currentPrice": "Rs 3,360",
           "discount": "-20%"
         },
         {
-          "name": "03 Piece Unstitched Monochrome Dyed Embroidered with Embroidered Lawn Dupatta",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-monochrome-dyed-embroidered-with-embroidered-lawn-dupatta-2",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_30215.jpg?v=1780906811",
-          "originalPrice": "Rs 6,250",
-          "currentPrice": "Rs 5,000",
-          "discount": "-20%"
-        },
-        {
           "name": "03 Piece Unstitched Printed Lawn",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-241",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-802166.jpg?v=1781680047",
+          "url": "https://lakhanyonline.com/products/03-piece-unstitched-printed-lawn-257",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_50283.jpg?v=1785264065",
           "originalPrice": "Rs 4,200",
-          "currentPrice": "Rs 3,360",
-          "discount": "-20%"
+          "currentPrice": "Rs 3,150",
+          "discount": "-25%"
         },
         {
-          "name": "02 Piece Unstitched Embroidered Shirt with Trouser",
-          "url": "https://lakhanyonline.com/products/02-piece-unstitched-embroidered-shirt-with-trouser",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-907_3b1695ee-bbee-4290-98f6-188d8b4369d2.jpg?v=1775800664",
-          "originalPrice": "Rs 4,350",
-          "currentPrice": "Rs 3,480",
-          "discount": "-20%"
+          "name": "02 Piece Unstitched Printed Embroidered Shirt & Trouser",
+          "url": "https://lakhanyonline.com/products/02-piece-unstitched-printed-embroidered-with-shirt-trouser-1",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_30022.jpg?v=1777012651",
+          "originalPrice": "Rs 4,150",
+          "currentPrice": "Rs 3,113",
+          "discount": "-25%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:33.254Z",
+    "checkedAt": "2026-09-09T05:13:44.920Z",
     "source": "auto"
   },
   "limelight": {
@@ -457,7 +457,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:35.134Z",
+    "checkedAt": "2026-09-09T05:13:46.867Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -539,7 +539,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:38.519Z",
+    "checkedAt": "2026-09-09T05:13:50.697Z",
     "source": "auto"
   },
   "mabsh": {
@@ -621,7 +621,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:42.894Z",
+    "checkedAt": "2026-09-09T05:13:54.658Z",
     "source": "auto"
   },
   "nayadour": {
@@ -703,7 +703,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:49.066Z",
+    "checkedAt": "2026-09-09T05:14:00.738Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -785,7 +785,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:50.923Z",
+    "checkedAt": "2026-09-09T05:14:03.466Z",
     "source": "auto"
   },
   "outfitters": {
@@ -800,20 +800,20 @@
       "sourceUrl": "https://outfitters.com.pk/collections/men-t-shirt-sale",
       "products": [
         {
-          "name": "Textured Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2118-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2118106808.jpg?v=1781175012",
-          "originalPrice": "Rs 3,690",
-          "currentPrice": "Rs 1,790",
-          "discount": "-51%"
-        },
-        {
           "name": "Textured T-Shirt",
           "url": "https://outfitters.com.pk/products/f2102-106",
           "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271",
           "originalPrice": "Rs 3,690",
           "currentPrice": "Rs 1,790",
           "discount": "-51%"
+        },
+        {
+          "name": "Textured T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1757-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1757106817_4.jpg?v=1772523644",
+          "originalPrice": "Rs 3,290",
+          "currentPrice": "Rs 1,590",
+          "discount": "-52%"
         },
         {
           "name": "Washed Out Graphic T-Shirt",
@@ -825,8 +825,8 @@
         },
         {
           "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f1998-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1998106720.jpg?v=1781175338",
+          "url": "https://outfitters.com.pk/products/f2014-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2014106003.jpg?v=1778146383",
           "originalPrice": "Rs 2,490",
           "currentPrice": "Rs 1,190",
           "discount": "-52%"
@@ -867,7 +867,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:54.970Z",
+    "checkedAt": "2026-09-09T05:14:07.456Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -949,7 +949,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:12:58.521Z",
+    "checkedAt": "2026-09-09T05:14:11.640Z",
     "source": "auto"
   },
   "wearhype": {
@@ -963,6 +963,38 @@
       "headline": "End Of Season",
       "sourceUrl": "https://wearhype.co/collections/sale",
       "products": [
+        {
+          "name": "Yellow Ribbed Sweater",
+          "url": "https://wearhype.co/products/yellow-ribbed-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_153ac0b5-f9c6-4d41-a69f-ebe5d66d26d0.png?v=1788867462",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,050",
+          "discount": "-70%"
+        },
+        {
+          "name": "Red Ribbed V-Neck Sweater",
+          "url": "https://wearhype.co/products/red-ribbed-v-neck-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_9668e5e3-1bb2-4064-b83f-bfaf0ce54fa5.png?v=1788867358",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
+        {
+          "name": "Ribbed V-Neck Sweater Vest",
+          "url": "https://wearhype.co/products/ribbed-v-neck-sweater-vest",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/0.png?v=1788867217",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
+        {
+          "name": "Classic Ribbed V-Neck Sweater Vest",
+          "url": "https://wearhype.co/products/classic-ribbed-v-neck-sweater-vest",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/04_224b8f11-5a57-4d2a-bf11-3db0dfa7ff2b.png?v=1788866951",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
         {
           "name": "Royal Crest Ribbed Sweater",
           "url": "https://wearhype.co/products/royal-crest-ribbed-sweater",
@@ -994,44 +1026,12 @@
           "originalPrice": "Rs 3,990",
           "currentPrice": "Rs 1,199",
           "discount": "-70%"
-        },
-        {
-          "name": "Coastal Mist Ribbed Sweater",
-          "url": "https://wearhype.co/products/ribbed-ice-blue-mock-neck-copy",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_f8474db1-43ce-43e0-9f2a-4d7faf4cd2b8.png?v=1788773687",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
-          "discount": "-70%"
-        },
-        {
-          "name": "Light Gray Ribbed Mock Neck",
-          "url": "https://wearhype.co/products/pink-ribbed-mock-neck",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_31ebecdf-2f98-4871-8d4e-e015b74f13a1.png?v=1788761638",
-          "originalPrice": "Rs 3,990",
-          "currentPrice": "Rs 1,199",
-          "discount": "-70%"
-        },
-        {
-          "name": "Blue Mock Neck",
-          "url": "https://wearhype.co/products/blue-mock-neck",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_379b20e5-74ef-4445-9d69-71b1b9287049.png?v=1788524580",
-          "originalPrice": "Rs 4,490",
-          "currentPrice": "Rs 1,350",
-          "discount": "-70%"
-        },
-        {
-          "name": "OFF WHITE Ribbed Sweater",
-          "url": "https://wearhype.co/products/off-white-ribbed-sweater",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_4c14bdcb-eec3-44d5-a0e7-099de7a4d98b.png?v=1788436824",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
-          "discount": "-70%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:08.793Z",
+    "checkedAt": "2026-09-09T05:14:21.691Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1113,7 +1113,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:11.013Z",
+    "checkedAt": "2026-09-09T05:14:24.706Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1130,7 +1130,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-08T07:13:14.955Z",
+    "checkedAt": "2026-09-09T05:14:29.670Z",
     "source": "auto"
   },
   "borjan": {
@@ -1212,7 +1212,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:16.303Z",
+    "checkedAt": "2026-09-09T05:14:30.965Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1294,7 +1294,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:18.568Z",
+    "checkedAt": "2026-09-09T05:14:33.580Z",
     "source": "auto"
   },
   "jutay": {
@@ -1376,7 +1376,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:23.510Z",
+    "checkedAt": "2026-09-09T05:14:40.104Z",
     "source": "auto"
   },
   "ndure": {
@@ -1458,7 +1458,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:25.189Z",
+    "checkedAt": "2026-09-09T05:14:42.237Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1475,7 +1475,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-08T07:13:27.354Z",
+    "checkedAt": "2026-09-09T05:14:44.717Z",
     "source": "auto"
   },
   "servis": {
@@ -1557,7 +1557,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:28.489Z",
+    "checkedAt": "2026-09-09T05:14:45.769Z",
     "source": "auto"
   },
   "stylo": {
@@ -1639,7 +1639,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:30.990Z",
+    "checkedAt": "2026-09-09T05:14:48.859Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1721,7 +1721,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:33.090Z",
+    "checkedAt": "2026-09-09T05:14:50.817Z",
     "source": "auto"
   },
   "chenone": {
@@ -1803,7 +1803,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:35.599Z",
+    "checkedAt": "2026-09-09T05:14:53.032Z",
     "source": "auto"
   },
   "interwood": {
@@ -1885,13 +1885,13 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:44.742Z",
+    "checkedAt": "2026-09-09T05:15:00.465Z",
     "source": "auto"
   },
   "insignia": {
     "status": "sale",
     "live": {
-      "off": "id Orders SALE SALE Sale FLAT 50% OFF FLAT 70% OFF WOMEN WOMEN ONLINE…",
+      "off": "id Orders SALE SALE Sale FLAT 50% OFF WOMEN WOMEN ONLINE EXCLUSIVE SHO…",
       "ends": "Check site for current details",
       "percent": 60
     },
@@ -1932,14 +1932,6 @@
           "discount": "-50%"
         },
         {
-          "name": "Formal Slip On IF0217-Tan",
-          "url": "https://insignia.com.pk/products/formal-slip-on-if0217-tan",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_36.png?v=1787911454",
-          "originalPrice": "Rs 9,950",
-          "currentPrice": "Rs 2,985",
-          "discount": "-70%"
-        },
-        {
           "name": "Casual Slip On IC0083-Maroon",
           "url": "https://insignia.com.pk/products/casual-slip-on-ic0083-maroon",
           "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_85da222e-efdc-4dfd-bf2f-15b720282df2.jpg?v=1771511365",
@@ -1962,12 +1954,20 @@
           "originalPrice": "Rs 6,950",
           "currentPrice": "Rs 3,475",
           "discount": "-50%"
+        },
+        {
+          "name": "Party Wear Slip On IP0097-Pewter",
+          "url": "https://insignia.com.pk/products/party-wear-slip-on-ip0097-pewter",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_35.png?v=1787909661",
+          "originalPrice": "Rs 8,950",
+          "currentPrice": "Rs 4,475",
+          "discount": "-50%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-08T07:13:56.291Z",
+    "checkedAt": "2026-09-09T05:15:13.051Z",
     "source": "auto"
   },
   "obipelle": {
@@ -1984,7 +1984,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-08T07:13:58.977Z",
+    "checkedAt": "2026-09-09T05:15:15.953Z",
     "source": "auto"
   }
 }
