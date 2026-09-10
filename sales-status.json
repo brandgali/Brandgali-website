@@ -78,7 +78,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:27.892Z",
+    "checkedAt": "2026-09-10T05:13:17.865Z",
     "source": "auto"
   },
   "dceast": {
@@ -160,7 +160,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:30.282Z",
+    "checkedAt": "2026-09-10T05:13:20.155Z",
     "source": "auto"
   },
   "drappy": {
@@ -177,7 +177,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-09T05:13:33.622Z",
+    "checkedAt": "2026-09-10T05:13:22.643Z",
     "source": "auto"
   },
   "fitted": {
@@ -191,6 +191,14 @@
       "headline": "SALE",
       "sourceUrl": "https://fittedshop.com/collections/sale",
       "products": [
+        {
+          "name": "Drop Needle Contrast Zip POLO Shirt",
+          "url": "https://fittedshop.com/products/drop-needle-contrast-zip-polo-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2c_9e2e4998-12bd-40f0-8c7d-a58cf6895eae.jpg?v=1772518727",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
+        },
         {
           "name": "Basic Knitted POLO Rustic Maroon",
           "url": "https://fittedshop.com/products/basic-knitted-polo-rustic-maroon",
@@ -246,20 +254,12 @@
           "originalPrice": "Rs 3,990",
           "currentPrice": "Rs 3,290",
           "discount": "-18%"
-        },
-        {
-          "name": "Chocolate Summerline Knitted POLO",
-          "url": "https://fittedshop.com/products/chocolate-summerline-knitted-polo",
-          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/3_c63dc4ed-9506-448e-93d8-36a24c6d862c.jpg?v=1772370833",
-          "originalPrice": "Rs 3,990",
-          "currentPrice": "Rs 3,490",
-          "discount": "-13%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:34.883Z",
+    "checkedAt": "2026-09-10T05:13:23.840Z",
     "source": "auto"
   },
   "imhaut": {
@@ -276,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-09T05:13:37.506Z",
+    "checkedAt": "2026-09-10T05:13:26.358Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -293,7 +293,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-09T05:13:43.114Z",
+    "checkedAt": "2026-09-10T05:13:31.409Z",
     "source": "auto"
   },
   "lakhany": {
@@ -375,7 +375,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:44.920Z",
+    "checkedAt": "2026-09-10T05:13:33.057Z",
     "source": "auto"
   },
   "limelight": {
@@ -457,7 +457,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:46.867Z",
+    "checkedAt": "2026-09-10T05:13:34.824Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -539,7 +539,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:50.697Z",
+    "checkedAt": "2026-09-10T05:13:38.021Z",
     "source": "auto"
   },
   "mabsh": {
@@ -621,7 +621,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:13:54.658Z",
+    "checkedAt": "2026-09-10T05:13:41.981Z",
     "source": "auto"
   },
   "nayadour": {
@@ -703,7 +703,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:00.738Z",
+    "checkedAt": "2026-09-10T05:13:47.845Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -785,7 +785,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:03.466Z",
+    "checkedAt": "2026-09-10T05:13:49.696Z",
     "source": "auto"
   },
   "outfitters": {
@@ -809,8 +809,8 @@
         },
         {
           "name": "Textured T-Shirt",
-          "url": "https://outfitters.com.pk/products/f1757-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1757106817_4.jpg?v=1772523644",
+          "url": "https://outfitters.com.pk/products/f1745-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1745106006.jpg?v=1773669527",
           "originalPrice": "Rs 3,290",
           "currentPrice": "Rs 1,590",
           "discount": "-52%"
@@ -825,10 +825,10 @@
         },
         {
           "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2014-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2014106003.jpg?v=1778146383",
-          "originalPrice": "Rs 2,490",
-          "currentPrice": "Rs 1,190",
+          "url": "https://outfitters.com.pk/products/f2013-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2013106317.jpg?v=1781158406",
+          "originalPrice": "Rs 2,890",
+          "currentPrice": "Rs 1,390",
           "discount": "-52%"
         },
         {
@@ -867,7 +867,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:07.456Z",
+    "checkedAt": "2026-09-10T05:13:52.583Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -949,7 +949,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:11.640Z",
+    "checkedAt": "2026-09-10T05:13:56.904Z",
     "source": "auto"
   },
   "wearhype": {
@@ -1031,7 +1031,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:21.691Z",
+    "checkedAt": "2026-09-10T05:14:06.064Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1113,7 +1113,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:24.706Z",
+    "checkedAt": "2026-09-10T05:14:08.877Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1130,7 +1130,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-09T05:14:29.670Z",
+    "checkedAt": "2026-09-10T05:14:12.796Z",
     "source": "auto"
   },
   "borjan": {
@@ -1212,7 +1212,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:30.965Z",
+    "checkedAt": "2026-09-10T05:14:14.144Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1294,7 +1294,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:33.580Z",
+    "checkedAt": "2026-09-10T05:14:16.348Z",
     "source": "auto"
   },
   "jutay": {
@@ -1376,7 +1376,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:40.104Z",
+    "checkedAt": "2026-09-10T05:14:21.498Z",
     "source": "auto"
   },
   "ndure": {
@@ -1458,7 +1458,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:42.237Z",
+    "checkedAt": "2026-09-10T05:14:23.249Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1475,7 +1475,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-09T05:14:44.717Z",
+    "checkedAt": "2026-09-10T05:14:25.182Z",
     "source": "auto"
   },
   "servis": {
@@ -1557,7 +1557,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:45.769Z",
+    "checkedAt": "2026-09-10T05:14:26.285Z",
     "source": "auto"
   },
   "stylo": {
@@ -1639,7 +1639,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:48.859Z",
+    "checkedAt": "2026-09-10T05:14:28.690Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1704,7 +1704,7 @@
         {
           "name": "Chesterfield Black",
           "url": "https://www.tsmco.com.pk/products/chesterfield-black",
-          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/IMG_6062_129119dd-ef75-4f33-a810-5bb6d6da8c4f.jpg?v=1788773134",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/IMG_6037_7fbfb99a-bb53-4e8a-ac3d-3f4552c6a3f6.jpg?v=1788773134",
           "originalPrice": "Rs 25,148",
           "currentPrice": "Rs 20,118",
           "discount": "-20%"
@@ -1721,7 +1721,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:50.817Z",
+    "checkedAt": "2026-09-10T05:14:30.595Z",
     "source": "auto"
   },
   "chenone": {
@@ -1803,7 +1803,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:14:53.032Z",
+    "checkedAt": "2026-09-10T05:14:32.746Z",
     "source": "auto"
   },
   "interwood": {
@@ -1885,7 +1885,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:15:00.465Z",
+    "checkedAt": "2026-09-10T05:14:41.351Z",
     "source": "auto"
   },
   "insignia": {
@@ -1967,7 +1967,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-09T05:15:13.051Z",
+    "checkedAt": "2026-09-10T05:14:52.696Z",
     "source": "auto"
   },
   "obipelle": {
@@ -1984,7 +1984,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-09T05:15:15.953Z",
+    "checkedAt": "2026-09-10T05:14:55.449Z",
     "source": "auto"
   }
 }
