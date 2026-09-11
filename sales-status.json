@@ -78,7 +78,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:17.865Z",
+    "checkedAt": "2026-09-11T05:13:49.388Z",
     "source": "auto"
   },
   "dceast": {
@@ -160,7 +160,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:20.155Z",
+    "checkedAt": "2026-09-11T05:13:53.241Z",
     "source": "auto"
   },
   "drappy": {
@@ -177,7 +177,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:13:22.643Z",
+    "checkedAt": "2026-09-11T05:13:58.230Z",
     "source": "auto"
   },
   "fitted": {
@@ -259,7 +259,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:23.840Z",
+    "checkedAt": "2026-09-11T05:13:59.631Z",
     "source": "auto"
   },
   "imhaut": {
@@ -276,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:13:26.358Z",
+    "checkedAt": "2026-09-11T05:14:02.894Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -293,7 +293,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:13:31.409Z",
+    "checkedAt": "2026-09-11T05:14:09.741Z",
     "source": "auto"
   },
   "lakhany": {
@@ -375,7 +375,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:33.057Z",
+    "checkedAt": "2026-09-11T05:14:11.766Z",
     "source": "auto"
   },
   "limelight": {
@@ -457,7 +457,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:34.824Z",
+    "checkedAt": "2026-09-11T05:14:14.397Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -539,7 +539,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:38.021Z",
+    "checkedAt": "2026-09-11T05:14:19.534Z",
     "source": "auto"
   },
   "mabsh": {
@@ -621,7 +621,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:41.981Z",
+    "checkedAt": "2026-09-11T05:14:25.427Z",
     "source": "auto"
   },
   "nayadour": {
@@ -703,89 +703,24 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:47.845Z",
+    "checkedAt": "2026-09-11T05:14:32.208Z",
     "source": "auto"
   },
   "ninefigures": {
     "status": "sale",
     "live": {
-      "off": "ontent SEASON END SALE | UPTO 50% OFF Men VIEW ALL NEW ARRIVALS AFTER…",
+      "off": "tent FURTHER REDUCTION | FLAT 40% OFF Men VIEW ALL NEW ARRIVALS DAYTRI…",
       "ends": "Check site for current details",
       "percent": 60
     },
     "sale": {
-      "headline": "50% off",
-      "sourceUrl": "https://ninefigures.com/collections/season-end-sale-upto-50-off",
-      "products": [
-        {
-          "name": "Printed Shirt",
-          "url": "https://ninefigures.com/products/wip-cs10-ss26-t-pink",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_7994.jpg?v=1778586231",
-          "originalPrice": "Rs 4,990",
-          "currentPrice": "Rs 2,495",
-          "discount": "-50%"
-        },
-        {
-          "name": "Printed Shirt",
-          "url": "https://ninefigures.com/products/wip-cs10-ss26-green",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_8175.jpg?v=1779280579",
-          "originalPrice": "Rs 4,990",
-          "currentPrice": "Rs 2,495",
-          "discount": "-50%"
-        },
-        {
-          "name": "Printed Shirt",
-          "url": "https://ninefigures.com/products/wip-cs09-ss26-teal",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_8157_34b85611-0e56-4c97-9db7-dd75f0cf7c56.jpg?v=1779277682",
-          "originalPrice": "Rs 4,990",
-          "currentPrice": "Rs 2,495",
-          "discount": "-50%"
-        },
-        {
-          "name": "Printed Shirt",
-          "url": "https://ninefigures.com/products/wip-cs09-ss26-black",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/IMG_8017_c08bb86c-7c55-4379-afb0-b96fd7c1e9b4.jpg?v=1778586446",
-          "originalPrice": "Rs 4,990",
-          "currentPrice": "Rs 2,495",
-          "discount": "-50%"
-        },
-        {
-          "name": "Zipper Textured Polo",
-          "url": "https://ninefigures.com/products/mcosp-17-ss26-sand",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/MCOSP-17-SS26-SAND_2.jpg?v=1775319517",
-          "originalPrice": "Rs 3,490",
-          "currentPrice": "Rs 1,745",
-          "discount": "-50%"
-        },
-        {
-          "name": "Textured Shorts",
-          "url": "https://ninefigures.com/products/mcoss-17-ss26-sand",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/MCOSS-17-SS26-sand_2.jpg?v=1775323712",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 1,495",
-          "discount": "-50%"
-        },
-        {
-          "name": "Zipper Textured Polo",
-          "url": "https://ninefigures.com/products/mcosp-18-ss26-copper",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/PRO08753_2.jpg?v=1775324197",
-          "originalPrice": "Rs 3,490",
-          "currentPrice": "Rs 1,745",
-          "discount": "-50%"
-        },
-        {
-          "name": "Textured Shorts",
-          "url": "https://ninefigures.com/products/mcoss-18-ss26-copper",
-          "image": "https://cdn.shopify.com/s/files/1/0638/8888/3878/files/MCOSS-18-SS26-COPPER_2.jpg?v=1775324543",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 1,495",
-          "discount": "-50%"
-        }
-      ],
-      "productsFound": 8,
-      "note": null
+      "headline": "40% off",
+      "sourceUrl": "https://ninefigures.com/collections/summer-sale-flat-25-50-off",
+      "products": [],
+      "productsFound": 0,
+      "note": "This brand's sale page doesn't publish product details in a way our automatic check can read. The sale is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:13:49.696Z",
+    "checkedAt": "2026-09-11T05:14:34.849Z",
     "source": "auto"
   },
   "outfitters": {
@@ -824,11 +759,11 @@
           "discount": "-51%"
         },
         {
-          "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2013-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2013106317.jpg?v=1781158406",
-          "originalPrice": "Rs 2,890",
-          "currentPrice": "Rs 1,390",
+          "name": "Color Block Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2114-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2114106901.jpg?v=1785310556",
+          "originalPrice": "Rs 3,290",
+          "currentPrice": "Rs 1,590",
           "discount": "-52%"
         },
         {
@@ -840,12 +775,12 @@
           "discount": "-51%"
         },
         {
-          "name": "Embroidered Slogan T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2101-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2101106001.jpg?v=1779357346",
-          "originalPrice": "Rs 3,690",
-          "currentPrice": "Rs 1,790",
-          "discount": "-51%"
+          "name": "Slogan Print T-Shirt With Label Patch",
+          "url": "https://outfitters.com.pk/products/f1642-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1642106002_3.jpg?v=1769582063",
+          "originalPrice": "Rs 3,290",
+          "currentPrice": "Rs 1,590",
+          "discount": "-52%"
         },
         {
           "name": "Crew Neck T-Shirt",
@@ -867,7 +802,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:52.583Z",
+    "checkedAt": "2026-09-11T05:14:42.407Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -949,7 +884,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:13:56.904Z",
+    "checkedAt": "2026-09-11T05:14:48.057Z",
     "source": "auto"
   },
   "wearhype": {
@@ -963,6 +898,14 @@
       "headline": "End Of Season",
       "sourceUrl": "https://wearhype.co/collections/sale",
       "products": [
+        {
+          "name": "Ribbed Raglan Henley",
+          "url": "https://wearhype.co/products/henley-heavy-melange",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_911806cf-37e7-498d-99ec-3615fc6264ef.png?v=1788947074",
+          "originalPrice": "Rs 4,490",
+          "currentPrice": "Rs 1,350",
+          "discount": "-70%"
+        },
         {
           "name": "Yellow Ribbed Sweater",
           "url": "https://wearhype.co/products/yellow-ribbed-sweater",
@@ -996,42 +939,34 @@
           "discount": "-70%"
         },
         {
-          "name": "Royal Crest Ribbed Sweater",
-          "url": "https://wearhype.co/products/royal-crest-ribbed-sweater",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_430be37b-1248-4696-a967-2ac1eebbf2ec.png?v=1788774071",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
-          "discount": "-70%"
-        },
-        {
-          "name": "Ivory Tide Ribbed Sweater",
-          "url": "https://wearhype.co/products/ivory-tide-ribbed-sweater",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/02_2a5a58d6-171a-4e4b-a6d9-d7d7b14e8c05.png?v=1788773915",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
-          "discount": "-70%"
-        },
-        {
-          "name": "Coral Drift Ribbed Sweater",
-          "url": "https://wearhype.co/products/coastal-mist-ribbed-sweater",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_f760209c-aab7-473b-9707-caf7bda4e936.png?v=1788769822",
+          "name": "Aqua Ribbed Turtle-Neck",
+          "url": "https://wearhype.co/products/aqua-ribbed-turtle-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_47350845-c006-4660-a903-2971596fdfe9.png?v=1788854127",
           "originalPrice": "Rs 3,490",
           "currentPrice": "Rs 1,050",
           "discount": "-70%"
         },
         {
-          "name": "Ribbed Mock Neck",
-          "url": "https://wearhype.co/products/ribbed-mock-neck",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_29d000db-3247-4491-813b-85fade6a1ee7.png?v=1788524819",
-          "originalPrice": "Rs 3,990",
-          "currentPrice": "Rs 1,199",
+          "name": "Mocha Ribbed Turtle-Neck",
+          "url": "https://wearhype.co/products/mocha-ribbed-turtle-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_33bccf85-c25c-43da-9d71-bc8cb1a20093.png?v=1788854591",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,050",
+          "discount": "-70%"
+        },
+        {
+          "name": "Deep Ribbed Turtle-Neck",
+          "url": "https://wearhype.co/products/deep-ribbed-turtle-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_9fffe51c-e001-47ae-addc-31c0c2d80452.png?v=1788853557",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,050",
           "discount": "-70%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:06.064Z",
+    "checkedAt": "2026-09-11T05:14:59.546Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1113,7 +1048,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:08.877Z",
+    "checkedAt": "2026-09-11T05:15:04.256Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1130,7 +1065,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:14:12.796Z",
+    "checkedAt": "2026-09-11T05:15:08.901Z",
     "source": "auto"
   },
   "borjan": {
@@ -1212,7 +1147,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:14.144Z",
+    "checkedAt": "2026-09-11T05:15:10.394Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1270,31 +1205,31 @@
           "name": "Modern Comfort Sneakers - White",
           "url": "https://fhsofficial.com/products/modern-comfort-sneakers-white",
           "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/49B_5c9393f2-3823-4ff5-a1a9-85d94089b568.jpg?v=1782990859",
-          "originalPrice": "Rs 13,900",
-          "currentPrice": "Rs 9,990",
-          "discount": "-28%"
+          "originalPrice": "Rs 14,990",
+          "currentPrice": "Rs 8,990",
+          "discount": "-40%"
         },
         {
           "name": "Modern Comfort Sneakers - Brown/White",
           "url": "https://fhsofficial.com/products/modern-comfort-sneakers-brown-white",
           "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/38B_df2f542e-f8cb-4fd5-a679-7f5b3bc52d00.jpg?v=1782990922",
-          "originalPrice": "Rs 13,900",
-          "currentPrice": "Rs 9,990",
-          "discount": "-28%"
+          "originalPrice": "Rs 14,990",
+          "currentPrice": "Rs 8,990",
+          "discount": "-40%"
         },
         {
           "name": "Modern Comfort Sneakers - Tan/White",
           "url": "https://fhsofficial.com/products/modern-comfort-sneakers-tan-white",
           "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/37B_434831b9-bd13-4ca5-a011-edd55d933926.jpg?v=1783078631",
-          "originalPrice": "Rs 13,900",
-          "currentPrice": "Rs 9,990",
-          "discount": "-28%"
+          "originalPrice": "Rs 14,990",
+          "currentPrice": "Rs 8,990",
+          "discount": "-40%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:16.348Z",
+    "checkedAt": "2026-09-11T05:15:14.166Z",
     "source": "auto"
   },
   "jutay": {
@@ -1376,7 +1311,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:21.498Z",
+    "checkedAt": "2026-09-11T05:15:20.633Z",
     "source": "auto"
   },
   "ndure": {
@@ -1458,7 +1393,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:23.249Z",
+    "checkedAt": "2026-09-11T05:15:23.527Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1475,7 +1410,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:14:25.182Z",
+    "checkedAt": "2026-09-11T05:15:26.511Z",
     "source": "auto"
   },
   "servis": {
@@ -1557,7 +1492,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:26.285Z",
+    "checkedAt": "2026-09-11T05:15:27.678Z",
     "source": "auto"
   },
   "stylo": {
@@ -1572,74 +1507,74 @@
       "sourceUrl": "https://stylo.pk/collections/sale",
       "products": [
         {
-          "name": "Maroon Casual Softy For Ladies CL5556",
-          "url": "https://stylo.pk/products/maroon-casual-softy-for-ladies-cl5556",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL555605_1_1efcdd3d-0078-4587-b42e-90e7899d366c.png?v=1767617920",
-          "originalPrice": "Rs 2,500",
-          "currentPrice": "Rs 1,500",
-          "discount": "-40%"
+          "name": "Coffee Casual Sneaker For Women WN6223",
+          "url": "https://stylo.pk/products/coffee-casual-sneaker-for-women-wn6223",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN622341_1.webp?v=1788341674",
+          "originalPrice": "Rs 3,000",
+          "currentPrice": "Rs 1,499",
+          "discount": "-50%"
         },
         {
-          "name": "Silver Formal Chappal For Women FR0576",
-          "url": "https://stylo.pk/products/silver-formal-chappal-for-women-fr0576",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/FR057616_2.png?v=1774942591",
-          "originalPrice": "Rs 2,500",
-          "currentPrice": "Rs 1,230",
-          "discount": "-51%"
+          "name": "Beige Casual Sneaker For Women WN6227",
+          "url": "https://stylo.pk/products/beige-casual-sneaker-for-women-wn6227",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN622762_2.webp?v=1788341674",
+          "originalPrice": "Rs 3,000",
+          "currentPrice": "Rs 1,499",
+          "discount": "-50%"
         },
         {
-          "name": "Black Women Pumps WN1246",
-          "url": "https://stylo.pk/products/black-women-pumps-wn1246",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN124601_2_c17acf44-e667-4eb8-bb07-1bcde7afd2bf.jpg?v=1777272921",
-          "originalPrice": "Rs 3,300",
-          "currentPrice": "Rs 2,280",
-          "discount": "-31%"
-        },
-        {
-          "name": "Golden Formal Chappal For Women FR0576",
-          "url": "https://stylo.pk/products/golden-formal-chappal-for-women-fr0576",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/FR057615_2.png?v=1776316875",
-          "originalPrice": "Rs 2,500",
-          "currentPrice": "Rs 1,230",
-          "discount": "-51%"
-        },
-        {
-          "name": "Golden Fancy Sandal For Women FN6203",
-          "url": "https://stylo.pk/products/golden-fancy-sandal-for-women-fn6203",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/FN620315_1_22934fe7-553f-4422-8573-60ba3a5ed4e0.png?v=1770978066",
-          "originalPrice": "Rs 3,800",
-          "currentPrice": "Rs 2,620",
-          "discount": "-31%"
-        },
-        {
-          "name": "Mustard Casual Softy For Women CL5642",
-          "url": "https://stylo.pk/products/mustard-casual-softy-for-women-cl5642",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564206_2.webp?v=1787313744",
+          "name": "Green Casual Softy For Ladies CL5640",
+          "url": "https://stylo.pk/products/green-casual-softy-for-ladies-cl5640",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564011.webp?v=1788870722",
           "originalPrice": "Rs 2,000",
           "currentPrice": "Rs 999",
           "discount": "-50%"
         },
         {
-          "name": "Blue Casual Softy For Women CL5644",
-          "url": "https://stylo.pk/products/blue-casual-softy-for-women-cl5644",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564412_1.webp?v=1787313742",
+          "name": "Pink Casual Softy For Ladies CL5640",
+          "url": "https://stylo.pk/products/pink-casual-softy-for-ladies-cl5640",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564018.webp?v=1788870722",
           "originalPrice": "Rs 2,000",
           "currentPrice": "Rs 999",
           "discount": "-50%"
         },
         {
-          "name": "Green Casual Softy For Women CL5646",
-          "url": "https://stylo.pk/products/green-casual-softy-for-women-cl5646",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564611_1.webp?v=1787313742",
+          "name": "Pink Casual Softy For Ladies CL5641",
+          "url": "https://stylo.pk/products/pink-casual-softy-for-ladies-cl5641",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/CL564118.webp?v=1788870722",
           "originalPrice": "Rs 2,000",
           "currentPrice": "Rs 999",
+          "discount": "-50%"
+        },
+        {
+          "name": "Grey Sneaker For Ladies WN6226",
+          "url": "https://stylo.pk/products/grey-sneaker-for-ladies-wn6226",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN622607.webp?v=1788870723",
+          "originalPrice": "Rs 3,000",
+          "currentPrice": "Rs 1,499",
+          "discount": "-50%"
+        },
+        {
+          "name": "Beige Sneaker For Ladies WN6237",
+          "url": "https://stylo.pk/products/beige-sneaker-for-ladies-wn6237",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN623762.webp?v=1788870722",
+          "originalPrice": "Rs 3,000",
+          "currentPrice": "Rs 1,499",
+          "discount": "-50%"
+        },
+        {
+          "name": "Maroon Sneaker For Ladies WN6240",
+          "url": "https://stylo.pk/products/maroon-sneaker-for-ladies-wn6240",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN624005.webp?v=1788870721",
+          "originalPrice": "Rs 3,000",
+          "currentPrice": "Rs 1,499",
           "discount": "-50%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:28.690Z",
+    "checkedAt": "2026-09-11T05:15:31.676Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1710,18 +1645,18 @@
           "discount": "-20%"
         },
         {
-          "name": "Belfast Black",
-          "url": "https://www.tsmco.com.pk/products/belfast-black",
-          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/IMG_0540.jpg?v=1752979516",
-          "originalPrice": "Rs 25,148",
-          "currentPrice": "Rs 20,118",
-          "discount": "-20%"
+          "name": "Casablanca Black Patent",
+          "url": "https://www.tsmco.com.pk/products/casablanca-black-patent",
+          "image": "https://cdn.shopify.com/s/files/1/0638/7102/5407/files/3_071578ba-fea7-49ff-8a04-7d4710a12347.png?v=1752979607",
+          "originalPrice": "Rs 26,198",
+          "currentPrice": "Rs 17,056",
+          "discount": "-35%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:30.595Z",
+    "checkedAt": "2026-09-11T05:15:35.642Z",
     "source": "auto"
   },
   "chenone": {
@@ -1803,7 +1738,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:32.746Z",
+    "checkedAt": "2026-09-11T05:15:39.638Z",
     "source": "auto"
   },
   "interwood": {
@@ -1885,18 +1820,18 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:41.351Z",
+    "checkedAt": "2026-09-11T05:15:49.444Z",
     "source": "auto"
   },
   "insignia": {
     "status": "sale",
     "live": {
-      "off": "id Orders SALE SALE Sale FLAT 50% OFF WOMEN WOMEN ONLINE EXCLUSIVE SHO…",
+      "off": "ignia PK Skip to content Flat 50% Off & Free Delivery on Prepaid Order…",
       "ends": "Check site for current details",
       "percent": 60
     },
     "sale": {
-      "headline": "50% off",
+      "headline": "50% Off",
       "sourceUrl": "https://insignia.com.pk/collections/sale",
       "products": [
         {
@@ -1967,7 +1902,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-10T05:14:52.696Z",
+    "checkedAt": "2026-09-11T05:16:04.871Z",
     "source": "auto"
   },
   "obipelle": {
@@ -1984,7 +1919,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-10T05:14:55.449Z",
+    "checkedAt": "2026-09-11T05:16:08.633Z",
     "source": "auto"
   }
 }
