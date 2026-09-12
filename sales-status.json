@@ -1,4 +1,103 @@
 {
+  "adma": {
+    "status": "sale",
+    "live": {
+      "off": "ntent SPEND MORE, SAVE MORE | 15% OFF on PKR 6,500+ | 20% OFF on PKR 1…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "15% off",
+      "sourceUrl": "https://adma.com.pk/",
+      "products": [],
+      "productsFound": 0,
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
+    },
+    "checkedAt": "2026-09-12T05:12:45.664Z",
+    "source": "auto"
+  },
+  "breakout": {
+    "status": "sale",
+    "live": {
+      "off": "RS / END OF SEASON SALE UP TO 50% OFF • SHOP NOW / Menu Menu MEN END O…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "50% off",
+      "sourceUrl": "https://breakout.com.pk/collections/sale",
+      "products": [
+        {
+          "name": "BOYS BASIC DENIM",
+          "url": "https://breakout.com.pk/products/k5dsd684-nvy",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K5BSD684-NVY_1.jpg?v=1756897839",
+          "originalPrice": "Rs 2,799",
+          "currentPrice": "Rs 1,399",
+          "discount": "-50%"
+        },
+        {
+          "name": "BOYS BASIC JOGGER TROUSER",
+          "url": "https://breakout.com.pk/products/k5csb633-mst",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K5CSB633-MLT_1.jpg?v=1756898019",
+          "originalPrice": "Rs 2,399",
+          "currentPrice": "Rs 1,199",
+          "discount": "-50%"
+        },
+        {
+          "name": "BOYS CARGO SHORTS",
+          "url": "https://breakout.com.pk/products/k6esb833-brn",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB833-BRN_1.jpg?v=1786362425",
+          "originalPrice": "Rs 2,399",
+          "currentPrice": "Rs 1,799",
+          "discount": "-25%"
+        },
+        {
+          "name": "BOYS KNIT CARGO SHORTS",
+          "url": "https://breakout.com.pk/products/k6esb828-dip",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB828-DIP_1.jpg?v=1786362510",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,574",
+          "discount": "-25%"
+        },
+        {
+          "name": "BOYS CHINO SHORTS",
+          "url": "https://breakout.com.pk/products/k6esb834-khk",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB834-KHK_1.jpg?v=1786362410",
+          "originalPrice": "Rs 2,299",
+          "currentPrice": "Rs 1,724",
+          "discount": "-25%"
+        },
+        {
+          "name": "BOYS BASIC POLO",
+          "url": "https://breakout.com.pk/products/k6esp809-pnk",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP809-PNK_1_096a85c1-3f5a-4782-bb2d-dda240fcebd5.jpg?v=1781503010",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,574",
+          "discount": "-25%"
+        },
+        {
+          "name": "BOYS PRINTED POLO",
+          "url": "https://breakout.com.pk/products/k6esp832-mlt",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP832-MLT_1.jpg?v=1786362304",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,574",
+          "discount": "-25%"
+        },
+        {
+          "name": "BOYS NEW YORK TEE",
+          "url": "https://breakout.com.pk/products/k6est696-blu",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6EST696-BLU_2_a4437cf0-d46f-4f2f-9c6e-2be4c7fffe32.jpg?v=1781503002",
+          "originalPrice": "Rs 1,399",
+          "currentPrice": "Rs 1,049",
+          "discount": "-25%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "checkedAt": "2026-09-12T05:12:50.733Z",
+    "source": "auto"
+  },
   "charizma": {
     "status": "sale",
     "live": {
@@ -78,7 +177,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:13:49.388Z",
+    "checkedAt": "2026-09-12T05:12:52.720Z",
     "source": "auto"
   },
   "dceast": {
@@ -160,7 +259,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:13:53.241Z",
+    "checkedAt": "2026-09-12T05:12:54.818Z",
     "source": "auto"
   },
   "drappy": {
@@ -177,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:13:58.230Z",
+    "checkedAt": "2026-09-12T05:12:57.679Z",
     "source": "auto"
   },
   "fitted": {
@@ -259,7 +358,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:13:59.631Z",
+    "checkedAt": "2026-09-12T05:12:58.642Z",
     "source": "auto"
   },
   "imhaut": {
@@ -276,7 +375,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:14:02.894Z",
+    "checkedAt": "2026-09-12T05:13:01.084Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -293,7 +392,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:14:09.741Z",
+    "checkedAt": "2026-09-12T05:13:06.208Z",
     "source": "auto"
   },
   "lakhany": {
@@ -375,7 +474,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:11.766Z",
+    "checkedAt": "2026-09-12T05:13:07.737Z",
     "source": "auto"
   },
   "limelight": {
@@ -396,14 +495,6 @@
           "originalPrice": "Rs 8,499",
           "currentPrice": "Rs 6,399",
           "discount": "-25%"
-        },
-        {
-          "name": "3 Piece Lawn Suit (Pret)",
-          "url": "https://www.limelight.pk/products/a6482su-xsl-227",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6482SU-SML-227-3PieceLawnSuit_Pret_3.jpg?v=1784636023",
-          "originalPrice": "Rs 6,999",
-          "currentPrice": "Rs 5,199",
-          "discount": "-26%"
         },
         {
           "name": "3 Piece Lawn Slub Suit- Embroidered (Pret)",
@@ -452,12 +543,20 @@
           "originalPrice": "Rs 5,499",
           "currentPrice": "Rs 3,999",
           "discount": "-27%"
+        },
+        {
+          "name": "Lawn Angrakha (Pret)",
+          "url": "https://www.limelight.pk/products/a6519ag-xsl-034",
+          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6519AG-SML-034-LawnAngrakha_Pret_6.jpg?v=1784634029",
+          "originalPrice": "Rs 3,999",
+          "currentPrice": "Rs 2,999",
+          "discount": "-25%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:14.397Z",
+    "checkedAt": "2026-09-12T05:13:09.606Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -539,7 +638,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:19.534Z",
+    "checkedAt": "2026-09-12T05:13:13.303Z",
     "source": "auto"
   },
   "mabsh": {
@@ -621,7 +720,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:25.427Z",
+    "checkedAt": "2026-09-12T05:13:19.470Z",
     "source": "auto"
   },
   "nayadour": {
@@ -703,7 +802,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:32.208Z",
+    "checkedAt": "2026-09-12T05:13:24.916Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -720,7 +819,7 @@
       "productsFound": 0,
       "note": "This brand's sale page doesn't publish product details in a way our automatic check can read. The sale is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:14:34.849Z",
+    "checkedAt": "2026-09-12T05:13:27.126Z",
     "source": "auto"
   },
   "outfitters": {
@@ -751,20 +850,20 @@
           "discount": "-52%"
         },
         {
+          "name": "Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2021-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2021106808.jpg?v=1781248412",
+          "originalPrice": "Rs 2,890",
+          "currentPrice": "Rs 1,390",
+          "discount": "-52%"
+        },
+        {
           "name": "Washed Out Graphic T-Shirt",
           "url": "https://outfitters.com.pk/products/f2109-106",
           "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2109106620_2.jpg?v=1780996695",
           "originalPrice": "Rs 3,690",
           "currentPrice": "Rs 1,790",
           "discount": "-51%"
-        },
-        {
-          "name": "Color Block Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2114-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2114106901.jpg?v=1785310556",
-          "originalPrice": "Rs 3,290",
-          "currentPrice": "Rs 1,590",
-          "discount": "-52%"
         },
         {
           "name": "Slogan Print T-Shirt",
@@ -802,7 +901,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:42.407Z",
+    "checkedAt": "2026-09-12T05:13:31.384Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -884,7 +983,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:48.057Z",
+    "checkedAt": "2026-09-12T05:13:35.412Z",
     "source": "auto"
   },
   "wearhype": {
@@ -966,7 +1065,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:14:59.546Z",
+    "checkedAt": "2026-09-12T05:13:44.280Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1048,7 +1147,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:04.256Z",
+    "checkedAt": "2026-09-12T05:13:47.585Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1065,7 +1164,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:15:08.901Z",
+    "checkedAt": "2026-09-12T05:13:51.562Z",
     "source": "auto"
   },
   "borjan": {
@@ -1147,7 +1246,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:10.394Z",
+    "checkedAt": "2026-09-12T05:13:52.947Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1229,7 +1328,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:14.166Z",
+    "checkedAt": "2026-09-12T05:13:55.225Z",
     "source": "auto"
   },
   "jutay": {
@@ -1311,7 +1410,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:20.633Z",
+    "checkedAt": "2026-09-12T05:13:59.986Z",
     "source": "auto"
   },
   "ndure": {
@@ -1393,7 +1492,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:23.527Z",
+    "checkedAt": "2026-09-12T05:14:01.841Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1410,7 +1509,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:15:26.511Z",
+    "checkedAt": "2026-09-12T05:14:03.787Z",
     "source": "auto"
   },
   "servis": {
@@ -1492,7 +1591,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:27.678Z",
+    "checkedAt": "2026-09-12T05:14:04.807Z",
     "source": "auto"
   },
   "stylo": {
@@ -1574,7 +1673,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:31.676Z",
+    "checkedAt": "2026-09-12T05:14:06.897Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1656,7 +1755,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:35.642Z",
+    "checkedAt": "2026-09-12T05:14:08.927Z",
     "source": "auto"
   },
   "chenone": {
@@ -1738,7 +1837,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:39.638Z",
+    "checkedAt": "2026-09-12T05:14:10.650Z",
     "source": "auto"
   },
   "interwood": {
@@ -1820,13 +1919,13 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:15:49.444Z",
+    "checkedAt": "2026-09-12T05:14:19.288Z",
     "source": "auto"
   },
   "insignia": {
     "status": "sale",
     "live": {
-      "off": "ignia PK Skip to content Flat 50% Off & Free Delivery on Prepaid Order…",
+      "off": "p to content Last Day of Flat 50% Off SALE SALE Sale FLAT 50% OFF WOME…",
       "ends": "Check site for current details",
       "percent": 60
     },
@@ -1902,7 +2001,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-11T05:16:04.871Z",
+    "checkedAt": "2026-09-12T05:14:30.962Z",
     "source": "auto"
   },
   "obipelle": {
@@ -1919,7 +2018,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-11T05:16:08.633Z",
+    "checkedAt": "2026-09-12T05:14:33.399Z",
     "source": "auto"
   }
 }
