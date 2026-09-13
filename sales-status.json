@@ -13,7 +13,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:12:45.664Z",
+    "checkedAt": "2026-09-13T05:12:56.743Z",
     "source": "auto"
   },
   "breakout": {
@@ -27,14 +27,6 @@
       "headline": "50% off",
       "sourceUrl": "https://breakout.com.pk/collections/sale",
       "products": [
-        {
-          "name": "BOYS BASIC DENIM",
-          "url": "https://breakout.com.pk/products/k5dsd684-nvy",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K5BSD684-NVY_1.jpg?v=1756897839",
-          "originalPrice": "Rs 2,799",
-          "currentPrice": "Rs 1,399",
-          "discount": "-50%"
-        },
         {
           "name": "BOYS BASIC JOGGER TROUSER",
           "url": "https://breakout.com.pk/products/k5csb633-mst",
@@ -68,6 +60,14 @@
           "discount": "-25%"
         },
         {
+          "name": "BOYS PRINTED POLO",
+          "url": "https://breakout.com.pk/products/k6esp832-mlt",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP832-MLT_1.jpg?v=1786362304",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,574",
+          "discount": "-25%"
+        },
+        {
           "name": "BOYS BASIC POLO",
           "url": "https://breakout.com.pk/products/k6esp809-pnk",
           "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP809-PNK_1_096a85c1-3f5a-4782-bb2d-dda240fcebd5.jpg?v=1781503010",
@@ -76,11 +76,11 @@
           "discount": "-25%"
         },
         {
-          "name": "BOYS PRINTED POLO",
-          "url": "https://breakout.com.pk/products/k6esp832-mlt",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP832-MLT_1.jpg?v=1786362304",
-          "originalPrice": "Rs 2,099",
-          "currentPrice": "Rs 1,574",
+          "name": "GIRLS BOXY STRIPED T-SHIRT",
+          "url": "https://breakout.com.pk/products/k6est739-wht",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6EST739-WHT_1.jpg?v=1782107660",
+          "originalPrice": "Rs 1,599",
+          "currentPrice": "Rs 1,199",
           "discount": "-25%"
         },
         {
@@ -95,7 +95,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:12:50.733Z",
+    "checkedAt": "2026-09-13T05:13:00.900Z",
     "source": "auto"
   },
   "charizma": {
@@ -177,7 +177,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:12:52.720Z",
+    "checkedAt": "2026-09-13T05:13:03.020Z",
     "source": "auto"
   },
   "dceast": {
@@ -259,7 +259,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:12:54.818Z",
+    "checkedAt": "2026-09-13T05:13:05.935Z",
     "source": "auto"
   },
   "drappy": {
@@ -276,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:12:57.679Z",
+    "checkedAt": "2026-09-13T05:13:08.379Z",
     "source": "auto"
   },
   "fitted": {
@@ -358,7 +358,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:12:58.642Z",
+    "checkedAt": "2026-09-13T05:13:09.674Z",
     "source": "auto"
   },
   "imhaut": {
@@ -375,7 +375,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:13:01.084Z",
+    "checkedAt": "2026-09-13T05:13:12.777Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -392,7 +392,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:13:06.208Z",
+    "checkedAt": "2026-09-13T05:13:18.259Z",
     "source": "auto"
   },
   "lakhany": {
@@ -406,14 +406,6 @@
       "headline": "20% off",
       "sourceUrl": "https://lakhanyonline.com/collections/unstitched-sale",
       "products": [
-        {
-          "name": "03 Piece Unstitched embroidered With Fancy Embroidered Shawl",
-          "url": "https://lakhanyonline.com/products/03-piece-unstitched-embroidered-with-fancy-embroidered-shawl-5",
-          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/12A5025.jpg?v=1760505092",
-          "originalPrice": "Rs 7,450",
-          "currentPrice": "Rs 4,843",
-          "discount": "-35%"
-        },
         {
           "name": "03 Piece Unstitched Embroidered Fancy Jacquard Peach With Velvet",
           "url": "https://lakhanyonline.com/products/03-piece-unstitched-embroidered-fancy-jacquard-peach-with-velvet-3",
@@ -469,12 +461,20 @@
           "originalPrice": "Rs 4,150",
           "currentPrice": "Rs 3,113",
           "discount": "-25%"
+        },
+        {
+          "name": "02 Piece Unstitched Embroidered Shirt with Trouser",
+          "url": "https://lakhanyonline.com/products/02-piece-unstitched-embroidered-shirt-with-trouser",
+          "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG-907_3b1695ee-bbee-4290-98f6-188d8b4369d2.jpg?v=1775800664",
+          "originalPrice": "Rs 4,350",
+          "currentPrice": "Rs 3,263",
+          "discount": "-25%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:07.737Z",
+    "checkedAt": "2026-09-13T05:13:20.181Z",
     "source": "auto"
   },
   "limelight": {
@@ -556,7 +556,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:09.606Z",
+    "checkedAt": "2026-09-13T05:13:22.246Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -638,7 +638,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:13.303Z",
+    "checkedAt": "2026-09-13T05:13:26.114Z",
     "source": "auto"
   },
   "mabsh": {
@@ -720,7 +720,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:19.470Z",
+    "checkedAt": "2026-09-13T05:13:30.328Z",
     "source": "auto"
   },
   "nayadour": {
@@ -802,7 +802,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:24.916Z",
+    "checkedAt": "2026-09-13T05:13:36.769Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -819,7 +819,7 @@
       "productsFound": 0,
       "note": "This brand's sale page doesn't publish product details in a way our automatic check can read. The sale is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:13:27.126Z",
+    "checkedAt": "2026-09-13T05:13:39.751Z",
     "source": "auto"
   },
   "outfitters": {
@@ -874,9 +874,9 @@
           "discount": "-51%"
         },
         {
-          "name": "Slogan Print T-Shirt With Label Patch",
-          "url": "https://outfitters.com.pk/products/f1642-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1642106002_3.jpg?v=1769582063",
+          "name": "Embroidered T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1641-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1641106801.jpg?v=1769492175",
           "originalPrice": "Rs 3,290",
           "currentPrice": "Rs 1,590",
           "discount": "-52%"
@@ -901,7 +901,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:31.384Z",
+    "checkedAt": "2026-09-13T05:13:44.861Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -983,7 +983,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:35.412Z",
+    "checkedAt": "2026-09-13T05:13:48.920Z",
     "source": "auto"
   },
   "wearhype": {
@@ -1065,7 +1065,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:44.280Z",
+    "checkedAt": "2026-09-13T05:13:58.786Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1147,7 +1147,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:47.585Z",
+    "checkedAt": "2026-09-13T05:14:03.178Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1164,7 +1164,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:13:51.562Z",
+    "checkedAt": "2026-09-13T05:14:08.062Z",
     "source": "auto"
   },
   "borjan": {
@@ -1246,7 +1246,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:52.947Z",
+    "checkedAt": "2026-09-13T05:14:09.333Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1328,7 +1328,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:55.225Z",
+    "checkedAt": "2026-09-13T05:14:11.604Z",
     "source": "auto"
   },
   "jutay": {
@@ -1410,7 +1410,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:13:59.986Z",
+    "checkedAt": "2026-09-13T05:14:17.087Z",
     "source": "auto"
   },
   "ndure": {
@@ -1492,7 +1492,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:01.841Z",
+    "checkedAt": "2026-09-13T05:14:18.880Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1509,7 +1509,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:14:03.787Z",
+    "checkedAt": "2026-09-13T05:14:21.709Z",
     "source": "auto"
   },
   "servis": {
@@ -1591,7 +1591,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:04.807Z",
+    "checkedAt": "2026-09-13T05:14:22.751Z",
     "source": "auto"
   },
   "stylo": {
@@ -1673,7 +1673,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:06.897Z",
+    "checkedAt": "2026-09-13T05:14:25.672Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1755,7 +1755,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:08.927Z",
+    "checkedAt": "2026-09-13T05:14:27.876Z",
     "source": "auto"
   },
   "chenone": {
@@ -1837,7 +1837,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:10.650Z",
+    "checkedAt": "2026-09-13T05:14:30.062Z",
     "source": "auto"
   },
   "interwood": {
@@ -1919,18 +1919,18 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:19.288Z",
+    "checkedAt": "2026-09-13T05:14:37.692Z",
     "source": "auto"
   },
   "insignia": {
     "status": "sale",
     "live": {
-      "off": "p to content Last Day of Flat 50% Off SALE SALE Sale FLAT 50% OFF WOME…",
+      "off": "JazzCash SALE SALE Sale FLAT 50% OFF WOMEN WOMEN ONLINE EXCLUSIVE SHOE…",
       "ends": "Check site for current details",
       "percent": 60
     },
     "sale": {
-      "headline": "50% Off",
+      "headline": "50% off",
       "sourceUrl": "https://insignia.com.pk/collections/sale",
       "products": [
         {
@@ -2001,7 +2001,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-12T05:14:30.962Z",
+    "checkedAt": "2026-09-13T05:14:50.091Z",
     "source": "auto"
   },
   "obipelle": {
@@ -2018,7 +2018,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-12T05:14:33.399Z",
+    "checkedAt": "2026-09-13T05:14:52.386Z",
     "source": "auto"
   }
 }
