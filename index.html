@@ -7,12 +7,12 @@
 <!-- Google Analytics 4 - replace G-XXXXXXXXXX with your real Measurement ID
      from analytics.google.com (Admin -> Data Streams -> your web stream).
      This same snippet must be pasted into every page with the same ID. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6E9FP2R4K8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-6E9FP2R4K8');
 </script>
 
 <!-- OneSignal - push notifications. Replace YOUR-ONESIGNAL-APP-ID below with
@@ -25,7 +25,7 @@
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
-      appId: "YOUR-ONESIGNAL-APP-ID",
+      appId: "1ce9cba4-d2b7-4c18-a568-ba3019f99988",
     });
     window.__oneSignalInstance = OneSignal;
     window.dispatchEvent(new Event('brandgali:onesignal-ready'));
@@ -60,7 +60,7 @@ img{max-width:100%;display:block;}
 /* ---- Ticker ---- */
 .ticker-bar{height:36px;background:var(--navy-deep);color:#F5EFE0;overflow:hidden;white-space:nowrap;display:flex;align-items:center;position:relative;}
 .ticker-bar.empty{display:none;}
-.ticker-track{display:inline-block;padding-left:100%;animation:scroll-left 30s linear infinite;font-size:12.5px;letter-spacing:0.02em;}
+.ticker-track{display:inline-block;padding-left:100%;animation:scroll-left 50s linear infinite;font-size:12.5px;letter-spacing:0.02em;}
 .ticker-track a{color:#F5EFE0;margin-right:0;}
 .ticker-track a:hover{color:var(--orange);text-decoration:underline;}
 .ticker-track i{color:var(--orange);margin-right:6px;}
