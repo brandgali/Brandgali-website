@@ -13,7 +13,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:13:33.982Z",
+    "checkedAt": "2026-09-15T05:14:30.708Z",
     "source": "auto"
   },
   "breakout": {
@@ -44,14 +44,6 @@
           "discount": "-25%"
         },
         {
-          "name": "BOYS KNIT CARGO SHORTS",
-          "url": "https://breakout.com.pk/products/k6esb828-dip",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB828-DIP_1.jpg?v=1786362510",
-          "originalPrice": "Rs 2,099",
-          "currentPrice": "Rs 1,574",
-          "discount": "-25%"
-        },
-        {
           "name": "BOYS CHINO SHORTS",
           "url": "https://breakout.com.pk/products/k6esb834-khk",
           "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB834-KHK_1.jpg?v=1786362410",
@@ -68,9 +60,9 @@
           "discount": "-25%"
         },
         {
-          "name": "BOYS BASIC POLO",
-          "url": "https://breakout.com.pk/products/k6esp809-pnk",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP809-PNK_1_096a85c1-3f5a-4782-bb2d-dda240fcebd5.jpg?v=1781503010",
+          "name": "BOYS KNIT CARGO SHORTS",
+          "url": "https://breakout.com.pk/products/k6esb828-dip",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB828-DIP_1.jpg?v=1786362510",
           "originalPrice": "Rs 2,099",
           "currentPrice": "Rs 1,574",
           "discount": "-25%"
@@ -84,18 +76,26 @@
           "discount": "-25%"
         },
         {
-          "name": "GIRLS BOXY STRIPED T-SHIRT",
-          "url": "https://breakout.com.pk/products/k6est739-wht",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6EST739-WHT_1.jpg?v=1782107660",
-          "originalPrice": "Rs 1,599",
-          "currentPrice": "Rs 1,199",
+          "name": "BOYS BASIC POLO",
+          "url": "https://breakout.com.pk/products/k6esp809-pnk",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP809-PNK_1_096a85c1-3f5a-4782-bb2d-dda240fcebd5.jpg?v=1781503010",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,574",
+          "discount": "-25%"
+        },
+        {
+          "name": "BOYS PRINTED SHIRT",
+          "url": "https://breakout.com.pk/products/k6esw802-wht",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESW802-WHT_1.jpg?v=1781265332",
+          "originalPrice": "Rs 2,199",
+          "currentPrice": "Rs 1,649",
           "discount": "-25%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:13:40.175Z",
+    "checkedAt": "2026-09-15T05:14:37.755Z",
     "source": "auto"
   },
   "charizma": {
@@ -177,7 +177,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:13:42.228Z",
+    "checkedAt": "2026-09-15T05:14:39.950Z",
     "source": "auto"
   },
   "dceast": {
@@ -259,7 +259,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:13:44.559Z",
+    "checkedAt": "2026-09-15T05:14:42.135Z",
     "source": "auto"
   },
   "drappy": {
@@ -276,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:13:47.098Z",
+    "checkedAt": "2026-09-15T05:14:44.646Z",
     "source": "auto"
   },
   "fitted": {
@@ -339,26 +339,26 @@
           "discount": "-13%"
         },
         {
-          "name": "Cappuccino Herringbone Knit POLO",
-          "url": "https://fittedshop.com/products/cappuccino-herringbone-knit-polo",
-          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2a_7982bfe1-900c-4b05-9330-b1f49037e4b6.jpg?v=1783795059",
-          "originalPrice": "Rs 3,490",
-          "currentPrice": "Rs 2,890",
-          "discount": "-17%"
+          "name": "Chocolate Summerline Knitted POLO",
+          "url": "https://fittedshop.com/products/chocolate-summerline-knitted-polo",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/3_c63dc4ed-9506-448e-93d8-36a24c6d862c.jpg?v=1772370833",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
         },
         {
-          "name": "LT Olive Twill POLO",
-          "url": "https://fittedshop.com/products/lt-olive-twill-polo",
-          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/14_05732329-fec5-438a-a6a0-29a308035de6.jpg?v=1784195349",
+          "name": "Black Textured Knitted Cuban Shirt",
+          "url": "https://fittedshop.com/products/black-textured-knitted-cuban-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2f_0711f7f3-5cc1-4846-aa21-05fde7bd0c2c.jpg?v=1784484509",
           "originalPrice": "Rs 3,990",
-          "currentPrice": "Rs 3,290",
-          "discount": "-18%"
+          "currentPrice": "Rs 3,490",
+          "discount": "-13%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:13:48.311Z",
+    "checkedAt": "2026-09-15T05:14:45.889Z",
     "source": "auto"
   },
   "imhaut": {
@@ -375,7 +375,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:13:50.463Z",
+    "checkedAt": "2026-09-15T05:14:48.507Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -392,7 +392,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:13:56.159Z",
+    "checkedAt": "2026-09-15T05:14:53.943Z",
     "source": "auto"
   },
   "lakhany": {
@@ -474,7 +474,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:13:57.620Z",
+    "checkedAt": "2026-09-15T05:14:54.990Z",
     "source": "auto"
   },
   "limelight": {
@@ -556,7 +556,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:13:59.688Z",
+    "checkedAt": "2026-09-15T05:14:56.812Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -638,7 +638,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:02.675Z",
+    "checkedAt": "2026-09-15T05:15:00.391Z",
     "source": "auto"
   },
   "mabsh": {
@@ -720,7 +720,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:06.574Z",
+    "checkedAt": "2026-09-15T05:15:04.018Z",
     "source": "auto"
   },
   "nayadour": {
@@ -802,7 +802,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:11.926Z",
+    "checkedAt": "2026-09-15T05:15:08.946Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -834,20 +834,20 @@
       "sourceUrl": "https://outfitters.com.pk/collections/men-t-shirt-sale",
       "products": [
         {
+          "name": "Textured Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2118-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2118106808.jpg?v=1781175012",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
           "name": "Textured T-Shirt",
           "url": "https://outfitters.com.pk/products/f2102-106",
           "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271",
           "originalPrice": "Rs 3,690",
           "currentPrice": "Rs 1,790",
           "discount": "-51%"
-        },
-        {
-          "name": "Textured Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f1930-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1930106006.jpg?v=1778152219",
-          "originalPrice": "Rs 3,290",
-          "currentPrice": "Rs 1,590",
-          "discount": "-52%"
         },
         {
           "name": "Slogan Print T-Shirt",
@@ -858,12 +858,12 @@
           "discount": "-52%"
         },
         {
-          "name": "Washed Out Graphic T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2109-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2109106620_2.jpg?v=1780996695",
-          "originalPrice": "Rs 3,690",
-          "currentPrice": "Rs 1,790",
-          "discount": "-51%"
+          "name": "Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1998-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1998106720.jpg?v=1781175338",
+          "originalPrice": "Rs 2,490",
+          "currentPrice": "Rs 1,190",
+          "discount": "-52%"
         },
         {
           "name": "Slogan Print T-Shirt",
@@ -874,12 +874,12 @@
           "discount": "-51%"
         },
         {
-          "name": "Cropped Embroidered T-Shirt",
-          "url": "https://outfitters.com.pk/products/f1940-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1940106002.jpg?v=1773725740",
-          "originalPrice": "Rs 3,690",
-          "currentPrice": "Rs 1,790",
-          "discount": "-51%"
+          "name": "Slogan Print T-Shirt With Label Patch",
+          "url": "https://outfitters.com.pk/products/f1642-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1642106002_3.jpg?v=1769582063",
+          "originalPrice": "Rs 3,290",
+          "currentPrice": "Rs 1,590",
+          "discount": "-52%"
         },
         {
           "name": "Crew Neck T-Shirt",
@@ -901,7 +901,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:18.102Z",
+    "checkedAt": "2026-09-15T05:15:12.827Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -983,7 +983,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:21.818Z",
+    "checkedAt": "2026-09-15T05:15:16.872Z",
     "source": "auto"
   },
   "wearhype": {
@@ -1065,7 +1065,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:31.216Z",
+    "checkedAt": "2026-09-15T05:15:26.548Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1147,7 +1147,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:34.080Z",
+    "checkedAt": "2026-09-15T05:15:29.857Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1164,7 +1164,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:14:38.919Z",
+    "checkedAt": "2026-09-15T05:15:34.287Z",
     "source": "auto"
   },
   "borjan": {
@@ -1246,7 +1246,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:40.260Z",
+    "checkedAt": "2026-09-15T05:15:35.513Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1328,7 +1328,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:42.546Z",
+    "checkedAt": "2026-09-15T05:15:37.655Z",
     "source": "auto"
   },
   "jutay": {
@@ -1410,7 +1410,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:47.806Z",
+    "checkedAt": "2026-09-15T05:15:43.350Z",
     "source": "auto"
   },
   "ndure": {
@@ -1492,7 +1492,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:49.648Z",
+    "checkedAt": "2026-09-15T05:15:45.428Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1509,7 +1509,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:14:51.716Z",
+    "checkedAt": "2026-09-15T05:15:47.573Z",
     "source": "auto"
   },
   "servis": {
@@ -1591,7 +1591,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:52.811Z",
+    "checkedAt": "2026-09-15T05:15:48.682Z",
     "source": "auto"
   },
   "stylo": {
@@ -1673,7 +1673,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:55.338Z",
+    "checkedAt": "2026-09-15T05:15:51.288Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1755,7 +1755,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:57.169Z",
+    "checkedAt": "2026-09-15T05:15:53.249Z",
     "source": "auto"
   },
   "chenone": {
@@ -1837,7 +1837,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:14:59.206Z",
+    "checkedAt": "2026-09-15T05:15:55.213Z",
     "source": "auto"
   },
   "interwood": {
@@ -1919,7 +1919,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:15:08.029Z",
+    "checkedAt": "2026-09-15T05:16:02.870Z",
     "source": "auto"
   },
   "insignia": {
@@ -1942,43 +1942,11 @@
           "discount": "-50%"
         },
         {
-          "name": "Comfort Slip On IK0128-Lilac",
-          "url": "https://insignia.com.pk/products/comfort-slip-on-ik0128-lilac",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_7c6f273d-050c-4fdc-8453-2f5e82c10746.jpg?v=1770810345",
-          "originalPrice": "Rs 8,450",
-          "currentPrice": "Rs 4,225",
-          "discount": "-50%"
-        },
-        {
           "name": "Party Wear Slip On IP0097-Gold",
           "url": "https://insignia.com.pk/products/party-wear-slip-on-ip0097-gold",
           "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_34.png?v=1787909512",
           "originalPrice": "Rs 8,950",
           "currentPrice": "Rs 4,475",
-          "discount": "-50%"
-        },
-        {
-          "name": "Casual Slip On IC0104-Ivory",
-          "url": "https://insignia.com.pk/products/casual-slip-on-ic0104-ivory",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_6760428c-e0af-458d-8891-85b87d4e44e1.jpg?v=1772442501",
-          "originalPrice": "Rs 5,950",
-          "currentPrice": "Rs 2,975",
-          "discount": "-50%"
-        },
-        {
-          "name": "Casual Slip On IC0083-Maroon",
-          "url": "https://insignia.com.pk/products/casual-slip-on-ic0083-maroon",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_85da222e-efdc-4dfd-bf2f-15b720282df2.jpg?v=1771511365",
-          "originalPrice": "Rs 7,950",
-          "currentPrice": "Rs 3,975",
-          "discount": "-50%"
-        },
-        {
-          "name": "Party Wear Sandal IP2072-Black",
-          "url": "https://insignia.com.pk/products/party-wear-sandal-ip2072-black",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_8837269d-eb53-409a-aff8-706354b31f7d.jpg?v=1772114954",
-          "originalPrice": "Rs 6,950",
-          "currentPrice": "Rs 3,475",
           "discount": "-50%"
         },
         {
@@ -1990,18 +1958,50 @@
           "discount": "-50%"
         },
         {
-          "name": "Party Wear Slip On IP0097-Pewter",
-          "url": "https://insignia.com.pk/products/party-wear-slip-on-ip0097-pewter",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_35.png?v=1787909661",
+          "name": "Formal Sandal IF2077-Silver",
+          "url": "https://insignia.com.pk/products/formal-sandal-if2077-silver",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_2d52b950-87d1-4e9f-b7fd-c964e5b73cf0.jpg?v=1778146109",
+          "originalPrice": "Rs 6,950",
+          "currentPrice": "Rs 3,475",
+          "discount": "-50%"
+        },
+        {
+          "name": "Party Wear Slip On IP0108-Pewter",
+          "url": "https://insignia.com.pk/products/party-wear-slip-on-ip0108-pewter",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/2_24395abc-f436-4a8f-8cca-b3b2e7cdd558.jpg?v=1771994069",
+          "originalPrice": "Rs 9,950",
+          "currentPrice": "Rs 4,975",
+          "discount": "-50%"
+        },
+        {
+          "name": "Formal Slip On IF0203-Pink",
+          "url": "https://insignia.com.pk/products/formal-slip-on-if0203-pink",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_41.png?v=1787914430",
           "originalPrice": "Rs 8,950",
           "currentPrice": "Rs 4,475",
+          "discount": "-50%"
+        },
+        {
+          "name": "Party Wear Sandal IP2060-Silver",
+          "url": "https://insignia.com.pk/products/party-wear-sandal-ip2060-silver",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_43.png?v=1787914926",
+          "originalPrice": "Rs 11,950",
+          "currentPrice": "Rs 5,975",
+          "discount": "-50%"
+        },
+        {
+          "name": "Party Wear Sling Back IP4035-Silver",
+          "url": "https://insignia.com.pk/products/party-wear-sling-back-ip4035-silver",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/5_34d26fcc-2ba8-4799-bebb-30e949781f4f.jpg?v=1772952360",
+          "originalPrice": "Rs 11,950",
+          "currentPrice": "Rs 5,975",
           "discount": "-50%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-14T05:15:19.005Z",
+    "checkedAt": "2026-09-15T05:16:14.752Z",
     "source": "auto"
   },
   "obipelle": {
@@ -2018,7 +2018,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:15:21.557Z",
+    "checkedAt": "2026-09-15T05:16:17.807Z",
     "source": "auto"
   }
 }
