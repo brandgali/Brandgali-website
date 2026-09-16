@@ -13,7 +13,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:14:30.708Z",
+    "checkedAt": "2026-09-16T05:13:15.037Z",
     "source": "auto"
   },
   "breakout": {
@@ -27,14 +27,6 @@
       "headline": "50% off",
       "sourceUrl": "https://breakout.com.pk/collections/sale",
       "products": [
-        {
-          "name": "BOYS BASIC JOGGER TROUSER",
-          "url": "https://breakout.com.pk/products/k5csb633-mst",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K5CSB633-MLT_1.jpg?v=1756898019",
-          "originalPrice": "Rs 2,399",
-          "currentPrice": "Rs 1,199",
-          "discount": "-50%"
-        },
         {
           "name": "BOYS CARGO SHORTS",
           "url": "https://breakout.com.pk/products/k6esb833-brn",
@@ -90,12 +82,20 @@
           "originalPrice": "Rs 2,199",
           "currentPrice": "Rs 1,649",
           "discount": "-25%"
+        },
+        {
+          "name": "GIRLS BOXY STRIPED T-SHIRT",
+          "url": "https://breakout.com.pk/products/k6est739-wht",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6EST739-WHT_1.jpg?v=1782107660",
+          "originalPrice": "Rs 1,599",
+          "currentPrice": "Rs 1,199",
+          "discount": "-25%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:14:37.755Z",
+    "checkedAt": "2026-09-16T05:13:22.828Z",
     "source": "auto"
   },
   "charizma": {
@@ -177,7 +177,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:14:39.950Z",
+    "checkedAt": "2026-09-16T05:13:25.403Z",
     "source": "auto"
   },
   "dceast": {
@@ -259,7 +259,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:14:42.135Z",
+    "checkedAt": "2026-09-16T05:13:27.632Z",
     "source": "auto"
   },
   "drappy": {
@@ -276,7 +276,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:14:44.646Z",
+    "checkedAt": "2026-09-16T05:13:30.501Z",
     "source": "auto"
   },
   "fitted": {
@@ -358,7 +358,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:14:45.889Z",
+    "checkedAt": "2026-09-16T05:13:31.544Z",
     "source": "auto"
   },
   "imhaut": {
@@ -375,7 +375,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:14:48.507Z",
+    "checkedAt": "2026-09-16T05:13:34.592Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -392,7 +392,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:14:53.943Z",
+    "checkedAt": "2026-09-16T05:13:40.013Z",
     "source": "auto"
   },
   "lakhany": {
@@ -474,89 +474,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:14:54.990Z",
-    "source": "auto"
-  },
-  "limelight": {
-    "status": "sale",
-    "live": {
-      "off": "uit- Embroidered (Unstitched) 22% OFF 3 Piece Lawn Suit- Embroidered (…",
-      "ends": "Check site for current details",
-      "percent": 60
-    },
-    "sale": {
-      "headline": "22% off",
-      "sourceUrl": "https://www.limelight.pk/collections/sale",
-      "products": [
-        {
-          "name": "2 Piece Lawn Suit- Embroidered (Pret)",
-          "url": "https://www.limelight.pk/products/a6779st-xsl-002",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6779ST-SML-002-2PieceLawnSuit-Embroidered_Pret_2.jpg?v=1784635241",
-          "originalPrice": "Rs 8,499",
-          "currentPrice": "Rs 6,399",
-          "discount": "-25%"
-        },
-        {
-          "name": "3 Piece Lawn Slub Suit- Embroidered (Pret)",
-          "url": "https://www.limelight.pk/products/a5138su-xsl-014",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5138SU-SML-014-3PieceLawnSlubSuit-Embroidered_Pret_4.jpg?v=1784634905",
-          "originalPrice": "Rs 9,499",
-          "currentPrice": "Rs 6,999",
-          "discount": "-26%"
-        },
-        {
-          "name": "3 Piece Lawn Suit- Embroidered (Pret)",
-          "url": "https://www.limelight.pk/products/a5120su-xsl-627",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5120SU-SML-627-3PieceLawnSuit-Embroidered_Pret_2_c09b0ef0-7f18-4905-a74a-2070caa4cc80.jpg?v=1784704787",
-          "originalPrice": "Rs 8,699",
-          "currentPrice": "Rs 6,499",
-          "discount": "-25%"
-        },
-        {
-          "name": "3 Piece Lawn Suit- Embroidered (Pret)",
-          "url": "https://www.limelight.pk/products/a5117su-xsl-002",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5117SU-SML-002-3PieceLawnSuit-Embroidered_Pret_3.jpg?v=1784637141",
-          "originalPrice": "Rs 8,899",
-          "currentPrice": "Rs 6,699",
-          "discount": "-25%"
-        },
-        {
-          "name": "2 Piece Lawn Suit- Embroidered (Pret)",
-          "url": "https://www.limelight.pk/products/a5086st-xsl-256",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A5086ST-SML-256-2PieceLawnSuit-Embroidered_Pret_1.jpg?v=1784635505",
-          "originalPrice": "Rs 5,999",
-          "currentPrice": "Rs 4,499",
-          "discount": "-25%"
-        },
-        {
-          "name": "2 Piece Lawn Suit (Pret)",
-          "url": "https://www.limelight.pk/products/a3070st-xsl-199",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A3070ST-SML-199-2PieceLawnSuit_Pret_4.jpg?v=1784634748",
-          "originalPrice": "Rs 4,999",
-          "currentPrice": "Rs 3,999",
-          "discount": "-20%"
-        },
-        {
-          "name": "2 Piece Lawn Suit (Pret)",
-          "url": "https://www.limelight.pk/products/a6603st-xsl-256",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6603ST-SML-256-2PieceLawnSuit_Pret_4.jpg?v=1784634094",
-          "originalPrice": "Rs 5,499",
-          "currentPrice": "Rs 3,999",
-          "discount": "-27%"
-        },
-        {
-          "name": "Lawn Angrakha (Pret)",
-          "url": "https://www.limelight.pk/products/a6519ag-xsl-034",
-          "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6519AG-SML-034-LawnAngrakha_Pret_6.jpg?v=1784634029",
-          "originalPrice": "Rs 3,999",
-          "currentPrice": "Rs 2,999",
-          "discount": "-25%"
-        }
-      ],
-      "productsFound": 8,
-      "note": null
-    },
-    "checkedAt": "2026-09-15T05:14:56.812Z",
+    "checkedAt": "2026-09-16T05:13:41.859Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -638,7 +556,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:00.391Z",
+    "checkedAt": "2026-09-16T05:13:46.783Z",
     "source": "auto"
   },
   "mabsh": {
@@ -720,7 +638,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:04.018Z",
+    "checkedAt": "2026-09-16T05:13:50.796Z",
     "source": "auto"
   },
   "nayadour": {
@@ -802,7 +720,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:08.946Z",
+    "checkedAt": "2026-09-16T05:13:57.151Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -819,7 +737,7 @@
       "productsFound": 0,
       "note": "This brand's sale page doesn't publish product details in a way our automatic check can read. The sale is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-14T05:14:13.894Z",
+    "checkedAt": "2026-09-16T05:13:59.327Z",
     "source": "auto"
   },
   "outfitters": {
@@ -834,14 +752,6 @@
       "sourceUrl": "https://outfitters.com.pk/collections/men-t-shirt-sale",
       "products": [
         {
-          "name": "Textured Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2118-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2118106808.jpg?v=1781175012",
-          "originalPrice": "Rs 3,690",
-          "currentPrice": "Rs 1,790",
-          "discount": "-51%"
-        },
-        {
           "name": "Textured T-Shirt",
           "url": "https://outfitters.com.pk/products/f2102-106",
           "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271",
@@ -850,11 +760,11 @@
           "discount": "-51%"
         },
         {
-          "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2021-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2021106808.jpg?v=1781248412",
-          "originalPrice": "Rs 2,890",
-          "currentPrice": "Rs 1,390",
+          "name": "Textured Slogan Print T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1930-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1930106006.jpg?v=1778152219",
+          "originalPrice": "Rs 3,290",
+          "currentPrice": "Rs 1,590",
           "discount": "-52%"
         },
         {
@@ -864,6 +774,14 @@
           "originalPrice": "Rs 2,490",
           "currentPrice": "Rs 1,190",
           "discount": "-52%"
+        },
+        {
+          "name": "Washed Out Graphic T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2109-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2109106620_2.jpg?v=1780996695",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
         },
         {
           "name": "Slogan Print T-Shirt",
@@ -901,7 +819,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:12.827Z",
+    "checkedAt": "2026-09-16T05:14:05.497Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -983,7 +901,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:16.872Z",
+    "checkedAt": "2026-09-16T05:14:10.952Z",
     "source": "auto"
   },
   "wearhype": {
@@ -998,11 +916,35 @@
       "sourceUrl": "https://wearhype.co/collections/sale",
       "products": [
         {
-          "name": "Ribbed Raglan Henley",
-          "url": "https://wearhype.co/products/henley-heavy-melange",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_911806cf-37e7-498d-99ec-3615fc6264ef.png?v=1788947074",
-          "originalPrice": "Rs 4,490",
-          "currentPrice": "Rs 1,350",
+          "name": "Core HY Panel Sweatshirt",
+          "url": "https://wearhype.co/products/core-hy-panel-sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_f490b528-e62f-4163-8671-47b76cff29b3.png?v=1787834643",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 1,499",
+          "discount": "-70%"
+        },
+        {
+          "name": "Lavender Haze Ribbed Turtle-Neck",
+          "url": "https://wearhype.co/products/lavender-haze-ribbed-turtle-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/02_ac57dbd8-79ab-459c-a3ca-203f2ec39e29.png?v=1788853387",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,050",
+          "discount": "-70%"
+        },
+        {
+          "name": "Less Talk Hoodie",
+          "url": "https://wearhype.co/products/less-talk-hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_0216c025-9558-43b2-abcc-7c141bfeb878.png?v=1787833052",
+          "originalPrice": "Rs 6,990",
+          "currentPrice": "Rs 2,099",
+          "discount": "-70%"
+        },
+        {
+          "name": "Ribbed Ice Blue Mock Neck",
+          "url": "https://wearhype.co/products/ribbed-ice-blue-mock-neck",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01potrait_d1e81568-e2f3-49fc-ba26-e95ba553a0e3.png?v=1788348281",
+          "originalPrice": "Rs 3,990",
+          "currentPrice": "Rs 1,199",
           "discount": "-70%"
         },
         {
@@ -1014,58 +956,34 @@
           "discount": "-70%"
         },
         {
-          "name": "Red Ribbed V-Neck Sweater",
-          "url": "https://wearhype.co/products/red-ribbed-v-neck-sweater",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_9668e5e3-1bb2-4064-b83f-bfaf0ce54fa5.png?v=1788867358",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
+          "name": "Conspiracy Crew Sweatshirt",
+          "url": "https://wearhype.co/products/concord-crew-sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_a91db18f-ccd0-4801-959d-17e93ff16d92.png?v=1787660888",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 1,497",
           "discount": "-70%"
         },
         {
-          "name": "Ribbed V-Neck Sweater Vest",
-          "url": "https://wearhype.co/products/ribbed-v-neck-sweater-vest",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/0.png?v=1788867217",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
+          "name": "Join The Hype Hoodie",
+          "url": "https://wearhype.co/products/join-the-hype-hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_b9e0376b-45e0-45e9-a7b6-14e6e19eae33.png?v=1787832761",
+          "originalPrice": "Rs 6,490",
+          "currentPrice": "Rs 1,950",
           "discount": "-70%"
         },
         {
-          "name": "Classic Ribbed V-Neck Sweater Vest",
-          "url": "https://wearhype.co/products/classic-ribbed-v-neck-sweater-vest",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/04_224b8f11-5a57-4d2a-bf11-3db0dfa7ff2b.png?v=1788866951",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 899",
-          "discount": "-70%"
-        },
-        {
-          "name": "Aqua Ribbed Turtle-Neck",
-          "url": "https://wearhype.co/products/aqua-ribbed-turtle-neck",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_47350845-c006-4660-a903-2971596fdfe9.png?v=1788854127",
-          "originalPrice": "Rs 3,490",
-          "currentPrice": "Rs 1,050",
-          "discount": "-70%"
-        },
-        {
-          "name": "Mocha Ribbed Turtle-Neck",
-          "url": "https://wearhype.co/products/mocha-ribbed-turtle-neck",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_33bccf85-c25c-43da-9d71-bc8cb1a20093.png?v=1788854591",
-          "originalPrice": "Rs 3,490",
-          "currentPrice": "Rs 1,050",
-          "discount": "-70%"
-        },
-        {
-          "name": "Deep Ribbed Turtle-Neck",
-          "url": "https://wearhype.co/products/deep-ribbed-turtle-neck",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_9fffe51c-e001-47ae-addc-31c0c2d80452.png?v=1788853557",
-          "originalPrice": "Rs 3,490",
-          "currentPrice": "Rs 1,050",
+          "name": "Join The Hype Trouser",
+          "url": "https://wearhype.co/products/join-the-hype-trouser",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_f7f2eaba-fc7d-4cf6-be8e-02155940f07f.png?v=1787832539",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 1,499",
           "discount": "-70%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:26.548Z",
+    "checkedAt": "2026-09-16T05:14:22.956Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1147,7 +1065,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:29.857Z",
+    "checkedAt": "2026-09-16T05:14:27.073Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1164,7 +1082,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:15:34.287Z",
+    "checkedAt": "2026-09-16T05:14:31.916Z",
     "source": "auto"
   },
   "borjan": {
@@ -1246,7 +1164,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:35.513Z",
+    "checkedAt": "2026-09-16T05:14:33.198Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1328,7 +1246,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:37.655Z",
+    "checkedAt": "2026-09-16T05:14:36.045Z",
     "source": "auto"
   },
   "jutay": {
@@ -1410,7 +1328,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:43.350Z",
+    "checkedAt": "2026-09-16T05:14:41.654Z",
     "source": "auto"
   },
   "ndure": {
@@ -1492,7 +1410,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:45.428Z",
+    "checkedAt": "2026-09-16T05:14:44.194Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1509,7 +1427,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:15:47.573Z",
+    "checkedAt": "2026-09-16T05:14:47.565Z",
     "source": "auto"
   },
   "servis": {
@@ -1591,7 +1509,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:48.682Z",
+    "checkedAt": "2026-09-16T05:14:48.961Z",
     "source": "auto"
   },
   "stylo": {
@@ -1673,7 +1591,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:51.288Z",
+    "checkedAt": "2026-09-16T05:14:51.819Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1755,7 +1673,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:53.249Z",
+    "checkedAt": "2026-09-16T05:14:53.957Z",
     "source": "auto"
   },
   "chenone": {
@@ -1837,7 +1755,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:15:55.213Z",
+    "checkedAt": "2026-09-16T05:14:56.583Z",
     "source": "auto"
   },
   "interwood": {
@@ -1919,7 +1837,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:16:02.870Z",
+    "checkedAt": "2026-09-16T05:15:03.960Z",
     "source": "auto"
   },
   "insignia": {
@@ -2001,7 +1919,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-15T05:16:14.752Z",
+    "checkedAt": "2026-09-16T05:15:16.435Z",
     "source": "auto"
   },
   "obipelle": {
@@ -2018,7 +1936,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-15T05:16:17.807Z",
+    "checkedAt": "2026-09-16T05:15:19.474Z",
     "source": "auto"
   }
 }
