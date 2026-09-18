@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+  <url><loc>https://www.brandgali.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.brandgali.com/live-sales.html</loc><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.brandgali.com/brands.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.brandgali.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.brandgali.com/partner.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.brandgali.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <!-- Individual brand pages (brand.html?id=...) are query-string based and
+       intentionally left out of this static sitemap - see
+       BRANDGALI-TECHNICAL-SPEC.md "SEO for brand pages" for how to give
+       each brand a real crawlable URL (e.g. /brands/khaadi) and generate
+       this list automatically from brands-data.js. -->
+</urlset>

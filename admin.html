@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrandGali — Manual Sale Override Tool (Internal)</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --navy:#1B2A5E; --navy-deep:#12183A; --orange:#F5A623; --orange-deep:#F08A1E;
+    --teal:#0EA98B; --teal-deep:#0B7D68; --cream:#FAF6EE; --line:#E7E1D3; --muted:#6B7080;
+  }
+  *{box-sizing:border-box;}
+  body{ font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif; background:var(--cream); color:#222; margin:0; padding:0 0 90px; }
+  .wrap{ max-width:1000px; margin:0 auto; padding:0 20px; }
+  header{ background:var(--navy); color:#fff; padding:24px 0; margin-bottom:6px; }
+  header .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  header h1{ font-size:20px; margin:0; }
+  header p{ margin:4px 0 0; color:#B8BCD0; font-size:13.5px; }
+
+  .banner{ background:#FDEBD3; border:1px solid #F0C98A; color:#7A4A0E; padding:14px 18px; border-radius:10px; margin:20px auto; font-size:14px; }
+  .banner strong{ display:block; margin-bottom:4px; }
+  .banner.info{ background:#DFF4EE; border-color:#8DD8C4; color:#0B4C3E; }
+
+  .cat-group{ margin:26px 0; }
+  .cat-title{ font-weight:700; font-size:15px; color:var(--navy); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+
+  .brand-row{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin-bottom:10px; }
+  .brand-row.changed{ border-color:var(--orange); box-shadow:0 0 0 2px rgba(245,166,35,0.15); }
+  .brand-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+  .brand-name{ font-weight:700; color:var(--navy); font-size:15px; }
+  .brand-name .cat{ font-weight:400; color:var(--muted); font-size:12.5px; margin-left:8px; }
+  .brand-name .src{ font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; margin-left:8px; }
+  .brand-name .src.auto{ background:#DFF4EE; color:var(--teal-deep); }
+  .brand-name .src.manual{ background:#EDE7F6; color:#5B3A8E; }
+
+  .row-controls{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+
+  .status-options{ display:flex; gap:8px; flex-wrap:wrap; }
+  .status-options label{ font-size:13px; display:flex; align-items:center; gap:5px; padding:6px 12px; border:1px solid var(--line); border-radius:999px; cursor:pointer; background:#fafafa; }
+  .status-options input[type=radio]{ margin:0; }
+  .status-options label.sel-none.active{ background:#eee; border-color:#999; }
+  .status-options label.sel-sale.active{ background:#FDEBD3; border-color:var(--orange); color:var(--orange-deep); font-weight:700; }
+
+  .new-arrival-toggle{ font-size:13px; display:flex; align-items:center; gap:6px; padding:6px 12px; border:1px solid var(--line); border-radius:999px; cursor:pointer; background:#fafafa; }
+  .new-arrival-toggle.active{ background:#DFF4EE; border-color:var(--teal); color:var(--teal-deep); font-weight:700; }
+  .new-arrival-toggle input{ margin:0; }
+
+  .sale-fields{ display:none; gap:10px; margin-top:12px; flex-wrap:wrap; padding-top:12px; border-top:1px dashed var(--line); }
+  .sale-fields.show{ display:flex; }
+  .field{ display:flex; flex-direction:column; gap:4px; }
+  .field label{ font-size:11.5px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:0.03em; }
+  .field input{ padding:8px 10px; border:1px solid var(--line); border-radius:8px; font-size:13.5px; font-family:inherit; }
+  .field.off input{ width:200px; }
+  .field.ends input{ width:200px; }
+  .field.percent input{ width:70px; }
+  .field.start input, .field.end input{ width:190px; }
+  .field-note{ font-size:11px; color:var(--muted); width:100%; margin:0; }
+
+  .generate-bar{ position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--line); padding:14px 20px; box-shadow:0 -8px 24px rgba(0,0,0,0.08); z-index:50; }
+  .generate-bar .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+  .change-count{ font-size:14px; color:var(--muted); }
+  .change-count strong{ color:var(--orange-deep); }
+  .btn{ background:var(--orange); color:#221200; border:none; padding:12px 24px; border-radius:999px; font-weight:700; font-size:14.5px; cursor:pointer; }
+  .btn:hover{ background:var(--orange-deep); }
+  .btn:disabled{ background:#ddd; color:#999; cursor:not-allowed; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div>
+      <h1>🛠 BrandGali — Manual Sale Override</h1>
+      <p>Internal use only — not linked from the live site. Bookmark this page.</p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="banner info">
+    <strong>You probably don't need this page daily anymore</strong>
+    A script checks every brand's website automatically once a day and updates sales on its own — see SETUP-AUTOMATION.md. Use this page only to: mark a "New Arrival" (the scraper only detects sales, not new-arrival announcements), set a sale manually for an Instagram-only brand the scraper can't check, add a known start/end time to a sale, or correct something the scraper got wrong.
+  </div>
+  <div class="banner" style="background:#EDE7F6;border-color:#C9B8E8;color:#3D2A63;">
+    <strong>Sale Live and New Arrival are now independent</strong>
+    A brand can be on sale <em>and</em> have new arrivals at the same time — toggle each one separately below rather than picking one. Rows you don't touch are left completely untouched on download, so any real product details the daily scraper already found for that brand are never overwritten by this tool.
+  </div>
+  <div class="banner" id="loadWarning" style="display:none;">
+    <strong>Couldn't load the current sales-status.json</strong>
+    <span id="loadWarningText"></span> Starting from a blank slate below — that's fine, just double check nothing important gets overwritten when you download.
+  </div>
+
+  <div id="brandList">Loading current status…</div>
+</div>
+
+<div class="generate-bar">
+  <div class="wrap">
+    <div class="change-count" id="changeCount">No changes yet</div>
+    <button class="btn" id="downloadBtn" disabled>Download Updated sales-status.json</button>
+  </div>
+</div>
+
+<script src="brands-data.js"></script>
+<script>
+  let currentStatus = {}; // what's currently in sales-status.json
+  const state = {}; // working copy while editing
+
+  // Converts an ISO timestamp (or null) to the value a <input type="datetime-local">
+  // expects (local time, no seconds, no "Z") — and back again on save.
+  function isoToLocalInput(iso){
+    if(!iso) return '';
+    const d = new Date(iso);
+    if(isNaN(d)) return '';
+    const pad = n => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  }
+  function localInputToIso(val){
+    if(!val) return null;
+    const d = new Date(val);
+    return isNaN(d) ? null : d.toISOString();
+  }
+
+  async function init(){
+    try{
+      const res = await fetch('sales-status.json', { cache: 'no-store' });
+      if(res.ok) currentStatus = await res.json();
+      else throw new Error('File not found (this is normal if it hasn\'t been created yet)');
+    }catch(e){
+      document.getElementById('loadWarning').style.display = 'block';
+      document.getElementById('loadWarningText').textContent = e.message;
+    }
+
+    BRANDS.forEach(b => {
+      const entry = currentStatus[b.id];
+      // Back-compat: older entries used status:'new' to mean New Arrival.
+      // Treat that as newArrival=true and drop it from `status` going
+      // forward — status now only ever means "sale live".
+      const legacyNewArrival = entry && entry.status === 'new';
+      state[b.id] = {
+        status: entry && entry.status === 'sale' ? 'sale' : null,
+        newArrival: entry ? !!entry.newArrival || legacyNewArrival : false,
+        off: entry && entry.live ? entry.live.off : '',
+        ends: entry && entry.live ? entry.live.ends : '',
+        percent: entry && entry.live ? entry.live.percent : 60,
+        startDate: entry && entry.sale ? isoToLocalInput(entry.sale.startDate) : '',
+        endDate: entry && entry.sale ? isoToLocalInput(entry.sale.endDate) : '',
+        source: entry ? entry.source : null,
+        touched: false,          // becomes true the moment this row is edited
+        _originalEntry: entry || null, // passed through untouched if never edited
+      };
+    });
+
+    renderList();
+  }
+
+  function groupByCategory(){
+    const map = {};
+    CATEGORIES.forEach(c => map[c.name] = []);
+    BRANDS.forEach(b => { if(map[b.category]) map[b.category].push(b); });
+    return map;
+  }
+
+  function renderList(){
+    const grouped = groupByCategory();
+    const container = document.getElementById('brandList');
+    container.innerHTML = Object.keys(grouped).map(catName => {
+      const brands = grouped[catName];
+      if(!brands.length) return '';
+      const rows = brands.map(b => rowHTML(b)).join('');
+      return `<div class="cat-group"><div class="cat-title">${catName}</div>${rows}</div>`;
+    }).join('');
+    BRANDS.forEach(b => wireRow(b.id));
+  }
+
+  function rowHTML(b){
+    const s = state[b.id];
+    const srcBadge = s.source ? `<span class="src ${s.source}">${s.source === 'auto' ? 'auto-detected' : 'manual'}</span>` : '';
+    return `
+      <div class="brand-row" id="row-${b.id}">
+        <div class="brand-head">
+          <div class="brand-name">${b.name} <span class="cat">${b.category}</span>${srcBadge}</div>
+          <div class="row-controls">
+            <div class="status-options" data-id="${b.id}">
+              <label class="sel-none"><input type="radio" name="status-${b.id}" value="none"> None</label>
+              <label class="sel-sale"><input type="radio" name="status-${b.id}" value="sale"> 🔥 Sale Live</label>
+            </div>
+            <label class="new-arrival-toggle" id="newarrival-${b.id}">
+              <input type="checkbox" id="newarrival-check-${b.id}"> ✨ New Arrival
+            </label>
+          </div>
+        </div>
+        <div class="sale-fields" id="salefields-${b.id}">
+          <div class="field off"><label>Discount text</label><input type="text" id="off-${b.id}" placeholder="e.g. Up to 50% Off"></div>
+          <div class="field ends"><label>Ends text</label><input type="text" id="ends-${b.id}" placeholder="e.g. Ends tonight, 11:59 PM"></div>
+          <div class="field percent"><label>Bar %</label><input type="number" id="percent-${b.id}" min="0" max="100"></div>
+          <div class="field start"><label>Sale starts (optional)</label><input type="datetime-local" id="start-${b.id}"></div>
+          <div class="field end"><label>Sale ends (optional)</label><input type="datetime-local" id="end-${b.id}"></div>
+          <p class="field-note">Only fill in Start/End if you genuinely know them (e.g. the brand announced "sale ends Sunday midnight") — leave blank otherwise. These power the countdown shown on the live site; never guess a date just to fill this in.</p>
+        </div>
+      </div>`;
+  }
+
+  function wireRow(id){
+    const s = state[id];
+    const radios = document.querySelectorAll(`input[name="status-${id}"]`);
+    radios.forEach(r => { r.checked = (r.value === (s.status || 'none')); });
+    document.getElementById(`off-${id}`).value = s.off;
+    document.getElementById(`ends-${id}`).value = s.ends;
+    document.getElementById(`percent-${id}`).value = s.percent;
+    document.getElementById(`start-${id}`).value = s.startDate;
+    document.getElementById(`end-${id}`).value = s.endDate;
+    document.getElementById(`newarrival-check-${id}`).checked = s.newArrival;
+
+    updateRowUI(id);
+
+    radios.forEach(r => r.addEventListener('change', () => { s.status = r.value === 'none' ? null : r.value; s.touched = true; updateRowUI(id); markChanges(); }));
+    document.getElementById(`off-${id}`).addEventListener('input', e => { s.off = e.target.value; s.touched = true; markChanges(); });
+    document.getElementById(`ends-${id}`).addEventListener('input', e => { s.ends = e.target.value; s.touched = true; markChanges(); });
+    document.getElementById(`percent-${id}`).addEventListener('input', e => { s.percent = parseInt(e.target.value || '0', 10); s.touched = true; markChanges(); });
+    document.getElementById(`start-${id}`).addEventListener('input', e => { s.startDate = e.target.value; s.touched = true; markChanges(); });
+    document.getElementById(`end-${id}`).addEventListener('input', e => { s.endDate = e.target.value; s.touched = true; markChanges(); });
+    document.getElementById(`newarrival-check-${id}`).addEventListener('change', e => { s.newArrival = e.target.checked; s.touched = true; updateRowUI(id); markChanges(); });
+  }
+
+  function updateRowUI(id){
+    const s = state[id];
+    const wrap = document.querySelector(`.status-options[data-id="${id}"]`);
+    wrap.querySelectorAll('label').forEach(l => l.classList.remove('active'));
+    const activeVal = s.status || 'none';
+    wrap.querySelector(`.sel-${activeVal}`).classList.add('active');
+    document.getElementById(`salefields-${id}`).classList.toggle('show', activeVal === 'sale');
+    document.getElementById(`newarrival-${id}`).classList.toggle('active', s.newArrival);
+  }
+
+  function hasChanged(id){
+    const s = state[id];
+    if(!s._originalEntry){
+      return s.status === 'sale' || s.newArrival; // brand new entry being added
+    }
+    const entry = s._originalEntry;
+    const origStatus = entry.status === 'sale' ? 'sale' : null;
+    const origNewArrival = !!entry.newArrival || entry.status === 'new';
+    const origOff = entry.live ? entry.live.off : '';
+    const origEnds = entry.live ? entry.live.ends : '';
+    const origPercent = entry.live ? entry.live.percent : 60;
+    const origStart = entry.sale ? isoToLocalInput(entry.sale.startDate) : '';
+    const origEnd = entry.sale ? isoToLocalInput(entry.sale.endDate) : '';
+    return s.status !== origStatus ||
+      s.newArrival !== origNewArrival ||
+      (s.status === 'sale' && (s.off !== origOff || s.ends !== origEnds || s.percent !== origPercent || s.startDate !== origStart || s.endDate !== origEnd));
+  }
+
+  function markChanges(){
+    let count = 0;
+    BRANDS.forEach(b => {
+      const changed = hasChanged(b.id);
+      document.getElementById(`row-${b.id}`).classList.toggle('changed', changed);
+      if(changed) count++;
+    });
+    document.getElementById('changeCount').innerHTML = count
+      ? `<strong>${count}</strong> brand${count === 1 ? '' : 's'} changed`
+      : 'No changes yet';
+    document.getElementById('downloadBtn').disabled = count === 0;
+  }
+
+  // Builds the final entry for one brand. Rows that were never touched are
+  // passed through completely unchanged — this is what stops this tool
+  // from ever clobbering real product data the daily scraper collected,
+  // even when other, unrelated brands on the same page were edited.
+  function buildOutputEntry(b){
+    const s = state[b.id];
+    const needed = s.status === 'sale' || s.newArrival;
+    if(!needed) return null;
+    if(!s.touched && s._originalEntry) return s._originalEntry;
+
+    const startIso = localInputToIso(s.startDate);
+    const endIso = localInputToIso(s.endDate);
+    const existingSale = s._originalEntry && s._originalEntry.sale;
+
+    const sale = s.status === 'sale' ? {
+      headline: (existingSale && existingSale.headline) || s.off || 'On Sale',
+      sourceUrl: (existingSale && existingSale.sourceUrl) || b.url,
+      products: (existingSale && existingSale.products) || [],
+      productsFound: (existingSale && existingSale.productsFound) || 0,
+      note: (existingSale && existingSale.note) || null,
+      startDate: startIso,
+      endDate: endIso,
+    } : null;
+
+    return {
+      status: s.status,
+      newArrival: s.newArrival,
+      live: s.status === 'sale' ? { off: s.off || 'On Sale', ends: s.ends || 'Check site for details', percent: s.percent || 60 } : null,
+      sale,
+      checkedAt: new Date().toISOString(),
+      source: 'manual',
+    };
+  }
+
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const output = {};
+    BRANDS.forEach(b => {
+      const entry = buildOutputEntry(b);
+      if(entry) output[b.id] = entry;
+    });
+
+    const blob = new Blob([JSON.stringify(output, null, 2) + '\n'], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'sales-status.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  init();
+</script>
+</body>
+</html>
