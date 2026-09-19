@@ -13,7 +13,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:12:41.863Z",
+    "checkedAt": "2026-09-19T05:12:26.511Z",
     "source": "auto"
   },
   "breakout": {
@@ -95,7 +95,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:12:46.262Z",
+    "checkedAt": "2026-09-19T05:12:31.407Z",
     "source": "auto"
   },
   "charizma": {
@@ -114,152 +114,70 @@
           "url": "https://houseofcharizma.com/products/crd-6-04",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC03559.jpg?v=1784029434",
           "originalPrice": "Rs 7,500",
-          "currentPrice": "Rs 5,250",
-          "discount": "-30%"
+          "currentPrice": "Rs 4,500",
+          "discount": "-40%"
         },
         {
           "name": "2-Piece Printed Lawn CRD-6-02",
           "url": "https://houseofcharizma.com/products/crd-6-02",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC05657.jpg?v=1784028869",
           "originalPrice": "Rs 7,500",
-          "currentPrice": "Rs 5,250",
-          "discount": "-30%"
+          "currentPrice": "Rs 4,500",
+          "discount": "-40%"
         },
         {
           "name": "2-Piece Printed Lawn CRD-6-01",
           "url": "https://houseofcharizma.com/products/crd-6-01",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC05421.jpg?v=1784028829",
           "originalPrice": "Rs 7,500",
-          "currentPrice": "Rs 5,250",
-          "discount": "-30%"
+          "currentPrice": "Rs 4,500",
+          "discount": "-40%"
         },
         {
           "name": "2-Piece Printed Lawn CRD-6-06",
           "url": "https://houseofcharizma.com/products/crd-6-06",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A9251.jpg?v=1782731319",
           "originalPrice": "Rs 8,950",
-          "currentPrice": "Rs 6,265",
-          "discount": "-30%"
+          "currentPrice": "Rs 5,370",
+          "discount": "-40%"
         },
         {
           "name": "2-Piece Printed Lawn CRD-6-05",
           "url": "https://houseofcharizma.com/products/crd-6-05",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A9138_b6e031b5-506e-46ca-a278-394f73da61c1.jpg?v=1782731246",
           "originalPrice": "Rs 8,950",
-          "currentPrice": "Rs 6,265",
-          "discount": "-30%"
+          "currentPrice": "Rs 5,370",
+          "discount": "-40%"
         },
         {
           "name": "2-PC CPM-6-212",
           "url": "https://houseofcharizma.com/products/cpm-6-212",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC01688.jpg?v=1781177057",
           "originalPrice": "Rs 7,500",
-          "currentPrice": "Rs 5,250",
-          "discount": "-30%"
+          "currentPrice": "Rs 4,500",
+          "discount": "-40%"
         },
         {
           "name": "2-PC CPM-6-203",
           "url": "https://houseofcharizma.com/products/cpm-6-203",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC01835.jpg?v=1781175746",
           "originalPrice": "Rs 7,500",
-          "currentPrice": "Rs 5,250",
-          "discount": "-30%"
+          "currentPrice": "Rs 4,500",
+          "discount": "-40%"
         },
         {
           "name": "2-PC CNP-6-244",
           "url": "https://houseofcharizma.com/products/cnp-6-244",
           "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/DSC01504.jpg?v=1781176133",
           "originalPrice": "Rs 8,950",
-          "currentPrice": "Rs 6,265",
-          "discount": "-30%"
+          "currentPrice": "Rs 5,370",
+          "discount": "-40%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:12:48.440Z",
-    "source": "auto"
-  },
-  "dceast": {
-    "status": "sale",
-    "live": {
-      "off": "ARCHIVE SALE LIVE NOW | UP TO 50% OFF THE ARCHIVE SALE THE ARCHIVE SAL…",
-      "ends": "Check site for current details",
-      "percent": 60
-    },
-    "sale": {
-      "headline": "50% off",
-      "sourceUrl": "https://divinelycrafted.org/collections/the-archive-sale",
-      "products": [
-        {
-          "name": "Roselle — Ivory Wildflower 3-Piece Set",
-          "url": "https://divinelycrafted.org/products/roselle-ivory-wildflower-3-piece-set",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/Roselle_IvoryWildflower3-PieceSet.webp?v=1784808731",
-          "originalPrice": "Rs 12,490",
-          "currentPrice": "Rs 9,990",
-          "discount": "-20%"
-        },
-        {
-          "name": "Embroidered 3PC | Lilly Blue",
-          "url": "https://divinelycrafted.org/products/embroidered-3pc-lilly-blue",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC09718.png?v=1776537852",
-          "originalPrice": "Rs 13,490",
-          "currentPrice": "Rs 8,000",
-          "discount": "-41%"
-        },
-        {
-          "name": "Misty Blue - 3pc Co-Ord",
-          "url": "https://divinelycrafted.org/products/misty-blue-3pc-set",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC04099.png?v=1770025355",
-          "originalPrice": "Rs 7,299",
-          "currentPrice": "Rs 5,500",
-          "discount": "-25%"
-        },
-        {
-          "name": "Men Shalwar Kameez | Vanilla White",
-          "url": "https://divinelycrafted.org/products/vanilla-white",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/Layer212.jpg?v=1766045359",
-          "originalPrice": "Rs 4,799",
-          "currentPrice": "Rs 4,000",
-          "discount": "-17%"
-        },
-        {
-          "name": "Men Shalwar Kameez | Regal Blue",
-          "url": "https://divinelycrafted.org/products/regal-blue",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC09412.png?v=1765367689",
-          "originalPrice": "Rs 5,290",
-          "currentPrice": "Rs 4,500",
-          "discount": "-15%"
-        },
-        {
-          "name": "Men Shalwar Kameez | Moss Green",
-          "url": "https://divinelycrafted.org/products/shalwar-kameez-for-men-moss-green",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC08571.png?v=1765276060",
-          "originalPrice": "Rs 4,999",
-          "currentPrice": "Rs 4,500",
-          "discount": "-10%"
-        },
-        {
-          "name": "Men - Basic T-Shirt | Navy Blue",
-          "url": "https://divinelycrafted.org/products/basic-navy-blue-t-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/1_d92e1b4c-a0fc-49d9-8f6c-5a93ba80d7a9.png?v=1775210713",
-          "originalPrice": "Rs 2,990",
-          "currentPrice": "Rs 1,990",
-          "discount": "-33%"
-        },
-        {
-          "name": "Teal Olive - Co-Ord Set",
-          "url": "https://divinelycrafted.org/products/teal-olive-coord-set",
-          "image": "https://cdn.shopify.com/s/files/1/0564/2518/5346/files/DSC04638.png?v=1769691927",
-          "originalPrice": "Rs 6,499",
-          "currentPrice": "Rs 5,250",
-          "discount": "-19%"
-        }
-      ],
-      "productsFound": 8,
-      "note": null
-    },
-    "checkedAt": "2026-09-18T05:12:50.537Z",
+    "checkedAt": "2026-09-19T05:12:33.609Z",
     "source": "auto"
   },
   "drappy": {
@@ -276,7 +194,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:12:53.169Z",
+    "checkedAt": "2026-09-19T05:12:37.197Z",
     "source": "auto"
   },
   "fitted": {
@@ -358,7 +276,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:12:54.438Z",
+    "checkedAt": "2026-09-19T05:12:38.428Z",
     "source": "auto"
   },
   "imhaut": {
@@ -375,7 +293,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:12:57.665Z",
+    "checkedAt": "2026-09-19T05:12:40.678Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -392,7 +310,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:13:02.950Z",
+    "checkedAt": "2026-09-19T05:12:46.088Z",
     "source": "auto"
   },
   "lakhany": {
@@ -474,7 +392,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:04.285Z",
+    "checkedAt": "2026-09-19T05:12:47.694Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -556,7 +474,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:08.788Z",
+    "checkedAt": "2026-09-19T05:12:51.786Z",
     "source": "auto"
   },
   "mabsh": {
@@ -638,7 +556,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:12.829Z",
+    "checkedAt": "2026-09-19T05:12:57.573Z",
     "source": "auto"
   },
   "nayadour": {
@@ -720,7 +638,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:18.714Z",
+    "checkedAt": "2026-09-19T05:13:03.885Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -737,7 +655,7 @@
       "productsFound": 0,
       "note": "This brand's sale page doesn't publish product details in a way our automatic check can read. The sale is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:13:21.288Z",
+    "checkedAt": "2026-09-19T05:13:06.229Z",
     "source": "auto"
   },
   "outfitters": {
@@ -777,8 +695,8 @@
         },
         {
           "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f1999-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1999106311.jpg?v=1782293726",
+          "url": "https://outfitters.com.pk/products/f2014-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2014106003.jpg?v=1778146383",
           "originalPrice": "Rs 2,490",
           "currentPrice": "Rs 1,190",
           "discount": "-52%"
@@ -792,12 +710,12 @@
           "discount": "-51%"
         },
         {
-          "name": "Slogan Print T-Shirt With Label Patch",
-          "url": "https://outfitters.com.pk/products/f1642-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1642106002_3.jpg?v=1769582063",
-          "originalPrice": "Rs 3,290",
-          "currentPrice": "Rs 1,590",
-          "discount": "-52%"
+          "name": "Cropped Embroidered T-Shirt",
+          "url": "https://outfitters.com.pk/products/f1940-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1940106002.jpg?v=1773725740",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
         },
         {
           "name": "Crew Neck T-Shirt",
@@ -819,7 +737,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:25.726Z",
+    "checkedAt": "2026-09-19T05:13:10.795Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -901,7 +819,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:29.349Z",
+    "checkedAt": "2026-09-19T05:13:15.157Z",
     "source": "auto"
   },
   "wearhype": {
@@ -916,27 +834,11 @@
       "sourceUrl": "https://wearhype.co/collections/sale",
       "products": [
         {
-          "name": "Core HY Panel Sweatshirt",
-          "url": "https://wearhype.co/products/core-hy-panel-sweatshirt",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/03_f490b528-e62f-4163-8671-47b76cff29b3.png?v=1787834643",
-          "originalPrice": "Rs 4,990",
-          "currentPrice": "Rs 1,499",
-          "discount": "-70%"
-        },
-        {
           "name": "Lavender Haze Ribbed Turtle-Neck",
           "url": "https://wearhype.co/products/lavender-haze-ribbed-turtle-neck",
           "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/02_ac57dbd8-79ab-459c-a3ca-203f2ec39e29.png?v=1788853387",
           "originalPrice": "Rs 3,490",
           "currentPrice": "Rs 1,050",
-          "discount": "-70%"
-        },
-        {
-          "name": "Less Talk Hoodie",
-          "url": "https://wearhype.co/products/less-talk-hoodie",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_0216c025-9558-43b2-abcc-7c141bfeb878.png?v=1787833052",
-          "originalPrice": "Rs 6,990",
-          "currentPrice": "Rs 2,099",
           "discount": "-70%"
         },
         {
@@ -964,26 +866,42 @@
           "discount": "-70%"
         },
         {
-          "name": "Join The Hype Hoodie",
-          "url": "https://wearhype.co/products/join-the-hype-hoodie",
-          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_b9e0376b-45e0-45e9-a7b6-14e6e19eae33.png?v=1787832761",
-          "originalPrice": "Rs 6,490",
-          "currentPrice": "Rs 1,950",
-          "discount": "-70%"
-        },
-        {
           "name": "Fruitful Club Sweatshirt",
           "url": "https://wearhype.co/products/fruitful-club-sweatshirt",
           "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_e7730967-b21f-49f1-bde3-71e23e5dcb0d.png?v=1787660685",
           "originalPrice": "Rs 4,990",
           "currentPrice": "Rs 1,499",
           "discount": "-70%"
+        },
+        {
+          "name": "Classic Ribbed V-Neck Sweater Vest",
+          "url": "https://wearhype.co/products/classic-ribbed-v-neck-sweater-vest",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/04_224b8f11-5a57-4d2a-bf11-3db0dfa7ff2b.png?v=1788866951",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 899",
+          "discount": "-70%"
+        },
+        {
+          "name": "Audit Your Circle Hoodie",
+          "url": "https://wearhype.co/products/audit-your-circle-hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_285f873d-ef2c-4d0c-b983-93fe57e8a300.png?v=1787833305",
+          "originalPrice": "Rs 6,990",
+          "currentPrice": "Rs 2,099",
+          "discount": "-70%"
+        },
+        {
+          "name": "Coral Drift Ribbed Sweater",
+          "url": "https://wearhype.co/products/coastal-mist-ribbed-sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_f760209c-aab7-473b-9707-caf7bda4e936.png?v=1788769822",
+          "originalPrice": "Rs 3,490",
+          "currentPrice": "Rs 1,050",
+          "discount": "-70%"
         }
       ],
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:38.467Z",
+    "checkedAt": "2026-09-19T05:13:24.509Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -1014,20 +932,20 @@
           "discount": "-6%"
         },
         {
-          "name": "Not Basic Grey Baggy Jeans",
-          "url": "https://lowkeypk.com/products/signature-storm-grey-wide-leg-denim",
-          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/ChatGPT_Image_Jun_22_2026_03_00_58_PM.png?v=1782122549",
-          "originalPrice": "Rs 4,649",
-          "currentPrice": "Rs 3,799",
-          "discount": "-18%"
-        },
-        {
           "name": "Dan Fit – Black Baggy Jeans",
           "url": "https://lowkeypk.com/products/dan-fit-black-baggy-denim",
           "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/UB05-1.jpg?v=1778830133",
           "originalPrice": "Rs 4,499",
           "currentPrice": "Rs 3,350",
           "discount": "-26%"
+        },
+        {
+          "name": "Not Basic Grey Baggy Jeans",
+          "url": "https://lowkeypk.com/products/signature-storm-grey-wide-leg-denim",
+          "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/ChatGPT_Image_Jun_22_2026_03_00_58_PM.png?v=1782122549",
+          "originalPrice": "Rs 4,649",
+          "currentPrice": "Rs 3,799",
+          "discount": "-18%"
         },
         {
           "name": "Not Basic Black Baggy Jeans",
@@ -1065,7 +983,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:41.168Z",
+    "checkedAt": "2026-09-19T05:13:28.104Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -1082,7 +1000,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:13:45.481Z",
+    "checkedAt": "2026-09-19T05:13:32.420Z",
     "source": "auto"
   },
   "borjan": {
@@ -1164,7 +1082,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:46.730Z",
+    "checkedAt": "2026-09-19T05:13:33.572Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -1246,7 +1164,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:49.134Z",
+    "checkedAt": "2026-09-19T05:13:35.719Z",
     "source": "auto"
   },
   "jutay": {
@@ -1328,7 +1246,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:53.911Z",
+    "checkedAt": "2026-09-19T05:13:40.963Z",
     "source": "auto"
   },
   "ndure": {
@@ -1410,7 +1328,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:55.792Z",
+    "checkedAt": "2026-09-19T05:13:42.844Z",
     "source": "auto"
   },
   "onedegree": {
@@ -1427,7 +1345,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:13:57.828Z",
+    "checkedAt": "2026-09-19T05:13:45.007Z",
     "source": "auto"
   },
   "servis": {
@@ -1509,7 +1427,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:13:58.899Z",
+    "checkedAt": "2026-09-19T05:13:46.033Z",
     "source": "auto"
   },
   "stylo": {
@@ -1580,9 +1498,9 @@
           "discount": "-50%"
         },
         {
-          "name": "Maroon Sneaker For Ladies WN6240",
-          "url": "https://stylo.pk/products/maroon-sneaker-for-ladies-wn6240",
-          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN624005.webp?v=1788870721",
+          "name": "Green Sneaker For Ladies WN6243",
+          "url": "https://stylo.pk/products/green-sneaker-for-ladies-wn6243",
+          "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN624311.webp?v=1788870722",
           "originalPrice": "Rs 3,000",
           "currentPrice": "Rs 1,499",
           "discount": "-50%"
@@ -1591,7 +1509,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:14:01.365Z",
+    "checkedAt": "2026-09-19T05:13:48.379Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -1673,7 +1591,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:14:03.377Z",
+    "checkedAt": "2026-09-19T05:13:50.085Z",
     "source": "auto"
   },
   "chenone": {
@@ -1755,7 +1673,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:14:05.568Z",
+    "checkedAt": "2026-09-19T05:13:52.446Z",
     "source": "auto"
   },
   "interwood": {
@@ -1837,7 +1755,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:14:13.082Z",
+    "checkedAt": "2026-09-19T05:14:00.968Z",
     "source": "auto"
   },
   "insignia": {
@@ -1919,7 +1837,7 @@
       "productsFound": 8,
       "note": null
     },
-    "checkedAt": "2026-09-18T05:14:25.919Z",
+    "checkedAt": "2026-09-19T05:14:13.005Z",
     "source": "auto"
   },
   "obipelle": {
@@ -1936,7 +1854,7 @@
       "productsFound": 0,
       "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
     },
-    "checkedAt": "2026-09-18T05:14:28.451Z",
+    "checkedAt": "2026-09-19T05:14:15.905Z",
     "source": "auto"
   }
 }
