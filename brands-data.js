@@ -310,9 +310,9 @@ function searchBrands(query){
    future app using the same OneSignal App ID.
 ===================================================================== */
 const FIREBASE_CONFIG = {
-  apiKey: "YOUR-FIREBASE-API-KEY",
-  authDomain: "YOUR-PROJECT-ID.firebaseapp.com",
-  projectId: "YOUR-PROJECT-ID",
+  apiKey: "AIzaSyCEwnVpZzu4Fu89M1pSTfyK1duoPCQfD7A",
+  authDomain: "http://brandgali-66b34.firebaseapp.com",
+  projectId: "brandgali-66b34",
 };
 function isFirebaseConfigured(){
   return !!(FIREBASE_CONFIG.apiKey && !FIREBASE_CONFIG.apiKey.startsWith('YOUR-'));
