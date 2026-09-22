@@ -1,0 +1,6 @@
+# Netlify configuration for BrandGali
+# Tells Netlify's secrets scanner that the Firebase web API key is a public
+# client-side identifier (safe by design), so it must not fail the build.
+
+[build.environment]
+  SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "AIzaSyCEwnVpZzu4Fu89M1pSTfyK1duoPCQfD7A"
