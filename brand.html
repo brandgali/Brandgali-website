@@ -417,6 +417,7 @@ img{max-width:100%;display:block;}
 </div>
 
 <script src="brands-data.js"></script>
+<script src="brandgali-ui.js"></script>
 <script>
 
 function renderDrawerCategories(){
@@ -519,35 +520,32 @@ function renderBrandPage(){
       <p class="empty-note">No live sale from ${b.name} right now. Follow them below to get alerted the moment one starts.</p>
     </div>`;
 
+  const saleItems = brandProducts(b);
+  const feed = saleItems.length ? saleItems : (b.products || []).filter(p => p && (p.name || p.image)).slice(0, 6);
+  const live = b.status === 'sale';
+  const headline = (b.sale && b.sale.headline) || (b.live && b.live.off) || 'Sale live now';
+  const meta = [verifiedChip(b), b.delivery ? `Delivery: ${b.delivery}` : '', b.cod ? 'COD Supported' : ''].filter(Boolean).join(' &bull; ');
+  const salePart = live ? `
+    <div class="bs-banner"><h2><i class="fa-solid fa-fire"></i> ${headline}</h2>${saleWindowHTML(b)}<div class="meta">${meta}</div></div>
+    <div class="bs-sec">
+      <div class="hd"><span><i class="fa-solid fa-tags" style="color:var(--orange-deep)"></i> Active Sale Deals (${feed.length} Featured Item${feed.length === 1 ? '' : 's'})</span><a href="live-sales.html">View Full Feed &rarr;</a></div>
+      <p class="hint">Tap any item to see full specifications, fabric, sizes, and savings before visiting the store:</p>
+      ${feed.length ? `<div class="product-grid">${feed.map(p => productCardHTML(b, p, saleItems.length ? 'brand_page_sale_product' : 'brand_page_sale_fallback_product')).join('')}</div>${saleItems.length ? '' : `<p class="hint">Current products from ${b.name}'s own website - we could not read the sale page item by item, so these may not all be discounted.</p>`}` : saleProductsBlock}
+      <div class="card-actions"><a class="btn" style="flex:1;text-align:center;" href="live-sales.html"><i class="fa-solid fa-list-check"></i> View on Live Sales Page</a>${notifyButtonHTML(b)}</div>
+    </div>` : `
+    <div class="bs-empty"><div style="width:64px;height:64px;border-radius:50%;background:#EDE8E0;margin:0 auto;display:grid;place-items:center;font-size:26px;color:#6B7080;"><i class="fa-solid fa-tags"></i></div>
+      <h3>No Live Sale Right Now</h3><p>${b.name} is currently selling at standard retail catalog prices. We verify brand discounts daily. Follow ${b.name} below to get an instant alert the minute their next sale drops!</p>
+      <div class="card-actions" style="justify-content:center;margin-top:12px;">${notifyButtonHTML(b)}<a class="notify-btn" href="${b.url}" target="_blank" rel="noopener">Visit Store Site &rarr;</a></div></div>
+    <div style="text-align:center;margin:16px;"><a class="btn" href="live-sales.html"><i class="fa-solid fa-fire"></i> Browse Brands On Sale Today &rarr;</a></div>
+    ${generalProductsHTML(b)}`;
   container.innerHTML = `
-    <div class="brand-hero">
-      ${brandBadgeHTML(b, 64)}
-      <div>
-        <h1>${b.name}</h1>
-        <div class="cat">${b.category}${b.stores.length ? ' &middot; <span class="avail-chip"><i class="fa-solid fa-shop"></i> In-Store &amp; Online</span>' : ''}</div>
-      </div>
-    </div>
-    <div style="padding:10px 16px 0;display:flex;gap:6px;flex-wrap:wrap;">${verifiedBadgeHTML(b)}${isNewArrival(b) ? '<span class="status-chip new" style="position:static;">New Arrival</span>' : ''}</div>
+    <div class="bs-head">${brandBadgeHTML(b, 64)}<div><h1>${b.name} <i class="fa-solid fa-circle-check"></i></h1><small>${b.category} &bull; Retail Brand${b.stores.length ? ' &bull; In-Store &amp; Online' : ''}</small></div></div>
     ${b.description ? `<p class="brand-desc">${b.description}</p>` : ''}
-
-    <div class="section" style="padding-top:6px;">
-      <div class="card-actions">
-        <a class="btn" href="${b.url}" target="_blank" rel="noopener" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="brand_page_visit">Visit Official Site &rarr;</a>
-        ${notifyButtonHTML(b)}
-        ${b.instagram ? `<a class="notify-btn" href="${b.instagram}" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>` : ''}
-      </div>
-    </div>
-
-    ${b.status === 'sale' ? saleBlock : generalProductsHTML(b) + saleBlock}
-
-    ${b.stores.length ? `<div class="section">
-      <div class="section-head"><h2><i class="fa-solid fa-location-dot"></i>Store Locations</h2></div>
-      ${storesListHTML(b)}
-    </div>` : ''}
-
-    <div class="section">
-      ${reportIncorrectLinkHTML(b)}
-    </div>
+    ${salePart}
+    <a class="bs-visit" href="${b.url}" target="_blank" rel="noopener" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="brand_page_visit">Visit official ${b.name} store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    ${b.instagram ? `<div style="text-align:center;margin-top:6px;"><a class="notify-btn" href="${b.instagram}" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></div>` : ''}
+    ${b.stores.length ? `<div class="section"><div class="section-head"><h2><i class="fa-solid fa-location-dot"></i>Store Locations</h2></div>${storesListHTML(b)}</div>` : ''}
+    <div class="section">${reportIncorrectLinkHTML(b)}</div>
   `;
 }
 

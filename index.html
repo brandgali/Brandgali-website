@@ -13,7 +13,7 @@
   gtag('config', 'G-6E9FP2R4K8');
 </script>
 
-<!-- OneSignal - push notifications. App ID 1ce9cba4-d2b7-4c18-a568-ba3019f99988.
+<!-- OneSignal - handles follow/identity + email sale alerts (no browser push). App ID 1ce9cba4-d2b7-4c18-a568-ba3019f99988.
      OneSignalSDKWorker.js must also sit at the site root - see
      SETUP-PUSH-NOTIFICATIONS.md. -->
 <!-- Firebase Authentication - email/password accounts. See SETUP-ACCOUNTS.md -->
@@ -402,18 +402,31 @@ img{max-width:100%;display:block;}
   <main id="main">
     <section class="hero">
       <div class="eyebrow">Pakistan's Digital High Street</div>
-      <h1>Stop Chasing Sales. <span class="accent">Let The Sales Find You.</span></h1>
-      <div class="search-box" id="heroSearchBox">
+      <h1>Never Miss A Sale <span class="accent">Again.</span></h1>
+      <p class="tagline">Every Pakistani brand. Every sale. One Gali.</p>
+      <div class="search-box" id="heroSearchBox" style="height:auto;min-height:52px;padding:8px 8px 8px 14px;">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <span>Search brands, sales or categories...</span>
+        <span style="line-height:1.3;">Search polo shirts, 30% off, brands, lawn, sneakers...</span>
         <button class="go" id="heroSearchBtn" aria-label="Search"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
+      <div class="pop-row"><span><i class="fa-solid fa-arrow-trend-up" style="color:var(--orange-deep)"></i> Popular:</span><button class="pop-chip" type="button" data-q="polo"><i class="fa-solid fa-shirt"></i>Polo shirts</button><button class="pop-chip" type="button" data-q="30%"><i class="fa-solid fa-percent"></i>30% Off</button><button class="pop-chip" type="button" data-q="50%"><i class="fa-solid fa-fire"></i>Flat 50% Off</button><button class="pop-chip" type="button" data-q="lawn"><i class="fa-solid fa-sun"></i>Lawn sale</button><button class="pop-chip" type="button" data-q="sneakers"><i class="fa-solid fa-shoe-prints"></i>Sneakers</button><button class="pop-chip" type="button" data-q="under 3000"><i class="fa-solid fa-wallet"></i>Under 3K</button></div>
       <div class="quick-row">
         <a href="live-sales.html"><i class="fa-solid fa-fire"></i>Live Sales<small>Explore now</small></a>
         <a href="brands.html"><i class="fa-solid fa-tag"></i>Discover Brands<small>Browse all</small></a>
         <a href="brands.html"><i class="fa-solid fa-bell"></i>Follow &amp; Get Alerts<small>Never miss a sale</small></a>
       </div>
     </section>
+    <div class="hs-tabs">
+      <button class="hs-tab active" data-tab="all" type="button"><i class="fa-solid fa-store"></i> All High Street</button>
+      <button class="hs-tab" data-tab="fol" type="button"><i class="fa-solid fa-heart"></i> My Followed Brands <span class="cnt" id="folCnt">0</span></button>
+    </div>
+    <div class="al-card">
+      <div class="row"><div class="ic"><i class="fa-solid fa-bell"></i></div><div><h4>Instant Morning Sale Alerts <span><i class="fa-solid fa-bolt"></i> Real-Time</span></h4><p>Receive an instant browser notification the minute Sapphire, Gul Ahmed, or your followed brands drop a sale.</p></div></div>
+      <button class="btn btn-block" id="turnOnAlerts" type="button"><i class="fa-solid fa-bolt"></i> Turn On Alerts</button>
+    </div>
+    <div class="fp" id="followedPanel" style="display:none;"></div>
+    <div id="highStreet">
+    
 
     <section class="section" id="live-sales-section">
       <div class="section-head">
@@ -464,24 +477,6 @@ img{max-width:100%;display:block;}
     </section>
 
     <section class="section">
-      <div class="discount-finder-box">
-        <div class="section-head" style="margin-bottom:8px;"><h2><i class="fa-solid fa-percent"></i>Find Deals By Discount</h2></div>
-        <p>See exactly which brands are discounting the most, right now.</p>
-        <select id="discountSelect">
-          <option value="0">Any live sale</option>
-          <option value="10">10% or more</option>
-          <option value="20">20% or more</option>
-          <option value="30">30% or more</option>
-          <option value="40">40% or more</option>
-          <option value="50">50% or more</option>
-          <option value="60">60% or more</option>
-          <option value="70">70% or more</option>
-        </select>
-        <div class="discount-result-list" id="discountResult"></div>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="alerts-box">
         <div class="section-head" style="margin-bottom:8px;"><h2><i class="fa-solid fa-bell"></i>Never Miss A Sale</h2></div>
         <p>Follow your favourite brands and get notified the moment they go on sale.</p>
@@ -490,6 +485,7 @@ img{max-width:100%;display:block;}
       </div>
     </section>
 
+    </div>
     <div class="app-banner" id="app">
       <div><strong>Get The BrandGali App</strong><small>Instant sale alerts, anytime, anywhere.</small></div>
       <button>Coming Soon &rarr;</button>
@@ -539,6 +535,7 @@ img{max-width:100%;display:block;}
 
 
 <script src="brands-data.js"></script>
+<script src="brandgali-ui.js"></script>
 <script>
 
 function renderDrawerCategories(){
@@ -602,23 +599,18 @@ function renderTicker(){
 function renderLiveSales(){
   const rail = document.getElementById('liveSalesRail');
   const countEl = document.getElementById('liveSalesCount');
-  const live = BRANDS.filter(b => b.status === 'sale');
+  const live = BRANDS.filter(b => b.status === 'sale').sort((a, b) => (getMaxDiscountPercent(b) || 0) - (getMaxDiscountPercent(a) || 0));
   countEl.textContent = live.length + (live.length === 1 ? ' sale happening now' : ' sales happening now');
   if(!live.length){ rail.innerHTML = '<p class="empty-note">No live sales right now - check back soon.</p>'; return; }
   rail.innerHTML = live.map(b => {
-    return `<article class="sale-card">
-      <div class="sale-media">
-        ${brandBadgeHTML(b, 56)}
-      </div>
-      <div class="sale-body">
-        <div class="sale-brand">${b.name}</div>
-        <div class="sale-meta">${b.category}</div>
-        <div class="card-actions">
-          <a class="btn" href="${(b.sale && b.sale.sourceUrl) || b.url}" target="_blank" rel="noopener" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="live_sales_home">Shop Sale &rarr;</a>
-          ${notifyButtonHTML(b)}
-        </div>
-      </div>
-    </article>`;
+    const pct = getMaxDiscountPercent(b);
+    const hl = (b.sale && b.sale.headline) || (b.live && b.live.off) || 'Sale live now';
+    return `<article class="lv-card">
+      <div class="lv-top"><a class="lv-view" href="brand.html?id=${b.id}"><i class="fa-solid fa-eye"></i> View Deals</a>${brandBadgeHTML(b, 60)}${pct ? `<span class="lv-off">Up to ${pct}% Off</span>` : ''}</div>
+      <div class="lv-body"><b>${b.name}</b><small>${b.category} &bull; ${hl}</small>
+        <div>${verifiedChip(b)}<span class="chip-lt"><i class="fa-regular fa-clock"></i> Limited Time</span></div>
+        <div class="card-actions" style="margin-top:10px;"><a class="btn" href="brand.html?id=${b.id}" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="live_sales_home"><i class="fa-solid fa-fire"></i> View Sale &rarr;</a>${notifyButtonHTML(b)}</div>
+      </div></article>`;
   }).join('');
 }
 
@@ -784,13 +776,44 @@ function wireNearMe(){
   });
 }
 
+function renderFollowedPanel(){
+  const el = document.getElementById('followedPanel');
+  const list = getFollows().map(id => BRANDS.find(b => b.id === id)).filter(Boolean);
+  const head = `<div class="section-head"><h2><i class="fa-solid fa-fire"></i>My Followed Deals <span class="pill">${list.length} brand${list.length === 1 ? '' : 's'} followed</span></h2><a href="live-sales.html" style="font-size:13px;font-weight:700;color:var(--navy);">View All &rarr;</a></div>`;
+  if(!list.length){
+    el.innerHTML = head + `<div class="fp-empty"><div style="font-size:40px;">&#128150;</div><h3>Your Followed Feed is Empty</h3><p>Follow brands to customize your high street and receive instant morning sale alerts.</p><button class="btn" id="followStarters" type="button">Follow Sapphire, Khaadi, J. &amp; Gul Ahmed</button><a class="btn2" href="brands.html">Browse All Brands</a></div>`;
+    document.getElementById('followStarters').addEventListener('click', () => followBrands(BRANDS.filter(b => /sapphire|khaadi|junaid|^j\.?$|gul ?ahmed/i.test(b.name)).map(b => b.id)));
+  } else {
+    list.sort((a, b) => (isSaleLive(b) ? 1 : 0) - (isSaleLive(a) ? 1 : 0));
+    el.innerHTML = head + `<div class="bgrid2">${list.map(brandCardV2HTML).join('')}</div>`;
+    refreshNotifyButtonsUI();
+  }
+}
+function initHomeV2(){
+  document.querySelectorAll('.pop-chip').forEach(c => c.addEventListener('click', () => openSearchWith(c.dataset.q)));
+  const tabs = document.querySelectorAll('.hs-tab');
+  const setTab = t => {
+    tabs.forEach(x => x.classList.toggle('active', x.dataset.tab === t));
+    document.getElementById('highStreet').style.display = t === 'all' ? '' : 'none';
+    document.getElementById('followedPanel').style.display = t === 'fol' ? '' : 'none';
+    if(t === 'fol') renderFollowedPanel();
+  };
+  tabs.forEach(x => x.addEventListener('click', () => setTab(x.dataset.tab)));
+  const upd = () => { document.getElementById('folCnt').textContent = getFollows().length; if(document.getElementById('followedPanel').style.display !== 'none') renderFollowedPanel(); };
+  window.addEventListener('brandgali:followed', upd); upd();
+  const ab = document.getElementById('turnOnAlerts');
+  const paint = () => { const on = getAccountEmail() && localStorage.getItem('brandgali_email_alerts') === 'yes'; ab.innerHTML = on ? '<i class="fa-solid fa-check"></i> Alerts Are On' : '<i class="fa-solid fa-bolt"></i> Turn On Alerts'; };
+  ab.addEventListener('click', () => { if(!getAccountEmail()){ window.dispatchEvent(new Event('brandgali:open-account')); return; } try{ localStorage.setItem('brandgali_email_alerts', 'yes'); }catch(e){} paint(); });
+  paint(); setTimeout(paint, 1500);
+}
+
 loadSalesStatus().then(() => {
   renderTicker();
   renderLiveSales();
   renderPopularBrands();
   renderCategories();
   renderCollections();
-  renderDiscountFinder();
+  initHomeV2();
   renderAlerts();
   renderDrawerCategories();
   wireDrawerAndSearch();

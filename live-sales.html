@@ -391,7 +391,11 @@ img{max-width:100%;display:block;}
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" id="liveSearchInput" placeholder="Search live sales - brand, category, or an item like 'polo'...">
       </div>
-      <div class="live-filter-row" id="liveFilterRow"></div>
+      <div class="qf-card">
+        <div class="qf-title"><i class="fa-solid fa-filter"></i> QUICK DEAL FILTERS:</div>
+        <div class="qf-row" id="liveFilterRow"></div>
+        <div class="qf-sort"><b id="liveShowing" style="color:var(--navy);"></b><label style="display:flex;align-items:center;gap:8px;color:var(--muted);font-weight:700;">Sort: <select id="liveSort"><option value="featured">Featured First</option><option value="discount">Highest Discount</option><option value="az">Brand A-Z</option></select></label></div>
+      </div>
       <div id="liveSalesList"></div>
     </section>
 
@@ -439,6 +443,7 @@ img{max-width:100%;display:block;}
 
 
 <script src="brands-data.js"></script>
+<script src="brandgali-ui.js"></script>
 <script>
 
 function renderDrawerCategories(){
@@ -481,71 +486,66 @@ function wireDrawerAndSearch(){
 }
 
 
+const LIVE_FILTERS = [['all','All Sales','fa-fire'],['flat50','Flat 50% Off','fa-fire'],['off30','30%+ Off','fa-tag'],['under3k','Under PKR 3,000','fa-wallet'],['both','Online & In-Store','fa-shop']];
+let liveFilter = 'all', liveSort = 'featured';
+
 function saleCardHTML(b){
   const sale = b.sale || {};
-  const products = Array.isArray(sale.products) ? sale.products.filter(p => p && (p.name || p.image)) : [];
+  const products = brandProducts(b);
   const headline = sale.headline || (b.live && b.live.off) || 'Sale live now';
   const shopUrl = sale.sourceUrl || b.url;
   const body = products.length
     ? `<div class="product-grid">${products.map(p => productCardHTML(b, p, 'live_sales_product')).join('')}</div>`
     : `<div class="sale-note-box"><i class="fa-solid fa-circle-info"></i><span>${sale.note || "We could not read individual products from this brand's website automatically - some brands block automated checks. The sale itself is live, so tap through to see everything on offer."}</span></div>`;
-  const source = sale.sourceUrl ? `<p class="sale-source">Source: <a href="${sale.sourceUrl}" target="_blank" rel="noopener">${sale.sourceUrl}</a></p>` : '';
-  return `<article class="live-full-card" data-avail="${b.stores.length ? 'both' : 'online'}">
-    <div class="live-full-head">
-      ${brandBadgeHTML(b, 48)}
-      <div>
-        <a href="brand.html?id=${b.id}"><div class="sale-brand">${b.name}</div></a>
-        <div class="sale-meta">${b.category}${b.stores.length ? ' &middot; <span class="avail-chip"><i class="fa-solid fa-shop"></i> In-Store &amp; Online</span>' : ''}</div>
-      </div>
-    </div>
-    <div class="live-full-headline"><i class="fa-solid fa-fire"></i> ${headline}${saleCountdownHTML(b)}</div>
-    ${saleWindowHTML(b)}
-    ${body}
-    ${source}
-    <div class="card-actions" style="margin-top:12px;">
-      <a class="btn" href="${shopUrl}" target="_blank" rel="noopener" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="live_sales">Shop The Sale &rarr;</a>
+  const source = sale.sourceUrl ? `<p class="lc2-src">Source: <a href="${sale.sourceUrl}" target="_blank" rel="noopener">${sale.sourceUrl}</a></p>` : '';
+  return `<article class="lc2" data-avail="${b.stores.length ? 'both' : 'online'}">
+    <div class="lc2-head">${brandBadgeHTML(b, 52)}
+      <div><a href="brand.html?id=${b.id}"><div class="nm">${b.name} <i class="fa-solid fa-circle-check"></i></div></a><div class="ct">${b.category} &bull; Retail</div></div>
+      <a class="vd" href="brand.html?id=${b.id}"><i class="fa-solid fa-fire"></i> View Deals</a></div>
+    <div class="lc2-hl"><i class="fa-solid fa-fire"></i> ${headline}</div>
+    <div>${verifiedChip(b)}<span class="chip-lt"><i class="fa-regular fa-clock"></i> Limited Time</span></div>
+    ${saleWindowHTML(b)}${body}${source}
+    <div class="lc2-act">
+      <a class="btn" href="brand.html?id=${b.id}"><i class="fa-solid fa-fire"></i> View Sale Details &rarr;</a>
+      <a class="alt" href="${shopUrl}" target="_blank" rel="noopener" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="live_sales">Store Site &rarr;</a>
       ${notifyButtonHTML(b)}
-    </div>
-  </article>`;
+    </div></article>`;
 }
-
-let liveFilter = 'all';
-
+function liveMatches(b, f){
+  const pct = getMaxDiscountPercent(b) || 0;
+  if(f === 'flat50') return pct >= 50;
+  if(f === 'off30') return pct >= 30;
+  if(f === 'under3k') return brandHasItemUnder(b, 3000);
+  if(f === 'both') return b.stores.length > 0;
+  return true;
+}
 function renderLiveFilters(){
   const row = document.getElementById('liveFilterRow');
-  const filters = [
-    { id:'all', label:'All' },
-    { id:'online', label:'Online' },
-    { id:'both', label:'Online & In-Store' },
-  ];
-  row.innerHTML = filters.map(f => `<button class="filter-chip${f.id===liveFilter?' active':''}" data-filter="${f.id}">${f.label}</button>`).join('');
-  row.querySelectorAll('.filter-chip').forEach(btn => {
-    btn.addEventListener('click', () => { liveFilter = btn.dataset.filter; renderLiveFilters(); renderLiveSalesPage(); });
-  });
+  const base = BRANDS.filter(b => b.status === 'sale');
+  row.innerHTML = LIVE_FILTERS.map(f => `<button class="filter-chip${f[0] === liveFilter ? ' active' : ''}" data-filter="${f[0]}"><i class="fa-solid ${f[2]}"></i> ${f[1]}</button>`).join('');
+  row.querySelectorAll('.filter-chip').forEach(btn => btn.addEventListener('click', () => { liveFilter = btn.dataset.filter; renderLiveFilters(); renderLiveSalesPage(); }));
 }
-
 function renderLiveSalesPage(){
-  let list = BRANDS.filter(b => b.status === 'sale');
-  if(liveFilter === 'online') list = list.filter(b => !b.stores.length);
-  if(liveFilter === 'both') list = list.filter(b => b.stores.length);
-
+  let list = BRANDS.filter(b => b.status === 'sale' && liveMatches(b, liveFilter));
   const q = (document.getElementById('liveSearchInput')?.value || '').trim();
-  if(q){
-    const matchedIds = new Set(searchBrands(q).map(m => m.brand.id));
-    list = list.filter(b => matchedIds.has(b.id));
-  }
-
+  if(q){ const ids = new Set(searchBrands(q).map(m => m.brand.id)); list = list.filter(b => ids.has(b.id)); }
+  const pct = b => getMaxDiscountPercent(b) || 0;
+  if(liveSort === 'az') list.sort((a, b) => a.name.localeCompare(b.name));
+  else if(liveSort === 'discount') list.sort((a, b) => pct(b) - pct(a));
+  else list.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || pct(b) - pct(a));
   document.getElementById('liveCount').textContent = `${list.length} live now`;
-  const container = document.getElementById('liveSalesList');
-  container.innerHTML = list.length
-    ? list.map(saleCardHTML).join('')
+  document.getElementById('liveShowing').textContent = `Showing ${list.length} sale${list.length === 1 ? '' : 's'}`;
+  document.getElementById('liveSalesList').innerHTML = list.length ? list.map(saleCardHTML).join('')
     : `<p class="empty-note">${q ? `No live sale matches "${q}" right now.` : 'No sales match this filter right now.'} Follow your favourite brands from the Brands page to get notified the moment one starts.</p>`;
+  refreshNotifyButtonsUI();
 }
+
 
 loadSalesStatus().then(() => {
   renderLiveFilters();
   renderLiveSalesPage();
   document.getElementById('liveSearchInput')?.addEventListener('input', renderLiveSalesPage);
+  document.getElementById('liveSort')?.addEventListener('change', e => { liveSort = e.target.value; renderLiveSalesPage(); });
   renderDrawerCategories();
   wireDrawerAndSearch();
   wireNotifyButtons();

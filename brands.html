@@ -13,7 +13,7 @@
   gtag('config', 'G-6E9FP2R4K8');
 </script>
 
-<!-- OneSignal - push notifications. App ID 1ce9cba4-d2b7-4c18-a568-ba3019f99988.
+<!-- OneSignal - handles follow/identity + email sale alerts (no browser push). App ID 1ce9cba4-d2b7-4c18-a568-ba3019f99988.
      OneSignalSDKWorker.js must also sit at the site root - see
      SETUP-PUSH-NOTIFICATIONS.md. -->
 <!-- Firebase Authentication - email/password accounts. See SETUP-ACCOUNTS.md -->
@@ -446,6 +446,7 @@ img{max-width:100%;display:block;}
 
 
 <script src="brands-data.js"></script>
+<script src="brandgali-ui.js"></script>
 <script>
 
 function renderDrawerCategories(){
@@ -509,73 +510,41 @@ function clearSpecialFilter(){
   renderGrid();
 }
 
-function renderFilters(){
-  const row = document.getElementById('filterRow');
-  const cats = ['All', ...CATEGORIES.map(c => c.name)];
-  row.innerHTML = cats.map(name => `<button class="filter-chip${name === activeCategory ? ' active' : ''}" data-cat="${name}">${name}</button>`).join('');
-  row.querySelectorAll('.filter-chip').forEach(btn => {
-    btn.addEventListener('click', () => {
-      activeCategory = btn.dataset.cat;
-      renderFilters();
-      renderGrid();
-    });
-  });
+
+let bgTab = activeSpecialFilter === 'recent' ? 'fresh' : 'all';
+let bgChip = activeCategory !== 'All' ? 'cat:' + activeCategory : ({stores:'stores', new:'new', top:'flat50'})[activeSpecialFilter] || null;
+let bgSort = 'az';
+const pctOf = b => getMaxDiscountPercent(b) || 0;
+const BG_TABS = [['all','All','fa-store',()=>true],['featured','Featured','fa-star',b=>b.featured],['fresh','Fresh Drops','fa-wand-magic-sparkles',b=>isRecentlyAdded(b)],['sale','On Sale','fa-fire',isSaleLive]];
+function bgChips(){
+  return [['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
+    .concat(CATEGORIES.map(c => ['cat:'+c.name, c.name, c.icon, b=>b.category===c.name]))
+    .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30],['new','New Arrivals','fa-wand-magic-sparkles',isNewArrival],['stores','In-Store','fa-shop',b=>b.stores.length]]);
 }
-
+function renderFilters(){
+  const row = document.getElementById('filterRow'); row.className = 'bg-filters';
+  const chips = bgChips();
+  row.innerHTML = `<div class="bg-scroll">${BG_TABS.map(t => `<button class="filter-chip${t[0]===bgTab?' active':''}" data-tab="${t[0]}"><i class="fa-solid ${t[2]}"></i> ${t[1]} (${BRANDS.filter(t[3]).length})</button>`).join('')}</div>
+    <div class="bg-scroll">${chips.map(c => `<button class="filter-chip${c[0]===bgChip?' active':''}" data-chip="${c[0]}"><i class="fa-solid ${c[2]}"></i> ${c[1]}${c[0].startsWith('cat:') ? ' (' + BRANDS.filter(c[3]).length + ')' : ''}</button>`).join('')}</div>
+    <div class="bg-sort"><label>Sort By: <select id="bgSort"><option value="az">Brand A-Z</option><option value="za">Brand Z-A</option><option value="discount">Highest Discount</option><option value="sale">On Sale First</option></select></label></div>`;
+  document.getElementById('bgSort').value = bgSort;
+  row.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { bgTab = b.dataset.tab; renderFilters(); renderGrid(); }));
+  row.querySelectorAll('[data-chip]').forEach(b => b.addEventListener('click', () => { bgChip = bgChip === b.dataset.chip ? null : b.dataset.chip; renderFilters(); renderGrid(); }));
+  document.getElementById('bgSort').addEventListener('change', e => { bgSort = e.target.value; renderGrid(); });
+}
 function renderGrid(){
-  const grid = document.getElementById('brandGrid');
-  let list = (activeCategory === 'All' ? BRANDS : BRANDS.filter(b => b.category === activeCategory));
-  if(activeSpecialFilter === 'new') list = list.filter(isNewArrival);
-  if(activeSpecialFilter === 'recent') list = list.filter(b => isRecentlyAdded(b));
-  if(activeSpecialFilter === 'stores') list = list.filter(b => b.stores.length);
-  if(activeSpecialFilter === 'top'){
-    list = list.map(b => ({ b, pct: getMaxDiscountPercent(b) })).filter(x => x.pct !== null && x.pct >= 50).sort((x,y) => y.pct - x.pct).map(x => x.b);
-  } else {
-    list = list.slice().sort((a,b) => a.name.localeCompare(b.name));
-  }
-
-  document.getElementById('brandCount').textContent = `${list.length} brand${list.length===1?'':'s'}`;
-
-  const banner = document.getElementById('specialFilterBanner');
-  if(activeSpecialFilter === 'new'){
-    banner.style.display = 'flex';
-    banner.innerHTML = `<span><i class="fa-solid fa-sparkles"></i> Showing brands with new arrivals</span><a href="#" id="clearSpecialFilter">Clear &times;</a>`;
-  } else if(activeSpecialFilter === 'recent'){
-    banner.style.display = 'flex';
-    banner.innerHTML = `<span><i class="fa-solid fa-seedling"></i> Showing brands recently added to BrandGali</span><a href="#" id="clearSpecialFilter">Clear &times;</a>`;
-  } else if(activeSpecialFilter === 'top'){
-    banner.style.display = 'flex';
-    banner.innerHTML = `<span><i class="fa-solid fa-star"></i> Showing today's top picks - 50% off or more</span><a href="#" id="clearSpecialFilter">Clear &times;</a>`;
-  } else if(activeSpecialFilter === 'stores'){
-    banner.style.display = 'flex';
-    banner.innerHTML = `<span><i class="fa-solid fa-shop"></i> Showing brands with physical stores</span><a href="#" id="clearSpecialFilter">Clear &times;</a>`;
-  } else {
-    banner.style.display = 'none';
-  }
-  document.getElementById('clearSpecialFilter')?.addEventListener('click', (e) => { e.preventDefault(); clearSpecialFilter(); });
-
-  grid.innerHTML = list.length ? list.map(b => {
-    const chips = [];
-    if(isSaleLive(b)) chips.push('<span class="status-chip sale">Sale Live</span>');
-    if(isNewArrival(b)) chips.push('<span class="status-chip new">New Arrival</span>');
-    const chip = chips.length ? `<div class="chip-stack">${chips.join('')}</div>` : '';
-    const cardStyle = chips.length ? ' style="padding-top:34px;"' : '';
-    return `<div class="brand-grid-card"${cardStyle}>
-      ${chip}
-      <div class="top-row">
-        ${brandBadgeHTML(b, 44)}
-        <div>
-          <a href="brand.html?id=${b.id}"><div class="name">${b.name}</div></a>
-          <div class="cat">${b.category}</div>
-          ${b.stores.length ? '<span class="avail-chip"><i class="fa-solid fa-shop"></i> In-Store &amp; Online</span>' : ''}
-        </div>
-      </div>
-      <div class="card-actions">
-        <a class="btn" href="brand.html?id=${b.id}" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="directory_grid">View &rarr;</a>
-        ${notifyButtonHTML(b)}
-      </div>
-    </div>`;
-  }).join('') : `<p class="empty-note">No brands match this filter yet. <a href="brands.html" style="color:var(--navy);font-weight:700;">View all brands &rarr;</a></p>`;
+  let list = BRANDS.filter(BG_TABS.find(t => t[0] === bgTab)[3]);
+  const chip = bgChips().find(c => c[0] === bgChip); if(chip) list = list.filter(chip[3]);
+  if(bgSort === 'za') list.sort((a, b) => b.name.localeCompare(a.name));
+  else if(bgSort === 'discount') list.sort((a, b) => pctOf(b) - pctOf(a) || a.name.localeCompare(b.name));
+  else if(bgSort === 'sale') list.sort((a, b) => (isSaleLive(b) ? 1 : 0) - (isSaleLive(a) ? 1 : 0) || a.name.localeCompare(b.name));
+  else list.sort((a, b) => a.name.localeCompare(b.name));
+  document.getElementById('brandCount').textContent = `${list.length} brand${list.length === 1 ? '' : 's'}`;
+  const h = document.querySelector('#main .section-head h2');
+  if(h) h.innerHTML = bgChip && bgChip.startsWith('cat:') ? `<i class="fa-solid fa-shop"></i>${bgChip.slice(4)} Brands` : '<i class="fa-solid fa-shop"></i>All Brands';
+  const grid = document.getElementById('brandGrid'); grid.className = 'bgrid2';
+  grid.innerHTML = list.length ? list.map(brandCardV2HTML).join('') : '<p class="empty-note" style="grid-column:1/-1;">No brands match these filters yet.</p>';
+  refreshNotifyButtonsUI();
 }
 
 loadSalesStatus().then(() => {
