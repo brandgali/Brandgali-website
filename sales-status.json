@@ -80,7 +80,7 @@
       }
     ],
     "productsSourceUrl": "https://adma.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:16:27.364Z",
+    "checkedAt": "2026-10-04T11:00:24.899Z",
     "source": "auto"
   },
   "beigebydandy": {
@@ -153,7 +153,7 @@
       }
     ],
     "productsSourceUrl": "https://beige.pk/collections/all",
-    "checkedAt": "2026-10-03T10:16:28.679Z",
+    "checkedAt": "2026-10-04T11:00:26.212Z",
     "source": "auto"
   },
   "breakout": {
@@ -176,11 +176,35 @@
           "discount": "-50%"
         },
         {
+          "name": "BOYS NEW YORK TEE",
+          "url": "https://breakout.com.pk/products/k6est696-blu",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6EST696-BLU_2_a4437cf0-d46f-4f2f-9c6e-2be4c7fffe32.jpg?v=1781503002",
+          "originalPrice": "Rs 1,399",
+          "currentPrice": "Rs 699",
+          "discount": "-50%"
+        },
+        {
+          "name": "BOYS TEXTURED POLO SHIRT",
+          "url": "https://breakout.com.pk/products/k6esp826-brg",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESP826-BRG_1.jpg?v=1786362306",
+          "originalPrice": "Rs 2,099",
+          "currentPrice": "Rs 1,049",
+          "discount": "-50%"
+        },
+        {
           "name": "BOYS PRINTED SLEEVELESS TEE",
           "url": "https://breakout.com.pk/products/k6est693-wht",
           "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6EST693-WHT_1_2a7b5498-bcfd-49af-96c6-eef82cbb3400.jpg?v=1781503006",
           "originalPrice": "Rs 1,399",
           "currentPrice": "Rs 699",
+          "discount": "-50%"
+        },
+        {
+          "name": "BOYS DENIM SHORTS",
+          "url": "https://breakout.com.pk/products/k6esb830-lbl",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB830-LBL_1.jpg?v=1786362440",
+          "originalPrice": "Rs 2,299",
+          "currentPrice": "Rs 1,149",
           "discount": "-50%"
         },
         {
@@ -192,33 +216,9 @@
           "discount": "-50%"
         },
         {
-          "name": "BOYS POCKET DETAIL SHIRT",
-          "url": "https://breakout.com.pk/products/k6esw803-gre",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESW803-GRE_1.jpg?v=1782107622",
-          "originalPrice": "Rs 2,199",
-          "currentPrice": "Rs 1,099",
-          "discount": "-50%"
-        },
-        {
-          "name": "BOYS KNIT CARGO SHORTS",
-          "url": "https://breakout.com.pk/products/k6esb828-dip",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB828-DIP_1.jpg?v=1786362510",
-          "originalPrice": "Rs 2,099",
-          "currentPrice": "Rs 1,049",
-          "discount": "-50%"
-        },
-        {
-          "name": "BOYS CHINO SHORTS",
-          "url": "https://breakout.com.pk/products/k6esb834-khk",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB834-KHK_1.jpg?v=1786362410",
-          "originalPrice": "Rs 2,299",
-          "currentPrice": "Rs 1,149",
-          "discount": "-50%"
-        },
-        {
-          "name": "BOYS KNIT SHORTS",
-          "url": "https://breakout.com.pk/products/k6esb820-blk",
-          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/MUJ7959copy.jpg?v=1786607694",
+          "name": "BOYS TEXTURED SHORTS",
+          "url": "https://breakout.com.pk/products/k6esb827-bgy",
+          "image": "https://cdn.shopify.com/s/files/1/0202/5884/8822/files/K6ESB827-BGY_1.jpg?v=1786362516",
           "originalPrice": "Rs 2,099",
           "currentPrice": "Rs 1,049",
           "discount": "-50%"
@@ -302,7 +302,7 @@
       }
     ],
     "productsSourceUrl": "https://breakout.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:16:35.697Z",
+    "checkedAt": "2026-10-04T11:00:31.548Z",
     "source": "auto"
   },
   "charizma": {
@@ -451,7 +451,7 @@
       }
     ],
     "productsSourceUrl": "https://houseofcharizma.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:41.549Z",
+    "checkedAt": "2026-10-04T11:00:36.002Z",
     "source": "auto"
   },
   "dceast": {
@@ -524,7 +524,7 @@
       }
     ],
     "productsSourceUrl": "https://divinelycrafted.org/collections/all",
-    "checkedAt": "2026-10-03T10:16:43.700Z",
+    "checkedAt": "2026-10-04T11:00:38.072Z",
     "source": "auto"
   },
   "drappy": {
@@ -608,7 +608,7 @@
       }
     ],
     "productsSourceUrl": "https://drappy.pk/collections/all",
-    "checkedAt": "2026-10-03T10:16:45.598Z",
+    "checkedAt": "2026-10-04T11:00:39.923Z",
     "source": "auto"
   },
   "fitted": {
@@ -757,7 +757,7 @@
       }
     ],
     "productsSourceUrl": "https://fittedshop.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:47.061Z",
+    "checkedAt": "2026-10-04T11:00:41.231Z",
     "source": "auto"
   },
   "imhaut": {
@@ -841,7 +841,7 @@
       }
     ],
     "productsSourceUrl": "https://imhaut.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:49.559Z",
+    "checkedAt": "2026-10-04T11:00:44.287Z",
     "source": "auto"
   },
   "ivar": {
@@ -914,7 +914,7 @@
       }
     ],
     "productsSourceUrl": "https://ivarclothing.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:51.127Z",
+    "checkedAt": "2026-10-04T11:00:45.878Z",
     "source": "auto"
   },
   "kiji": {
@@ -987,7 +987,7 @@
       }
     ],
     "productsSourceUrl": "https://kijiretail.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:54.042Z",
+    "checkedAt": "2026-10-04T11:00:48.622Z",
     "source": "auto"
   },
   "kottonfruit": {
@@ -1071,7 +1071,7 @@
       }
     ],
     "productsSourceUrl": "https://www.kottonfruit.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:55.801Z",
+    "checkedAt": "2026-10-04T11:00:49.852Z",
     "source": "auto"
   },
   "lakhany": {
@@ -1220,7 +1220,7 @@
       }
     ],
     "productsSourceUrl": "https://lakhanyonline.com/collections/all",
-    "checkedAt": "2026-10-03T10:16:57.723Z",
+    "checkedAt": "2026-10-04T11:00:51.468Z",
     "source": "auto"
   },
   "limelight": {
@@ -1234,6 +1234,14 @@
         "originalPrice": "Rs 9,499",
         "currentPrice": "Rs 5,699",
         "discount": "-40%"
+      },
+      {
+        "name": "2 Piece Lawn Slub Suit- Embroidered (Pret)",
+        "url": "https://www.limelight.pk/products/a2289st-xsl-597",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A2289ST-SML-597-2PieceCambricSlubSuit-Embroidered_Pret_2.jpg?v=1772094613",
+        "originalPrice": "Rs 5,999",
+        "currentPrice": "Rs 3,499",
+        "discount": "-42%"
       },
       {
         "name": "2 Piece Lawn Slub Suit- Embroidered (Pret)",
@@ -1258,14 +1266,6 @@
         "originalPrice": "Rs 4,499",
         "currentPrice": "Rs 2,999",
         "discount": "-33%"
-      },
-      {
-        "name": "2 Piece Blended Marina Suit (Pret)",
-        "url": "https://www.limelight.pk/products/k0134st-xsl-049",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/K0134ST-XSL-049-MarinaCoordSet_2.jpg?v=1763724741",
-        "originalPrice": "Rs 4,999",
-        "currentPrice": "Rs 3,499",
-        "discount": "-30%"
       },
       {
         "name": "2 Piece Blended Marina Suit- Embroidered (Pret)",
@@ -1293,7 +1293,7 @@
       }
     ],
     "productsSourceUrl": "https://www.limelight.pk/collections/all",
-    "checkedAt": "2026-10-03T10:16:59.846Z",
+    "checkedAt": "2026-10-04T11:00:53.483Z",
     "source": "auto"
   },
   "lunaoutlet": {
@@ -1442,7 +1442,7 @@
       }
     ],
     "productsSourceUrl": "https://luna-outlet.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:02.373Z",
+    "checkedAt": "2026-10-04T11:00:56.196Z",
     "source": "auto"
   },
   "luso": {
@@ -1515,7 +1515,7 @@
       }
     ],
     "productsSourceUrl": "https://www.luso.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:05.277Z",
+    "checkedAt": "2026-10-04T11:00:59.003Z",
     "source": "auto"
   },
   "mabsh": {
@@ -1664,7 +1664,7 @@
       }
     ],
     "productsSourceUrl": "https://mabsh.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:07.596Z",
+    "checkedAt": "2026-10-04T11:01:00.718Z",
     "source": "auto"
   },
   "madofficial": {
@@ -1737,7 +1737,7 @@
       }
     ],
     "productsSourceUrl": "https://madofficialstore.shop/collections/all",
-    "checkedAt": "2026-10-03T10:17:10.226Z",
+    "checkedAt": "2026-10-04T11:01:02.844Z",
     "source": "auto"
   },
   "mahhi": {
@@ -1810,7 +1810,7 @@
       }
     ],
     "productsSourceUrl": "https://mahhi.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:12.070Z",
+    "checkedAt": "2026-10-04T11:01:05.290Z",
     "source": "auto"
   },
   "nayadour": {
@@ -1959,7 +1959,7 @@
       }
     ],
     "productsSourceUrl": "https://nayadour.co/collections/all",
-    "checkedAt": "2026-10-03T10:17:13.810Z",
+    "checkedAt": "2026-10-04T11:01:06.885Z",
     "source": "auto"
   },
   "ninefigures": {
@@ -2043,7 +2043,7 @@
       }
     ],
     "productsSourceUrl": "https://ninefigures.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:21.308Z",
+    "checkedAt": "2026-10-04T11:01:09.087Z",
     "source": "auto"
   },
   "outfitters": {
@@ -2058,14 +2058,6 @@
       "sourceUrl": "https://outfitters.com.pk/collections/men-t-shirt-sale",
       "products": [
         {
-          "name": "Textured Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2118-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2118106808.jpg?v=1781175012",
-          "originalPrice": "Rs 3,690",
-          "currentPrice": "Rs 1,790",
-          "discount": "-51%"
-        },
-        {
           "name": "Textured T-Shirt",
           "url": "https://outfitters.com.pk/products/f2102-106",
           "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271",
@@ -2074,19 +2066,27 @@
           "discount": "-51%"
         },
         {
+          "name": "Textured T-Shirt",
+          "url": "https://outfitters.com.pk/products/f2145-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2145106122..jpg?v=1783575340",
+          "originalPrice": "Rs 3,690",
+          "currentPrice": "Rs 1,790",
+          "discount": "-51%"
+        },
+        {
           "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f1997-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1997106615._ec480106-d526-4fb3-8c36-affc440aa675.jpg?v=1778220016",
+          "url": "https://outfitters.com.pk/products/f1999-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1999106311.jpg?v=1782293726",
           "originalPrice": "Rs 2,490",
           "currentPrice": "Rs 1,190",
           "discount": "-52%"
         },
         {
           "name": "Slogan Print T-Shirt",
-          "url": "https://outfitters.com.pk/products/f2021-106",
-          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2021106808.jpg?v=1781248412",
-          "originalPrice": "Rs 2,890",
-          "currentPrice": "Rs 1,390",
+          "url": "https://outfitters.com.pk/products/f1998-106",
+          "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1998106720.jpg?v=1781175338",
+          "originalPrice": "Rs 2,490",
+          "currentPrice": "Rs 1,190",
           "discount": "-52%"
         },
         {
@@ -2152,14 +2152,6 @@
       },
       {
         "name": "A-Line T-Shirt Dress",
-        "url": "https://outfitters.com.pk/products/f0313-204",
-        "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F0313204002.jpg?v=1783943350",
-        "originalPrice": "Rs 5,490",
-        "currentPrice": "Rs 2,690",
-        "discount": "-51%"
-      },
-      {
-        "name": "A-Line T-Shirt Dress",
         "url": "https://outfitters.com.pk/products/f0315-204",
         "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F0315204003.jpg?v=1782717743",
         "originalPrice": "Rs 6,990",
@@ -2189,10 +2181,18 @@
         "originalPrice": "Rs 3,290",
         "currentPrice": "Rs 3,290",
         "discount": null
+      },
+      {
+        "name": "Activewear Color Block T-Shirt",
+        "url": "https://outfitters.com.pk/products/f0260-125",
+        "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F0260125901._fb66ecc7-0c1c-4f27-a2e3-e3a0b3934bfc.jpg?v=1784029522",
+        "originalPrice": "Rs 3,690",
+        "currentPrice": "Rs 3,690",
+        "discount": null
       }
     ],
     "productsSourceUrl": "https://outfitters.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:31.003Z",
+    "checkedAt": "2026-10-04T11:01:13.805Z",
     "source": "auto"
   },
   "raiment61": {
@@ -2341,7 +2341,7 @@
       }
     ],
     "productsSourceUrl": "https://raiment61.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:33.970Z",
+    "checkedAt": "2026-10-04T11:01:16.505Z",
     "source": "auto"
   },
   "sanasafinaz": {
@@ -2490,7 +2490,7 @@
       }
     ],
     "productsSourceUrl": "https://www.sanasafinaz.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:36.456Z",
+    "checkedAt": "2026-10-04T11:01:18.965Z",
     "source": "auto"
   },
   "shaffer": {
@@ -2563,7 +2563,7 @@
       }
     ],
     "productsSourceUrl": "https://shaffer.store/collections/all",
-    "checkedAt": "2026-10-03T10:17:41.210Z",
+    "checkedAt": "2026-10-04T11:01:22.979Z",
     "source": "auto"
   },
   "sohasultan": {
@@ -2636,7 +2636,7 @@
       }
     ],
     "productsSourceUrl": "https://sohasultan.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:42.778Z",
+    "checkedAt": "2026-10-04T11:01:24.413Z",
     "source": "auto"
   },
   "thecottonleaf": {
@@ -2709,7 +2709,7 @@
       }
     ],
     "productsSourceUrl": "https://thecottonleaf.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:44.097Z",
+    "checkedAt": "2026-10-04T11:01:26.021Z",
     "source": "auto"
   },
   "dirtylaundry": {
@@ -2793,7 +2793,7 @@
       }
     ],
     "productsSourceUrl": "https://www.thedirtylaundry.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:45.475Z",
+    "checkedAt": "2026-10-04T11:01:27.579Z",
     "source": "auto"
   },
   "wearhype": {
@@ -2893,14 +2893,6 @@
         "discount": "-70%"
       },
       {
-        "name": "Aqua Ribbed Turtle-Neck",
-        "url": "https://wearhype.co/products/aqua-ribbed-turtle-neck",
-        "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/01_47350845-c006-4660-a903-2971596fdfe9.png?v=1788854127",
-        "originalPrice": "Rs 3,490",
-        "currentPrice": "Rs 1,050",
-        "discount": "-70%"
-      },
-      {
         "name": "Ash Grey Slim Fit Jeans",
         "url": "https://wearhype.co/products/denim-slim-fit-002932-032-mgr",
         "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/02_a4273d00-dee7-4357-90b2-c8feb606ac68.jpg?v=1765267731",
@@ -2939,10 +2931,18 @@
         "originalPrice": "Rs 3,990",
         "currentPrice": "Rs 2,790",
         "discount": "-30%"
+      },
+      {
+        "name": "Band Collar Soft Jersey Polo",
+        "url": "https://wearhype.co/products/polo-002865",
+        "image": "https://cdn.shopify.com/s/files/1/0707/3061/3009/files/1_36edafb4-ac4b-4592-804e-b6cec34246d5.jpg?v=1754638424",
+        "originalPrice": "Rs 3,990",
+        "currentPrice": "Rs 798",
+        "discount": "-80%"
       }
     ],
     "productsSourceUrl": "https://wearhype.co/collections/all",
-    "checkedAt": "2026-10-03T10:17:47.059Z",
+    "checkedAt": "2026-10-04T11:01:29.123Z",
     "source": "auto"
   },
   "wearlowkey": {
@@ -3084,14 +3084,14 @@
       {
         "name": "Black Quarter Zipper",
         "url": "https://lowkeypk.com/products/black-quarter-zipper",
-        "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/1_f1fae2ca-f2dd-4593-b967-070b232052c9.jpg?v=1776179035",
+        "image": "https://cdn.shopify.com/s/files/1/0773/1324/5396/files/Black_zipper_Front_model.png?v=1791037895",
         "originalPrice": "Rs 2,899",
         "currentPrice": "Rs 1,899",
         "discount": "-34%"
       }
     ],
     "productsSourceUrl": "https://lowkeypk.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:50.500Z",
+    "checkedAt": "2026-10-04T11:01:32.838Z",
     "source": "auto"
   },
   "zahstudio": {
@@ -3164,7 +3164,7 @@
       }
     ],
     "productsSourceUrl": "https://zahstudio.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:53.494Z",
+    "checkedAt": "2026-10-04T11:01:35.061Z",
     "source": "auto"
   },
   "zephyrwaleed": {
@@ -3248,7 +3248,7 @@
       }
     ],
     "productsSourceUrl": "https://zephyrbywaleed.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:55.656Z",
+    "checkedAt": "2026-10-04T11:01:37.271Z",
     "source": "auto"
   },
   "borjan": {
@@ -3397,7 +3397,7 @@
       }
     ],
     "productsSourceUrl": "https://www.borjan.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:17:57.200Z",
+    "checkedAt": "2026-10-04T11:01:38.739Z",
     "source": "auto"
   },
   "fhsofficial": {
@@ -3546,7 +3546,7 @@
       }
     ],
     "productsSourceUrl": "https://fhsofficial.com/collections/all",
-    "checkedAt": "2026-10-03T10:17:59.722Z",
+    "checkedAt": "2026-10-04T11:01:40.928Z",
     "source": "auto"
   },
   "giorgiovanti": {
@@ -3619,7 +3619,7 @@
       }
     ],
     "productsSourceUrl": "https://giorgiovanti.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:02.271Z",
+    "checkedAt": "2026-10-04T11:01:42.929Z",
     "source": "auto"
   },
   "inmysaaz": {
@@ -3692,7 +3692,7 @@
       }
     ],
     "productsSourceUrl": "https://saazstore.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:03.893Z",
+    "checkedAt": "2026-10-04T11:01:44.795Z",
     "source": "auto"
   },
   "jutay": {
@@ -3841,7 +3841,7 @@
       }
     ],
     "productsSourceUrl": "https://jutay.co/collections/all",
-    "checkedAt": "2026-10-03T10:18:05.918Z",
+    "checkedAt": "2026-10-04T11:01:46.524Z",
     "source": "auto"
   },
   "ndure": {
@@ -3990,7 +3990,7 @@
       }
     ],
     "productsSourceUrl": "https://www.ndure.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:08.209Z",
+    "checkedAt": "2026-10-04T11:01:48.190Z",
     "source": "auto"
   },
   "onedegree": {
@@ -4139,7 +4139,7 @@
       }
     ],
     "productsSourceUrl": "https://onedegree.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:10.738Z",
+    "checkedAt": "2026-10-04T11:01:50.628Z",
     "source": "auto"
   },
   "servis": {
@@ -4288,7 +4288,7 @@
       }
     ],
     "productsSourceUrl": "https://servis.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:12.919Z",
+    "checkedAt": "2026-10-04T11:01:52.497Z",
     "source": "auto"
   },
   "stylo": {
@@ -4437,7 +4437,7 @@
       }
     ],
     "productsSourceUrl": "https://stylo.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:15.451Z",
+    "checkedAt": "2026-10-04T11:01:54.976Z",
     "source": "auto"
   },
   "tsmandco": {
@@ -4586,7 +4586,7 @@
       }
     ],
     "productsSourceUrl": "https://www.tsmco.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:17.645Z",
+    "checkedAt": "2026-10-04T11:01:56.786Z",
     "source": "auto"
   },
   "chenone": {
@@ -4735,7 +4735,7 @@
       }
     ],
     "productsSourceUrl": "https://chenone.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:20.077Z",
+    "checkedAt": "2026-10-04T11:01:59.219Z",
     "source": "auto"
   },
   "interwood": {
@@ -4884,7 +4884,7 @@
       }
     ],
     "productsSourceUrl": "https://interwood.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:28.580Z",
+    "checkedAt": "2026-10-04T11:02:10.270Z",
     "source": "auto"
   },
   "alfatah": {
@@ -4957,7 +4957,7 @@
       }
     ],
     "productsSourceUrl": "https://alfatah.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:32.031Z",
+    "checkedAt": "2026-10-04T11:02:12.885Z",
     "source": "auto"
   },
   "chasevalue": {
@@ -5030,7 +5030,7 @@
       }
     ],
     "productsSourceUrl": "https://chasevalue.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:36.198Z",
+    "checkedAt": "2026-10-04T11:02:16.538Z",
     "source": "auto"
   },
   "bhojascollection": {
@@ -5103,7 +5103,7 @@
       }
     ],
     "productsSourceUrl": "https://www.bhojascollections.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:39.865Z",
+    "checkedAt": "2026-10-04T11:02:19.473Z",
     "source": "auto"
   },
   "fiore": {
@@ -5176,7 +5176,7 @@
       }
     ],
     "productsSourceUrl": "https://fioure.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:41.887Z",
+    "checkedAt": "2026-10-04T11:02:21.142Z",
     "source": "auto"
   },
   "insignia": {
@@ -5325,7 +5325,7 @@
       }
     ],
     "productsSourceUrl": "https://insignia.com.pk/collections/all",
-    "checkedAt": "2026-10-03T10:18:44.723Z",
+    "checkedAt": "2026-10-04T11:02:22.799Z",
     "source": "auto"
   },
   "obipelle": {
@@ -5409,7 +5409,7 @@
       }
     ],
     "productsSourceUrl": "https://obipelle.com/collections/all",
-    "checkedAt": "2026-10-03T10:18:47.386Z",
+    "checkedAt": "2026-10-04T11:02:25.344Z",
     "source": "auto"
   }
 }
