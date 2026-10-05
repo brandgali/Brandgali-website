@@ -60,7 +60,7 @@ const BRANDS_DATA_PATH = path.join(__dirname, 'brands-data.js');
 const OUTPUT_PATH = path.join(__dirname, 'sales-status.json');
 
 const MAX_PRODUCTS = 8;       // how many products to show per brand on live-sales.html
-const NEW_ARRIVAL_DAYS = 10;   // a product counts as a "new arrival" if the brand published it within this many days
+const NEW_ARRIVAL_DAYS = 21;   // a product counts as a "new arrival" if the brand published it within this many days
 const REQUEST_TIMEOUT = 12000; // ms before giving up on a single page
 
 // Phrases that indicate an active sale. Checked case-insensitively unless
@@ -233,6 +233,45 @@ function findSalePageUrl(html, baseUrl){
         abs.hash = '';
         return abs.href;
       }catch(e){ /* malformed href, ignore */ }
+    }
+  }
+  return null;
+}
+
+/* ---------- Brand logo finder ----------
+   Reads each brand's own logo from its homepage so the site can show the
+   real logo instead of a tiny favicon. Order: structured-data logo, then an
+   <img> in the page header that is clearly a logo, then the apple-touch icon.
+   Never invented - returns null if nothing trustworthy is found. */
+function extractLogo(html, baseUrl){
+  if(!html) return null;
+  const abs = (u) => { try{ if(!u || /^data:/i.test(u)) return null; const a = new URL(decodeEntities(u).trim(), baseUrl); return /^https?:$/.test(a.protocol) ? a.href : null; }catch(e){ return null; } };
+  // 1. JSON-LD Organization / WebSite logo
+  const ld = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  let m;
+  while((m = ld.exec(html)) !== null){
+    try{
+      const found = [];
+      const walk = (n) => { if(!n || typeof n !== 'object') return; if(Array.isArray(n)){ n.forEach(walk); return; } if(n.logo) found.push(n.logo); Object.values(n).forEach(v => { if(v && typeof v === 'object') walk(v); }); };
+      walk(JSON.parse(m[1].trim()));
+      for(const l of found){ const u = abs(typeof l === 'string' ? l : (l && (l.url || l.contentUrl))); if(u) return u; }
+    }catch(e){ /* malformed JSON-LD */ }
+  }
+  // 2. an <img> in the top of the page that is clearly the logo
+  const head = html.slice(0, 120000);
+  const imgs = head.match(/<img\b[^>]*>/gi) || [];
+  for(const tag of imgs){
+    if(!/logo/i.test(tag)) continue;
+    if(/payment|trust|footer|badge|app-?store|google-?play|whatsapp|facebook|instagram/i.test(tag)) continue;
+    const src = (tag.match(/\bdata-src=["']([^"']+)["']/i) || tag.match(/\bsrc=["']([^"']+)["']/i) || [])[1];
+    const u = abs(src); if(u) return u;
+  }
+  // 3. apple-touch-icon / icon
+  const links = html.match(/<link\b[^>]*>/gi) || [];
+  for(const rel of ['apple-touch-icon', 'icon']){
+    for(const tag of links){
+      if(!new RegExp('rel=["\'][^"\']*' + rel, 'i').test(tag)) continue;
+      const u = abs((tag.match(/\bhref=["']([^"']+)["']/i) || [])[1]); if(u) return u;
     }
   }
   return null;
@@ -665,13 +704,14 @@ async function main(){
   // and anything manually set via admin.html) so they aren't wiped out
   for(const [id, entry] of Object.entries(existing)){
     const brand = brands.find(b => b.id === id);
-    if(!brand || !isScrapable(brand.url)){
+    if(brand && !isScrapable(brand.url)){ // entries for brands removed from brands-data.js are dropped
       results[id] = entry;
     }
   }
 
   // check scrapable brands one at a time with a short delay, to be a polite,
   // low-load visitor rather than hammering every site at once
+  const foundLogos = {};
   for(const brand of scrapable){
     const result = await checkBrand(brand);
     const now = new Date().toISOString();
@@ -687,6 +727,8 @@ async function main(){
     // (site temporarily blocked us, catalogue endpoint down, etc.) we
     // keep whatever was found on a previous successful run rather than
     // wiping out real products just because of a transient miss.
+    const logoFound = extractLogo(result.html, brand.url);
+    if(logoFound) foundLogos[brand.id] = logoFound;
     const general = await collectGeneralProducts(brand, result.html);
     const previousProducts = (existing[brand.id] && existing[brand.id].products) || [];
     const previousProductsUrl = (existing[brand.id] && existing[brand.id].productsSourceUrl) || null;
@@ -775,6 +817,12 @@ async function main(){
     }
 
     await new Promise(r => setTimeout(r, 800)); // small politeness delay between requests
+  }
+
+  // attach each brand's real logo (today's if found, otherwise the one we already had)
+  for(const brand of scrapable){
+    const logo = foundLogos[brand.id] || (existing[brand.id] && existing[brand.id].logo) || null;
+    if(logo) results[brand.id] = { ...(results[brand.id] || {}), logo };
   }
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(results, null, 2) + '\n');

@@ -51,7 +51,17 @@ const CATEGORIES = [
 
 const BRANDS = [
   // ---- Clothing (alphabetical) ----
-  { id:'adma',          name:'Adma',                category:'Clothing', url:'https://adma.com.pk/',          initial:'A', color:'navy',   featured:false },
+  { id:'alkaramstudio', name:'Alkaram Studio', category:'Clothing', url:'https://www.alkaramstudio.com/', initial:'A', color:'orange', featured:true },
+  { id:'beechtree', name:'BeechTree', category:'Clothing', url:'https://beechtree.pk/', initial:'B', color:'teal', featured:false },
+  { id:'charcoal', name:'Charcoal', category:'Clothing', url:'https://charcoal.com.pk/', initial:'C', color:'navy', featured:false },
+  { id:'cougar', name:'Cougar', category:'Clothing', url:'https://cougar.com.pk/', initial:'C', color:'orange', featured:false },
+  { id:'ecs', name:'ECS', category:'Clothing', url:'https://shopecs.com/', initial:'E', color:'teal', featured:false },
+  { id:'generation', name:'Generation', category:'Clothing', url:'https://generation.com.pk/', initial:'G', color:'navy', featured:false },
+  { id:'gulahmed', name:'Gul Ahmed', category:'Clothing', url:'https://www.gulahmedshop.com/', initial:'G', color:'orange', featured:true },
+  { id:'jdot', name:'J. (Junaid Jamshed)', category:'Clothing', url:'https://www.junaidjamshed.com/', initial:'J', color:'navy', featured:true },
+  { id:'mariab', name:'Maria B.', category:'Clothing', url:'https://www.mariab.pk/', initial:'M', color:'teal', featured:true },
+  { id:'one', name:'One', category:'Clothing', url:'https://beoneshopone.com/', initial:'O', color:'orange', featured:false },
+  { id:'zellbury', name:'Zellbury', category:'Clothing', url:'https://zellbury.com/', initial:'Z', color:'navy', featured:false },
   { id:'beigebydandy',  name:'Beige by Dandy',       category:'Clothing', url:'https://beige.pk/',             initial:'B', color:'orange', featured:false },
   { id:'breakout',      name:'Breakout',             category:'Clothing', url:'https://breakout.com.pk/',      initial:'B', color:'navy',   featured:false, stores:[{city:'Rawalpindi'}] }, // VERIFY url
   { id:'charizma',      name:'Charizma',             category:'Clothing', url:'https://houseofcharizma.com/',  initial:'C', color:'orange', featured:false, stores:[{city:'Lahore'},{city:'Karachi'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Multan'},{city:'Gujranwala'},{city:'Peshawar'},{city:'Sialkot'},{city:'Sargodha'},{city:'Sahiwal'}] },
@@ -65,27 +75,20 @@ const BRANDS = [
   { id:'kottonfruit',   name:'Kotton Fruit',         category:'Clothing', url:'https://www.kottonfruit.com/',  initial:'K', color:'navy',   featured:false },
   { id:'lakhany',       name:'Lakhany',              category:'Clothing', url:'https://lakhanyonline.com/',    initial:'L', color:'orange', featured:false, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'},{city:'Faisalabad'},{city:'Multan'},{city:'Hyderabad'},{city:'Peshawar'}] }, // renamed from "Lakhany Home" and moved from Kitchen & Accessories
   { id:'limelight',     name:'Limelight',            category:'Clothing', url:'https://www.limelight.pk/',     initial:'L', color:'teal',   featured:false, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Peshawar'},{city:'Faisalabad'},{city:'Multan'},{city:'Gujranwala'},{city:'Sialkot'},{city:'Hyderabad'},{city:'Abbottabad'},{city:'Bahawalpur'},{city:'Sargodha'},{city:'Rahim Yar Khan'}] },
-  { id:'lunaoutlet',    name:'Luna Outlet',          category:'Clothing', url:'https://luna-outlet.com/',      initial:'L', color:'navy',   featured:false },
-  { id:'luso',          name:'Luso',                 category:'Clothing', url:'https://www.luso.com.pk/',      initial:'L', color:'orange', featured:false },
   { id:'mabsh',         name:'Mabsh',                category:'Clothing', url:'https://mabsh.pk/',             initial:'M', color:'teal',   featured:false },
   { id:'madofficial',   name:'MAD Official',         category:'Clothing', url:'https://madofficialstore.shop/', initial:'M', color:'navy',  featured:false }, // VERIFY — a couple similarly-named stores exist, confirm this is the right one
-  { id:'mahhi',         name:'Mahhi',                category:'Clothing', url:'https://mahhi.com.pk/',         initial:'M', color:'orange', featured:false },
   { id:'nayadour',      name:'Naya Dour',            category:'Clothing', url:'https://nayadour.co/',          initial:'N', color:'teal',   featured:false },
   { id:'ninefigures',   name:'Nine Figures',         category:'Clothing', url:'https://ninefigures.com/',      initial:'N', color:'navy',   featured:false },
   { id:'outfitters',    name:'Outfitters',           category:'Clothing', url:'https://outfitters.com.pk/',    initial:'O', color:'teal',   featured:true, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Peshawar'},{city:'Quetta'},{city:'Faisalabad'},{city:'Multan'},{city:'Gujranwala'},{city:'Sialkot'},{city:'Hyderabad'},{city:'Abbottabad'},{city:'Sargodha'}] },
   { id:'raiment61',     name:'Raiment61',            category:'Clothing', url:'https://raiment61.com/',        initial:'R', color:'navy',   featured:false },
   { id:'sanasafinaz',   name:'Sana Safinaz',         category:'Clothing', url:'https://www.sanasafinaz.com/',  initial:'S', color:'orange', featured:true, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Multan'},{city:'Gujranwala'},{city:'Peshawar'},{city:'Hyderabad'},{city:'Sialkot'},{city:'Quetta'},{city:'Sargodha'}] },
   { id:'sapphire',      name:'Sapphire',             category:'Clothing', url:'https://pk.sapphireonline.pk/', initial:'S', color:'teal',   featured:true, stores:[{city:'Karachi',area:'Dolmen Mall Clifton, LuckyOne'},{city:'Lahore',area:'Packages Mall, Emporium Mall'},{city:'Islamabad',area:'Centaurus Mall'},{city:'Faisalabad'},{city:'Multan'},{city:'Sialkot'},{city:'Gujranwala'},{city:'Peshawar'},{city:'Rawalpindi'}] },
-  { id:'shaffer',       name:'Shaffer',              category:'Clothing', url:'https://shaffer.store/',        initial:'S', color:'navy',   featured:false, stores:[{city:'Karachi',area:'LuckyOne Mall',address:'F-02, 1st Floor'},{city:'Karachi',area:'Dolmen Mall Tariq Road',address:'G 90-96'},{city:'Karachi',area:'DHA Phase 6',address:'34C, Lane 11, Khayaban-e-Bukhari'},{city:'Karachi',area:'Dolmen Mall Clifton',address:'S-37, 2nd Floor'},{city:'Lahore',area:'Dolmen Mall Lahore, DHA Phase 6',address:'S-14, 2nd Floor'},{city:'Hyderabad',area:'Boulevard Mall, SITE',address:'F119, F121, F128'},{city:'Faisalabad',area:'Chen One Road, Peoples Colony 01',address:'Shop #862-B'}] }, // VERIFY category — confirm what they sell
   { id:'sohasultan',    name:'Soha Sultan',          category:'Clothing', url:'https://sohasultan.com/',       initial:'S', color:'orange', featured:false },
   { id:'thecottonleaf', name:'The Cotton Leaf',      category:'Clothing', url:'https://thecottonleaf.pk/',     initial:'T', color:'teal',   featured:false },
-  { id:'dirtylaundry',  name:'The Dirty Laundry',    category:'Clothing', url:'https://www.thedirtylaundry.pk/', initial:'T', color:'navy', featured:false },
-  { id:'wearhype',      name:'Wear Hype',            category:'Clothing', url:'https://wearhype.co/',          initial:'W', color:'navy',   featured:false },
-  { id:'wearlowkey',    name:'Wear Lowkey',          category:'Clothing', url:'https://lowkeypk.com/',         initial:'W', color:'orange', featured:false },
   { id:'zahstudio',     name:'Zah Studio',           category:'Clothing', url:'https://zahstudio.com.pk/',     initial:'Z', color:'teal',   featured:false },
-  { id:'zephyrwaleed',  name:'Zephyr by Waleed',     category:'Clothing', url:'https://zephyrbywaleed.com/',   initial:'Z', color:'navy',   featured:false },
 
   // ---- Footwear (alphabetical) ----
+  { id:'saeedghani', name:'Saeed Ghani', category:'Footwear', url:'https://saeedghani.pk/', initial:'S', color:'teal', featured:false },
   { id:'borjan',      name:'Borjan',      category:'Footwear', url:'https://www.borjan.com.pk/',  initial:'B', color:'navy',   featured:true, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'}] },
   { id:'fhsofficial', name:'FHS Official', category:'Footwear', url:'https://fhsofficial.com/',   initial:'F', color:'orange', featured:false, stores:[{city:'Karachi',area:'Dolmen Mall Clifton',address:'Store S-26, 2nd Floor'},{city:'Karachi',area:'Ocean Mall',address:'Store G-03, Ground Floor'},{city:'Lahore',area:'Packages Mall',address:'Store #1024'},{city:'Lahore',area:'Emporium Mall',address:'Store G-35, Ground Floor'}] },
   { id:'giorgiovanti',name:'Giorgio Vanti',category:'Footwear', url:'https://giorgiovanti.com/',  initial:'G', color:'teal',   featured:false, stores:[{city:'Lahore',area:'MM Alam Road, Dolmen Mall Lahore'},{city:'Faisalabad',area:'Lyallpur Galleria'}] },
@@ -98,12 +101,14 @@ const BRANDS = [
   { id:'tsmandco',    name:'TSM & Co',    category:'Footwear', url:'https://www.tsmco.com.pk/',   initial:'T', color:'navy',   featured:false, stores:[{city:'Karachi',area:'DHA Phase 5, Zamzama Commercial Area',address:'Building 1/C, Shop 4, 2nd Commercial Ln'}] },
 
   // ---- Home Décor (alphabetical) ----
+  { id:'dolcevitahome', name:'Dolce Vita Home', category:'Home Décor', url:'https://dolcevitahome.com.pk/', initial:'D', color:'navy', featured:false },
+  { id:'habitt', name:'Habitt', category:'Home Décor', url:'https://habitt.com/', initial:'H', color:'teal', featured:false },
+  { id:'ideashome', name:'Ideas Home', category:'Home Décor', url:'https://www.ideas.com.pk/', initial:'I', color:'orange', featured:false },
   { id:'chenone',     name:'ChenOne',       category:'Home Décor', url:'https://chenone.com/',              initial:'C', color:'navy',   featured:true, stores:[{city:'Lahore'},{city:'Karachi'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Multan'},{city:'Peshawar'},{city:'Sialkot'},{city:'Gujranwala'},{city:'Bahawalpur'},{city:'Abbottabad'}] },
-  { id:'cosmodecor',  name:'Cosmo Décor',   category:'Home Décor', url:'https://www.cosmodecorpk.com/',     initial:'C', color:'orange', featured:false },
-  { id:'homeshopping',name:'Home Shopping', category:'Home Décor', url:'https://www.homeshopping.pk/',      initial:'H', color:'teal',   featured:false }, // VERIFY url
   { id:'interwood',   name:'Interwood',     category:'Home Décor', url:'https://interwood.pk/',             initial:'I', color:'navy',   featured:true, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Peshawar'},{city:'Gujranwala'},{city:'Multan'}] },
 
   // ---- Lifestyle (alphabetical) ----
+  { id:'hemaniherbals', name:'Hemani Herbals', category:'Lifestyle', url:'https://pk.hemaniherbals.com/', initial:'H', color:'teal', featured:false },
   { id:'alfatah',     name:'Al-Fatah',      category:'Lifestyle', url:'https://alfatah.pk/',     initial:'A', color:'navy',   featured:false, stores:[{city:'Lahore',area:'Hussain Chowk, DHA, Johar Town'},{city:'Islamabad',area:'Centaurus, Safa Gold'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Sialkot'},{city:'Gujranwala'},{city:'Multan'},{city:'Bahawalpur'}] }, // VERIFY url
   { id:'chasevalue',  name:'Chase Value',   category:'Lifestyle', url:'https://chasevalue.pk/',  initial:'C', color:'orange', featured:false, stores:[{city:'Karachi',area:'Khalid Bin Waleed Road, North Nazimabad'},{city:'Multan'},{city:'Bahawalpur'},{city:'Islamabad'},{city:'Faisalabad'}] },
   { id:'naheed',      name:'Naheed',        category:'Lifestyle', url:'https://www.naheed.pk/',  initial:'N', color:'teal',   featured:false, stores:[{city:'Karachi',area:'Main Tariq Road / Bahadurabad intersection'}] },
@@ -112,10 +117,11 @@ const BRANDS = [
   { id:'bhojascollection', name:'Bhojas Collection', category:'Kitchen & Accessories', url:'https://www.bhojascollections.com/', initial:'B', color:'teal', featured:false, stores:[{city:'Karachi',area:'Gul Tijara, Near Saddar Town',address:'152 Bhurgri Road'}] },
 
   // ---- Bags (alphabetical) ----
+  { id:'hubleather', name:'Hub', category:'Bags', url:'https://hub.com.pk/', initial:'H', color:'navy', featured:false },
+  { id:'jafferjees', name:'Jafferjees', category:'Bags', url:'https://jafferjees.com/', initial:'J', color:'orange', featured:false },
   { id:'fiore',       name:'Fioré',      category:'Bags', url:'https://fioure.com/',     initial:'F', color:'navy',   featured:false }, // category not fully confirmed — check this is actually a bags brand
   { id:'insignia',    name:'Insignia',   category:'Bags', url:'https://insignia.com.pk/', initial:'I', color:'orange', featured:false, stores:[{city:'Rawalpindi'}] }, // VERIFY url
   { id:'obipelle',    name:'Obi Pelle',  category:'Bags', url:'https://obipelle.com/',    initial:'O', color:'teal',   featured:false }, // VERIFY category — "Pelle" is Italian for leather, reasonably confident but confirm
-  { id:'warponline',  name:'Warp',       category:'Bags', url:'https://warp-online.pk/', initial:'W', color:'navy',   featured:false },
 ];
 
 /* ---------- Shared helpers used by both pages ---------- */
@@ -127,6 +133,7 @@ const colorVar = c => c === 'orange' ? 'var(--orange-deep)' : c === 'teal' ? 'va
 // badge (via onerror in the HTML) if the brand has no real website (e.g. '#')
 // or the icon can't be fetched for any reason.
 function logoUrl(brand){
+  if(brand.logo) return brand.logo;
   if(!brand.url || brand.url === '#' || brand.url.includes('instagram.com')) return null;
   try{
     const host = new URL(brand.url).hostname;

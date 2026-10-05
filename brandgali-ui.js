@@ -399,3 +399,19 @@ input,select,textarea{font-size:16px!important}
 .bc2 .notify-btn{padding:8px!important;font-size:12px!important;border-radius:10px!important}
 .bgrid2{gap:10px!important}
 `; document.head.appendChild(s); })();
+
+
+/* ---------- real logos (read from each brand's own site by the daily check) ---------- */
+(function(){
+  const _ls = loadSalesStatus;
+  loadSalesStatus = async function(){
+    await _ls();
+    const m = window.SALES_STATUS || {};
+    BRANDS.forEach(b => { if(m[b.id] && m[b.id].logo) b.logo = m[b.id].logo; });
+  };
+  const _bb = brandBadgeHTML;
+  brandBadgeHTML = function(b, size){
+    // contain (not crop) so wide wordmark logos aren't cut off; no-referrer so brand CDNs don't block hot-linking
+    return _bb(b, size).replace('<img ', '<img referrerpolicy="no-referrer" ').replace('object-fit:cover', 'object-fit:contain');
+  };
+})();
