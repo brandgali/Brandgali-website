@@ -412,6 +412,6 @@ input,select,textarea{font-size:16px!important}
   const _bb = brandBadgeHTML;
   brandBadgeHTML = function(b, size){
     // contain (not crop) so wide wordmark logos aren't cut off; no-referrer so brand CDNs don't block hot-linking
-    return _bb(b, size).replace('<img ', '<img referrerpolicy="no-referrer" ').replace('object-fit:cover', 'object-fit:contain');
+    return _bb(b, size).replace('<img ', '<img referrerpolicy="no-referrer" ').replace('object-fit:cover', 'object-fit:contain').replace('padding:8px', 'padding:2px');
   };
 })();
