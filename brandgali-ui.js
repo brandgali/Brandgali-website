@@ -409,9 +409,25 @@ input,select,textarea{font-size:16px!important}
     const m = window.SALES_STATUS || {};
     BRANDS.forEach(b => { if(m[b.id] && m[b.id].logo) b.logo = m[b.id].logo; });
   };
-  const _bb = brandBadgeHTML;
+  // Logo chain: brand's own logo (found by the daily check) -> favicon -> coloured initial badge.
+  // Google's favicon service returns a tiny generic "?" icon (not an error) for sites it can't
+  // read, so any 16px-or-smaller image is treated as "no logo" and we move on to the next option.
+  window.bgLogoFail = function(img){
+    const rest = (img.dataset.chain || '').split(' ').filter(Boolean);
+    if(rest.length){ img.dataset.chain = rest.slice(1).join(' '); if(rest[0] !== img.getAttribute('src')){ img.src = rest[0]; return; } }
+    const d = document.createElement('div');
+    d.className = 'brand-badge';
+    d.style.cssText = `width:${img.dataset.px}px;height:${img.dataset.px}px;font-size:${Math.round(img.dataset.px * 0.34)}px;background:${img.dataset.bg};flex-shrink:0;`;
+    d.textContent = img.dataset.ini;
+    img.replaceWith(d);
+  };
+  window.bgLogoLoad = function(img){ if(img.naturalWidth <= 16 && img.naturalHeight <= 16) window.bgLogoFail(img); };
   brandBadgeHTML = function(b, size){
-    // contain (not crop) so wide wordmark logos aren't cut off; no-referrer so brand CDNs don't block hot-linking
-    return _bb(b, size).replace('<img ', '<img referrerpolicy="no-referrer" ').replace('object-fit:cover', 'object-fit:contain').replace('padding:8px', 'padding:2px');
+    const px = size || 52, chain = [];
+    if(b.logo) chain.push(b.logo);
+    try{ if(b.url && b.url !== '#' && !b.url.includes('instagram.com')) chain.push('https://www.google.com/s2/favicons?sz=128&domain=' + new URL(b.url).hostname); }catch(e){}
+    const bg = colorVar(b.color);
+    if(!chain.length) return `<div class="brand-badge" style="width:${px}px;height:${px}px;font-size:${Math.round(px * 0.34)}px;background:${bg};flex-shrink:0;">${b.initial}</div>`;
+    return `<img src="${chain[0]}" data-chain="${chain.slice(1).join(' ')}" data-px="${px}" data-bg="${bg}" data-ini="${b.initial}" alt="${b.name} logo" referrerpolicy="no-referrer" onerror="bgLogoFail(this)" onload="bgLogoLoad(this)" style="width:${px}px;height:${px}px;border-radius:50%;object-fit:contain;background:#F0F1F4;flex-shrink:0;padding:2px;box-sizing:border-box;border:1px solid var(--line);">`;
   };
 })();

@@ -55,7 +55,6 @@ const BRANDS = [
   { id:'beechtree', name:'BeechTree', category:'Clothing', url:'https://beechtree.pk/', initial:'B', color:'teal', featured:false },
   { id:'charcoal', name:'Charcoal', category:'Clothing', url:'https://charcoal.com.pk/', initial:'C', color:'navy', featured:false },
   { id:'cougar', name:'Cougar', category:'Clothing', url:'https://cougar.com.pk/', initial:'C', color:'orange', featured:false },
-  { id:'ecs', name:'ECS', category:'Clothing', url:'https://shopecs.com/', initial:'E', color:'teal', featured:false },
   { id:'generation', name:'Generation', category:'Clothing', url:'https://generation.com.pk/', initial:'G', color:'navy', featured:false },
   { id:'gulahmed', name:'Gul Ahmed', category:'Clothing', url:'https://www.gulahmedshop.com/', initial:'G', color:'orange', featured:true },
   { id:'jdot', name:'J. (Junaid Jamshed)', category:'Clothing', url:'https://www.junaidjamshed.com/', initial:'J', color:'navy', featured:true },
@@ -63,7 +62,7 @@ const BRANDS = [
   { id:'one', name:'One', category:'Clothing', url:'https://beoneshopone.com/', initial:'O', color:'orange', featured:false },
   { id:'zellbury', name:'Zellbury', category:'Clothing', url:'https://zellbury.com/', initial:'Z', color:'navy', featured:false },
   { id:'beigebydandy',  name:'Beige by Dandy',       category:'Clothing', url:'https://beige.pk/',             initial:'B', color:'orange', featured:false },
-  { id:'breakout',      name:'Breakout',             category:'Clothing', url:'https://breakout.com.pk/',      initial:'B', color:'navy',   featured:false, stores:[{city:'Rawalpindi'}] }, // VERIFY url
+  { id:'breakout',      name:'Breakout',             category:'Clothing', url:'https://www.breakout.com.pk/',      initial:'B', color:'navy',   featured:false, stores:[{city:'Rawalpindi'}] },
   { id:'charizma',      name:'Charizma',             category:'Clothing', url:'https://houseofcharizma.com/',  initial:'C', color:'orange', featured:false, stores:[{city:'Lahore'},{city:'Karachi'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Multan'},{city:'Gujranwala'},{city:'Peshawar'},{city:'Sialkot'},{city:'Sargodha'},{city:'Sahiwal'}] },
   { id:'dceast',        name:'DC East',              category:'Clothing', url:'https://divinelycrafted.org/',  initial:'D', color:'teal',   featured:false }, // VERIFY — handle "Dc.east" and domain name don't obviously match, confirm this is the right site
   { id:'drappy',        name:'Drappy',               category:'Clothing', url:'https://drappy.pk/',            initial:'D', color:'navy',   featured:false },
@@ -88,7 +87,8 @@ const BRANDS = [
   { id:'zahstudio',     name:'Zah Studio',           category:'Clothing', url:'https://zahstudio.com.pk/',     initial:'Z', color:'teal',   featured:false },
 
   // ---- Footwear (alphabetical) ----
-  { id:'saeedghani', name:'Saeed Ghani', category:'Footwear', url:'https://saeedghani.pk/', initial:'S', color:'teal', featured:false },
+  { id:'insignia',    name:'Insignia',   category:'Footwear', url:'https://insignia.com.pk/', initial:'I', color:'orange', featured:false, stores:[{city:'Rawalpindi'}] }, // VERIFY url
+  { id:'ecs', name:'ECS', category:'Footwear', url:'https://shopecs.com/', initial:'E', color:'teal', featured:false },
   { id:'borjan',      name:'Borjan',      category:'Footwear', url:'https://www.borjan.com.pk/',  initial:'B', color:'navy',   featured:true, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'}] },
   { id:'fhsofficial', name:'FHS Official', category:'Footwear', url:'https://fhsofficial.com/',   initial:'F', color:'orange', featured:false, stores:[{city:'Karachi',area:'Dolmen Mall Clifton',address:'Store S-26, 2nd Floor'},{city:'Karachi',area:'Ocean Mall',address:'Store G-03, Ground Floor'},{city:'Lahore',area:'Packages Mall',address:'Store #1024'},{city:'Lahore',area:'Emporium Mall',address:'Store G-35, Ground Floor'}] },
   { id:'giorgiovanti',name:'Giorgio Vanti',category:'Footwear', url:'https://giorgiovanti.com/',  initial:'G', color:'teal',   featured:false, stores:[{city:'Lahore',area:'MM Alam Road, Dolmen Mall Lahore'},{city:'Faisalabad',area:'Lyallpur Galleria'}] },
@@ -108,6 +108,7 @@ const BRANDS = [
   { id:'interwood',   name:'Interwood',     category:'Home Décor', url:'https://interwood.pk/',             initial:'I', color:'navy',   featured:true, stores:[{city:'Karachi'},{city:'Lahore'},{city:'Islamabad'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Peshawar'},{city:'Gujranwala'},{city:'Multan'}] },
 
   // ---- Lifestyle (alphabetical) ----
+  { id:'saeedghani', name:'Saeed Ghani', category:'Lifestyle', url:'https://saeedghani.pk/', initial:'S', color:'teal', featured:false },
   { id:'hemaniherbals', name:'Hemani Herbals', category:'Lifestyle', url:'https://pk.hemaniherbals.com/', initial:'H', color:'teal', featured:false },
   { id:'alfatah',     name:'Al-Fatah',      category:'Lifestyle', url:'https://alfatah.pk/',     initial:'A', color:'navy',   featured:false, stores:[{city:'Lahore',area:'Hussain Chowk, DHA, Johar Town'},{city:'Islamabad',area:'Centaurus, Safa Gold'},{city:'Rawalpindi'},{city:'Faisalabad'},{city:'Sialkot'},{city:'Gujranwala'},{city:'Multan'},{city:'Bahawalpur'}] }, // VERIFY url
   { id:'chasevalue',  name:'Chase Value',   category:'Lifestyle', url:'https://chasevalue.pk/',  initial:'C', color:'orange', featured:false, stores:[{city:'Karachi',area:'Khalid Bin Waleed Road, North Nazimabad'},{city:'Multan'},{city:'Bahawalpur'},{city:'Islamabad'},{city:'Faisalabad'}] },
@@ -120,7 +121,6 @@ const BRANDS = [
   { id:'hubleather', name:'Hub', category:'Bags', url:'https://hub.com.pk/', initial:'H', color:'navy', featured:false },
   { id:'jafferjees', name:'Jafferjees', category:'Bags', url:'https://jafferjees.com/', initial:'J', color:'orange', featured:false },
   { id:'fiore',       name:'Fioré',      category:'Bags', url:'https://fioure.com/',     initial:'F', color:'navy',   featured:false }, // category not fully confirmed — check this is actually a bags brand
-  { id:'insignia',    name:'Insignia',   category:'Bags', url:'https://insignia.com.pk/', initial:'I', color:'orange', featured:false, stores:[{city:'Rawalpindi'}] }, // VERIFY url
   { id:'obipelle',    name:'Obi Pelle',  category:'Bags', url:'https://obipelle.com/',    initial:'O', color:'teal',   featured:false }, // VERIFY category — "Pelle" is Italian for leather, reasonably confident but confirm
 ];
 
