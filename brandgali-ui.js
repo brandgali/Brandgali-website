@@ -10,7 +10,7 @@ const css = `
 .pop-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center;font-size:12px;font-weight:700;color:var(--muted)}
 .pop-chip{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:999px;padding:7px 12px;font:700 12px Inter,sans-serif;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
 .pop-chip i{color:var(--orange-deep)}
-.search-overlay .search-head input{border:2px solid var(--orange);border-radius:18px;box-shadow:0 0 0 5px #FBE7C6;height:54px;padding:0 16px;font-size:15px;outline:0}
+.search-overlay .search-head input{border:2px solid var(--orange);border-radius:18px;box-shadow:0 0 0 5px #FBE7C6;height:54px;padding:0 16px;font-size:16px;outline:0}
 .ps-title{font:800 12px Inter,sans-serif;letter-spacing:1px;color:var(--muted);margin:22px 4px 12px;display:flex;gap:8px;align-items:center}
 .ps-title i{color:var(--orange-deep)}
 .ps-list{display:flex;flex-wrap:wrap;gap:9px}
@@ -313,7 +313,7 @@ function brandCardV2HTML(b){
   const tags = (live ? '<span class="bc2-tag"><i class="fa-solid fa-fire"></i> Sale Live</span>' : '') + (isNew ? '<span class="bc2-tag new"><i class="fa-solid fa-wand-magic-sparkles"></i> New Arrival</span>' : '');
   return `<article class="bc2">
     <div class="bc2-tags">${tags}</div>
-    <div class="bc2-top">${brandBadgeHTML(b, 52)}<div class="bc2-name"><a href="brand.html?id=${b.id}"><b>${b.name}</b></a><small>${b.category} &bull; Retail</small></div></div>
+    <div class="bc2-top">${brandBadgeHTML(b, 44)}<div class="bc2-name"><a href="brand.html?id=${b.id}"><b>${b.name}</b></a><small>${b.category} &bull; Retail</small></div></div>
     <div class="bc2-chips">${live ? `${verifiedChip(b)}<span class="chip-lt"><i class="fa-regular fa-clock"></i> Limited Time</span>` : ''}</div>
     <div class="bc2-actions">
       ${live ? `<a class="bc2-btn sale" href="brand.html?id=${b.id}"><i class="fa-solid fa-fire"></i> View Sale Deals</a>` : `<a class="bc2-btn grey" href="brand.html?id=${b.id}"><i class="fa-solid fa-tags"></i> Check Sales</a>`}
@@ -368,4 +368,21 @@ function initProductSort(){
 .bc2-actions{margin-top:auto;display:flex;flex-direction:column;gap:8px}
 .alert-row .alert-name{flex:1}
 .alert-row .notify-btn{margin-left:auto;justify-content:center;min-width:104px;flex-shrink:0}
+`; document.head.appendChild(s); })();
+
+/* ---------- v2.2: no focus-zoom on iPhone + more compact brand tiles ---------- */
+(function(){ const s = document.createElement('style'); s.textContent = `
+input,select,textarea{font-size:16px!important}
+.ac2-field input{font-size:16px!important}
+.bc2{min-height:218px!important;padding:12px!important;gap:6px!important;border-radius:18px!important}
+.bc2-tags{min-height:20px!important}
+.bc2-tag{font-size:10px!important;padding:3px 8px!important}
+.bc2-top{min-height:46px!important;gap:8px!important}
+.bc2-top b{font-size:14px!important}.bc2-top small{font-size:11px!important}
+.bc2-chips{min-height:44px!important;gap:4px!important}
+.bc2-chips .chip-ok,.bc2-chips .chip-lt{font-size:10px!important;padding:3px 7px!important}
+.bc2-actions{gap:6px!important}
+.bc2-btn{padding:9px!important;font-size:12px!important;border-radius:10px!important}
+.bc2 .notify-btn{padding:8px!important;font-size:12px!important;border-radius:10px!important}
+.bgrid2{gap:10px!important}
 `; document.head.appendChild(s); })();
