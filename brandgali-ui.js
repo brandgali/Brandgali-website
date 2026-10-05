@@ -113,6 +113,18 @@ const s = document.createElement('style'); s.textContent = css; document.head.ap
 
 /* ---------- price helpers ---------- */
 function parsePKR(v){ if(v==null) return null; const m = String(v).replace(/,/g,'').match(/\d+(\.\d+)?/); return m ? parseFloat(m[0]) : null; }
+/* Safety net for already-saved data: if a brand's typical price is tiny (under Rs 150) it was
+   read in the wrong currency, so hide that brand's prices instead of showing wrong ones. */
+function priceSuspect(b){
+  if(b.__ps !== undefined) return b.__ps;
+  const nums = brandProducts(b).concat(b.products || [], b.newArrivalProducts || []).map(p => parsePKR(p.currentPrice)).filter(n => n > 0).sort((x, y) => x - y);
+  return b.__ps = nums.length > 0 && nums[Math.floor(nums.length / 2)] < 150;
+}
+function cleanPriced(b, p){
+  if(priceSuspect(b)) return { ...p, currentPrice: null, originalPrice: null, discount: null };
+  const a = parsePKR(p.currentPrice), o = parsePKR(p.originalPrice);
+  return (o && a && o <= a) ? { ...p, originalPrice: null, discount: null } : p;
+}
 function productOffPct(p){
   const a = parsePKR(p.currentPrice), o = parsePKR(p.originalPrice);
   if(a && o && o > a) return Math.round((o - a) / o * 100);
@@ -123,12 +135,13 @@ function brandProducts(b){
   return sp.filter(p => p && (p.name || p.image));
 }
 function brandHasItemUnder(b, limit){
-  return isSaleLive(b) && brandProducts(b).concat(b.products || []).some(p => { const n = parsePKR(p.currentPrice); return n && n <= limit; });
+  return isSaleLive(b) && !priceSuspect(b) && brandProducts(b).concat(b.products || []).some(p => { const n = parsePKR(p.currentPrice); return n && n <= limit; });
 }
 
 /* ---------- product card + details popup ---------- */
 window.__PREG = window.__PREG || {}; window.__PN = 0;
 function productCardHTML(b, p, source){
+  p = cleanPriced(b, p);
   const key = b.id + '_' + (++window.__PN); window.__PREG[key] = { b, p };
   const url = p.url || (b.sale && b.sale.sourceUrl) || b.url;
   const off = productOffPct(p);
@@ -148,7 +161,7 @@ function productCardHTML(b, p, source){
     </div></div>`;
 }
 function openProductModal(key){
-  const e = window.__PREG[key]; if(!e) return; const { b, p } = e;
+  const e = window.__PREG[key]; if(!e) return; const b = e.b, p = cleanPriced(e.b, e.p);
   let back = document.getElementById('pmBack');
   if(!back){ document.body.insertAdjacentHTML('beforeend', '<div class="pm-back" id="pmBack"></div><div class="pm-sheet" id="pmSheet"></div>'); back = document.getElementById('pmBack'); back.addEventListener('click', closeProductModal); }
   const url = p.url || (b.sale && b.sale.sourceUrl) || b.url;

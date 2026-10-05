@@ -60,7 +60,7 @@ const BRANDS_DATA_PATH = path.join(__dirname, 'brands-data.js');
 const OUTPUT_PATH = path.join(__dirname, 'sales-status.json');
 
 const MAX_PRODUCTS = 8;       // how many products to show per brand on live-sales.html
-const NEW_ARRIVAL_DAYS = 14;   // a product counts as a "new arrival" if the brand published it within this many days
+const NEW_ARRIVAL_DAYS = 21;   // a product counts as a "new arrival" if the brand published it within this many days
 const REQUEST_TIMEOUT = 12000; // ms before giving up on a single page
 
 // Phrases that indicate an active sale. Checked case-insensitively unless
@@ -135,7 +135,7 @@ function isScrapable(url){
   return true;
 }
 
-async function fetchWithTimeout(url, ms){
+async function fetchWithTimeout(url, ms, extraHeaders){
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), ms || REQUEST_TIMEOUT);
   try{
@@ -145,6 +145,7 @@ async function fetchWithTimeout(url, ms){
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
+        ...(extraHeaders || {}),
       },
       redirect: 'follow',
     });
@@ -237,6 +238,26 @@ function findSalePageUrl(html, baseUrl){
   return null;
 }
 
+/* ---------- Price sanity guard ----------
+   Shopify stores with multi-currency ("Markets") quote prices in the
+   VISITOR's currency, and GitHub's servers are not in Pakistan - so a
+   Rs 17,700 jacket can come back as 82 (US dollars) and then get a
+   "Rs" label stuck on it. Pakistani brands price in PKR, where real
+   items virtually never cost under Rs 150, so if the typical price is
+   tiny we know the currency is wrong and we DROP the prices rather
+   than show wrong ones. The product itself (name, photo, link) is kept. */
+function stripPricesIfSuspicious(products, label){
+  if(!products || !products.length) return products;
+  const nums = products.map(p => parseFloat(String(p.currentPrice || '').replace(/[^0-9.]/g, ''))).filter(n => isFinite(n) && n > 0).sort((a, b) => a - b);
+  if(!nums.length) return products;
+  const median = nums[Math.floor(nums.length / 2)];
+  if(median >= 150) return products;
+  console.log(`     ⚠ ${label}: prices look like a foreign currency (median ${median}) - hiding prices rather than showing wrong ones`);
+  return products.map(p => ({ ...p, currentPrice: null, originalPrice: null, discount: null }));
+}
+// Ask Shopify for the Pakistan storefront (PKR) instead of the server's own country.
+const PK_HEADERS = { 'Cookie': 'localization=PK; cart_currency=PKR', 'Accept-Language': 'en-PK,en;q=0.9' };
+
 /* ---------- New-arrival page finder ---------- */
 const NEW_LINK_PATTERNS = [/new[-_]?arrivals?/i, /\/new[-_]?in\b/i, /whats?[-_]?new/i, /just[-_]?landed/i, /latest[-_]?(arrivals|collection)/i, /\/collections\/new\/?$/i];
 function findNewArrivalsUrl(html, baseUrl){
@@ -291,11 +312,10 @@ function buildProduct({ name, url, image, original, current, currency }){
     name: decodeEntities(name).slice(0, 120),
     url,
     image: image || null,
-    originalPrice: formatPrice(original, currency),
+    originalPrice: (Number(original) > Number(current)) ? formatPrice(original, currency) : null,
     currentPrice: formatPrice(current, currency),
     discount: discountLabel(original, current),
   };
-  if(!p.currentPrice && p.originalPrice){ p.currentPrice = p.originalPrice; p.originalPrice = null; }
   return p;
 }
 
@@ -314,12 +334,12 @@ async function productsFromShopify(salePageUrl, currency, opts){
     const u = new URL(salePageUrl);
     if(!/\/collections\//i.test(u.pathname)) return null;
     u.pathname = u.pathname.replace(/\/$/, '') + '/products.json';
-    u.search = '?limit=' + (opts.maxAgeDays ? 40 : MAX_PRODUCTS) + (opts.sort ? '&sort_by=' + opts.sort : '');
+    u.search = '?limit=40&country=PK' + (opts.sort ? '&sort_by=' + opts.sort : '');
     jsonUrl = u.href;
   }catch(e){ return null; }
 
   try{
-    const res = await fetchWithTimeout(jsonUrl);
+    const res = await fetchWithTimeout(jsonUrl, null, PK_HEADERS);
     if(!res.ok) return null;
     const ct = res.headers.get('content-type') || '';
     if(!ct.includes('json')) return null;
@@ -334,7 +354,13 @@ async function productsFromShopify(salePageUrl, currency, opts){
         const t = new Date(prod.published_at || prod.created_at || 0).getTime();
         if(!t || t < cutoff) continue; // too old to be a "new arrival"
       }
-      const variant = Array.isArray(prod.variants) ? prod.variants[0] : null;
+      // Sold-out products are skipped entirely (a shopper can't buy them).
+      const variants = Array.isArray(prod.variants) ? prod.variants : [];
+      const inStock = variants.filter(v => v && v.available !== false);
+      if(variants.length && !inStock.length) continue;
+      // Use the cheapest variant that is actually in stock, with ITS compare-at price,
+      // not just whichever variant happens to be listed first.
+      const variant = inStock.slice().sort((a, b) => parseFloat(a.price) - parseFloat(b.price))[0] || null;
       const image = Array.isArray(prod.images) && prod.images[0] ? prod.images[0].src : null;
       const current = variant ? variant.price : null;
       const original = variant ? variant.compare_at_price : null;
@@ -344,12 +370,12 @@ async function productsFromShopify(salePageUrl, currency, opts){
         image,
         original,
         current,
-        currency,
+        currency: 'Rs',
       });
       if(p) out.push(p);
       if(out.length >= MAX_PRODUCTS) break;
     }
-    return (out.length || opts.maxAgeDays) ? out : null; // with an age filter, an empty list is a real answer ("nothing new")
+    return (out.length || opts.maxAgeDays) ? stripPricesIfSuspicious(out, new URL(salePageUrl).hostname) : null; // with an age filter, an empty list is a real answer ("nothing new")
   }catch(e){
     return null;
   }
@@ -386,13 +412,21 @@ function productsFromJsonLd(html, pageUrl, currency){
       if(image && typeof image === 'object') image = image.url || image.contentUrl || null;
       try{ image = image ? new URL(image, pageUrl).href : null; }catch(e){ image = null; }
 
+      // highPrice on an AggregateOffer is the dearest VARIANT, not an original price,
+      // so it must never be treated as a "was" price. Only an explicit list/strike price counts.
+      let original = null;
+      const specs = offers && offers.priceSpecification ? [].concat(offers.priceSpecification) : [];
+      const list = specs.find(sp => sp && /list|strike|msrp/i.test(String(sp.priceType || '')));
+      if(list) original = list.price;
+      const cur = offers && offers.priceCurrency;
+      const pkr = cur === 'PKR' || (!cur && currency === 'Rs');
       const p = buildProduct({
         name: node.name,
         url,
         image,
-        original: offers && (offers.highPrice || offers.priceSpecification && offers.priceSpecification.price),
-        current: offers && (offers.price || offers.lowPrice),
-        currency: (offers && offers.priceCurrency === 'PKR') ? 'Rs' : currency,
+        original: pkr ? original : null,
+        current: pkr && offers ? (offers.price || offers.lowPrice) : null, // foreign/unknown currency -> no price shown
+        currency: 'Rs',
       });
       if(p) products.push(p);
     }
@@ -402,7 +436,7 @@ function productsFromJsonLd(html, pageUrl, currency){
     });
   };
   blocks.forEach(visit);
-  return products.length ? products.slice(0, MAX_PRODUCTS) : null;
+  return products.length ? stripPricesIfSuspicious(products.slice(0, MAX_PRODUCTS), new URL(pageUrl).hostname) : null;
 }
 
 /* =====================================================================
