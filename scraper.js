@@ -23,8 +23,11 @@
      live-sales.html.
    - If no match is found: clears any previous "sale" status for that
      brand (so an ended sale disappears from the site on its own).
-     A manually-set "new" (New Arrival) status is left alone, since
-     the scraper only ever looks for sales, not new-arrival wording.
+     A manually-set "new" (New Arrival) status is left alone.
+   - NEW ARRIVALS: also looks for each brand's New Arrivals page (or,
+     on Shopify stores, products published in the last 3 weeks) and
+     writes newArrival / newArrivals into sales-status.json. The site
+     shows a New Arrival tag from that.
    - Writes everything to sales-status.json, which the website reads
      on every page load
 
@@ -57,6 +60,7 @@ const BRANDS_DATA_PATH = path.join(__dirname, 'brands-data.js');
 const OUTPUT_PATH = path.join(__dirname, 'sales-status.json');
 
 const MAX_PRODUCTS = 8;       // how many products to show per brand on live-sales.html
+const NEW_ARRIVAL_DAYS = 21;   // a product counts as a "new arrival" if the brand published it within this many days
 const REQUEST_TIMEOUT = 12000; // ms before giving up on a single page
 
 // Phrases that indicate an active sale. Checked case-insensitively unless
@@ -233,6 +237,28 @@ function findSalePageUrl(html, baseUrl){
   return null;
 }
 
+/* ---------- New-arrival page finder ---------- */
+const NEW_LINK_PATTERNS = [/new[-_]?arrivals?/i, /\/new[-_]?in\b/i, /whats?[-_]?new/i, /just[-_]?landed/i, /latest[-_]?(arrivals|collection)/i, /\/collections\/new\/?$/i];
+function findNewArrivalsUrl(html, baseUrl){
+  const hrefs = [];
+  const re = /<a\b[^>]*href=["']([^"']+)["']/gi;
+  let m;
+  while((m = re.exec(html)) !== null) hrefs.push(m[1]);
+  for(const pattern of NEW_LINK_PATTERNS){
+    for(const href of hrefs){
+      if(!pattern.test(href)) continue;
+      if(/\/(cart|account|login|blogs?|pages\/(privacy|terms))/i.test(href)) continue;
+      try{
+        const abs = new URL(decodeEntities(href), baseUrl);
+        if(abs.hostname !== new URL(baseUrl).hostname) continue;
+        abs.hash = '';
+        return abs.href;
+      }catch(e){ /* ignore malformed href */ }
+    }
+  }
+  return null;
+}
+
 /* ---------- Price helpers ---------- */
 
 function detectCurrency(html){
@@ -281,13 +307,14 @@ function buildProduct({ name, url, image, original, current, currency }){
    it gives exact titles, images, current price and compare-at (original)
    price — no guessing at all.
 ===================================================================== */
-async function productsFromShopify(salePageUrl, currency){
+async function productsFromShopify(salePageUrl, currency, opts){
+  opts = opts || {};
   let jsonUrl;
   try{
     const u = new URL(salePageUrl);
     if(!/\/collections\//i.test(u.pathname)) return null;
     u.pathname = u.pathname.replace(/\/$/, '') + '/products.json';
-    u.search = '?limit=' + MAX_PRODUCTS;
+    u.search = '?limit=' + (opts.maxAgeDays ? 40 : MAX_PRODUCTS) + (opts.sort ? '&sort_by=' + opts.sort : '');
     jsonUrl = u.href;
   }catch(e){ return null; }
 
@@ -301,7 +328,12 @@ async function productsFromShopify(salePageUrl, currency){
 
     const origin = new URL(salePageUrl).origin;
     const out = [];
+    const cutoff = opts.maxAgeDays ? Date.now() - opts.maxAgeDays * 86400000 : null;
     for(const prod of data.products){
+      if(cutoff){
+        const t = new Date(prod.published_at || prod.created_at || 0).getTime();
+        if(!t || t < cutoff) continue; // too old to be a "new arrival"
+      }
       const variant = Array.isArray(prod.variants) ? prod.variants[0] : null;
       const image = Array.isArray(prod.images) && prod.images[0] ? prod.images[0].src : null;
       const current = variant ? variant.price : null;
@@ -317,7 +349,7 @@ async function productsFromShopify(salePageUrl, currency){
       if(p) out.push(p);
       if(out.length >= MAX_PRODUCTS) break;
     }
-    return out.length ? out : null;
+    return (out.length || opts.maxAgeDays) ? out : null; // with an age filter, an empty list is a real answer ("nothing new")
   }catch(e){
     return null;
   }
@@ -536,6 +568,54 @@ async function sendSaleNotification(brand, snippet, landingUrl){
   }
 }
 
+/* =====================================================================
+   NEW ARRIVALS — real products only, never invented.
+   Order of attempts:
+     1. A dedicated new-arrivals page linked from the homepage
+        (Shopify products.json, then structured data). Anything listed
+        on the brand's own "New Arrivals" page counts.
+     2. Common Shopify collection names (/collections/new-arrivals ...).
+     3. Shopify's newest products (/collections/all, newest first) that
+        the brand published within the last NEW_ARRIVAL_DAYS days.
+   Returns { ok, products, sourceUrl }. ok=false means "couldn't tell"
+   (site blocked us etc.) - the caller keeps the previous result instead
+   of wiping it. ok=true with no products means "checked, nothing new".
+===================================================================== */
+async function collectNewArrivals(brand, homepageHtml){
+  const currency = detectCurrency(homepageHtml || '');
+  const tryUrl = async (u) => {
+    let p = await productsFromShopify(u, currency);
+    if(!p){
+      try{
+        const res = await fetchWithTimeout(u);
+        if(res.ok) p = productsFromJsonLd(await res.text(), u, currency);
+      }catch(e){ /* ignore */ }
+    }
+    return p && p.length ? p : null;
+  };
+
+  // 1. dedicated page linked from the homepage
+  const linked = homepageHtml ? findNewArrivalsUrl(homepageHtml, brand.url) : null;
+  if(linked){
+    const p = await tryUrl(linked);
+    if(p) return { ok: true, products: p, sourceUrl: linked };
+  }
+  // 2. usual Shopify collection handles
+  for(const handle of ['new-arrivals', 'new-arrival', 'new-in', 'new', 'just-landed']){
+    let u; try{ u = new URL('/collections/' + handle, brand.url).href; }catch(e){ break; }
+    const p = await productsFromShopify(u, currency);
+    if(p && p.length) return { ok: true, products: p, sourceUrl: u };
+  }
+  // 3. newest products that are genuinely recent
+  try{
+    const allUrl = new URL('/collections/all', brand.url).href;
+    const fresh = await productsFromShopify(allUrl, currency, { sort: 'created-descending', maxAgeDays: NEW_ARRIVAL_DAYS });
+    if(fresh) return { ok: true, products: fresh.slice(0, MAX_PRODUCTS), sourceUrl: allUrl };
+  }catch(e){ /* fall through */ }
+
+  return { ok: false, products: [], sourceUrl: null };
+}
+
 async function main(){
   const brands = extractBrandsFromDataFile();
   const scrapable = brands.filter(b => isScrapable(b.url));
@@ -582,6 +662,20 @@ async function main(){
       console.log(`     ↳ ${general.products.length} general product(s) read from ${general.sourceUrl}`);
     }
 
+    // New arrivals - collected every run, sale or not.
+    const prevEntry = existing[brand.id] || {};
+    const arr = await collectNewArrivals(brand, result.html);
+    let arrivalFields;
+    if(arr.ok){
+      arrivalFields = { newArrival: arr.products.length > 0, newArrivals: arr.products, newArrivalsSourceUrl: arr.sourceUrl };
+      if(arr.products.length) console.log(`     ↳ ${arr.products.length} new arrival(s) from ${arr.sourceUrl}`);
+    } else {
+      // couldn't tell today - keep whatever we knew before rather than flip-flopping
+      arrivalFields = { newArrival: !!prevEntry.newArrival, newArrivals: prevEntry.newArrivals || [], newArrivalsSourceUrl: prevEntry.newArrivalsSourceUrl || null };
+    }
+    // a New Arrival badge set by hand in admin.html is never cleared by the scraper
+    if(prevEntry.source === 'manual' && prevEntry.newArrival) arrivalFields.newArrival = true;
+
     if(result.hasSale){
       const wasAlreadyOnSale = existing[brand.id] && existing[brand.id].status === 'sale';
       console.log(`  🔥 ${brand.id}: sale detected — "${result.snippet}"`);
@@ -610,6 +704,7 @@ async function main(){
         // under Visit Official Site / Notify Me, sale or no sale.
         products: productsForOutput,
         productsSourceUrl: productsSourceForOutput,
+        ...arrivalFields,
         checkedAt: now,
         source: 'auto',
       };
@@ -625,10 +720,10 @@ async function main(){
       if(prev && prev.status === 'new' && prev.source === 'manual'){
         // don't clobber a manually-set "New Arrival" badge — scraper only handles sales
         console.log(`  ·  ${brand.id}: no sale found, keeping manual "New Arrival" status`);
-        results[brand.id] = { ...prev, products: productsForOutput, productsSourceUrl: productsSourceForOutput, checkedAt: now };
+        results[brand.id] = { ...prev, products: productsForOutput, productsSourceUrl: productsSourceForOutput, ...arrivalFields, checkedAt: now };
       } else {
         console.log(`  -  ${brand.id}: no sale found`);
-        if(productsForOutput.length){
+        if(productsForOutput.length || arrivalFields.newArrival){
           // No sale, but we do have real products to show on brand.html —
           // still worth an entry for that alone.
           results[brand.id] = {
@@ -636,6 +731,7 @@ async function main(){
             live: null,
             products: productsForOutput,
             productsSourceUrl: productsSourceForOutput,
+            ...arrivalFields,
             checkedAt: now,
             source: 'auto',
           };

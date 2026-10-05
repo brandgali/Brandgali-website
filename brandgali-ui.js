@@ -135,7 +135,7 @@ function productCardHTML(b, p, source){
   const nm = (p.name || 'View product').replace(/"/g,'&quot;');
   const img = p.image ? `<img src="${p.image}" alt="${nm}" loading="lazy" onerror="this.style.display='none'">` : '';
   const price = p.currentPrice ? `<span class="p-now">${p.currentPrice}</span>${p.originalPrice ? `<span class="p-was">${p.originalPrice}</span>` : ''}` : (p.discount ? `<span class="p-now">${p.discount}</span>` : '');
-  return `<div class="p-card">
+  return `<div class="p-card" data-idx="${window.__PN}" data-price="${parsePKR(p.currentPrice) || ''}" data-off="${off || 0}">
     <div class="p-img" data-open-product="${key}">${img}<span class="p-detail-badge"><i class="fa-solid fa-eye"></i> Details</span></div>
     <div class="p-body">
       <div class="p-name">${p.name || 'View product'}</div>
@@ -187,24 +187,59 @@ async function followBrands(ids){
 }
 
 /* ---------- search: popular searches + smarter queries ---------- */
-const POPULAR_SEARCHES = [
-  ['Unstitched Lawn','Lawn','fa-sun','lawn'],['Khussa & Chappal','Footwear','fa-shoe-prints','khussa'],
-  ['Stitched Kurti','Pret','fa-shirt','kurti'],['Perfumes & Attar','Fragrance','fa-spray-can-sparkles','perfume'],
-  ['Bedsheets & Home','Home','fa-bed','bedsheet'],['Under PKR 3,000','Budget','fa-wallet','under 3000'],
-  ['Flat 50% Off','Mega Deals','fa-fire','50%'],['Polo Shirts','Trending','fa-shirt','polo'],
-  ['30% Off','Popular','fa-percent','30%'],['Flat 40% Off','Hot','fa-bolt','40%'],
-];
+/* ---- search over real product names (sale items, catalogue items, new arrivals) ---- */
+const _normS = t => String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+function _qTokens(q){ return String(q).toLowerCase().split(/\s+/).map(t => _normS(t).replace(/s$/, '')).filter(Boolean); }
+function productNameMatches(name, q){
+  const n = _normS(name), toks = _qTokens(q);
+  return toks.length > 0 && toks.every(t => n.includes(t));
+}
+function allProductsOf(b){ return brandProducts(b).concat(b.products || [], b.newArrivalProducts || []).filter(p => p && p.name); }
+function findProductMatch(b, q){ return allProductsOf(b).find(p => productNameMatches(p.name, q)); }
+
 const _origSearchBrands = searchBrands;
 searchBrands = function(query){
   const q = (query || '').toLowerCase().trim();
   let m = q.match(/(\d{1,2})\s*%/);
-  if(m){ const n = +m[1]; return BRANDS.map(b => ({ b, pct: getMaxDiscountPercent(b) })).filter(x => x.pct !== null && x.pct >= n).sort((x,y) => y.pct - x.pct).map(x => ({ brand: x.b, reason: `Up to ${x.pct}% off` })); }
+  if(m){
+    // brands whose best discount is AT LEAST n%, lowest qualifying % first (30% off -> 30s on top, 50s and 70s after)
+    const n = +m[1];
+    return BRANDS.map(b => ({ b, pct: getMaxDiscountPercent(b) })).filter(x => x.pct !== null && x.pct >= n)
+      .sort((x, y) => x.pct - y.pct || x.b.name.localeCompare(y.b.name)).map(x => ({ brand: x.b, reason: `Up to ${x.pct}% off` }));
+  }
   m = q.match(/under\s*(?:pkr|rs\.?)?\s*([\d,]+)\s*(k?)/);
-  if(m){ let n = parseInt(m[1].replace(/,/g,''), 10); if(m[2] || n < 100) n *= 1000; return BRANDS.filter(b => brandHasItemUnder(b, n)).map(b => ({ brand: b, reason: `Items under PKR ${n.toLocaleString('en-PK')}` })); }
-  return _origSearchBrands(query);
+  if(m){ let n = parseInt(m[1].replace(/,/g, ''), 10); if(m[2] || n < 100) n *= 1000; return BRANDS.filter(b => brandHasItemUnder(b, n)).map(b => ({ brand: b, reason: `Items under PKR ${n.toLocaleString('en-PK')}` })); }
+  const out = _origSearchBrands(query), seen = new Set(out.map(r => r.brand.id));
+  BRANDS.forEach(b => {
+    if(seen.has(b.id)) return;
+    const p = findProductMatch(b, q);
+    if(p) out.push({ brand: b, reason: `has "${p.name}"` });
+  });
+  return out;
 };
+
+/* ---- popular searches: only terms that really return brands right now ---- */
+const POP_CANDIDATES = [
+  ['Printed Lawn','Lawn','fa-sun','printed lawn'],['Embroidered Lawn','Lawn','fa-sun','embroidered lawn'],
+  ['Co-ord Set','Pret','fa-shirt','co-ord set'],['Embroidered Shirt','Pret','fa-shirt','embroidered shirt'],
+  ['Kurta','Menswear','fa-shirt','kurta'],['Tapered Pants','Bottoms','fa-shirt','tapered pants'],['Trousers','Bottoms','fa-shirt','trouser'],
+  ['Sweatshirt','Winter','fa-shirt','sweatshirt'],['Hoodie','Winter','fa-shirt','hoodie'],['Polo Shirts','Trending','fa-shirt','polo'],
+  ['T-Shirts','Casual','fa-shirt','t-shirt'],['Jeans','Denim','fa-shirt','jeans'],['Shawl','Winter','fa-shirt','shawl'],
+  ['Sneakers','Footwear','fa-shoe-prints','sneaker'],['Slippers','Footwear','fa-shoe-prints','slipper'],['Sandals','Footwear','fa-shoe-prints','sandal'],
+  ['Khussa','Footwear','fa-shoe-prints','khussa'],['Heels','Footwear','fa-shoe-prints','heel'],
+  ['Perfume','Fragrance','fa-spray-can-sparkles','perfume'],['Bedsheet','Home','fa-bed','bed sheet'],['Cushion Covers','Home','fa-bed','cushion'],
+  ['Lunch Box','Home','fa-bed','lunch box'],['Handbags','Bags','fa-bag-shopping','bag'],
+];
+const POP_DISCOUNTS = [['Flat 50% Off','Mega Deals','fa-fire','50%'],['Flat 40% Off','Hot','fa-bolt','40%'],['30% Off','Popular','fa-percent','30%'],['Under PKR 3,000','Budget','fa-wallet','under 3000']];
+function popularList(limit){
+  const items = POP_CANDIDATES.map(c => ({ c, n: searchBrands(c[3]).length })).filter(x => x.n > 0).sort((a, b) => b.n - a.n).slice(0, limit || 8).map(x => x.c);
+  const disc = POP_DISCOUNTS.filter(d => searchBrands(d[3]).length > 0);
+  return { items, disc };
+}
 function popularSearchesHTML(){
-  return `<div class="ps-title"><i class="fa-solid fa-arrow-trend-up"></i> POPULAR SEARCHES</div><div class="ps-list">${POPULAR_SEARCHES.map(s => `<span class="ps-chip" data-q="${s[3]}"><i class="fa-solid ${s[2]}"></i>${s[0]}<em>${s[1]}</em></span>`).join('')}</div>`;
+  const { items, disc } = popularList(8);
+  const chip = s => `<span class="ps-chip" data-q="${s[3]}"><i class="fa-solid ${s[2]}"></i>${s[0]}<em>${s[1]}</em></span>`;
+  return `<div class="ps-title"><i class="fa-solid fa-arrow-trend-up"></i> POPULAR SEARCHES</div><div class="ps-list">${items.map(chip).join('')}${disc.map(chip).join('')}</div>`;
 }
 function openSearchWith(q){
   document.getElementById('searchBtn')?.click();
@@ -271,18 +306,66 @@ refreshNotifyButtonsUI = async function(){
 
 /* ---------- shared card pieces ---------- */
 function verifiedChip(b){
-  if(!b.saleCheckedAt) return '<span class="chip-ok"><i class="fa-solid fa-circle-check"></i> Verified</span>';
-  const hrs = (Date.now() - new Date(b.saleCheckedAt).getTime()) / 3600000;
-  return `<span class="chip-ok"><i class="fa-solid fa-circle-check"></i> ${hrs < 36 ? 'Verified Today' : 'Verified'}</span>`;
+  return '<span class="chip-ok"><i class="fa-solid fa-circle-check"></i> Verified</span>';
 }
 function brandCardV2HTML(b){
   const live = isSaleLive(b), isNew = isNewArrival(b);
-  const tag = live ? '<span class="bc2-tag"><i class="fa-solid fa-fire"></i> Sale Live</span>' : (isNew ? '<span class="bc2-tag new">New</span>' : '');
-  return `<article class="bc2">${tag}
-    <div class="bc2-top">${brandBadgeHTML(b, 52)}<div><a href="brand.html?id=${b.id}"><b>${b.name}</b></a><small>${b.category} &bull; Retail</small></div></div>
-    ${live ? `<div>${verifiedChip(b)}<span class="chip-lt"><i class="fa-regular fa-clock"></i> Limited Time</span></div>` : ''}
-    <div style="margin-top:auto;display:flex;flex-direction:column;gap:8px">
+  const tags = (live ? '<span class="bc2-tag"><i class="fa-solid fa-fire"></i> Sale Live</span>' : '') + (isNew ? '<span class="bc2-tag new"><i class="fa-solid fa-wand-magic-sparkles"></i> New Arrival</span>' : '');
+  return `<article class="bc2">
+    <div class="bc2-tags">${tags}</div>
+    <div class="bc2-top">${brandBadgeHTML(b, 52)}<div class="bc2-name"><a href="brand.html?id=${b.id}"><b>${b.name}</b></a><small>${b.category} &bull; Retail</small></div></div>
+    <div class="bc2-chips">${live ? `${verifiedChip(b)}<span class="chip-lt"><i class="fa-regular fa-clock"></i> Limited Time</span>` : ''}</div>
+    <div class="bc2-actions">
       ${live ? `<a class="bc2-btn sale" href="brand.html?id=${b.id}"><i class="fa-solid fa-fire"></i> View Sale Deals</a>` : `<a class="bc2-btn grey" href="brand.html?id=${b.id}"><i class="fa-solid fa-tags"></i> Check Sales</a>`}
       ${notifyButtonHTML(b)}
     </div></article>`;
 }
+
+
+/* ---------- new-arrival product data (if the daily check provides it) ---------- */
+const _loadSS = loadSalesStatus;
+loadSalesStatus = async function(){
+  await _loadSS();
+  const m = window.SALES_STATUS || {};
+  BRANDS.forEach(b => { const e = m[b.id]; b.newArrivalProducts = (e && Array.isArray(e.newArrivals)) ? e.newArrivals : []; if(b.newArrivalProducts.length) b.newArrival = true; });
+};
+
+/* ---------- sort for product grids (brand page) ---------- */
+function initProductSort(){
+  const grids = document.querySelectorAll('#brandContent .product-grid');
+  const n = document.querySelectorAll('#brandContent .p-card').length;
+  if(!grids.length || n < 2) return;
+  grids[0].insertAdjacentHTML('beforebegin', `<div class="bg-sort" style="justify-content:space-between;"><span style="color:var(--navy);">${n} item${n === 1 ? '' : 's'}</span><label>Sort By: <select id="prodSort"><option value="def">Featured First</option><option value="plow">Lowest Price First</option><option value="phigh">Highest Price First</option><option value="dhigh">Highest Discount First</option><option value="dlow">Lowest Discount First</option></select></label></div>`);
+  document.getElementById('prodSort').addEventListener('change', e => {
+    const v = e.target.value, price = c => parseFloat(c.dataset.price) || null, off = c => +c.dataset.off || 0;
+    grids.forEach(g => {
+      const cards = Array.from(g.children);
+      cards.sort((a, b) => {
+        if(v === 'plow') return (price(a) ?? Infinity) - (price(b) ?? Infinity);
+        if(v === 'phigh') return (price(b) ?? -1) - (price(a) ?? -1);
+        if(v === 'dhigh') return off(b) - off(a);
+        if(v === 'dlow') return (off(a) || Infinity) - (off(b) || Infinity);
+        return a.dataset.idx - b.dataset.idx;
+      });
+      cards.forEach(c => g.appendChild(c));
+    });
+  });
+}
+
+/* ---------- v2.1 style fixes ---------- */
+(function(){ const s = document.createElement('style'); s.textContent = `
+.account-modal .ac2-field input{padding:14px 46px 14px 46px!important;margin:0!important;height:auto!important;border-radius:14px!important;width:100%!important}
+.account-modal .ac2-field>i{z-index:2;pointer-events:none;font-size:15px}
+.account-modal .ac2-field>i.eye{pointer-events:auto}
+.bgrid2{grid-auto-rows:1fr;align-items:stretch}
+.bc2{height:100%;box-sizing:border-box;min-height:262px}
+.bc2-tags{display:flex;justify-content:flex-end;gap:5px;flex-wrap:wrap;min-height:26px}
+.bc2-tag{align-self:auto;white-space:nowrap}
+.bc2-top{min-height:56px}.bc2-top .brand-badge,.bc2-top img{flex-shrink:0}
+.bc2-name{min-width:0}.bc2-name b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bc2-chips{min-height:58px;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.bc2-chips .chip-ok,.bc2-chips .chip-lt{margin-right:0}
+.bc2-actions{margin-top:auto;display:flex;flex-direction:column;gap:8px}
+.alert-row .alert-name{flex:1}
+.alert-row .notify-btn{margin-left:auto;justify-content:center;min-width:104px;flex-shrink:0}
+`; document.head.appendChild(s); })();

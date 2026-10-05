@@ -539,7 +539,7 @@ function renderBrandPage(){
     <div style="text-align:center;margin:16px;"><a class="btn" href="live-sales.html"><i class="fa-solid fa-fire"></i> Browse Brands On Sale Today &rarr;</a></div>
     ${generalProductsHTML(b)}`;
   container.innerHTML = `
-    <div class="bs-head">${brandBadgeHTML(b, 64)}<div><h1>${b.name} <i class="fa-solid fa-circle-check"></i></h1><small>${b.category} &bull; Retail Brand${b.stores.length ? ' &bull; In-Store &amp; Online' : ''}</small></div></div>
+    <div class="bs-head">${brandBadgeHTML(b, 64)}<div><h1>${b.name} <i class="fa-solid fa-circle-check"></i></h1><small>${b.category} &bull; Retail Brand${b.stores.length ? ' &bull; In-Store &amp; Online' : ''}</small>${isNewArrival(b) ? '<div style="margin-top:6px;"><span class="bc2-tag new"><i class="fa-solid fa-wand-magic-sparkles"></i> New Arrival</span></div>' : ''}</div></div>
     ${b.description ? `<p class="brand-desc">${b.description}</p>` : ''}
     ${salePart}
     <a class="bs-visit" href="${b.url}" target="_blank" rel="noopener" data-gtm-brand="${b.id}" data-gtm-name="${b.name}" data-gtm-category="${b.category}" data-gtm-source="brand_page_visit">Visit official ${b.name} store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -547,6 +547,7 @@ function renderBrandPage(){
     ${b.stores.length ? `<div class="section"><div class="section-head"><h2><i class="fa-solid fa-location-dot"></i>Store Locations</h2></div>${storesListHTML(b)}</div>` : ''}
     <div class="section">${reportIncorrectLinkHTML(b)}</div>
   `;
+  initProductSort();
 }
 
 loadSalesStatus().then(() => {

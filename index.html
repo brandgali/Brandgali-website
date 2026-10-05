@@ -420,10 +420,6 @@ img{max-width:100%;display:block;}
       <button class="hs-tab active" data-tab="all" type="button"><i class="fa-solid fa-store"></i> All High Street</button>
       <button class="hs-tab" data-tab="fol" type="button"><i class="fa-solid fa-heart"></i> My Followed Brands <span class="cnt" id="folCnt">0</span></button>
     </div>
-    <div class="al-card">
-      <div class="row"><div class="ic"><i class="fa-solid fa-bell"></i></div><div><h4>Instant Morning Sale Alerts <span><i class="fa-solid fa-bolt"></i> Real-Time</span></h4><p>Receive an instant browser notification the minute Sapphire, Gul Ahmed, or your followed brands drop a sale.</p></div></div>
-      <button class="btn btn-block" id="turnOnAlerts" type="button"><i class="fa-solid fa-bolt"></i> Turn On Alerts</button>
-    </div>
     <div class="fp" id="followedPanel" style="display:none;"></div>
     <div id="highStreet">
     
@@ -435,6 +431,11 @@ img{max-width:100%;display:block;}
       </div>
       <div class="rail" id="liveSalesRail"></div>
     </section>
+
+    <div class="al-card" style="margin:6px 16px 8px;">
+      <div class="row"><div class="ic"><i class="fa-solid fa-bell"></i></div><div><h4>Instant Morning Sale Alerts <span><i class="fa-solid fa-bolt"></i> Real-Time</span></h4><p>Receive an instant browser notification the minute Sapphire, Gul Ahmed, or your followed brands drop a sale.</p></div></div>
+      <button class="btn btn-block" id="turnOnAlerts" type="button"><i class="fa-solid fa-bolt"></i> Turn On Alerts</button>
+    </div>
 
     <section class="section">
       <div class="section-head">
@@ -660,11 +661,12 @@ function renderCollections(){
   const grid = document.getElementById('collectionsGrid');
   const liveCount = BRANDS.filter(isSaleLive).length;
   const newCount = BRANDS.filter(isNewArrival).length;
+  const newItems = BRANDS.reduce((n, b) => n + ((b.newArrivalProducts || []).length), 0);
   const recentCount = BRANDS.filter(b => isRecentlyAdded(b)).length;
 
   const collections = [
     { tag:'Live Sales', title:'Sales Live Right Now', count:`${liveCount} brand${liveCount===1?'':'s'} on sale`, href:'live-sales.html', bg:'linear-gradient(110deg,#F08A1E,#F5A623)' },
-    { tag:'New Arrivals', title:'New Arrivals', count:`${newCount} brand${newCount===1?'':'s'} with new stock`, href:'brands.html?filter=new', bg:'linear-gradient(110deg,#0B7D68,#0EA98B)' },
+    { tag:'New Arrivals', title:'New Arrivals', count: newItems ? `${newItems} new arrival${newItems===1?'':'s'} across ${newCount} brand${newCount===1?'':'s'}` : `${newCount} brand${newCount===1?'':'s'} with new arrivals`, href:'brands.html?filter=new', bg:'linear-gradient(110deg,#0B7D68,#0EA98B)' },
     { tag:'Just Joined', title:'New Additions to BrandGali', count: recentCount ? `${recentCount} brand${recentCount===1?'':'s'} added recently` : 'Check back soon', href:'brands.html?filter=recent', bg:'linear-gradient(110deg,#1B2A5E,#3A4E92)' },
     { tag:'Directory', title:'Brands Directory', count:`All ${BRANDS.length} brands`, href:'brands.html', bg:'linear-gradient(110deg,#59616B,#8B93A0)' },
   ];
@@ -790,6 +792,12 @@ function renderFollowedPanel(){
   }
 }
 function initHomeV2(){
+  (function(){
+    const row = document.querySelector('.pop-row'); if(!row) return;
+    const { items, disc } = popularList(4);
+    const list = items.concat(disc.filter(d => d[3] !== '40%')).slice(0, 6);
+    row.innerHTML = '<span><i class="fa-solid fa-arrow-trend-up" style="color:var(--orange-deep)"></i> Popular:</span>' + list.map(s => `<button class="pop-chip" type="button" data-q="${s[3]}"><i class="fa-solid ${s[2]}"></i>${s[0]}</button>`).join('');
+  })();
   document.querySelectorAll('.pop-chip').forEach(c => c.addEventListener('click', () => openSearchWith(c.dataset.q)));
   const tabs = document.querySelectorAll('.hs-tab');
   const setTab = t => {

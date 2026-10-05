@@ -511,22 +511,21 @@ function clearSpecialFilter(){
 }
 
 
-let bgTab = activeSpecialFilter === 'recent' ? 'fresh' : 'all';
-let bgChip = activeCategory !== 'All' ? 'cat:' + activeCategory : ({stores:'stores', new:'new', top:'flat50'})[activeSpecialFilter] || null;
+let bgTab = activeSpecialFilter === 'recent' ? 'fresh' : activeSpecialFilter === 'new' ? 'new' : 'all';
+let bgChip = activeCategory !== 'All' ? 'cat:' + activeCategory : ({stores:'stores', top:'flat50'})[activeSpecialFilter] || null;
 let bgSort = 'az';
 const pctOf = b => getMaxDiscountPercent(b) || 0;
-const BG_TABS = [['all','All','fa-store',()=>true],['featured','Featured','fa-star',b=>b.featured],['fresh','Fresh Drops','fa-wand-magic-sparkles',b=>isRecentlyAdded(b)],['sale','On Sale','fa-fire',isSaleLive]];
+const BG_TABS = [['all','All','fa-store',()=>true],['featured','Featured','fa-star',b=>b.featured],['new','New Arrivals','fa-wand-magic-sparkles',isNewArrival],['fresh','Fresh Drops','fa-wand-magic-sparkles',b=>isRecentlyAdded(b)],['sale','On Sale','fa-fire',isSaleLive]];
 function bgChips(){
   return [['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
     .concat(CATEGORIES.map(c => ['cat:'+c.name, c.name, c.icon, b=>b.category===c.name]))
-    .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30],['new','New Arrivals','fa-wand-magic-sparkles',isNewArrival],['stores','In-Store','fa-shop',b=>b.stores.length]]);
+    .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30],['stores','In-Store','fa-shop',b=>b.stores.length]]);
 }
 function renderFilters(){
   const row = document.getElementById('filterRow'); row.className = 'bg-filters';
   const chips = bgChips();
-  row.innerHTML = `<div class="bg-scroll">${BG_TABS.map(t => `<button class="filter-chip${t[0]===bgTab?' active':''}" data-tab="${t[0]}"><i class="fa-solid ${t[2]}"></i> ${t[1]} (${BRANDS.filter(t[3]).length})</button>`).join('')}</div>
-    <div class="bg-scroll">${chips.map(c => `<button class="filter-chip${c[0]===bgChip?' active':''}" data-chip="${c[0]}"><i class="fa-solid ${c[2]}"></i> ${c[1]}${c[0].startsWith('cat:') ? ' (' + BRANDS.filter(c[3]).length + ')' : ''}</button>`).join('')}</div>
-    <div class="bg-sort"><label>Sort By: <select id="bgSort"><option value="az">Brand A-Z</option><option value="za">Brand Z-A</option><option value="discount">Highest Discount</option><option value="sale">On Sale First</option></select></label></div>`;
+  row.innerHTML = `<div class="bg-scroll">${BG_TABS.map(t => `<button class="filter-chip${t[0]===bgTab?' active':''}" data-tab="${t[0]}"><i class="fa-solid ${t[2]}"></i> ${t[1]} (${BRANDS.filter(t[3]).length})</button>`).join('')}<span style="width:1px;background:var(--line);flex-shrink:0;margin:4px 2px;"></span>${chips.map(c => `<button class="filter-chip${c[0]===bgChip?' active':''}" data-chip="${c[0]}"><i class="fa-solid ${c[2]}"></i> ${c[1]}${c[0].startsWith('cat:') ? ' (' + BRANDS.filter(c[3]).length + ')' : ''}</button>`).join('')}</div>
+    <div class="bg-sort"><label>Sort By: <select id="bgSort"><option value="az">Brand A-Z</option><option value="za">Brand Z-A</option><option value="discount">Highest Discount</option><option value="dlow">Lowest Discount First</option><option value="sale">On Sale First</option></select></label></div>`;
   document.getElementById('bgSort').value = bgSort;
   row.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { bgTab = b.dataset.tab; renderFilters(); renderGrid(); }));
   row.querySelectorAll('[data-chip]').forEach(b => b.addEventListener('click', () => { bgChip = bgChip === b.dataset.chip ? null : b.dataset.chip; renderFilters(); renderGrid(); }));
@@ -536,6 +535,7 @@ function renderGrid(){
   let list = BRANDS.filter(BG_TABS.find(t => t[0] === bgTab)[3]);
   const chip = bgChips().find(c => c[0] === bgChip); if(chip) list = list.filter(chip[3]);
   if(bgSort === 'za') list.sort((a, b) => b.name.localeCompare(a.name));
+  else if(bgSort === 'dlow') list.sort((a, b) => (pctOf(a) || Infinity) - (pctOf(b) || Infinity) || a.name.localeCompare(b.name));
   else if(bgSort === 'discount') list.sort((a, b) => pctOf(b) - pctOf(a) || a.name.localeCompare(b.name));
   else if(bgSort === 'sale') list.sort((a, b) => (isSaleLive(b) ? 1 : 0) - (isSaleLive(a) ? 1 : 0) || a.name.localeCompare(b.name));
   else list.sort((a, b) => a.name.localeCompare(b.name));
