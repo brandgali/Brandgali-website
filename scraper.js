@@ -60,7 +60,7 @@ const BRANDS_DATA_PATH = path.join(__dirname, 'brands-data.js');
 const OUTPUT_PATH = path.join(__dirname, 'sales-status.json');
 
 const MAX_PRODUCTS = 8;       // how many products to show per brand on live-sales.html
-const NEW_ARRIVAL_DAYS = 21;   // a product counts as a "new arrival" if the brand published it within this many days
+const NEW_ARRIVAL_DAYS = 10;   // a product counts as a "new arrival" if the brand published it within this many days
 const REQUEST_TIMEOUT = 12000; // ms before giving up on a single page
 
 // Phrases that indicate an active sale. Checked case-insensitively unless
