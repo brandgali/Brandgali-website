@@ -431,3 +431,113 @@ input,select,textarea{font-size:16px!important}
     return `<img src="${chain[0]}" data-chain="${chain.slice(1).join(' ')}" data-px="${px}" data-bg="${bg}" data-ini="${b.initial}" alt="${b.name} logo" referrerpolicy="no-referrer" onerror="bgLogoFail(this)" onload="bgLogoLoad(this)" style="width:${px}px;height:${px}px;border-radius:50%;object-fit:contain;background:#F0F1F4;flex-shrink:0;padding:2px;box-sizing:border-box;border:1px solid var(--line);">`;
   };
 })();
+
+/* =====================================================================
+   RESPONSIVE LAYOUT: phone (as designed) / tablet / laptop & desktop.
+   Phones keep the exact mobile layout; wider screens get a real desktop
+   page: full-width header with nav links, wide content, multi-column grids.
+===================================================================== */
+(function(){
+  const s = document.createElement('style'); s.textContent = `
+.dt-nav{display:none}
+
+/* ---------- tablet & landscape phones: 600-899px ---------- */
+@media (min-width:600px) and (max-width:899px){
+  .shell{max-width:760px!important}
+  .bottom-nav{width:min(760px,100%)!important}
+  .bgrid2{grid-template-columns:repeat(3,1fr)!important}
+  .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .cat-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+  .p-card .p-img{height:150px}
+}
+
+/* ---------- laptop & desktop: 900px and up ---------- */
+@media (min-width:900px){
+  body{background:var(--cream)!important}
+  .shell{max-width:none!important;width:100%;box-shadow:none!important;background:var(--cream)!important;padding-bottom:0!important}
+  .bottom-nav{display:none!important}
+
+  /* header: full-width bar, content centred at 1200px, nav links inline */
+  .ticker-bar{max-width:none!important;margin:0!important}
+  .topbar{max-width:none!important;margin:0!important;height:76px!important;padding:10px max(32px,calc((100% - 1200px)/2))!important;gap:28px}
+  .logo-link img{height:46px!important}
+  .dt-nav{display:flex;gap:6px;margin-right:auto;margin-left:18px}
+  .dt-nav a{padding:10px 16px;border-radius:999px;font:700 15px Inter,sans-serif;color:var(--navy)}
+  .dt-nav a:hover{background:#F1EBDD}
+  .dt-nav a.active{background:#FDEBD3;color:var(--orange-deep)}
+  .icon-btn{width:44px!important;height:44px!important;font-size:16px!important;cursor:pointer}
+
+  /* everything below the header lives in a centred 1200px column */
+  .hero,.section,.hs-tabs,.al-card,.fp,.app-banner,.mini-footer,.bs-head,.bs-banner,.bs-sec,.bs-empty,.bs-visit,.qf-card,.breadcrumbs,.brand-hero,.bg-filters,.bg-sort,.empty-note,.trust-note,#brandContent>*,#liveSalesList,#brandGrid{
+    margin-left:auto!important;margin-right:auto!important;max-width:1200px;box-sizing:border-box}
+  .hero{padding:64px 32px 36px!important;background:transparent!important}
+  .hero h1{font-size:58px!important;letter-spacing:-2px}
+  .hero p.tagline{font-size:19px!important;max-width:640px}
+  .hero .search-box{max-width:680px!important;cursor:text}
+  .quick-row{max-width:560px!important}
+  .quick-row a{font-size:13px!important}
+  .section{padding:34px 32px 8px!important}
+  .section-head h2{font-size:26px!important}
+  .hs-tabs{max-width:560px!important;margin:18px auto 18px max(32px,calc((100% - 1200px)/2))!important}
+  .al-card{max-width:1136px!important}
+  .fp{max-width:1136px!important}
+  .app-banner{max-width:1136px!important;margin-top:30px!important}
+  .mini-footer{padding-bottom:36px!important;font-size:13px!important}
+
+  /* grids */
+  .rail{display:grid!important;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/4);overflow-x:auto!important;gap:12px!important;padding-bottom:12px;scrollbar-width:thin}
+  .rail::-webkit-scrollbar{display:block;height:8px}.rail::-webkit-scrollbar-thumb{background:#D9D2C2;border-radius:8px}
+  .lv-card{flex:none!important;max-width:none!important}
+  .cat-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:16px!important}
+  .collections{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+  .collection{min-height:150px!important}
+  .collection h3{font-size:20px!important}.collection p,.collection .count-line{font-size:12.5px!important}
+  .bgrid2,.brand-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+  .product-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:14px!important}
+  .p-card .p-img{height:200px}
+  .p-card .p-name{font-size:13.5px}.p-card .p-price{font-size:14px}.p-link{font-size:13px!important}
+  .bc2{min-height:230px!important}
+  .qf-row,.bg-scroll{flex-wrap:wrap!important;overflow:visible!important}
+  .bg-sort{justify-content:flex-end}
+  .lc2{padding:22px!important;border-radius:26px!important}
+  .lc2-head .nm{font-size:22px!important}
+  #alertsList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+  .alert-row{font-size:14px!important}
+  .alerts-box{border-radius:26px}
+  .al-card,.fp,.bs-banner,.bs-empty,.bs-visit,.qf-card,.app-banner{width:calc(100% - 64px)}
+
+  /* search overlay: centred panel instead of a full-width phone screen */
+  .search-overlay{padding:56px 24px!important;background:rgba(246,241,229,.97)!important}
+  .search-overlay>*{max-width:780px;margin-left:auto!important;margin-right:auto!important}
+  .search-overlay .search-head input{height:60px!important}
+
+  /* popups: centred dialogs */
+  .pm-sheet{top:50%!important;bottom:auto!important;transform:translateY(-50%);max-width:560px!important;border-radius:26px!important}
+  .drawer{width:380px!important;max-width:380px!important}
+  .brand-hero{padding:30px 32px 10px!important}
+  .brand-hero h1{font-size:30px!important}
+}
+
+/* very wide monitors */
+@media (min-width:1500px){
+  .hero h1{font-size:64px!important}
+  .bgrid2,.brand-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+}
+`; document.head.appendChild(s);
+
+  // desktop nav links in the header (copied from the phone's bottom tab bar so they always match)
+  function buildDesktopNav(){
+    const top = document.querySelector('.topbar'), bn = document.querySelectorAll('.bottom-nav a');
+    if(!top || !bn.length || top.querySelector('.dt-nav')) return;
+    const nav = document.createElement('nav'); nav.className = 'dt-nav';
+    bn.forEach(a => {
+      const label = (a.textContent || '').trim();
+      if(!label || /^more$/i.test(label)) return;   // "More" is the menu button on desktop
+      const l = document.createElement('a'); l.href = a.getAttribute('href') || '#'; l.textContent = label;
+      if(a.classList.contains('active')) l.classList.add('active');
+      nav.appendChild(l);
+    });
+    const icons = top.querySelector('.icon-row'); top.insertBefore(nav, icons);
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', buildDesktopNav); else buildDesktopNav();
+})();
