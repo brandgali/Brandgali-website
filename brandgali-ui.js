@@ -329,6 +329,15 @@ wireAccountUI = function(){ _wireUI(); initSearchV2(); };
 document.addEventListener('click', function(e){
   const btn = e.target.closest('.notify-btn[data-notify-brand]'); if(!btn) return;
   const id = btn.dataset.notifyBrand;
+  // Following a brand for the first time: ask the browser for push permission right here, inside the
+  // tap (browsers only allow the prompt as a direct result of a tap). Without this a user could follow
+  // brands and never actually be subscribed to push.
+  try{
+    const O = window.__oneSignalInstance;
+    if(getAccountEmail() && O && !btn.classList.contains('following') && ('Notification' in window) && Notification.permission === 'default'){
+      O.Notifications.requestPermission().then(() => { try{ return O.User.PushSubscription.optIn(); }catch(e){} }).catch(() => {});
+    }
+  }catch(e){}
   setTimeout(() => { if(getAccountEmail()) setFollowLocal(id, btn.classList.contains('following')); }, 900);
 });
 const _refreshNotify = refreshNotifyButtonsUI;
