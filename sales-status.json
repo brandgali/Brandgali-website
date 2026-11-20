@@ -2,7 +2,7 @@
   "alkaramstudio": {
     "status": "sale",
     "live": {
-      "off": "WEDDING EDIT SHOP BY DISCOUNT FLAT 20% FLAT 30% FLAT 40% FLAT 50% SHOP…",
+      "off": "WEDDING EDIT SHOP BY DISCOUNT FLAT 20% FLAT 30% FLAT 40% SHOP BY PRICE…",
       "ends": "Check site for current details",
       "percent": 60
     },
@@ -44,14 +44,6 @@
         },
         {
           "name": "RTW | KURTA",
-          "url": "https://www.alkaramstudio.com/products/rtw-kurta-r-sp-743-ice-blue",
-          "image": "https://cdn.shopify.com/s/files/1/0623/6481/1444/files/R-SP-743_2_25735d8a-9a43-4270-8c97-534b0a98cffa.jpg?v=1768997850",
-          "originalPrice": "Rs 3,590",
-          "currentPrice": "Rs 2,154",
-          "discount": "-40%"
-        },
-        {
-          "name": "RTW | KURTA",
           "url": "https://www.alkaramstudio.com/products/rtw-kurta-af-sp-27-white",
           "image": "https://cdn.shopify.com/s/files/1/0623/6481/1444/files/AF-SP-27_2.jpg?v=1767599382",
           "originalPrice": "Rs 3,390",
@@ -72,6 +64,14 @@
           "image": "https://cdn.shopify.com/s/files/1/0623/6481/1444/files/R-SP-754_S_3_2a24c30d-222d-4b80-a846-8932b78fe8bf.jpg?v=1766220587",
           "originalPrice": "Rs 3,490",
           "currentPrice": "Rs 2,094",
+          "discount": "-40%"
+        },
+        {
+          "name": "RTW | KAMEEZ & SHALWAR",
+          "url": "https://www.alkaramstudio.com/products/rtw-kameez-shalwar-mks-bas26-024-tan-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0623/6481/1444/files/MKS-BAS26-024_2_ae4b6b72-8457-4c8e-87af-bdab2e587fc8.jpg?v=1766220579",
+          "originalPrice": "Rs 6,990",
+          "currentPrice": "Rs 4,194",
           "discount": "-40%"
         }
       ],
@@ -213,7 +213,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.alkaramstudio.com/collections/new-in",
-    "checkedAt": "2026-11-20T09:48:45.878Z",
+    "checkedAt": "2026-11-20T13:53:04.077Z",
     "source": "auto",
     "logo": "https://www.alkaramstudio.com/cdn/shop/files/700x105.png?v=1713331800&width=180"
   },
@@ -237,12 +237,12 @@
           "discount": "-30%"
         },
         {
-          "name": "3 PIECE EMBROIDERED SLUB KHADDAR SUIT-BOHO NOCTURNE (UNSTITCHED)",
-          "url": "https://beechtree.pk/products/bt22601un004130-black",
-          "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004130_1.jpg?v=1791792195",
-          "originalPrice": "Rs 6,490",
-          "currentPrice": "Rs 5,192",
-          "discount": "-20%"
+          "name": "2 PIECE EMBROIDERED SELF JACQUARD SUIT-EARTH ENCHANT (UNSTITCHED)",
+          "url": "https://beechtree.pk/products/bt22601un004055-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004055_1.jpg?v=1793020955",
+          "originalPrice": "Rs 5,990",
+          "currentPrice": "Rs 4,193",
+          "discount": "-30%"
         },
         {
           "name": "3 PIECE PRINTED KHADDAR SUIT-FLORELLE MIST (UNSTITCHED)",
@@ -250,14 +250,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004126_1_15d7c75d-7e32-42e1-bd76-c2c0c19f265c.jpg?v=1794164563",
           "originalPrice": "Rs 4,990",
           "currentPrice": "Rs 3,493",
-          "discount": "-30%"
-        },
-        {
-          "name": "2 PIECE EMBROIDERED SELF JACQUARD SUIT-EARTH ENCHANT (UNSTITCHED)",
-          "url": "https://beechtree.pk/products/bt22601un004055-brown",
-          "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004055_1.jpg?v=1793020955",
-          "originalPrice": "Rs 5,990",
-          "currentPrice": "Rs 4,193",
           "discount": "-30%"
         },
         {
@@ -277,6 +269,14 @@
           "discount": "-20%"
         },
         {
+          "name": "3 PIECE EMBROIDERED KHADDAR SUIT WITH SHAWL-GARNET CRUSH (UNSTITCHED)",
+          "url": "https://beechtree.pk/products/bt22601un004069-multi",
+          "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004069_1.jpg?v=1792410785",
+          "originalPrice": "Rs 6,990",
+          "currentPrice": "Rs 4,893",
+          "discount": "-30%"
+        },
+        {
           "name": "2 PIECE EMBROIDERED KHADDAR SUIT-DUSKY SERENADE (UNSTITCHED)",
           "url": "https://beechtree.pk/products/bt22601un004188-teal",
           "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004188_1.jpg?v=1791795003",
@@ -285,11 +285,11 @@
           "discount": "-30%"
         },
         {
-          "name": "3 PIECE EMBROIDERED KHADDAR SUIT WITH SHAWL-GARNET CRUSH (UNSTITCHED)",
-          "url": "https://beechtree.pk/products/bt22601un004069-multi",
-          "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22601UN004069_1.jpg?v=1792410785",
-          "originalPrice": "Rs 6,990",
-          "currentPrice": "Rs 4,893",
+          "name": "3 PIECE PRINTED KHADDAR SUIT-ORNATE HAZE (UNSTITCHED)",
+          "url": "https://beechtree.pk/products/bt22602un004075-multi",
+          "image": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/BT22602UN004075_1.jpg?v=1793020193",
+          "originalPrice": "Rs 4,990",
+          "currentPrice": "Rs 3,493",
           "discount": "-30%"
         }
       ],
@@ -431,7 +431,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://beechtree.pk/collections/new-arrivals-outerwear",
-    "checkedAt": "2026-11-20T09:48:47.575Z",
+    "checkedAt": "2026-11-20T13:53:06.005Z",
     "source": "auto",
     "logo": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/logo_UHD_60474f28-144e-4cbd-9151-c7a78f8cbd1b.png?v=1636350495"
   },
@@ -455,6 +455,14 @@
           "discount": "-50%"
         },
         {
+          "name": "2 PIECE SUIT SLIM FIT BLUE",
+          "url": "https://charcoal.com.pk/products/2-piece-suit-slim-fit-blue-1",
+          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC071711.webp?v=1753075873",
+          "originalPrice": "Rs 36,195",
+          "currentPrice": "Rs 18,098",
+          "discount": "-50%"
+        },
+        {
           "name": "2 PIECE SUIT SLIM FIT DARK KHAKI",
           "url": "https://charcoal.com.pk/products/2-piece-suit-slim-fit-dark-khaki",
           "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC073388.jpg?v=1753075880",
@@ -471,6 +479,14 @@
           "discount": "-50%"
         },
         {
+          "name": "2 PIECE SUIT DARK BROWN",
+          "url": "https://charcoal.com.pk/products/2-piece-suit-dark-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC073999.webp?v=1757316539",
+          "originalPrice": "Rs 33,795",
+          "currentPrice": "Rs 16,898",
+          "discount": "-50%"
+        },
+        {
           "name": "2 PIECE SUIT LIGHT BROWN",
           "url": "https://charcoal.com.pk/products/2-piece-suit-light-brown-2",
           "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC074233.webp?v=1757316537",
@@ -479,35 +495,19 @@
           "discount": "-50%"
         },
         {
-          "name": "PREMIUM 2 PIECE SUIT MAROON GREY",
-          "url": "https://charcoal.com.pk/products/premium-2-piece-suit-maroon-grey",
-          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/products/PREMIUM-2-PIECE-SUIT-MAROON-GREY-at-Charcoal-Clothing-583.jpg?v=1739186327",
-          "originalPrice": "Rs 34,195",
-          "currentPrice": "Rs 13,678",
-          "discount": "-60%"
-        },
-        {
-          "name": "2 PIECE PREMIUM SUIT MAROON GREY",
-          "url": "https://charcoal.com.pk/products/2-piece-premium-suit-maroon-grey",
-          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/PREMIUM-2-PIECE-SUIT-MAROON-GREY-at-Charcoal-Clothing-316.jpg?v=1784181955",
-          "originalPrice": "Rs 34,195",
-          "currentPrice": "Rs 13,678",
-          "discount": "-60%"
-        },
-        {
-          "name": "Men's Textured Casual Coat Navy",
-          "url": "https://charcoal.com.pk/products/mens-textured-casual-coat-navy",
-          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC06827.webp?v=1765525942",
-          "originalPrice": "Rs 26,995",
-          "currentPrice": "Rs 13,498",
+          "name": "Men's Corduroy Blazer Dark Olive",
+          "url": "https://charcoal.com.pk/products/mens-corduroy-blazer-dark-olive",
+          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC06770.webp?v=1763549584",
+          "originalPrice": "Rs 29,995",
+          "currentPrice": "Rs 14,998",
           "discount": "-50%"
         },
         {
-          "name": "Men's Textured Casual Coat Olive",
-          "url": "https://charcoal.com.pk/products/mens-textured-casual-coat-olive",
-          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC068344.webp?v=1765525667",
-          "originalPrice": "Rs 26,995",
-          "currentPrice": "Rs 13,498",
+          "name": "Men's Corduroy Blazer DK Brown",
+          "url": "https://charcoal.com.pk/products/mens-corduroy-blazer-dk-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/25COT24-BRN.webp?v=1763548971",
+          "originalPrice": "Rs 29,995",
+          "currentPrice": "Rs 14,998",
           "discount": "-50%"
         }
       ],
@@ -522,6 +522,14 @@
         "originalPrice": "Rs 34,195",
         "currentPrice": "Rs 13,678",
         "discount": "-60%"
+      },
+      {
+        "name": "2 PIECE SUIT DARK BROWN",
+        "url": "https://charcoal.com.pk/products/2-piece-suit-dark-brown",
+        "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC073999.webp?v=1757316539",
+        "originalPrice": "Rs 33,795",
+        "currentPrice": "Rs 16,898",
+        "discount": "-50%"
       },
       {
         "name": "2 PIECE SUIT GREY",
@@ -567,14 +575,6 @@
         "name": "2 PIECE SUIT NOTCH LAPEL & SMART FIT BLACK",
         "url": "https://charcoal.com.pk/products/2-piece-suit-notch-lapel-smart-fit-black",
         "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC02295.webp?v=1790772287",
-        "originalPrice": "Rs 32,995",
-        "currentPrice": "Rs 26,396",
-        "discount": "-20%"
-      },
-      {
-        "name": "2 PIECE SUIT NOTCH LAPEL & SMART FIT NAVY",
-        "url": "https://charcoal.com.pk/products/2-piece-suit-notch-lapel-smart-fit-navy-1",
-        "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/26SUT15-M54-NVY.webp?v=1790772544",
         "originalPrice": "Rs 32,995",
         "currentPrice": "Rs 26,396",
         "discount": "-20%"
@@ -632,24 +632,24 @@
         "discount": "-20%"
       },
       {
+        "name": "SMART FIT REGULAR COLLAR LONG SLEEVE KNITTED SWEATER NAVY",
+        "url": "https://charcoal.com.pk/products/smart-fit-regular-collar-long-sleeve-knitted-sweater-navy",
+        "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC04558.webp?v=1790340348",
+        "originalPrice": "Rs 8,995",
+        "currentPrice": "Rs 7,196",
+        "discount": "-20%"
+      },
+      {
         "name": "SMART FIT FULL SLEEVE REVERSIBLE JACKET LIGHT BROWN WITH CHARCOAL GREY",
         "url": "https://charcoal.com.pk/products/full-sleeve-reversible-jacket-light-brown-charcoal-grey",
         "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC03965_5c64f15d-621a-43fe-9ce3-7d8a5e7b68af.webp?v=1791798085",
         "originalPrice": "Rs 14,995",
         "currentPrice": "Rs 11,996",
         "discount": "-20%"
-      },
-      {
-        "name": "SMART FIT FULL SLEEVE REVERSIBLE JACKET BLACK",
-        "url": "https://charcoal.com.pk/products/reversible-collar-jacket-olive-black",
-        "image": "https://cdn.shopify.com/s/files/1/0419/6171/7922/files/DSC03695_7bc30eca-cea4-4c3e-9426-6d195b0fedf2.webp?v=1789819179",
-        "originalPrice": "Rs 14,995",
-        "currentPrice": "Rs 11,996",
-        "discount": "-20%"
       }
     ],
     "newArrivalsSourceUrl": "https://charcoal.com.pk/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:48:49.869Z",
+    "checkedAt": "2026-11-20T13:53:08.109Z",
     "source": "auto",
     "logo": "https://charcoal.com.pk/cdn/shop/files/Charcoal-logo-black-1200.png?v=1792255416&width=600"
   },
@@ -670,7 +670,7 @@
     "newArrival": false,
     "newArrivals": [],
     "newArrivalsSourceUrl": "https://generation.com.pk/collections/all",
-    "checkedAt": "2026-11-20T09:48:55.478Z",
+    "checkedAt": "2026-11-20T13:53:12.710Z",
     "source": "auto",
     "logo": "https://generation.com.pk/cdn/shop/files/center_for_image_svg.svg?v=1780664112&width=500"
   },
@@ -812,7 +812,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.gulahmedshop.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:48:57.741Z",
+    "checkedAt": "2026-11-20T13:53:14.793Z",
     "source": "auto",
     "logo": "https://www.gulahmedshop.com/cdn/shop/files/Ideas_by_Gul_Ahmed_logo_702e259d-7a37-4625-a329-9c101d253711.png?crop=center&height=32&v=1782797528&width=32"
   },
@@ -965,7 +965,7 @@
     "newArrival": false,
     "newArrivals": [],
     "newArrivalsSourceUrl": "https://www.junaidjamshed.com/collections/all",
-    "checkedAt": "2026-11-20T09:48:59.312Z",
+    "checkedAt": "2026-11-20T13:53:16.205Z",
     "source": "auto",
     "logo": "https://www.junaidjamshed.com/cdn/shop/files/logo_black_-_wania_saleem.svg?v=1765460151&width=500"
   },
@@ -1183,7 +1183,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.mariab.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:02.481Z",
+    "checkedAt": "2026-11-20T13:53:19.405Z",
     "source": "auto",
     "logo": "https://www.mariab.pk/cdn/shop/files/logo-black.jpg?v=1704873697&width=500"
   },
@@ -1199,67 +1199,67 @@
       "sourceUrl": "https://beoneshopone.com/collections/blessed-friday-sale",
       "products": [
         {
-          "name": "Mock Neck Sweater",
-          "url": "https://beoneshopone.com/products/mos0123",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MOS0123.jpg?v=1794928598",
-          "originalPrice": "Rs 7,499",
-          "currentPrice": "Rs 3,750",
-          "discount": "-50%"
-        },
-        {
-          "name": "Sleeveless Puffer Jacket",
-          "url": "https://beoneshopone.com/products/moj0151",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MOJ0151-_6.jpg?v=1794928569",
-          "originalPrice": "Rs 9,999",
-          "currentPrice": "Rs 5,000",
-          "discount": "-50%"
-        },
-        {
-          "name": "Regular Sweater Hoodie",
-          "url": "https://beoneshopone.com/products/moh0256",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MOH0256-1.jpg?v=1794928482",
-          "originalPrice": "Rs 8,999",
-          "currentPrice": "Rs 4,500",
-          "discount": "-50%"
-        },
-        {
-          "name": "Textured Relax Fit Shirt",
-          "url": "https://beoneshopone.com/products/mts0427",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MTS0427.jpg?v=1794396715",
-          "originalPrice": "Rs 7,999",
-          "currentPrice": "Rs 4,000",
-          "discount": "-50%"
-        },
-        {
-          "name": "Relax Jacquard Sweatshirt",
-          "url": "https://beoneshopone.com/products/mot0155",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MOT0155-1_f852634c-7825-4123-8c21-e2eea2f94753.jpg?v=1794907494",
-          "originalPrice": "Rs 5,499",
-          "currentPrice": "Rs 2,750",
-          "discount": "-50%"
-        },
-        {
-          "name": "Reflector Gym Tee",
-          "url": "https://beoneshopone.com/products/mgt0144",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGT0144-3.jpg?v=1794806095",
+          "name": "Textured Gym Tee",
+          "url": "https://beoneshopone.com/products/mgt0146",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGT0146-5.jpg?v=1795168056",
           "originalPrice": "Rs 6,499",
           "currentPrice": "Rs 3,250",
           "discount": "-50%"
         },
         {
-          "name": "Relax Jacquard Trousers",
-          "url": "https://beoneshopone.com/products/mbt0382",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MBT0382-1.jpg?v=1794806110",
-          "originalPrice": "Rs 5,999",
-          "currentPrice": "Rs 3,000",
+          "name": "Hooded Gym Jacket",
+          "url": "https://beoneshopone.com/products/mgj0014",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGJ0014-_2_3.jpg?v=1795168040",
+          "originalPrice": "Rs 10,999",
+          "currentPrice": "Rs 5,500",
           "discount": "-50%"
         },
         {
-          "name": "Graphic Sweatshirt",
-          "url": "https://beoneshopone.com/products/got0044",
-          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/GOT0044-7.jpg?v=1794806044",
-          "originalPrice": "Rs 3,499",
-          "currentPrice": "Rs 1,750",
+          "name": "Mockneck Gym Jacket",
+          "url": "https://beoneshopone.com/products/mgj0013",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGJ0013-_2_2.jpg?v=1795167984",
+          "originalPrice": "Rs 10,999",
+          "currentPrice": "Rs 5,500",
+          "discount": "-50%"
+        },
+        {
+          "name": "Raglan Gym Jacket",
+          "url": "https://beoneshopone.com/products/mgj0012",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGJ0012-_5_2.jpg?v=1795167967",
+          "originalPrice": "Rs 11,999",
+          "currentPrice": "Rs 6,000",
+          "discount": "-50%"
+        },
+        {
+          "name": "Paneled Gym Track Pants",
+          "url": "https://beoneshopone.com/products/mgb0123",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0123-2.jpg?v=1795167920",
+          "originalPrice": "Rs 7,999",
+          "currentPrice": "Rs 4,000",
+          "discount": "-50%"
+        },
+        {
+          "name": "Regflector Gym Track Pants",
+          "url": "https://beoneshopone.com/products/mgb0121",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0121-_5_2.jpg?v=1795167849",
+          "originalPrice": "Rs 7,999",
+          "currentPrice": "Rs 4,000",
+          "discount": "-50%"
+        },
+        {
+          "name": "Paneled Gym Track Pants",
+          "url": "https://beoneshopone.com/products/mgb0120",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0120-3.jpg?v=1795167811",
+          "originalPrice": "Rs 7,999",
+          "currentPrice": "Rs 4,000",
+          "discount": "-50%"
+        },
+        {
+          "name": "Paneled Gym Track Pants",
+          "url": "https://beoneshopone.com/products/mgb0119",
+          "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0119-1.jpg?v=1795167678",
+          "originalPrice": "Rs 7,999",
+          "currentPrice": "Rs 4,000",
           "discount": "-50%"
         }
       ],
@@ -1339,69 +1339,69 @@
         "name": "Textured Gym Tee",
         "url": "https://beoneshopone.com/products/mgt0146",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGT0146-5.jpg?v=1795168056",
-        "originalPrice": null,
-        "currentPrice": "Rs 6,499",
-        "discount": null
-      },
-      {
-        "name": "Basic Gym Tee",
-        "url": "https://beoneshopone.com/products/mgt0143",
-        "image": null,
-        "originalPrice": null,
-        "currentPrice": "Rs 6,499",
-        "discount": null
+        "originalPrice": "Rs 6,499",
+        "currentPrice": "Rs 3,250",
+        "discount": "-50%"
       },
       {
         "name": "Hooded Gym Jacket",
         "url": "https://beoneshopone.com/products/mgj0014",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGJ0014-_2_3.jpg?v=1795168040",
-        "originalPrice": null,
-        "currentPrice": "Rs 10,999",
-        "discount": null
+        "originalPrice": "Rs 10,999",
+        "currentPrice": "Rs 5,500",
+        "discount": "-50%"
       },
       {
         "name": "Mockneck Gym Jacket",
         "url": "https://beoneshopone.com/products/mgj0013",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGJ0013-_2_2.jpg?v=1795167984",
-        "originalPrice": null,
-        "currentPrice": "Rs 10,999",
-        "discount": null
+        "originalPrice": "Rs 10,999",
+        "currentPrice": "Rs 5,500",
+        "discount": "-50%"
       },
       {
         "name": "Raglan Gym Jacket",
         "url": "https://beoneshopone.com/products/mgj0012",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGJ0012-_5_2.jpg?v=1795167967",
-        "originalPrice": null,
-        "currentPrice": "Rs 11,999",
-        "discount": null
+        "originalPrice": "Rs 11,999",
+        "currentPrice": "Rs 6,000",
+        "discount": "-50%"
       },
       {
         "name": "Paneled Gym Track Pants",
         "url": "https://beoneshopone.com/products/mgb0123",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0123-2.jpg?v=1795167920",
-        "originalPrice": null,
-        "currentPrice": "Rs 7,999",
-        "discount": null
+        "originalPrice": "Rs 7,999",
+        "currentPrice": "Rs 4,000",
+        "discount": "-50%"
       },
       {
         "name": "Regflector Gym Track Pants",
         "url": "https://beoneshopone.com/products/mgb0121",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0121-_5_2.jpg?v=1795167849",
-        "originalPrice": null,
-        "currentPrice": "Rs 7,999",
-        "discount": null
+        "originalPrice": "Rs 7,999",
+        "currentPrice": "Rs 4,000",
+        "discount": "-50%"
       },
       {
         "name": "Paneled Gym Track Pants",
         "url": "https://beoneshopone.com/products/mgb0120",
         "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0120-3.jpg?v=1795167811",
-        "originalPrice": null,
-        "currentPrice": "Rs 7,999",
-        "discount": null
+        "originalPrice": "Rs 7,999",
+        "currentPrice": "Rs 4,000",
+        "discount": "-50%"
+      },
+      {
+        "name": "Paneled Gym Track Pants",
+        "url": "https://beoneshopone.com/products/mgb0119",
+        "image": "https://cdn.shopify.com/s/files/1/0572/7263/1447/files/MGB0119-1.jpg?v=1795167678",
+        "originalPrice": "Rs 7,999",
+        "currentPrice": "Rs 4,000",
+        "discount": "-50%"
       }
     ],
     "newArrivalsSourceUrl": "https://beoneshopone.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:05.012Z",
+    "checkedAt": "2026-11-20T13:53:22.008Z",
     "source": "auto",
     "logo": "https://beoneshopone.com/cdn/shop/files/insignia_Black_32x32.png?v=1794718977"
   },
@@ -1543,7 +1543,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://zellbury.com/collections/all",
-    "checkedAt": "2026-11-20T09:49:07.152Z",
+    "checkedAt": "2026-11-20T13:53:24.151Z",
     "source": "auto",
     "logo": "https://zellbury.com/cdn/shop/files/zellbury_logo_white_2.png?v=1776142797&width=500"
   },
@@ -1761,7 +1761,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://beige.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:08.737Z",
+    "checkedAt": "2026-11-20T13:53:25.850Z",
     "source": "auto",
     "logo": "https://beige.pk/cdn/shop/files/Favicon.png?v=1773134343&width=600"
   },
@@ -1914,7 +1914,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://breakout.com.pk/collections/new-in",
-    "checkedAt": "2026-11-20T09:49:11.301Z",
+    "checkedAt": "2026-11-20T13:53:29.282Z",
     "source": "auto",
     "logo": "https://www.breakout.com.pk/cdn/shop/files/bkt_a4eb0eec-b705-4158-9d7f-19f75972835e.png?v=1737016765"
   },
@@ -2067,19 +2067,19 @@
     "newArrival": true,
     "newArrivals": [
       {
-        "name": "3-PC Stitched Embroidered CMA-6-517",
-        "url": "https://houseofcharizma.com/products/cma-6-517",
-        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A7572.jpg?v=1795163361",
+        "name": "3-PC Stitched Embroidered CMA-6-537",
+        "url": "https://houseofcharizma.com/products/cma-6-537",
+        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A7298.jpg?v=1795171357",
         "originalPrice": null,
-        "currentPrice": "Rs 34,500",
+        "currentPrice": "Rs 17,500",
         "discount": null
       },
       {
-        "name": "3-PC Stitched Embroidered CMA-6-536",
-        "url": "https://houseofcharizma.com/products/cma-6-536",
-        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A8825.jpg?v=1795163167",
+        "name": "3-PC Stitched Embroidered CMA-6-517",
+        "url": "https://houseofcharizma.com/products/cma-6-517",
+        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A7523.jpg?v=1795163361",
         "originalPrice": null,
-        "currentPrice": "Rs 17,500",
+        "currentPrice": "Rs 34,500",
         "discount": null
       },
       {
@@ -2099,9 +2099,25 @@
         "discount": null
       },
       {
+        "name": "3-PC Stitched Embroidered CMA-6-445",
+        "url": "https://houseofcharizma.com/products/cma-6-445",
+        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A4892.jpg?v=1795170833",
+        "originalPrice": null,
+        "currentPrice": "Rs 24,500",
+        "discount": null
+      },
+      {
         "name": "3-PC Stitched Embroidered CMA-6-533",
         "url": "https://houseofcharizma.com/products/cma-6-533",
-        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A9208.jpg?v=1794916351",
+        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A0658.jpg?v=1795173333",
+        "originalPrice": null,
+        "currentPrice": "Rs 23,500",
+        "discount": null
+      },
+      {
+        "name": "3-PC Stitched Embroidered CMA-6-532",
+        "url": "https://houseofcharizma.com/products/cma-6-532",
+        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/052A0783.jpg?v=1795173105",
         "originalPrice": null,
         "currentPrice": "Rs 23,500",
         "discount": null
@@ -2113,26 +2129,10 @@
         "originalPrice": null,
         "currentPrice": "Rs 16,500",
         "discount": null
-      },
-      {
-        "name": "3-PC Stitched Embroidered Lawn SLC27-09P",
-        "url": "https://houseofcharizma.com/products/slc27-09p",
-        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/29A4342.jpg?v=1787044093",
-        "originalPrice": null,
-        "currentPrice": "Rs 10,450",
-        "discount": null
-      },
-      {
-        "name": "3-PC Embroidered CMA-6-513",
-        "url": "https://houseofcharizma.com/products/cma-6-513",
-        "image": "https://cdn.shopify.com/s/files/1/0645/0518/4436/files/WEB_40_310503fd-f288-4083-9b53-6155eaefb5f9.jpg?v=1794047280",
-        "originalPrice": null,
-        "currentPrice": "Rs 17,500",
-        "discount": null
       }
     ],
     "newArrivalsSourceUrl": "https://houseofcharizma.com/collections/new-arrivals-pret",
-    "checkedAt": "2026-11-20T09:49:15.298Z",
+    "checkedAt": "2026-11-20T13:53:33.678Z",
     "source": "auto",
     "logo": "https://houseofcharizma.com/cdn/shop/files/Untitled_design_10.svg?v=1714373826&width=500"
   },
@@ -2274,7 +2274,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://divinelycrafted.org/collections/new-in",
-    "checkedAt": "2026-11-20T09:49:17.171Z",
+    "checkedAt": "2026-11-20T13:53:35.389Z",
     "source": "auto",
     "logo": "https://divinelycrafted.org/cdn/shop/files/DIVINELY_CRAFTED_LOGO_5d5a088d-e961-4f5e-9928-b57004e4fa47.png?v=1791806021&width=500"
   },
@@ -2492,7 +2492,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://drappy.pk/collections/new-in",
-    "checkedAt": "2026-11-20T09:49:18.847Z",
+    "checkedAt": "2026-11-20T13:53:37.136Z",
     "source": "auto",
     "logo": "https://drappy.pk/cdn/shop/files/Drappy-LOGO-email-sig.avif?v=1775817454&width=200"
   },
@@ -2685,32 +2685,32 @@
         "discount": "-22%"
       },
       {
+        "name": "Beige Soft Knit Trouser (Women)",
+        "url": "https://fittedshop.com/products/beige-soft-knit-trouser-women",
+        "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2e_25d64661-22ae-4bbf-9aa5-72008eb8f8c4.jpg?v=1795175326",
+        "originalPrice": null,
+        "currentPrice": "Rs 4,990",
+        "discount": null
+      },
+      {
+        "name": "Beige Soft Knit Zipper (Women)",
+        "url": "https://fittedshop.com/products/beige-soft-knit-zipper-women",
+        "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2c_3e047cbe-0ff3-463b-a638-e7051c633b98.jpg?v=1795175304",
+        "originalPrice": null,
+        "currentPrice": "Rs 5,490",
+        "discount": null
+      },
+      {
         "name": "Beige Stretch Chino Pants",
         "url": "https://fittedshop.com/products/beige-stretch-chino-pants",
         "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/1_9ae15cc4-4e8f-4094-a769-2e701adc6e43.jpg?v=1754363003",
         "originalPrice": null,
         "currentPrice": "Rs 3,990",
         "discount": null
-      },
-      {
-        "name": "Beige Winter Cardigan (Women)",
-        "url": "https://fittedshop.com/products/beige-winter-cardigan-women",
-        "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/2b_e32f3fe2-3bac-4ec4-816f-44540d5714b0.jpg?v=1794396092",
-        "originalPrice": null,
-        "currentPrice": "Rs 4,990",
-        "discount": null
-      },
-      {
-        "name": "Black & Beige Striped Sweater (Women)",
-        "url": "https://fittedshop.com/products/black-beige-striped-sweater-women",
-        "image": "https://cdn.shopify.com/s/files/1/0785/2625/1296/files/5_7e26eb63-4628-425c-ac5f-11d4baa3136f.jpg?v=1793858329",
-        "originalPrice": null,
-        "currentPrice": "Rs 4,990",
-        "discount": null
       }
     ],
     "newArrivalsSourceUrl": "https://fittedshop.com/collections/all",
-    "checkedAt": "2026-11-20T09:49:20.782Z",
+    "checkedAt": "2026-11-20T13:53:39.093Z",
     "source": "auto",
     "logo": "https://fittedshop.com/cdn/shop/files/logo2_32x32.png?v=1694281521"
   },
@@ -2863,7 +2863,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://imhaut.com/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:49:23.211Z",
+    "checkedAt": "2026-11-20T13:53:41.485Z",
     "source": "auto",
     "logo": "https://imhaut.com/cdn/shop/files/logo_1_png_0e7fcf23-c5df-4740-b35b-62eaf4635e94_1080x.png?v=1698237720"
   },
@@ -3005,7 +3005,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://ivarclothing.com/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:49:24.868Z",
+    "checkedAt": "2026-11-20T13:53:42.958Z",
     "source": "auto",
     "logo": "https://ivarclothing.com/cdn/shop/files/Ivar_New_Logo_No_Backafwer.png?v=1766574246&width=500"
   },
@@ -3147,7 +3147,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://kijiretail.com/collections/new-arrivals-1",
-    "checkedAt": "2026-11-20T09:49:28.760Z",
+    "checkedAt": "2026-11-20T13:53:46.546Z",
     "source": "auto",
     "logo": "https://kijiretail.com/cdn/shop/files/logo_104x.png?v=1727249263"
   },
@@ -3300,7 +3300,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.kottonfruit.com/collections/new-in",
-    "checkedAt": "2026-11-20T09:49:30.239Z",
+    "checkedAt": "2026-11-20T13:53:47.986Z",
     "source": "auto",
     "logo": "https://www.kottonfruit.com/cdn/shop/files/fabicon.png?crop=center&height=32&v=1714390339&width=32"
   },
@@ -3397,79 +3397,79 @@
     "newArrival": true,
     "newArrivals": [
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-8",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_643_f51b166b-1bc6-4330-9308-d5ec848cb159.jpg?v=1794907189",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-17",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85567.jpg?v=1795150805",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-7",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_635_d6ef25ad-a4b0-4824-a274-c069659135ee.jpg?v=1794906631",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-16",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85560.jpg?v=1795150662",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-6",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_627_37d4285c-4194-4c0d-99b2-f787e50d1d4a.jpg?v=1794906469",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-15",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85552.jpg?v=1795150529",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-5",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_619_5afce8c0-be32-4555-adc2-96fe48fb7c2b.jpg?v=1794906334",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-14",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85545.jpg?v=1795150038",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-4",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_601_146795dc-b835-4d38-9c2d-6ed109ef8b4d.jpg?v=1794906182",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-13",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85537.jpg?v=1795149631",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-3",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_675_cf5415bb-0356-40ab-801b-c31e32df1a94.jpg?v=1794905994",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-12",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85530.jpg?v=1795149097",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-2",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_667_86843dbe-a953-47ba-8964-3e9299486bfb.jpg?v=1794905890",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-11",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85523.jpg?v=1795148898",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       },
       {
-        "name": "02 Piece Stitched Embroidered Collection",
-        "url": "https://lakhanyonline.com/products/02-piece-stitched-embroidered-collection-1",
-        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_659_93a36320-bd99-4f21-b98d-0c3b1be95f1b.jpg?v=1794905763",
+        "name": "01 Piece Ready To Wear Printed Kaftaan",
+        "url": "https://lakhanyonline.com/products/01-piece-ready-to-wear-printed-kaftaan-10",
+        "image": "https://cdn.shopify.com/s/files/1/0300/8059/8075/files/IMG_85516.jpg?v=1795148695",
         "originalPrice": null,
-        "currentPrice": "Rs 6,790",
+        "currentPrice": "Rs 5,490",
         "discount": null
       }
     ],
     "newArrivalsSourceUrl": "https://lakhanyonline.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:32.348Z",
+    "checkedAt": "2026-11-20T13:53:49.893Z",
     "source": "auto",
     "logo": "https://lakhanyonline.com/cdn/shop/files/Lakhani-White-150x150.png?crop=center&height=32&v=1675936461&width=32"
   },
   "limelight": {
     "status": "sale",
     "live": {
-      "off": "Silk Suit- Embroidered (Pret) 30% OFF 3 Piece Premium Silk Suit- Embro…",
+      "off": "Silk Suit- Embroidered (Pret) 30% OFF 2 Piece Winter Silk Suit- Embroi…",
       "ends": "Check site for current details",
       "percent": 60
     },
@@ -3615,72 +3615,72 @@
     "newArrival": true,
     "newArrivals": [
       {
-        "name": "3 Piece Premium Silk Suit- Embroidered (Pret)",
-        "url": "https://www.limelight.pk/products/a7562su-xsl-199",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A7562SU-SML-199-3PiecePremiumSilkSuit-Embroidered_Pret_3.jpg?v=1795067689",
+        "name": "2 Piece Winter Silk Suit- Embroidered (Pret)",
+        "url": "https://www.limelight.pk/products/w2321st-xsl-014",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2321ST-SML-014-2PieceWinterSilkSuit-Embroidered_Pret_4.jpg?v=1795179424",
         "originalPrice": "Rs 14,990",
         "currentPrice": "Rs 10,493",
         "discount": "-30%"
       },
       {
-        "name": "Button Tab Co-ord",
-        "url": "https://www.limelight.pk/products/w2794st-xsl-565",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2794ST-SML-565-ButtonTabCo-ord_2.jpg?v=1795083128",
-        "originalPrice": "Rs 6,990",
-        "currentPrice": "Rs 4,893",
+        "name": "2 Piece Marina Suit (Pret)",
+        "url": "https://www.limelight.pk/products/a7699st-xsl-374",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A7699ST-SML-374-2PieceMarinaSuit_Pret_4.jpg?v=1795179288",
+        "originalPrice": "Rs 7,690",
+        "currentPrice": "Rs 5,383",
         "discount": "-30%"
       },
       {
-        "name": "Covered Button Top",
-        "url": "https://www.limelight.pk/products/w2597tp-xsl-002",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2597TP-SML-002-CoveredButtonTop_3.jpg?v=1795082515",
-        "originalPrice": "Rs 3,390",
-        "currentPrice": "Rs 2,373",
+        "name": "2 Piece Silk Suit- Embellished (Pret)",
+        "url": "https://www.limelight.pk/products/a7611st-xsl-489",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A7611ST-SML-489-2PieceSilkSuit-Embellished_Pret_3.jpg?v=1795179230",
+        "originalPrice": "Rs 10,990",
+        "currentPrice": "Rs 7,693",
         "discount": "-30%"
       },
       {
-        "name": "Lace Trim Top",
-        "url": "https://www.limelight.pk/products/w2588tp-xsl-002",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2588TP-SML-002-LaceTrimTop_4.jpg?v=1795082336",
-        "originalPrice": "Rs 3,390",
-        "currentPrice": "Rs 2,373",
-        "discount": "-30%"
-      },
-      {
-        "name": "V-Neck Top",
-        "url": "https://www.limelight.pk/products/w2586tp-xsl-034",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2586TP-SML-034-V-NeckTop_2.jpg?v=1795082214",
-        "originalPrice": "Rs 2,990",
-        "currentPrice": "Rs 2,093",
-        "discount": "-30%"
-      },
-      {
-        "name": "Embellished Co-ord",
-        "url": "https://www.limelight.pk/products/w2358st-xsl-091",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2358ST-SML-091-EmbellishedCo-ord_4.jpg?v=1795082036",
+        "name": "Silk Co-ord Set- Embroidered",
+        "url": "https://www.limelight.pk/products/a7603st-xsl-227",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A7603ST-SML-227-SilkCo-ordSet-Embroidered_2.jpg?v=1795179163",
         "originalPrice": "Rs 9,990",
         "currentPrice": "Rs 6,993",
         "discount": "-30%"
       },
       {
-        "name": "Contrast Collar Top",
-        "url": "https://www.limelight.pk/products/w2322tp-xsl-002",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2322TP-SML-002-ContrastCollarTop_4.jpg?v=1795081951",
-        "originalPrice": "Rs 3,990",
-        "currentPrice": "Rs 2,793",
+        "name": "2 Piece Silk Chambray Suit (Pret)",
+        "url": "https://www.limelight.pk/products/a7317st-xsl-049",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A7317ST-SML-049-2PieceSilkChambraySuit_Pret_2.jpg?v=1795180620",
+        "originalPrice": "Rs 8,990",
+        "currentPrice": "Rs 6,293",
         "discount": "-30%"
       },
       {
-        "name": "Tie-Neck Co-ord",
-        "url": "https://www.limelight.pk/products/w2315st-xsl-034",
-        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/W2315ST-SML-034-Tie-NeckCo-ord_2.jpg?v=1795081406",
-        "originalPrice": "Rs 7,990",
-        "currentPrice": "Rs 5,593",
+        "name": "3 Piece Silk Suit- Embroidered (Pret)",
+        "url": "https://www.limelight.pk/products/a7023su-xsl-227",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A7023SU-SML-227-3PieceSilkSuit-Embroidered_Pret_2.jpg?v=1795180473",
+        "originalPrice": "Rs 13,990",
+        "currentPrice": "Rs 9,793",
+        "discount": "-30%"
+      },
+      {
+        "name": "Silk Co-ord Set",
+        "url": "https://www.limelight.pk/products/a6833st-xsl-091",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6833ST-SML-091-SilkCo-ordSet_3.jpg?v=1795179023",
+        "originalPrice": "Rs 6,990",
+        "currentPrice": "Rs 4,893",
+        "discount": "-30%"
+      },
+      {
+        "name": "2 Piece Premium Velvet Suit- Embellished (Pret)",
+        "url": "https://www.limelight.pk/products/a6750st-xsl-168",
+        "image": "https://cdn.shopify.com/s/files/1/2635/3244/files/A6750ST-SML-168-2PiecePremiumVelvetSuit-Embellished_Pret_3.jpg?v=1795180398",
+        "originalPrice": "Rs 11,990",
+        "currentPrice": "Rs 8,393",
         "discount": "-30%"
       }
     ],
     "newArrivalsSourceUrl": "https://www.limelight.pk/collections/new-in",
-    "checkedAt": "2026-11-20T09:49:34.314Z",
+    "checkedAt": "2026-11-20T13:53:51.724Z",
     "source": "auto",
     "logo": "https://www.limelight.pk/cdn/shop/files/LimeLight_New_Logo_Source_File-01_220x_60ba6562-d3a3-4362-83ec-25aeadc96177.svg?v=1735035472&width=500"
   },
@@ -3833,7 +3833,7 @@
     "newArrival": false,
     "newArrivals": [],
     "newArrivalsSourceUrl": "https://mabsh.pk/collections/all",
-    "checkedAt": "2026-11-20T09:49:36.417Z",
+    "checkedAt": "2026-11-20T13:53:53.573Z",
     "source": "auto",
     "logo": "https://mabsh.pk/cdn/shop/files/Untitled-2.png?v=1723031000&width=500"
   },
@@ -3856,9 +3856,9 @@
         "name": "MAD Premium Beige Brown Tracksuit-09",
         "url": "https://madofficialstore.shop/products/mad-premium-beige-brown-tracksuit-09",
         "image": "https://cdn.shopify.com/s/files/1/0711/7583/1811/files/WhatsAppImage2026-10-25at10.42.59PM_5.jpg?v=1792954234",
-        "originalPrice": "Rs 10,000",
+        "originalPrice": null,
         "currentPrice": "Rs 3,550",
-        "discount": "-65%"
+        "discount": null
       },
       {
         "name": "MAD Premium Beige Green Tracksuit-06",
@@ -3921,7 +3921,7 @@
     "newArrival": false,
     "newArrivals": [],
     "newArrivalsSourceUrl": "https://madofficialstore.shop/collections/all",
-    "checkedAt": "2026-11-20T09:49:38.729Z",
+    "checkedAt": "2026-11-20T13:53:55.688Z",
     "source": "auto",
     "logo": "https://madofficialstore.shop/cdn/shop/files/Untitled_1080_x_1080_px_62.jpg?v=1792979324&width=500"
   },
@@ -4139,7 +4139,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://nayadour.co/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:49:40.950Z",
+    "checkedAt": "2026-11-20T13:53:57.665Z",
     "source": "auto",
     "logo": "https://nayadour.co/cdn/shop/files/naya_dour_logo_White.png?crop=center&height=32&v=1727442442&width=32"
   },
@@ -4292,7 +4292,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://ninefigures.com/collections/new-arrivals-men",
-    "checkedAt": "2026-11-20T09:49:43.488Z",
+    "checkedAt": "2026-11-20T13:53:59.805Z",
     "source": "auto",
     "logo": "https://ninefigures.com/cdn/shop/files/imjoigpdfmgdfmg_32x32.png?v=1716466879"
   },
@@ -4510,7 +4510,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://outfitters.com.pk/collections/men-new-arrivals-view-all",
-    "checkedAt": "2026-11-20T09:49:47.394Z",
+    "checkedAt": "2026-11-20T13:54:04.279Z",
     "source": "auto",
     "logo": "https://outfitters.com.pk/cdn/shop/files/B_1_2627a128-eee3-4f67-8c6a-603226158b46.png?v=1760445872&width=500"
   },
@@ -4728,7 +4728,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://raiment61.com/collections/new-in",
-    "checkedAt": "2026-11-20T09:49:50.026Z",
+    "checkedAt": "2026-11-20T13:54:07.065Z",
     "source": "auto",
     "logo": "https://raiment61.com/files/Raiment_logo_black.png"
   },
@@ -4881,6 +4881,30 @@
     "newArrival": true,
     "newArrivals": [
       {
+        "name": "Stitched Safi & Me Sheesha Silk Kaftan",
+        "url": "https://www.sanasafinaz.com/products/stitched-safi-me-sheesha-silk-kaftan-ss26sm65",
+        "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26SM65_1.jpg?v=1795173573",
+        "originalPrice": null,
+        "currentPrice": "Rs 39,000",
+        "discount": null
+      },
+      {
+        "name": "Stitched Sheesha Silk Shirt+ Shalwar",
+        "url": "https://www.sanasafinaz.com/products/stitched-sheesha-silk-shirt-shalwar",
+        "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26SM68P2T_1.jpg?v=1795174533",
+        "originalPrice": null,
+        "currentPrice": "Rs 45,399",
+        "discount": null
+      },
+      {
+        "name": "Stitched Sheesha Silk Shirt+ Shalwar",
+        "url": "https://www.sanasafinaz.com/products/stitched-sheesha-silk-shirt-shalwar-1",
+        "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/SS26SM71P2T_1.jpg?v=1795174468",
+        "originalPrice": null,
+        "currentPrice": "Rs 43,149",
+        "discount": null
+      },
+      {
         "name": "Unstitched Embroidered 3 Piece Muzlin Suit",
         "url": "https://www.sanasafinaz.com/products/unstitched-embroidered-3-piece-muzlin-suit-m263-001-cv",
         "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/M263-001-CV_5_8f3d9402-e512-4a4a-bc58-99d9091a21f0.jpg?v=1794286128",
@@ -4919,34 +4943,10 @@
         "originalPrice": null,
         "currentPrice": "Rs 12,999",
         "discount": null
-      },
-      {
-        "name": "Stitched Embroidered Dobby Masoori Shirt+ Culotte",
-        "url": "https://www.sanasafinaz.com/products/stitched-embroidered-dobby-masoori-shirt-culotte-fw26ese520p2t",
-        "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/FW26ESE520P2T_1.jpg?v=1794901720",
-        "originalPrice": null,
-        "currentPrice": "Rs 9,999",
-        "discount": null
-      },
-      {
-        "name": "Stitched Embroidered Stripe Khaddar Shirt+ Culotte",
-        "url": "https://www.sanasafinaz.com/products/stitched-embroidered-stripe-khaddar-shirt-culotte-fw26ese456p2t",
-        "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/FW26ESE456P2T_1.jpg?v=1794890972",
-        "originalPrice": null,
-        "currentPrice": "Rs 10,999",
-        "discount": null
-      },
-      {
-        "name": "Stitched Embroidered Cotton Khaddar Shirt+ Shalwar",
-        "url": "https://www.sanasafinaz.com/products/stitched-embroidered-cotton-khaddar-shirt-shalwar-fw26ese459p2t",
-        "image": "https://cdn.shopify.com/s/files/1/0740/1753/8280/files/FW26ESE459P2T_1.jpg?v=1794893528",
-        "originalPrice": null,
-        "currentPrice": "Rs 10,499",
-        "discount": null
       }
     ],
     "newArrivalsSourceUrl": "https://www.sanasafinaz.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:52.149Z",
+    "checkedAt": "2026-11-20T13:54:09.332Z",
     "source": "auto",
     "logo": "https://sanasafinaz.com/cdn/shop/files/Sana_Safinaz_1.png?format=webp&height=104&v=1770731884"
   },
@@ -5088,7 +5088,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://sohasultan.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:57.721Z",
+    "checkedAt": "2026-11-20T13:54:15.338Z",
     "source": "auto",
     "logo": "https://sohasultan.com/cdn/shop/files/Soha_Sultan_-_Final_Logo-30_32x32.png?v=1732098760"
   },
@@ -5230,7 +5230,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://thecottonleaf.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:49:59.025Z",
+    "checkedAt": "2026-11-20T13:54:17.053Z",
     "source": "auto",
     "logo": "https://thecottonleaf.pk/cdn/shop/files/TCL_Logo_ab96f23c-1b75-460a-aa60-a60fb105f53a_1.webp?v=1770828507&width=600"
   },
@@ -5265,7 +5265,7 @@
       {
         "name": "Aman Set & Embroidered Dupatta",
         "url": "https://zahstudio.com.pk/products/aman-set-embroidered-dupatta",
-        "image": "https://cdn.shopify.com/s/files/1/0603/8044/6882/files/20_5508dbc4-df79-4ba4-8213-b09e1e244b87.png?v=1786543919",
+        "image": "https://cdn.shopify.com/s/files/1/0603/8044/6882/files/AmanStory2.jpg?v=1770215062",
         "originalPrice": "Rs 62,800",
         "currentPrice": "Rs 40,500",
         "discount": "-36%"
@@ -5316,7 +5316,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://zahstudio.com.pk/collections/all",
-    "checkedAt": "2026-11-20T09:50:00.506Z",
+    "checkedAt": "2026-11-20T13:54:18.460Z",
     "source": "auto",
     "logo": "https://zahstudio.com.pk/cdn/shop/files/zah_logo_copy-removebg-preview_622x.png?v=1643969618"
   },
@@ -5332,67 +5332,67 @@
       "sourceUrl": "https://insignia.com.pk/collections/sale",
       "products": [
         {
-          "name": "Casual Flip Flop IL3044-Silver",
-          "url": "https://insignia.com.pk/products/casual-flip-flop-il3044-silver",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_9099f154-c7c2-438e-b4e6-863c7db995da.jpg?v=1778649210",
-          "originalPrice": "Rs 3,450",
-          "currentPrice": "Rs 2,588",
-          "discount": "-25%"
-        },
-        {
-          "name": "Formal Court Shoes IF5090-Maroon",
-          "url": "https://insignia.com.pk/products/formal-court-shoes-if5090-maroon",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_77.png?v=1790339195",
-          "originalPrice": "Rs 6,950",
-          "currentPrice": "Rs 4,518",
-          "discount": "-35%"
-        },
-        {
-          "name": "Casual Pumps IC6058-Black",
-          "url": "https://insignia.com.pk/products/casual-pumps-ic6058-black",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_3168cdb3-18f2-4381-b548-c445c350dea1.jpg?v=1793698130",
-          "originalPrice": "Rs 5,950",
-          "currentPrice": "Rs 3,868",
-          "discount": "-35%"
-        },
-        {
-          "name": "Casual Pumps IC6058-Coffee",
-          "url": "https://insignia.com.pk/products/casual-pumps-ic6058-coffee",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_342222f7-e3ad-45cd-93f8-cd31537051fa.jpg?v=1793698406",
-          "originalPrice": "Rs 5,950",
-          "currentPrice": "Rs 3,868",
-          "discount": "-35%"
-        },
-        {
-          "name": "Casual Flip Flop IL6001-Brown",
-          "url": "https://insignia.com.pk/products/casual-flip-flop-il6001-brown",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_f2434357-bec2-4cf3-9982-14a00b2f538a.jpg?v=1791525015",
-          "originalPrice": "Rs 4,450",
-          "currentPrice": "Rs 3,338",
-          "discount": "-25%"
-        },
-        {
-          "name": "Casual Pumps IC6067-Black",
-          "url": "https://insignia.com.pk/products/casual-pumps-ic6067-black",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Model_wearing_pumps_c0899507_2K.jpg?v=1794296999",
-          "originalPrice": "Rs 5,450",
-          "currentPrice": "Rs 3,543",
-          "discount": "-35%"
-        },
-        {
-          "name": "Formal Court Shoes IF5106-Maroon",
-          "url": "https://insignia.com.pk/products/formal-court-shoes-if5106-maroon",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitleddesign_85.png?v=1795002247",
+          "name": "Formal Court Shoes IF5113-Black",
+          "url": "https://insignia.com.pk/products/formal-court-shoes-if5113-black",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_c9f2cbb7-d6bf-44c4-9827-36e3b3d14b9c.jpg?v=1789106926",
           "originalPrice": "Rs 9,950",
           "currentPrice": "Rs 6,468",
           "discount": "-35%"
         },
         {
-          "name": "Formal Court Shoes IF5085-Brown",
-          "url": "https://insignia.com.pk/products/formal-court-shoes-if5085-brown",
-          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_37ce32c3-3847-4a25-a086-3b32f61162f4.jpg?v=1792754145",
-          "originalPrice": "Rs 7,950",
-          "currentPrice": "Rs 5,963",
+          "name": "Comfort Court Shoes IK5001-Beige",
+          "url": "https://insignia.com.pk/products/comfort-court-shoes-ik5001-beige",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_4f1139e9-0124-40c4-8ecc-412b7a618e2f.jpg?v=1792578990",
+          "originalPrice": "Rs 9,950",
+          "currentPrice": "Rs 6,468",
+          "discount": "-35%"
+        },
+        {
+          "name": "Formal Court Shoes IF5106-Beige",
+          "url": "https://insignia.com.pk/products/formal-court-shoes-if5106-beige",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_0032d460-b4af-40d3-9c83-ffc041fca357.jpg?v=1790165042",
+          "originalPrice": "Rs 9,950",
+          "currentPrice": "Rs 6,468",
+          "discount": "-35%"
+        },
+        {
+          "name": "Formal Court Shoes IF5113-Maroon",
+          "url": "https://insignia.com.pk/products/formal-court-shoes-if5113-maroon",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_06719bf7-b5c5-4c53-9993-6e764c6ed02e.jpg?v=1789106835",
+          "originalPrice": "Rs 9,950",
+          "currentPrice": "Rs 6,468",
+          "discount": "-35%"
+        },
+        {
+          "name": "Formal Court Shoes IF5101-Brown",
+          "url": "https://insignia.com.pk/products/formal-court-shoes-if5101-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_dc2fdcc5-192f-48e3-aedf-cf4877f3b267.jpg?v=1793108653",
+          "originalPrice": "Rs 9,950",
+          "currentPrice": "Rs 7,463",
+          "discount": "-25%"
+        },
+        {
+          "name": "Formal Court Shoes IF5086-Black",
+          "url": "https://insignia.com.pk/products/formal-court-shoes-if5086-black",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_82ec5454-7d71-4fb7-9867-cc46fbd2bf99.jpg?v=1794059449",
+          "originalPrice": "Rs 8,450",
+          "currentPrice": "Rs 6,338",
+          "discount": "-25%"
+        },
+        {
+          "name": "Party Wear Court Shoes IP5034-Black",
+          "url": "https://insignia.com.pk/products/party-wear-court-shoes-ip5034-black",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_baa6f85b-3ecf-4da4-b97a-8baa62c57859.jpg?v=1794904758",
+          "originalPrice": "Rs 7,450",
+          "currentPrice": "Rs 5,588",
+          "discount": "-25%"
+        },
+        {
+          "name": "Formal Court Shoes IF5089-Pink",
+          "url": "https://insignia.com.pk/products/formal-court-shoes-if5089-pink",
+          "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_e5d1a37c-6329-4521-bdb1-db240bc44e9d.jpg?v=1790597096",
+          "originalPrice": "Rs 5,950",
+          "currentPrice": "Rs 4,463",
           "discount": "-25%"
         }
       ],
@@ -5471,7 +5471,7 @@
       {
         "name": "Casual Sling Back IC4011-Tea Pink",
         "url": "https://insignia.com.pk/products/casual-sling-back-ic4011-tea-pink",
-        "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_70.png?v=1790337755",
+        "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_900dfbf8-80f2-4e0e-b111-e92f5e9062e8.jpg?v=1785141915",
         "originalPrice": "Rs 4,950",
         "currentPrice": "Rs 3,218",
         "discount": "-35%"
@@ -5495,7 +5495,7 @@
       {
         "name": "Casual Sling Back IC4011-Black",
         "url": "https://insignia.com.pk/products/casual-sling-back-ic4011-black",
-        "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/Untitled_design_69.png?v=1790338226",
+        "image": "https://cdn.shopify.com/s/files/1/0490/2443/4341/files/1_12b64294-92a5-4780-93bc-187a1a0401e8.jpg?v=1785141943",
         "originalPrice": "Rs 4,950",
         "currentPrice": "Rs 3,218",
         "discount": "-35%"
@@ -5534,7 +5534,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://insignia.com.pk/collections/women-new-arrival",
-    "checkedAt": "2026-11-20T09:50:02.584Z",
+    "checkedAt": "2026-11-20T13:54:20.594Z",
     "source": "auto",
     "logo": "https://insignia.com.pk/cdn/shop/files/final_logo_insignia-01_2847a8f6-7ff7-4e81-ab09-44d3d3fe386e.png?v=1686553684&width=500"
   },
@@ -5611,7 +5611,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://shopecs.com/collections/new-arrival-winter",
-    "checkedAt": "2026-11-20T09:50:04.874Z",
+    "checkedAt": "2026-11-20T13:54:22.696Z",
     "source": "auto",
     "logo": "https://shopecs.com/cdn/shop/files/logo.png"
   },
@@ -5829,7 +5829,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.borjan.com.pk/collections/new-in-women",
-    "checkedAt": "2026-11-20T09:50:06.658Z",
+    "checkedAt": "2026-11-20T13:54:24.437Z",
     "source": "auto",
     "logo": "https://www.borjan.com.pk/cdn/shop/files/200-x-100-px_275f4c30-848c-456c-8815-f6f614f7e92f.png?v=1759384800&width=500"
   },
@@ -5877,36 +5877,36 @@
           "discount": "-27%"
         },
         {
-          "name": "Modern Comfort Sneakers - Tan Suede",
-          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-tan-suede",
-          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/45B_939caf02-1bf7-4f90-bb0b-a927a8cd7183.jpg?v=1783078725",
-          "originalPrice": "Rs 14,990",
-          "currentPrice": "Rs 8,995",
-          "discount": "-40%"
-        },
-        {
-          "name": "Modern Comfort Sneakers - Black/White",
-          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-black-white",
-          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/50B_c7032ee7-cb8f-4116-9bd1-0ce56510588d.jpg?v=1783078674",
-          "originalPrice": null,
+          "name": "Heritage Moccasins - Brown",
+          "url": "https://fhsofficial.com/products/heritage-moccasins-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/2B_fe85fa6f-2f27-4d3f-9cb7-3bf51dbbef50.jpg?v=1789729224",
+          "originalPrice": "Rs 21,500",
           "currentPrice": "Rs 8,990",
-          "discount": null
+          "discount": "-58%"
         },
         {
-          "name": "Modern Comfort Sneakers - Tan/White",
-          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-tan-white",
-          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/37B_434831b9-bd13-4ca5-a011-edd55d933926.jpg?v=1783078631",
-          "originalPrice": "Rs 14,990",
-          "currentPrice": "Rs 8,995",
-          "discount": "-40%"
+          "name": "Snake Embossed Horsebit Loafers - Brown",
+          "url": "https://fhsofficial.com/products/snake-embossed-horsebit-loafers-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/7I_806b6194-1830-4f02-91ef-2bdf44d12c8f.jpg?v=1774941674",
+          "originalPrice": "Rs 19,990",
+          "currentPrice": "Rs 13,990",
+          "discount": "-30%"
         },
         {
-          "name": "Modern Comfort Sneakers - Brown/White",
-          "url": "https://fhsofficial.com/products/modern-comfort-sneakers-brown-white",
-          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/38B_df2f542e-f8cb-4fd5-a679-7f5b3bc52d00.jpg?v=1782990922",
-          "originalPrice": "Rs 14,990",
-          "currentPrice": "Rs 8,995",
-          "discount": "-40%"
+          "name": "Crocodile Embossed Leather Sandals - Black",
+          "url": "https://fhsofficial.com/products/crocodile-embossed-leather-sandals-black",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/43B_33ef8ddf-6ffd-4a09-89b2-23eb6515ad73.jpg?v=1782989291",
+          "originalPrice": "Rs 7,990",
+          "currentPrice": "Rs 5,590",
+          "discount": "-30%"
+        },
+        {
+          "name": "Crocodile Embossed Leather Sandals - Brown",
+          "url": "https://fhsofficial.com/products/crocodile-embossed-leather-sandals-brown",
+          "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/55B_e7a566a3-c237-43cb-8b18-e3cb97780471.jpg?v=1782989466",
+          "originalPrice": "Rs 7,990",
+          "currentPrice": "Rs 5,590",
+          "discount": "-30%"
         }
       ],
       "productsFound": 8,
@@ -5925,57 +5925,57 @@
         "name": "Artisan Twill Chino - Black",
         "url": "https://fhsofficial.com/products/artisan-twill-chino-black",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/36A_6223e1a1-144c-4853-9762-8eae3fc64656.jpg?v=1775725706",
-        "originalPrice": "Rs 5,690",
-        "currentPrice": "Rs 4,550",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 5,690",
+        "discount": null
       },
       {
         "name": "Artisan Twill Chino - Navy",
         "url": "https://fhsofficial.com/products/artisan-twill-chino-navy",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/39E_jpg_c890d645-44d7-4647-b402-e5364b258a2e.jpg?v=1775730720",
-        "originalPrice": "Rs 5,690",
-        "currentPrice": "Rs 4,550",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 5,690",
+        "discount": null
       },
       {
         "name": "Azure Bloom Hawaiian Shirt",
         "url": "https://fhsofficial.com/products/azure-bloom-hawaiian-shirt",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/2A_12371703-fffd-4621-bae2-82c3a267d197.jpg?v=1783073272",
-        "originalPrice": "Rs 4,490",
-        "currentPrice": "Rs 3,590",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 4,490",
+        "discount": null
       },
       {
         "name": "Basket-weave Patterned Moccasins - Black",
         "url": "https://fhsofficial.com/products/basket-weave-patterned-moccasins-black",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/3B_714ccbfd-3a5b-4dde-9316-121b9fa8b63c.jpg?v=1756063460",
-        "originalPrice": "Rs 18,900",
-        "currentPrice": "Rs 15,120",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 18,900",
+        "discount": null
       },
       {
         "name": "Black Classic Collar Shirt",
         "url": "https://fhsofficial.com/products/black-classic-collar-shirt",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/16A.jpg?v=1756063531",
-        "originalPrice": "Rs 5,990",
-        "currentPrice": "Rs 4,790",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 5,990",
+        "discount": null
       },
       {
         "name": "Black Clipped Moccasin",
         "url": "https://fhsofficial.com/products/black-clipped-moccasin",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/products/black-clipped-moccasin-397892.jpg?v=1756064201",
-        "originalPrice": "Rs 19,500",
-        "currentPrice": "Rs 15,600",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 19,500",
+        "discount": null
       },
       {
         "name": "Bold Flair Loafers-Coffee",
         "url": "https://fhsofficial.com/products/bold-flair-loafers-coffee",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/3H_09b36028-87ac-44db-86b3-b63fb181aa85.jpg?v=1764936120",
-        "originalPrice": "Rs 19,500",
-        "currentPrice": "Rs 9,750",
-        "discount": "-50%"
+        "originalPrice": null,
+        "currentPrice": "Rs 19,500",
+        "discount": null
       }
     ],
     "productsSourceUrl": "https://fhsofficial.com/collections/all",
@@ -5985,69 +5985,69 @@
         "name": "The Noir Weaved Loafers - Black",
         "url": "https://fhsofficial.com/products/the-noir-weaved-loafers-black",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/5B_52c20ac2-d9ad-49d7-8780-b7a92543c889.jpg?v=1789728926",
-        "originalPrice": "Rs 18,500",
-        "currentPrice": "Rs 14,800",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 18,500",
+        "discount": null
       },
       {
         "name": "Imperial Crocodile Embossed Moccasins - Black",
         "url": "https://fhsofficial.com/products/imperial-crocodile-embossed-moccasins-black",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/12B_a97f0cc0-4b36-4e37-95a1-d0a2d30d8214.jpg?v=1789728555",
-        "originalPrice": "Rs 11,990",
-        "currentPrice": "Rs 9,590",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 11,990",
+        "discount": null
       },
       {
         "name": "Prestige Nubuck Loafers - Navy",
         "url": "https://fhsofficial.com/products/prestige-nubuck-loafers-navy",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/9B_06088807-0160-4cc1-8f00-0819c7087c48.jpg?v=1789729009",
-        "originalPrice": "Rs 15,990",
-        "currentPrice": "Rs 12,790",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 15,990",
+        "discount": null
       },
       {
         "name": "The Belmont Mules - Tan",
         "url": "https://fhsofficial.com/products/the-belmont-mules-tan",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/13B_b5d043ea-c08e-463f-95c9-caf96e998682.jpg?v=1789729087",
-        "originalPrice": "Rs 12,990",
-        "currentPrice": "Rs 10,390",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 12,990",
+        "discount": null
       },
       {
         "name": "Buffalo Leather Moccasins - Black",
         "url": "https://fhsofficial.com/products/buffalo-leather-moccasins-black",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/3B_824726c2-a6f1-46d8-9a0f-2ad1e0ee660f.jpg?v=1789729717",
-        "originalPrice": "Rs 18,490",
-        "currentPrice": "Rs 14,790",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 18,490",
+        "discount": null
       },
       {
         "name": "Classic Cap-Toe Oxfords - Dark Brown",
         "url": "https://fhsofficial.com/products/classic-cap-toe-oxfords-dark-brown",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/6B_47a2e821-0926-4861-a431-35cf4ac94aa1.jpg?v=1789728859",
-        "originalPrice": "Rs 18,990",
-        "currentPrice": "Rs 15,190",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 18,990",
+        "discount": null
       },
       {
         "name": "Signature Mules - Coffee",
         "url": "https://fhsofficial.com/products/signature-mules-coffee",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/11B_1eb796ff-d363-4682-be76-5a0aef8cb2ec.jpg?v=1789729571",
-        "originalPrice": "Rs 12,500",
-        "currentPrice": "Rs 10,000",
-        "discount": "-20%"
+        "originalPrice": null,
+        "currentPrice": "Rs 12,500",
+        "discount": null
       },
       {
         "name": "Executive Brogue Oxfords - Black",
         "url": "https://fhsofficial.com/products/executive-brogue-oxfords-black",
         "image": "https://cdn.shopify.com/s/files/1/0575/3887/1502/files/4B_0b66945d-1df7-4b06-89e1-6f12e4e0e80c.jpg?v=1789729767",
-        "originalPrice": "Rs 18,990",
-        "currentPrice": "Rs 11,395",
-        "discount": "-40%"
+        "originalPrice": null,
+        "currentPrice": "Rs 18,990",
+        "discount": null
       }
     ],
     "newArrivalsSourceUrl": "https://fhsofficial.com/collections/new-in",
-    "checkedAt": "2026-11-20T09:50:08.954Z",
+    "checkedAt": "2026-11-20T13:54:26.615Z",
     "source": "auto",
     "logo": "https://fhsofficial.com/cdn/shop/files/fhs-logo_32x32.png?v=1623130354"
   },
@@ -6072,30 +6072,6 @@
         "discount": null
       },
       {
-        "name": "ADEEM - BLK",
-        "url": "https://giorgiovanti.com/products/coming-soon",
-        "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/Untitled-1_c99b695a-f52f-4062-8f36-0b8381708429.jpg?v=1769245969",
-        "originalPrice": "Rs 8,800",
-        "currentPrice": "Rs 4,400",
-        "discount": "-50%"
-      },
-      {
-        "name": "ADEEM - BRN",
-        "url": "https://giorgiovanti.com/products/adeem-brn",
-        "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/Untitled-1_93b5e366-126e-4066-a175-b95391b81878.jpg?v=1786606860",
-        "originalPrice": "Rs 8,800",
-        "currentPrice": "Rs 4,400",
-        "discount": "-50%"
-      },
-      {
-        "name": "ADEEM - TAN",
-        "url": "https://giorgiovanti.com/products/coming-soon-1",
-        "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/asdfdf_0019_Layer125.jpg?v=1769097365",
-        "originalPrice": "Rs 8,800",
-        "currentPrice": "Rs 5,280",
-        "discount": "-40%"
-      },
-      {
         "name": "AKORA - BLK",
         "url": "https://giorgiovanti.com/products/akora-blk",
         "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/Untitled-1_09c1e4b1-022e-402d-b8d1-7dd0bcf9678c.jpg?v=1788932352",
@@ -6118,6 +6094,30 @@
         "originalPrice": "Rs 12,500",
         "currentPrice": "Rs 6,250",
         "discount": "-50%"
+      },
+      {
+        "name": "ALLOSA - BROWN",
+        "url": "https://giorgiovanti.com/products/allosa-brn",
+        "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/Untitled-1_c2bc0b73-91fd-4fd6-905e-cfe7ee404b88.jpg?v=1784960878",
+        "originalPrice": "Rs 12,500",
+        "currentPrice": "Rs 6,250",
+        "discount": "-50%"
+      },
+      {
+        "name": "ARAI - ASH-GRAY",
+        "url": "https://giorgiovanti.com/products/arai-ash-gry",
+        "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/Untitled-1_db62c9bf-913d-46bd-8321-155074aac301.jpg?v=1790925806",
+        "originalPrice": null,
+        "currentPrice": "Rs 11,900",
+        "discount": null
+      },
+      {
+        "name": "ARAI - BLACK",
+        "url": "https://giorgiovanti.com/products/arai-blk",
+        "image": "https://cdn.shopify.com/s/files/1/0555/7583/8894/files/Untitled-1_ce3a145d-cc02-43b6-8b96-a6458c2f03dc.jpg?v=1792402798",
+        "originalPrice": null,
+        "currentPrice": "Rs 12,300",
+        "discount": null
       }
     ],
     "productsSourceUrl": "https://giorgiovanti.com/collections/all",
@@ -6189,7 +6189,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://giorgiovanti.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:10.655Z",
+    "checkedAt": "2026-11-20T13:54:28.376Z",
     "source": "auto",
     "logo": "https://giorgiovanti.com/cdn/shop/files/newlogopng.png?crop=center&height=600&v=1782192239&width=600"
   },
@@ -6275,7 +6275,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://saazstore.com/collections/all",
-    "checkedAt": "2026-11-20T09:50:12.225Z",
+    "checkedAt": "2026-11-20T13:54:29.864Z",
     "source": "auto",
     "logo": "https://saazstore.com/cdn/shop/files/saaz_1.png?v=1791373525&width=500"
   },
@@ -6428,6 +6428,14 @@
     "newArrival": true,
     "newArrivals": [
       {
+        "name": "ADIZERO EVO SL 2 - BLACK WHITE",
+        "url": "https://jutay.co/products/adizero-evo-sl-2-black-white",
+        "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/1_b71254a6-e55b-4bee-8b2b-21dc3a24fcc3.webp?v=1795168991",
+        "originalPrice": "Rs 18,500",
+        "currentPrice": "Rs 14,999",
+        "discount": "-19%"
+      },
+      {
         "name": "ADIZERO EVO SL 2 - ALL BLACK",
         "url": "https://jutay.co/products/adizero-evo-sl-2-all-black",
         "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/8_0dec0d3c-1464-4690-82ef-dc9efa778d65.webp?v=1795154324",
@@ -6447,6 +6455,14 @@
         "name": "ADIZERO EVO SL 2 - LUCID RED",
         "url": "https://jutay.co/products/adizero-evo-sl-2-lucid-red",
         "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/14_fbe5a8d3-ae59-4a9a-979e-f27d9c64b5e5.webp?v=1795154739",
+        "originalPrice": "Rs 18,500",
+        "currentPrice": "Rs 14,999",
+        "discount": "-19%"
+      },
+      {
+        "name": "ADIZERO EVO SL 2 - WHITE BLACK",
+        "url": "https://jutay.co/products/adizero-evo-sl-2-white-black",
+        "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/4_a362a21e-7db6-47a6-9bee-953ed113b0f5.webp?v=1795168824",
         "originalPrice": "Rs 18,500",
         "currentPrice": "Rs 14,999",
         "discount": "-19%"
@@ -6474,28 +6490,12 @@
         "originalPrice": "Rs 18,500",
         "currentPrice": "Rs 15,999",
         "discount": "-14%"
-      },
-      {
-        "name": "GEL RESOLUTION X - DARK COBALT",
-        "url": "https://jutay.co/products/gel-resolution-x-dark-cobalt",
-        "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/12_b8f08f19-a836-442b-be81-e7b90b0bbb9c.webp?v=1795092318",
-        "originalPrice": "Rs 22,500",
-        "currentPrice": "Rs 15,999",
-        "discount": "-29%"
-      },
-      {
-        "name": "GEL RESOLUTION X - ICE MINT LAGOON",
-        "url": "https://jutay.co/products/gel-resolution-x-ice-mint-lagoon",
-        "image": "https://cdn.shopify.com/s/files/1/0609/8416/4583/files/9_215dd005-fecb-48d6-97ca-02107dd0ac28.webp?v=1795092388",
-        "originalPrice": "Rs 22,500",
-        "currentPrice": "Rs 15,999",
-        "discount": "-29%"
       }
     ],
     "newArrivalsSourceUrl": "https://jutay.co/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:50:14.995Z",
+    "checkedAt": "2026-11-20T13:54:32.662Z",
     "source": "auto",
-    "logo": "https://jutay.co/cdn/shop/t/21/assets/logo.png?v=19065"
+    "logo": "https://jutay.co/cdn/shop/t/21/assets/logo.png?v=19074"
   },
   "ndure": {
     "status": "sale",
@@ -6711,7 +6711,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.ndure.com/collections/new-in",
-    "checkedAt": "2026-11-20T09:50:17.376Z",
+    "checkedAt": "2026-11-20T13:54:34.887Z",
     "source": "auto",
     "logo": "https://www.ndure.com/cdn/shop/files/logo_2_8576e595-38de-4ceb-a299-52968609c0b7.svg?v=1696359047&width=500"
   },
@@ -6929,7 +6929,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://onedegree.com.pk/collections/summer-new-arrivals-2026",
-    "checkedAt": "2026-11-20T09:50:19.210Z",
+    "checkedAt": "2026-11-20T13:54:36.889Z",
     "source": "auto",
     "logo": "https://onedegree.com.pk/cdn/shop/files/1od-black-favicon.png?crop=center&height=180&v=1740548594&width=180"
   },
@@ -7147,7 +7147,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://servis.pk/collections/kids-new-arrivals",
-    "checkedAt": "2026-11-20T09:50:21.025Z",
+    "checkedAt": "2026-11-20T13:54:38.918Z",
     "source": "auto",
     "logo": "https://servis.pk/cdn/shop/files/new-servis-0122.png?v=1709385446&width=500"
   },
@@ -7244,72 +7244,72 @@
     "newArrival": true,
     "newArrivals": [
       {
-        "name": "Girls Golden Fancy Pumps KD8369",
-        "url": "https://stylo.pk/products/girls-golden-fancy-pumps-kd8369",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/KD836915.webp?v=1787642158",
-        "originalPrice": "Rs 2,000",
-        "currentPrice": "Rs 1,580",
+        "name": "Brown Ethnic Back Open Khussa For Ladies EC8838",
+        "url": "https://stylo.pk/products/brown-ethnic-back-open-khussa-for-ladies-ec8838",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC883802_4.webp?v=1795156903",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,000",
+        "discount": null
+      },
+      {
+        "name": "Yellow Fancy Khussa For Ladies EC8837",
+        "url": "https://stylo.pk/products/yellow-fancy-khussa-for-ladies-ec8837",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC883720_4.webp?v=1795156904",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,000",
+        "discount": null
+      },
+      {
+        "name": "Brown Fancy Khussa For Ladies EC8836",
+        "url": "https://stylo.pk/products/brown-fancy-khussa-for-ladies-ec8836",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC883602_3.webp?v=1795156905",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,000",
+        "discount": null
+      },
+      {
+        "name": "Mehndi Fancy Khussa For Ladies EC8835",
+        "url": "https://stylo.pk/products/mehndi-fancy-khussa-for-ladies-ec8835",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC883526_1.webp?v=1795156905",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,000",
+        "discount": null
+      },
+      {
+        "name": "Pink Ethnic Khussa For Ladies EC8796",
+        "url": "https://stylo.pk/products/pink-ethnic-khussa-for-ladies-ec8796",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC879618_2.webp?v=1795156904",
+        "originalPrice": "Rs 3,200",
+        "currentPrice": "Rs 2,530",
         "discount": "-21%"
       },
       {
-        "name": "Girls Fawn Casual Pumps KD8365",
-        "url": "https://stylo.pk/products/girls-fawn-casual-pumps-kd8365",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/KD836514.webp?v=1787642159",
-        "originalPrice": "Rs 1,800",
-        "currentPrice": "Rs 1,420",
-        "discount": "-21%"
+        "name": "Coffee Ethnic Khussa For Ladies EC8790",
+        "url": "https://stylo.pk/products/coffee-ethnic-khussa-for-ladies-ec8790",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC879041_3.webp?v=1795156904",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,000",
+        "discount": null
       },
       {
-        "name": "Girls Golden Fancy Pumps KD8254",
-        "url": "https://stylo.pk/products/girls-golden-fancy-pumps-kd8254",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/KD825415.webp?v=1787642159",
-        "originalPrice": "Rs 2,000",
-        "currentPrice": "Rs 1,580",
-        "discount": "-21%"
+        "name": "Black Ethnic Khussa For Ladies EC8790",
+        "url": "https://stylo.pk/products/black-ethnic-khussa-for-ladies-ec8790",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC879001_4.webp?v=1795156904",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,000",
+        "discount": null
       },
       {
-        "name": "Boys Navy Formal Moccasin KD8450",
-        "url": "https://stylo.pk/products/boys-navy-formal-moccasin-kd8450",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/KD845048.webp?v=1787642159",
-        "originalPrice": "Rs 2,000",
-        "currentPrice": "Rs 1,580",
-        "discount": "-21%"
-      },
-      {
-        "name": "White Fancy Khussa For Women EC8831",
-        "url": "https://stylo.pk/products/white-fancy-khussa-for-women-ec8831",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC883109_1.webp?v=1787642159",
-        "originalPrice": "Rs 2,500",
-        "currentPrice": "Rs 1,980",
-        "discount": "-21%"
-      },
-      {
-        "name": "Black Fancy Khussa For Women EC8831",
-        "url": "https://stylo.pk/products/black-fancy-khussa-for-women-ec8831",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC883101.webp?v=1787642159",
-        "originalPrice": "Rs 2,500",
-        "currentPrice": "Rs 1,980",
-        "discount": "-21%"
-      },
-      {
-        "name": "Pink Pumps For Women WN1445",
-        "url": "https://stylo.pk/products/pink-pumps-for-women-wn1445",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN144518_2.webp?v=1787642159",
-        "originalPrice": "Rs 2,800",
-        "currentPrice": "Rs 2,210",
-        "discount": "-21%"
-      },
-      {
-        "name": "Beige Moccasin For Ladies WN7567",
-        "url": "https://stylo.pk/products/beige-moccasin-for-ladies-wn7567",
-        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/WN756762_3.webp?v=1787642159",
-        "originalPrice": "Rs 4,800",
-        "currentPrice": "Rs 3,790",
+        "name": "Maroon Ethnic Khussa For Ladies EC8786",
+        "url": "https://stylo.pk/products/maroon-ethnic-khussa-for-ladies-ec8786",
+        "image": "https://cdn.shopify.com/s/files/1/0485/1459/7030/files/EC878605_2.webp?v=1795156905",
+        "originalPrice": "Rs 3,200",
+        "currentPrice": "Rs 2,530",
         "discount": "-21%"
       }
     ],
     "newArrivalsSourceUrl": "https://stylo.pk/collections/new-in",
-    "checkedAt": "2026-11-20T09:50:23.106Z",
+    "checkedAt": "2026-11-20T13:54:41.051Z",
     "source": "auto",
     "logo": "https://stylo.pk/cdn/shop/files/Untitled-1.svg?v=1721730862&width=240"
   },
@@ -7511,7 +7511,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.tsmco.com.pk/collections/all",
-    "checkedAt": "2026-11-20T09:50:24.882Z",
+    "checkedAt": "2026-11-20T13:54:42.859Z",
     "source": "auto",
     "logo": "https://www.tsmandco.co/cdn/shop/files/TSM-tag-optimized-header_119x.png?v=1753808569"
   },
@@ -7653,7 +7653,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://dolcevitahome.com.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:27.439Z",
+    "checkedAt": "2026-11-20T13:54:45.875Z",
     "source": "auto",
     "logo": "https://dolcevitahome.com.pk/cdn/shop/files/logo_1.png?v=1786521572&width=140"
   },
@@ -7679,7 +7679,7 @@
         {
           "name": "Tropical Garden Printed Double Bed Sheet",
           "url": "https://habitt.com/products/tropical-garden-printed-double-bed-sheet",
-          "image": "https://cdn.shopify.com/s/files/1/0429/7654/2881/files/habitt-original-1795084364416-1.webp?v=1795084366",
+          "image": "https://cdn.shopify.com/s/files/1/0429/7654/2881/files/1000245711.png?v=1795180077",
           "originalPrice": "Rs 3,990",
           "currentPrice": "Rs 1,990",
           "discount": "-50%"
@@ -7687,7 +7687,7 @@
         {
           "name": "Vintage Blossom Printed Double Bed Sheet",
           "url": "https://habitt.com/products/vintage-blossom-printed-double-bed-sheet",
-          "image": "https://cdn.shopify.com/s/files/1/0429/7654/2881/files/habitt-original-1795084425101-1.webp?v=1795084426",
+          "image": "https://cdn.shopify.com/s/files/1/0429/7654/2881/files/1000245712.png?v=1795180030",
           "originalPrice": "Rs 3,990",
           "currentPrice": "Rs 1,990",
           "discount": "-50%"
@@ -7695,7 +7695,7 @@
         {
           "name": "Blush Meadow Floral Printed Double Bed Sheet",
           "url": "https://habitt.com/products/blush-meadow-floral-printed-double-bed-sheet",
-          "image": "https://cdn.shopify.com/s/files/1/0429/7654/2881/files/habitt-original-1795084224809-1.webp?v=1795085369",
+          "image": "https://cdn.shopify.com/s/files/1/0429/7654/2881/files/1000245710.png?v=1795180123",
           "originalPrice": "Rs 3,990",
           "currentPrice": "Rs 1,990",
           "discount": "-50%"
@@ -7871,7 +7871,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://habitt.com/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:50:29.231Z",
+    "checkedAt": "2026-11-20T13:54:47.448Z",
     "source": "auto",
     "logo": "https://habitt.com/cdn/shop/files/UR_habitt_RGB_32x32_af2e1940-9e66-4920-ab4b-83dcc062c2c7_32x32.webp?v=1695649086"
   },
@@ -8013,7 +8013,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.ideas.com.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:32.003Z",
+    "checkedAt": "2026-11-20T13:54:50.113Z",
     "source": "auto",
     "logo": "https://www.gulahmedshop.com/cdn/shop/files/Ideas_by_Gul_Ahmed_logo_702e259d-7a37-4625-a329-9c101d253711.png?crop=center&height=32&v=1782797528&width=32"
   },
@@ -8231,7 +8231,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://chenone.com/en-pakistan/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:34.259Z",
+    "checkedAt": "2026-11-20T13:54:52.202Z",
     "source": "auto",
     "logo": "https://chenone.com/cdn/shop/files/black.png?v=1763555836&width=500"
   },
@@ -8449,7 +8449,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://interwood.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:36.544Z",
+    "checkedAt": "2026-11-20T13:54:54.147Z",
     "source": "auto",
     "logo": "https://cdn.shopify.com/s/files/1/0777/5666/2055/files/interwood_favicon_20250709.ico"
   },
@@ -8591,7 +8591,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://saeedghani.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:39.228Z",
+    "checkedAt": "2026-11-20T13:54:56.425Z",
     "source": "auto",
     "logo": "https://saeedghani.pk/cdn/shop/files/SG-logo_32x32.png?v=1613775667"
   },
@@ -8809,7 +8809,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://pk.hemaniherbals.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:40.682Z",
+    "checkedAt": "2026-11-20T13:54:58.045Z",
     "source": "auto",
     "logo": "https://pk.hemaniherbals.com/cdn/shop/files/hemani-logo1.png?v=1769439725"
   },
@@ -8951,7 +8951,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://alfatah.pk/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:50:42.887Z",
+    "checkedAt": "2026-11-20T13:55:01.397Z",
     "source": "auto",
     "logo": "https://alfatah.pk/cdn/shop/files/logo_48px.png?crop=center&height=32&v=1784354167&width=32"
   },
@@ -9028,6 +9028,38 @@
     "newArrival": true,
     "newArrivals": [
       {
+        "name": "Gilrs Skechers",
+        "url": "https://chasevalue.pk/products/gilrs-skechers-chase-value-a253351101",
+        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DZ7A0167-Photoroom.....jpg?v=1795181987",
+        "originalPrice": null,
+        "currentPrice": "Rs 899",
+        "discount": null
+      },
+      {
+        "name": "Boys Skechers",
+        "url": "https://chasevalue.pk/products/boys-skechers-chase-value-a253345101",
+        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DZ7A0142-Photoroom....jpg?v=1795182069",
+        "originalPrice": null,
+        "currentPrice": "Rs 899",
+        "discount": null
+      },
+      {
+        "name": "Boys Skechers",
+        "url": "https://chasevalue.pk/products/boys-skechers-chase-value-a253353101",
+        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DZ7A0162-Photoroom_copy.jpg?v=1795182116",
+        "originalPrice": null,
+        "currentPrice": "Rs 995",
+        "discount": null
+      },
+      {
+        "name": "Boys Skechers",
+        "url": "https://chasevalue.pk/products/boys-skechers-chase-value-a253347101",
+        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DZ7A0147-Photoroom_copy.jpg?v=1795182198",
+        "originalPrice": null,
+        "currentPrice": "Rs 899",
+        "discount": null
+      },
+      {
         "name": "Valuables Cocoa Butter Lotion - 75ml",
         "url": "https://chasevalue.pk/products/valuables-cocoa-butter-lotion-75ml-valuables-745178339261",
         "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/Gemini_Generated_Image_vgktiuvgktiuvgktcopy....jpg?v=1795000421",
@@ -9058,42 +9090,10 @@
         "originalPrice": null,
         "currentPrice": "Rs 4,499",
         "discount": null
-      },
-      {
-        "name": "Eminent Men's Slippers",
-        "url": "https://chasevalue.pk/products/eminent-mens-slippers-eminent-a245956101",
-        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DSC06936-Photoroom.....jpg?v=1794920105",
-        "originalPrice": null,
-        "currentPrice": "Rs 4,999",
-        "discount": null
-      },
-      {
-        "name": "Eminent Men's Sandals",
-        "url": "https://chasevalue.pk/products/eminent-mens-sandals-eminent-a245966101",
-        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DSC06907-Photoroom....jpg?v=1794920360",
-        "originalPrice": null,
-        "currentPrice": "Rs 4,999",
-        "discount": null
-      },
-      {
-        "name": "Eminent Men's Sandals",
-        "url": "https://chasevalue.pk/products/eminent-mens-sandals-eminent-a245965101",
-        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DSC06927-Photoroom....jpg?v=1794920298",
-        "originalPrice": null,
-        "currentPrice": "Rs 4,999",
-        "discount": null
-      },
-      {
-        "name": "Eminent Women's Softy Sandals",
-        "url": "https://chasevalue.pk/products/eminent-womens-softy-sandals-eminent-a244145101",
-        "image": "https://cdn.shopify.com/s/files/1/0081/3504/9293/files/DZ7A0024-Photoroom.....jpg?v=1794920001",
-        "originalPrice": null,
-        "currentPrice": "Rs 3,999",
-        "discount": null
       }
     ],
     "newArrivalsSourceUrl": "https://chasevalue.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-19T14:13:56.903Z",
+    "checkedAt": "2026-11-20T13:55:04.875Z",
     "source": "auto",
     "logo": "https://chasevalue.pk/cdn/shop/files/Chase_value_logo.gif?v=1654242350&width=32"
   },
@@ -9235,7 +9235,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://www.bhojascollections.com/collections/new-arrival",
-    "checkedAt": "2026-11-20T09:50:50.334Z",
+    "checkedAt": "2026-11-20T13:55:09.129Z",
     "source": "auto",
     "logo": "https://www.bhojascollections.com/cdn/shop/files/Bhojas_Collection_Logo_x60.png?v=1780384640"
   },
@@ -9388,7 +9388,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://hub.com.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:52.197Z",
+    "checkedAt": "2026-11-20T13:55:10.470Z",
     "source": "auto",
     "logo": "https://hub.com.pk/cdn/shop/files/Desktop-Logo-Hub-White-46a0196-hub_2_copy_140x@2x.png?v=1613230466"
   },
@@ -9530,7 +9530,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://jafferjees.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:53.745Z",
+    "checkedAt": "2026-11-20T13:55:12.199Z",
     "source": "auto",
     "logo": "https://usa.jafferjees.com/cdn/shop/files/J_Logo_200_X_90.png?v=1710153395&width=200"
   },
@@ -9683,7 +9683,7 @@
       }
     ],
     "newArrivalsSourceUrl": "https://fioure.com/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:50:55.069Z",
+    "checkedAt": "2026-11-20T13:55:13.499Z",
     "source": "auto",
     "logo": "https://fioure.com/cdn/shop/files/IMG-20260204-WA0059.jpg_-_Edited.png?v=1770219116&width=1333"
   },
@@ -9771,9 +9771,485 @@
     "newArrival": false,
     "newArrivals": [],
     "newArrivalsSourceUrl": "https://obipelle.com/collections/all",
-    "checkedAt": "2026-11-20T09:50:56.950Z",
+    "checkedAt": "2026-11-20T13:55:15.191Z",
     "source": "auto",
     "logo": "https://obipelle.co.uk/cdn/shop/files/obi_pelle_logo_1000x1000_transparent.png?v=1789597365&width=512"
+  },
+  "allurebeauty": {
+    "status": "sale",
+    "live": {
+      "off": "Effortless Glam By Maybelline 20% off 0 Quantity Maybelline Maybelline…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "20% off",
+      "sourceUrl": "https://allurebeauty.pk/collections/on-sale",
+      "products": [
+        {
+          "name": "Maybelline Color Sensational Ultimatte Slim Lipstick",
+          "url": "https://allurebeauty.pk/products/maybelline-color-sensational-ultimatte-slim-lipstick-199-more-ruby-1-2",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/6902395803843.jpg?v=1752174763",
+          "originalPrice": "Rs 2,299",
+          "currentPrice": "Rs 1,839",
+          "discount": "-20%"
+        },
+        {
+          "name": "Maybelline Fit Me Matte+Poreless Foundation For Normal to Oily Skin",
+          "url": "https://allurebeauty.pk/products/maybelline-fit-me-matte-poreless-foundation-for-no",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshot2-2024-10-16T144024.592.png?v=1752172712",
+          "originalPrice": "Rs 3,499",
+          "currentPrice": "Rs 2,799",
+          "discount": "-20%"
+        },
+        {
+          "name": "Maybelline Fit Me Concealer",
+          "url": "https://allurebeauty.pk/products/fit-me-conceal-fair-16",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/products/41554247732.jpg?v=1752257430",
+          "originalPrice": "Rs 2,999",
+          "currentPrice": "Rs 2,399",
+          "discount": "-20%"
+        },
+        {
+          "name": "Maybelline Sensational Liquid Matte 04 Easy Berry",
+          "url": "https://allurebeauty.pk/products/c-sens-lipstick-liq-matte-02-as-1",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/MAYBELLINE-MaybellineSensationalLiquidLipMatteNo047ml-6902395723035-1-834889_5e0f8975-34d0-4d4f-9378-2cdc50c18cc4.jpg?v=1756124823",
+          "originalPrice": "Rs 2,299",
+          "currentPrice": "Rs 1,839",
+          "discount": "-20%"
+        },
+        {
+          "name": "Rimmel Stay Matte Pressed Powder Shade 002 Pink Blossom",
+          "url": "https://allurebeauty.pk/products/rimmel-stay-matte-pressed-powder-shade-002-pink-blossom",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/3607345064512-652438.webp?v=1752171378",
+          "originalPrice": "Rs 2,100",
+          "currentPrice": "Rs 1,680",
+          "discount": "-20%"
+        },
+        {
+          "name": "Maybelline Fit Me Mono Blush - 30 Fierce As",
+          "url": "https://allurebeauty.pk/products/maybelline-fit-me-mono-blush-30-fierce-as",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/6902395828327-355300.jpg?v=1752168727",
+          "originalPrice": "Rs 2,999",
+          "currentPrice": "Rs 2,399",
+          "discount": "-20%"
+        },
+        {
+          "name": "Maybelline New York Sensational Liquid Matte",
+          "url": "https://allurebeauty.pk/products/maybelline-new-york-sensational-liquid-matte-nu01",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/6902395832669_9_166db635-04c6-4297-8fbe-aa6a9ec406a8.png?v=1752172696",
+          "originalPrice": "Rs 2,299",
+          "currentPrice": "Rs 1,839",
+          "discount": "-20%"
+        },
+        {
+          "name": "Maybelline Color Sensational Creamy Matte Lipstick",
+          "url": "https://allurebeauty.pk/products/maybelline-color-sensational-creamy-matte-lipstick",
+          "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/640---red-liberation_1_3e173321-58ba-46e0-b1be-99e89eea9786.jpg?v=1752172719",
+          "originalPrice": "Rs 2,299",
+          "currentPrice": "Rs 1,839",
+          "discount": "-20%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "products": [
+      {
+        "name": "Abercrombie & Fitch Authentic Man EDT 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-man-edt-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-28T154501.414.png_turbo.webp?v=1752257024",
+        "originalPrice": null,
+        "currentPrice": "Rs 17,033",
+        "discount": null
+      },
+      {
+        "name": "Abercrombie & Fitch Authentic Moment Men EDT 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-moment-men-edt-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-28T154055.479.png_turbo.webp?v=1752257025",
+        "originalPrice": null,
+        "currentPrice": "Rs 16,766",
+        "discount": null
+      },
+      {
+        "name": "Abercrombie & Fitch Authentic Moment Women EDP 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-moment-women-edp-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-28T153556.145.png_turbo.webp?v=1752257026",
+        "originalPrice": null,
+        "currentPrice": "Rs 17,033",
+        "discount": null
+      },
+      {
+        "name": "Abercrombie & Fitch Authentic Night Men Edt 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-night-men-edt-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-28T150350.826.png_turbo.webp?v=1752257029",
+        "originalPrice": null,
+        "currentPrice": "Rs 17,033",
+        "discount": null
+      },
+      {
+        "name": "Abercrombie & Fitch Authentic Night Women EDP 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-night-women-edp-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/61vNt3Z7EWS._SL1500.jpg_turbo.webp?v=1752257026",
+        "originalPrice": "Rs 17,033",
+        "currentPrice": "Rs 15,330",
+        "discount": "-10%"
+      },
+      {
+        "name": "Abercrombie & Fitch Authentic Self Men EDT 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-self-men-edt-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-28T152402.508.png_turbo.webp?v=1752257029",
+        "originalPrice": "Rs 17,033",
+        "currentPrice": "Rs 15,330",
+        "discount": "-10%"
+      },
+      {
+        "name": "Abercrombie & Fitch Authentic Self Women EDP 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-authentic-self-women-edp-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-28T152755.518.png_turbo.webp?v=1752257027",
+        "originalPrice": "Rs 17,033",
+        "currentPrice": "Rs 15,330",
+        "discount": "-10%"
+      },
+      {
+        "name": "Abercrombie & Fitch Away Men EDT 100Ml",
+        "url": "https://allurebeauty.pk/products/abercrombie-fitch-away-men-edt-100ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots-2024-09-30T145633.467.png_turbo.webp?v=1752256995",
+        "originalPrice": "Rs 17,033",
+        "currentPrice": "Rs 15,330",
+        "discount": "-10%"
+      }
+    ],
+    "productsSourceUrl": "https://allurebeauty.pk/collections/all",
+    "newArrival": true,
+    "newArrivals": [
+      {
+        "name": "Bourjois Volume Glamour Max Definition Mascara",
+        "url": "https://allurebeauty.pk/products/bourjois-volume-glamour-max-definition-mascara",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/3616305721365_principal.webp?v=1760007355",
+        "originalPrice": "Rs 3,870",
+        "currentPrice": "Rs 3,096",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Volume Glamour Max Intensité Mascara - 01 Black",
+        "url": "https://allurebeauty.pk/products/bourjois-volume-glamour-max-intensite-mascara-01-black",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/3616305721372_1_1000x1000_78c860fc-9da2-4ec3-945f-1d9fc9a4beed.webp?v=1758537134",
+        "originalPrice": "Rs 3,870",
+        "currentPrice": "Rs 3,096",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Lipstick And Lip Liner 2 In 1 Velvet The Pencil",
+        "url": "https://allurebeauty.pk/products/bourjois-lipstick-and-lip-liner-2-in-1-velvet-the-pencil",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/0-233_03713e2e-7fcc-4b5f-b268-ba9e653173c6.webp?v=1753357728",
+        "originalPrice": "Rs 2,500",
+        "currentPrice": "Rs 2,000",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Healthy Mix Lengthen & Lift Mascara 01",
+        "url": "https://allurebeauty.pk/products/bourjois-healthy-mix-lengthen-lift-mascara-01",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots_50.png?v=1752238854",
+        "originalPrice": "Rs 3,750",
+        "currentPrice": "Rs 3,000",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Contour Clubbing Wateproof - 046 Bleu Neon",
+        "url": "https://allurebeauty.pk/products/bourjois-contour-clubbing-wateproof-046-bleu-neon",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Dr.Clinic_30.webp?v=1752238514",
+        "originalPrice": "Rs 3,260",
+        "currentPrice": "Rs 2,608",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Moon Bourjois La Captivante For Women Edp 50Ml",
+        "url": "https://allurebeauty.pk/products/bourjois-moon-bourjois-la-captivante-for-women-edp-50ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/1297046-1.jpg?v=1752238846",
+        "originalPrice": "Rs 5,110",
+        "currentPrice": "Rs 4,088",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Moon Bourjois La Formidable For Women Edp 50Ml",
+        "url": "https://allurebeauty.pk/products/bourjois-moon-bourjois-la-formidable-for-women-edp-50ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots_44_ff0490ca-67f7-47cb-b137-ddbab9d61e4b.png?v=1752238844",
+        "originalPrice": "Rs 5,110",
+        "currentPrice": "Rs 4,088",
+        "discount": "-20%"
+      },
+      {
+        "name": "Bourjois Mon Bourjois La Fantastique For Women Edp 50Ml",
+        "url": "https://allurebeauty.pk/products/bourjois-mon-bourjois-la-fantastique-for-women-edp-50ml",
+        "image": "https://cdn.shopify.com/s/files/1/0568/4635/2438/files/Packshots_47_b68fcee9-4afa-4263-a4df-ff2cad91be0c.png?v=1752238852",
+        "originalPrice": "Rs 5,110",
+        "currentPrice": "Rs 4,088",
+        "discount": "-20%"
+      }
+    ],
+    "newArrivalsSourceUrl": "https://allurebeauty.pk/collections/bourjois-new-arrivals",
+    "checkedAt": "2026-11-20T13:55:17.760Z",
+    "source": "auto",
+    "logo": "https://allurebeauty.pk/REPLACE_WITH_LOGO_CDN_URL"
+  },
+  "glowandglee": {
+    "status": "sale",
+    "live": {
+      "off": "🎁 Bundles &amp; Kits: Up to 25% Off. Shop Bundles 🚚 Free Shipping on…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "25% Off",
+      "sourceUrl": "https://glownglee.com/",
+      "products": [],
+      "productsFound": 0,
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
+    },
+    "products": [
+      {
+        "name": "301 First Kiss",
+        "url": "https://glownglee.com/products/301-first-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09877s.jpg?v=1738655331",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "302 Love Kiss",
+        "url": "https://glownglee.com/products/302-love-kiss-1",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09753s.jpg?v=1738655330",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "303 Kiss Me",
+        "url": "https://glownglee.com/products/302-love-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09530s.jpg?v=1738655329",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "304 Hot Kiss",
+        "url": "https://glownglee.com/products/304-hot-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09933s.jpg?v=1738655328",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "305 let's Kiss",
+        "url": "https://glownglee.com/products/305-let_s-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09702s.jpg?v=1738655327",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "306 Magic Kiss",
+        "url": "https://glownglee.com/products/306-magic-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09269s.jpg?v=1738655326",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "307 Soft Kiss",
+        "url": "https://glownglee.com/products/3067-soft-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09973s.jpg?v=1738655325",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      },
+      {
+        "name": "308 Warm Kiss",
+        "url": "https://glownglee.com/products/307-warm-kiss",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/DSC09610s.jpg?v=1738655324",
+        "originalPrice": "Rs 1,495",
+        "currentPrice": "Rs 1,346",
+        "discount": "-10%"
+      }
+    ],
+    "productsSourceUrl": "https://glownglee.com/collections/all",
+    "newArrival": true,
+    "newArrivals": [
+      {
+        "name": "Acne Control Travel Kit",
+        "url": "https://glownglee.com/products/acne-control-travel-kit",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/gg-bundle-acne-travel-kit.jpg?v=1793446332",
+        "originalPrice": "Rs 5,208",
+        "currentPrice": "Rs 3,906",
+        "discount": "-25%"
+      },
+      {
+        "name": "Acne Starter Kit",
+        "url": "https://glownglee.com/products/acne-starter-kit",
+        "image": "https://cdn.shopify.com/s/files/1/0655/1126/0400/files/gg-bundle-acne-starter.jpg?v=1793446332",
+        "originalPrice": "Rs 7,458",
+        "currentPrice": "Rs 5,594",
+        "discount": "-25%"
+      }
+    ],
+    "newArrivalsSourceUrl": "https://glownglee.com/collections/all",
+    "checkedAt": "2026-11-20T13:55:20.878Z",
+    "source": "auto",
+    "logo": "https://glownglee.com/cdn/shop/files/FAVICON.png?crop=center&height=32&v=1675232298&width=32"
+  },
+  "kikomilano": {
+    "status": "sale",
+    "live": {
+      "off": "tioners Serums Masks New Upto 70% OFF Face &amp; Skin Routine UAE KSA…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "70% off",
+      "sourceUrl": "https://kikocosmetics.pk/",
+      "products": [],
+      "productsFound": 0,
+      "note": "We could not find a dedicated sale page on this brand's website, so we can't list individual products here. The sale itself is live — tap through to see everything on offer."
+    },
+    "products": [
+      {
+        "name": "3D Hydra Cozy Limited Edition",
+        "url": "https://kikocosmetics.pk/products/3d-hydra-cozy-limited-edition",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/01-20260410_71d23350-c003-45d3-ad2a-d3ee0817d2df.webp?v=1782130522",
+        "originalPrice": null,
+        "currentPrice": "Rs 9,450",
+        "discount": null
+      },
+      {
+        "name": "3D Hydra Lip Oil",
+        "url": "https://kikocosmetics.pk/products/3d-hydra-lip-oil",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM000000473001B_01.webp?v=1752043478",
+        "originalPrice": null,
+        "currentPrice": "Rs 6,210",
+        "discount": null
+      },
+      {
+        "name": "3D Hydra Lip Stylo",
+        "url": "https://kikocosmetics.pk/products/3d-hydra-lip-stylo",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/01-20250723_63d811f7-d339-406f-b0c8-b7eced0ff88f.webp?v=1758781290",
+        "originalPrice": null,
+        "currentPrice": "Rs 6,750",
+        "discount": null
+      },
+      {
+        "name": "3D Hydra Lipgloss",
+        "url": "https://kikocosmetics.pk/products/3d-hydra-lipgloss",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM0020201800144_01_1_1.webp?v=1752043506",
+        "originalPrice": null,
+        "currentPrice": "Rs 6,750",
+        "discount": null
+      },
+      {
+        "name": "3D Hydra Xtreme Lipgloss",
+        "url": "https://kikocosmetics.pk/products/3d-hydra-xtreme-lipgloss",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/01-20250723_9ca7330a-b86d-45dd-8119-656a3c501dfd.webp?v=1758781256",
+        "originalPrice": null,
+        "currentPrice": "Rs 8,010",
+        "discount": null
+      },
+      {
+        "name": "All In One",
+        "url": "https://kikocosmetics.pk/products/all-in-one",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM000000180001B_01.webp?v=1752044163",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,510",
+        "discount": null
+      },
+      {
+        "name": "Antifatigue Face Mask",
+        "url": "https://kikocosmetics.pk/products/anti-fatigue-face-mask",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KS000000124001B_01.webp?v=1752043918",
+        "originalPrice": null,
+        "currentPrice": "Rs 2,250",
+        "discount": null
+      },
+      {
+        "name": "Beauty Case",
+        "url": "https://kikocosmetics.pk/products/beauty-case",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM0050703300044_01.webp?v=1752043982",
+        "originalPrice": null,
+        "currentPrice": "Rs 6,210",
+        "discount": null
+      }
+    ],
+    "productsSourceUrl": "https://kikocosmetics.pk/collections/all",
+    "newArrival": true,
+    "newArrivals": [
+      {
+        "name": "Glamour Multi Finish Eyeshadow Palette",
+        "url": "https://kikocosmetics.pk/products/glamour-multi-finish-es-palette",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM000000226002B_01.webp?v=1752044149",
+        "originalPrice": null,
+        "currentPrice": "Rs 9,810",
+        "discount": null
+      },
+      {
+        "name": "Glow Fusion Powder Highlighter",
+        "url": "https://kikocosmetics.pk/products/glow-fusion-pwdr-hlghtr",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM0010600600244_01.webp?v=1752044078",
+        "originalPrice": null,
+        "currentPrice": "Rs 6,750",
+        "discount": null
+      },
+      {
+        "name": "Skin Trainer Cc Blur",
+        "url": "https://kikocosmetics.pk/products/skin-trainer-cc-blur",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KS000000111001B_01.webp?v=1752043929",
+        "originalPrice": null,
+        "currentPrice": "Rs 11,250",
+        "discount": null
+      },
+      {
+        "name": "Instamoisture Glow Foundation",
+        "url": "https://kikocosmetics.pk/products/instamoisture-glow-foundation",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM000000348001B_01.webp?v=1752043660",
+        "originalPrice": null,
+        "currentPrice": "Rs 10,710",
+        "discount": null
+      },
+      {
+        "name": "Radiance Boost Serum Face Base",
+        "url": "https://kikocosmetics.pk/products/radiance-boost-serum-face-base",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KM000000196001B_01.webp?v=1752044159",
+        "originalPrice": null,
+        "currentPrice": "Rs 9,450",
+        "discount": null
+      },
+      {
+        "name": "Nourish & Protect Daily Hair Serum",
+        "url": "https://kikocosmetics.pk/products/haircare-24-daily-hair-serum",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KS000000234001B_01.webp?v=1752043612",
+        "originalPrice": null,
+        "currentPrice": "Rs 10,350",
+        "discount": null
+      },
+      {
+        "name": "Skin Trainer Eyes",
+        "url": "https://kikocosmetics.pk/products/skin-trainer-eyes",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KS000000106001B_01.webp?v=1752043934",
+        "originalPrice": null,
+        "currentPrice": "Rs 10,710",
+        "discount": null
+      },
+      {
+        "name": "Nourish & Protect Conditioner",
+        "url": "https://kikocosmetics.pk/products/haircare-24-conditioner",
+        "image": "https://cdn.shopify.com/s/files/1/0681/4302/2372/files/kiko_KS000000235001B_01.webp?v=1752043613",
+        "originalPrice": null,
+        "currentPrice": "Rs 8,910",
+        "discount": null
+      }
+    ],
+    "newArrivalsSourceUrl": "https://kikocosmetics.pk/collections/new",
+    "checkedAt": "2026-11-20T13:55:24.156Z",
+    "source": "auto",
+    "logo": "https://kikocosmetics.pk/cdn/shop/files/fav_icon_4c79ff23-bf37-4eaa-b6f5-d595c90273d2_32x32.jpg?v=1672828235"
   },
   "lusciouscosmetics": {
     "status": "sale",
@@ -9784,11 +10260,11 @@
     },
     "sale": {
       "headline": "Clearance",
-      "sourceUrl": "https://lusciouscosmetics.pk/collections/clearance",
+      "sourceUrl": "https://iloveluscious.com/collections/clearance",
       "products": [
         {
           "name": "Sparkling Shimmer Highlighter",
-          "url": "https://lusciouscosmetics.pk/products/sparkling-face-shimmer",
+          "url": "https://iloveluscious.com/products/sparkling-face-shimmer",
           "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-sparkling-shimmer-highlighter-hero-image_f222d8a4-afc8-4dff-bf19-5ac796e185eb.webp?v=1786106273",
           "originalPrice": "Rs 1,475",
           "currentPrice": "Rs 995",
@@ -9801,7 +10277,7 @@
     "products": [
       {
         "name": "24-Hour Brow Definer Pencil",
-        "url": "https://lusciouscosmetics.pk/products/24-hour-brow-definer-eyebrow-pencil",
+        "url": "https://iloveluscious.com/products/24-hour-brow-definer-eyebrow-pencil",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-24-hour-brow-definer-hero-image.webp?v=1786103786",
         "originalPrice": "Rs 1,875",
         "currentPrice": "Rs 1,695",
@@ -9809,7 +10285,7 @@
       },
       {
         "name": "3D Lashes",
-        "url": "https://lusciouscosmetics.pk/products/3d-lashes",
+        "url": "https://iloveluscious.com/products/3d-lashes",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-Fairy-luxe-3d-lashes-x3-Hero-image.webp?v=1793621782",
         "originalPrice": "Rs 2,695",
         "currentPrice": "Rs 2,425",
@@ -9817,7 +10293,7 @@
       },
       {
         "name": "5-Minute Power Facial Mask",
-        "url": "https://lusciouscosmetics.pk/products/freshlabs-5-minute-power-facial-mask",
+        "url": "https://iloveluscious.com/products/freshlabs-5-minute-power-facial-mask",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/5-Minute-Power-Facial-Mask-Freshlabs-Hero_jpg.jpg?v=1790793570",
         "originalPrice": "Rs 3,650",
         "currentPrice": "Rs 2,950",
@@ -9825,7 +10301,7 @@
       },
       {
         "name": "All-Over Powder Brush",
-        "url": "https://lusciouscosmetics.pk/products/all-over-powder-brush",
+        "url": "https://iloveluscious.com/products/all-over-powder-brush",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/All-Over_Powder_Brush.webp?v=1750743538",
         "originalPrice": "Rs 3,195",
         "currentPrice": "Rs 2,875",
@@ -9833,7 +10309,7 @@
       },
       {
         "name": "Angel Eyes™ Eyeshadow Primer",
-        "url": "https://lusciouscosmetics.pk/products/angel-eyes-primer",
+        "url": "https://iloveluscious.com/products/angel-eyes-primer",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-angel-eyes-eyeshadow-primer-hero-image.webp?v=1791791242",
         "originalPrice": "Rs 1,695",
         "currentPrice": "Rs 1,450",
@@ -9841,7 +10317,7 @@
       },
       {
         "name": "Angled Blush & Contour Brush",
-        "url": "https://lusciouscosmetics.pk/products/soft-angle-contour-brush",
+        "url": "https://iloveluscious.com/products/soft-angle-contour-brush",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Angled_Contour_Brush.png?v=1750006665",
         "originalPrice": "Rs 2,995",
         "currentPrice": "Rs 2,695",
@@ -9849,7 +10325,7 @@
       },
       {
         "name": "Angled Eyeliner Brush",
-        "url": "https://lusciouscosmetics.pk/products/angled-eyeliner-brush",
+        "url": "https://iloveluscious.com/products/angled-eyeliner-brush",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Angled_Eyeliner_Brush.png?v=1750007025",
         "originalPrice": "Rs 2,030",
         "currentPrice": "Rs 1,827",
@@ -9857,19 +10333,19 @@
       },
       {
         "name": "Blush & Highlighter Brush",
-        "url": "https://lusciouscosmetics.pk/products/setting-powder-brush",
+        "url": "https://iloveluscious.com/products/setting-powder-brush",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Blush_Highlight_Brush.png?v=1750006689",
         "originalPrice": "Rs 2,995",
         "currentPrice": "Rs 2,695",
         "discount": "-10%"
       }
     ],
-    "productsSourceUrl": "https://lusciouscosmetics.pk/collections/all",
+    "productsSourceUrl": "https://iloveluscious.com/collections/all",
     "newArrival": true,
     "newArrivals": [
       {
         "name": "24-Hour Brow Definer Pencil",
-        "url": "https://lusciouscosmetics.pk/products/24-hour-brow-definer-eyebrow-pencil",
+        "url": "https://iloveluscious.com/products/24-hour-brow-definer-eyebrow-pencil",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-24-hour-brow-definer-hero-image.webp?v=1786103786",
         "originalPrice": "Rs 1,875",
         "currentPrice": "Rs 1,695",
@@ -9877,7 +10353,7 @@
       },
       {
         "name": "Luxury Brightening Cleanser",
-        "url": "https://lusciouscosmetics.pk/products/brightening-cleanser",
+        "url": "https://iloveluscious.com/products/brightening-cleanser",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Brightening_Cleanser_Hero.png?v=1766524270",
         "originalPrice": "Rs 3,250",
         "currentPrice": "Rs 2,600",
@@ -9885,7 +10361,7 @@
       },
       {
         "name": "Wonder Glass Makeup Setting Spray",
-        "url": "https://lusciouscosmetics.pk/products/wonder-glass-makeup-setting-spray",
+        "url": "https://iloveluscious.com/products/wonder-glass-makeup-setting-spray",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Wonder-Glass-Makeup-Setting-Spray-Luscious-Cosmetics.webp?v=1766493794",
         "originalPrice": "Rs 2,150",
         "currentPrice": "Rs 1,935",
@@ -9893,7 +10369,7 @@
       },
       {
         "name": "Softlight Brightening Face Powders",
-        "url": "https://lusciouscosmetics.pk/products/color-correcting-powders",
+        "url": "https://iloveluscious.com/products/color-correcting-powders",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-softlight-brightening-face-powders-hero-image.webp?v=1786105199",
         "originalPrice": "Rs 2,895",
         "currentPrice": "Rs 2,295",
@@ -9901,7 +10377,7 @@
       },
       {
         "name": "Softlight Powder Foundation",
-        "url": "https://lusciouscosmetics.pk/products/softlight-powder-foundation",
+        "url": "https://iloveluscious.com/products/softlight-powder-foundation",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/luscious-softlight-powder-foundation-hero-image.webp?v=1785853513",
         "originalPrice": "Rs 3,995",
         "currentPrice": "Rs 3,395",
@@ -9909,7 +10385,7 @@
       },
       {
         "name": "Makeup Brush Cleaner",
-        "url": "https://lusciouscosmetics.pk/products/makeup-brush-cleaner",
+        "url": "https://iloveluscious.com/products/makeup-brush-cleaner",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Makeup-Brush-Cleaner-Luscious-Cosmetics-Hero_2076a453-1f9e-4ff3-aed5-07e4613ad72b.webp?v=1770117673",
         "originalPrice": "Rs 1,695",
         "currentPrice": "Rs 1,525",
@@ -9917,7 +10393,7 @@
       },
       {
         "name": "Brow Grooming Set",
-        "url": "https://lusciouscosmetics.pk/products/luscious-brow-grooming-set",
+        "url": "https://iloveluscious.com/products/luscious-brow-grooming-set",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/Brow-Grooming-Set-Luscious-Cosmetics-Hero.png?v=1780655865",
         "originalPrice": "Rs 1,795",
         "currentPrice": "Rs 1,615",
@@ -9925,21 +10401,412 @@
       },
       {
         "name": "Essential Sponge Set",
-        "url": "https://lusciouscosmetics.pk/products/essential-sponge-set",
+        "url": "https://iloveluscious.com/products/essential-sponge-set",
         "image": "https://cdn.shopify.com/s/files/1/1164/2586/files/EssentialSpongeSet_1.png?v=1743767778",
         "originalPrice": "Rs 1,695",
         "currentPrice": "Rs 1,525",
         "discount": "-10%"
       }
     ],
-    "newArrivalsSourceUrl": "https://lusciouscosmetics.pk/collections/new-arrivals",
-    "checkedAt": "2026-11-20T09:51:09.832Z",
+    "newArrivalsSourceUrl": "https://iloveluscious.com/collections/new-arrivals",
+    "checkedAt": "2026-11-20T13:55:26.145Z",
     "source": "auto",
     "logo": "https://iloveluscious.com/cdn/shop/files/Luscious_logo_White_e2bb3f89-6037-4945-acd0-2b569a461198.png?v=1741553023&width=500"
   },
+  "makeupcity": {
+    "status": "sale",
+    "live": {
+      "off": "Tools OneStep - Hot Air Brush 40% OFF Add Choose OneStep - Hot Air Bru…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "40% off",
+      "sourceUrl": "https://www.makeupcityshop.com/collections/sale",
+      "products": [
+        {
+          "name": "Kryolan - TV Paint Stick",
+          "url": "https://www.makeupcityshop.com/products/kryolan-tv-paint-stick-1",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/products/Kryolan---TV-Paint-Stick---Ivory.jpg?v=1693554805",
+          "originalPrice": "Rs 6,160",
+          "currentPrice": "Rs 4,928",
+          "discount": "-20%"
+        },
+        {
+          "name": "ST London - Dual Wet & Dry Compact Powder",
+          "url": "https://www.makeupcityshop.com/products/st-london-dual-wet-dry-compact-powder",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/13312.jpg?v=1745218257",
+          "originalPrice": "Rs 2,990",
+          "currentPrice": "Rs 1,944",
+          "discount": "-35%"
+        },
+        {
+          "name": "Janssen - Anti wrinkle booster 2ML",
+          "url": "https://www.makeupcityshop.com/products/15583",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/15583.jpg?v=1725348021",
+          "originalPrice": "Rs 496",
+          "currentPrice": "Rs 447",
+          "discount": "-10%"
+        },
+        {
+          "name": "ST London - Eyelash Adhesive (Glue)",
+          "url": "https://www.makeupcityshop.com/products/5060390410969",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/products/EyelashAdhesive.jpg?v=1677231701",
+          "originalPrice": "Rs 650",
+          "currentPrice": "Rs 423",
+          "discount": "-35%"
+        },
+        {
+          "name": "IKT - Hair Wax Stick 75gm",
+          "url": "https://www.makeupcityshop.com/products/6148268752355",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/ikt-hair-wax-stick-75gm-0.png?v=1777464615",
+          "originalPrice": "Rs 1,035",
+          "currentPrice": "Rs 621",
+          "discount": "-40%"
+        },
+        {
+          "name": "Maybelline - Super Stay Up to 30hr Lumi Matte Foundation",
+          "url": "https://www.makeupcityshop.com/products/maybelline-super-stay-up-to-30hr-lumi-matte-foundation",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/6902395970071.jpg?v=1727330801",
+          "originalPrice": "Rs 3,950",
+          "currentPrice": "Rs 2,963",
+          "discount": "-25%"
+        },
+        {
+          "name": "ST London - Imperfection Eraser",
+          "url": "https://www.makeupcityshop.com/products/st-london-imperfection-eraser",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/13388_e302a035-ac54-4489-b643-4650f7f29e93.jpg?v=1741243352",
+          "originalPrice": "Rs 5,650",
+          "currentPrice": "Rs 3,673",
+          "discount": "-35%"
+        },
+        {
+          "name": "Sheglam - Color Bloom Matte Liquid Blush",
+          "url": "https://www.makeupcityshop.com/products/sheglam-color-bloom-matte-liquid-blush",
+          "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/17834948231b5995b25f1a388e8103e18794deb4cc.jpg?v=1792392985",
+          "originalPrice": "Rs 2,790",
+          "currentPrice": "Rs 2,093",
+          "discount": "-25%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "products": [
+      {
+        "name": "AHA 30% + BHA 2% Peeling Solution - 30ml",
+        "url": "https://www.makeupcityshop.com/products/769915191004",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/769915191004.jpg?v=1772016919",
+        "originalPrice": "Rs 7,200",
+        "currentPrice": "Rs 4,320",
+        "discount": "-40%"
+      },
+      {
+        "name": "Amino Acids + B5",
+        "url": "https://www.makeupcityshop.com/products/769915194708",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/products/TheOrdinary-AminoAcids_B5.webp?v=1675403152",
+        "originalPrice": "Rs 6,400",
+        "currentPrice": "Rs 3,840",
+        "discount": "-40%"
+      },
+      {
+        "name": "Anua - 3 Ceramide Panthenol Moisture Barrier Cream - 100ml",
+        "url": "https://www.makeupcityshop.com/products/8809640737251",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/anua-3-ceramide-panthenol-moisture-barrier-cream-100ml-2_1200x1200_b57435b7-b3a1-4fc0-bb51-8660208180d3.jpg?v=1773036819",
+        "originalPrice": "Rs 6,800",
+        "currentPrice": "Rs 5,100",
+        "discount": "-25%"
+      },
+      {
+        "name": "Anua - 8 Hyaluronic Acid Hydrating Gentle Foaming Cleanser 150Ml",
+        "url": "https://www.makeupcityshop.com/products/8809640735561",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/XXL_p0209734752.jpg?v=1781515570",
+        "originalPrice": "Rs 8,000",
+        "currentPrice": "Rs 6,000",
+        "discount": "-25%"
+      },
+      {
+        "name": "Anua - 8 Hyaluronic Acid Moisturizing Gentle Gel Cleanser 150Ml",
+        "url": "https://www.makeupcityshop.com/products/8809640735813",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/anua-us-cleanser-8-hyaluronic-acid-moisturizing-gentle-gel-cleanser-1239193698.jpg?v=1790409101",
+        "originalPrice": "Rs 8,099",
+        "currentPrice": "Rs 6,074",
+        "discount": "-25%"
+      },
+      {
+        "name": "Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum 30Ml",
+        "url": "https://www.makeupcityshop.com/products/anua-azelaic-acid-10-hyaluron-redness-soothing-serum-30ml",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/XXL_p0214877430.jpg?v=1777540393",
+        "originalPrice": "Rs 7,600",
+        "currentPrice": "Rs 5,700",
+        "discount": "-25%"
+      },
+      {
+        "name": "Anua - Azelaic Acid 3 Cica Skin Clarifying Toner 250Ml",
+        "url": "https://www.makeupcityshop.com/products/8800307370743",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/XXL_p0220894199.jpg?v=1781515573",
+        "originalPrice": "Rs 11,000",
+        "currentPrice": "Rs 8,250",
+        "discount": "-25%"
+      },
+      {
+        "name": "Anua - Azelaic Acid Cica Skin Soothing Moisturizer 100Ml",
+        "url": "https://www.makeupcityshop.com/products/8800307373157",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/XXL_p0223066519.jpg?v=1781696759",
+        "originalPrice": "Rs 8,000",
+        "currentPrice": "Rs 6,000",
+        "discount": "-25%"
+      }
+    ],
+    "productsSourceUrl": "https://www.makeupcityshop.com/collections/all",
+    "newArrival": true,
+    "newArrivals": [
+      {
+        "name": "Essence - Welcome To London Eyeshadow Palette 13.2gm",
+        "url": "https://www.makeupcityshop.com/products/4059729348715",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/4059729348715_450f0cfa-578c-4ccf-acd5-6504ee1234ef-558931.jpg?v=1794918921",
+        "originalPrice": null,
+        "currentPrice": "Rs 2,890",
+        "discount": null
+      },
+      {
+        "name": "St.Ives - Energizing Citrus & Cherry Blossom Body Wash 450ml",
+        "url": "https://www.makeupcityshop.com/products/8886467031458",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/F9200E54-9553-47D8-ABBE-11C0F9DB2DF0.webp?v=1794909151",
+        "originalPrice": "Rs 1,140",
+        "currentPrice": "Rs 1,026",
+        "discount": "-10%"
+      },
+      {
+        "name": "St.Ives - Blackhead Clearing Green Tea & Bamboo Face Scrub 170g",
+        "url": "https://www.makeupcityshop.com/products/77043002551",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/St.IvesBlackheadClearingGreenTeaScrub170g.webp?v=1794908803",
+        "originalPrice": "Rs 1,070",
+        "currentPrice": "Rs 963",
+        "discount": "-10%"
+      },
+      {
+        "name": "Huda Beauty - FauxFilter Luminous Matte Concealer Mini 2ml",
+        "url": "https://www.makeupcityshop.com/products/huda-beauty-fauxfilter-luminous-matte-concealer-mini-2ml",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/images_8892cf63-4468-4e44-8c98-7d4a3bc748e5.webp?v=1794903879",
+        "originalPrice": "Rs 11,000",
+        "currentPrice": "Rs 7,700",
+        "discount": "-30%"
+      },
+      {
+        "name": "AXIS-Y - Kojic Yuzu Pack Cleanser 60g",
+        "url": "https://www.makeupcityshop.com/products/axis-y-kojic-yuzu-pack-cleanser-60g",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/KojicYuzuPackCleanser_1.png?v=1794903877",
+        "originalPrice": "Rs 6,000",
+        "currentPrice": "Rs 4,200",
+        "discount": "-30%"
+      },
+      {
+        "name": "AXIS-Y - Triple PDRN Barrier Boost Serum 30ml",
+        "url": "https://www.makeupcityshop.com/products/axis-y-triple-pdrn-barrier-boost-serum-30ml",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/2608_TriplePDRNBarrierBoostSerum_01.png?v=1794903877",
+        "originalPrice": "Rs 5,800",
+        "currentPrice": "Rs 4,060",
+        "discount": "-30%"
+      },
+      {
+        "name": "Beauty of Joseon - Stay Fresh Tone-Up Sunscreen 50Ml",
+        "url": "https://www.makeupcityshop.com/products/beauty-of-joseon-stay-fresh-tone-up-sunscreen-50ml",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/XXL_p0224814803.webp?v=1794902134",
+        "originalPrice": "Rs 5,600",
+        "currentPrice": "Rs 3,920",
+        "discount": "-30%"
+      },
+      {
+        "name": "O/S - Powder Melt Glass Setting Spray 30ml",
+        "url": "https://www.makeupcityshop.com/products/o-s-powder-melt-glass-setting-spray-30ml",
+        "image": "https://cdn.shopify.com/s/files/1/0561/4259/4241/files/PowderMeltGlassSettingSprayTS.webp?v=1794898284",
+        "originalPrice": "Rs 9,800",
+        "currentPrice": "Rs 7,000",
+        "discount": "-29%"
+      }
+    ],
+    "newArrivalsSourceUrl": "https://www.makeupcityshop.com/collections/new-arrival",
+    "checkedAt": "2026-11-20T13:55:28.459Z",
+    "source": "auto",
+    "logo": "https://www.makeupcityshop.com/cdn/shop/files/makeupcity-logo_f2f73b66-4f31-419c-a917-2c199575f2fd.png?v=1777111153&width=500"
+  },
+  "rios": {
+    "status": "sale",
+    "live": {
+      "off": "orized Reset Log in Cart Menu Clearance Sale New Arrivals Back New Arr…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "Clearance",
+      "sourceUrl": "https://www.rios.pk/collections/clearance-sale-26",
+      "products": [
+        {
+          "name": "Hugo Boss Bottled Perfume 100ml",
+          "url": "https://www.rios.pk/products/hugo-boss-bottled-perfume-100ml",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/3616303173098_c560051d-9f8e-469a-8e6d-f6d646820f74.jpg?v=1734344160",
+          "originalPrice": "Rs 22,700",
+          "currentPrice": "Rs 11,350",
+          "discount": "-50%"
+        },
+        {
+          "name": "Mac Studio Fix Sculpt & Shape Contour Palette - Medium Dark / Dark",
+          "url": "https://www.rios.pk/products/mac-studio-fix-sculpt-shape-contour-palette-medium",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/Dark-Photoroom.jpg?v=1741331012",
+          "originalPrice": "Rs 14,500",
+          "currentPrice": "Rs 8,700",
+          "discount": "-40%"
+        },
+        {
+          "name": "Mac Studio Fix Sculpt & Shape Contour Palette - Light Medium",
+          "url": "https://www.rios.pk/products/mac-studio-fix-sculpt-shape-contour-palette-light-medium",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/MacStudioFixSculpt_ShapeContourPalette-LightMedium-Photoroom.jpg?v=1741332234",
+          "originalPrice": "Rs 14,500",
+          "currentPrice": "Rs 8,700",
+          "discount": "-40%"
+        },
+        {
+          "name": "Mac Studio Fix Conceal & Correct Palette - Deep Medium",
+          "url": "https://www.rios.pk/products/mac-studio-fix-conceal-correct-palette-deep-medium",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/shop-mq-04502-08-studio-fix-conceal-palette---medium-deep---6gr--1.jpg?v=1740984939",
+          "originalPrice": "Rs 13,450",
+          "currentPrice": "Rs 8,070",
+          "discount": "-40%"
+        },
+        {
+          "name": "MAC NC35 SPF15 FLUID FOUNDATION 30ML",
+          "url": "https://www.rios.pk/products/mac-nc-spf15-fluid-foundation-30ml",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/DERMA.PK-2024-04-03T115700.797.webp?v=1793421838",
+          "originalPrice": "Rs 13,000",
+          "currentPrice": "Rs 7,800",
+          "discount": "-40%"
+        },
+        {
+          "name": "MAC Studio Fix Powder Plus Foundation - NC41",
+          "url": "https://www.rios.pk/products/mac-studio-fix-powder-plus-foundation-nc41",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/MacStudioFixPowderPlusFoundation-NC41-Photoroom.jpg?v=1741675172",
+          "originalPrice": "Rs 13,000",
+          "currentPrice": "Rs 7,800",
+          "discount": "-40%"
+        },
+        {
+          "name": "MAC NC30 STUDIO FIX 24-HOUR SMOOTH WEAR CONCEALER",
+          "url": "https://www.rios.pk/products/mac-studio-fix-24h-liquid-concealer-nc30-copy",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/images_4f8687c1-d010-450e-8e51-59843b0c58c8.jpg?v=1794821895",
+          "originalPrice": "Rs 7,950",
+          "currentPrice": "Rs 4,770",
+          "discount": "-40%"
+        },
+        {
+          "name": "Mac Studio Fix 24H Smooth Wear Concealer - NC20",
+          "url": "https://www.rios.pk/products/mac-studio-fix-24h-liquid-concealer-nc20-1",
+          "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/image_1024.jpg?v=1764156718",
+          "originalPrice": "Rs 7,950",
+          "currentPrice": "Rs 4,770",
+          "discount": "-40%"
+        }
+      ],
+      "productsFound": 8,
+      "note": null
+    },
+    "products": [
+      {
+        "name": "ACTIVE 50'S ULTRA GLIDE INTERDENTAL FLOSSERS",
+        "url": "https://www.rios.pk/products/beauty-formulas-active-glide-interdental-flossers-50s",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/beauty-formulas-active-waxed-flossers-50-s-1.jpg?v=1755499109",
+        "originalPrice": "Rs 570",
+        "currentPrice": "Rs 285",
+        "discount": "-50%"
+      }
+    ],
+    "productsSourceUrl": "https://www.rios.pk/collections/all",
+    "newArrival": true,
+    "newArrivals": [
+      {
+        "name": "BELLEZA PAJAMA SET F/SLV CREW NECK -60 RED ROSE",
+        "url": "https://www.rios.pk/products/belleza-pajama-set-f-slv-crew-neck-60-red-rose",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/00060AI.jpg?v=1794285615",
+        "originalPrice": null,
+        "currentPrice": "Rs 4,500",
+        "discount": null
+      },
+      {
+        "name": "BODY LOTION POMEGRANATE + COLAGEN BODY",
+        "url": "https://www.rios.pk/products/body-lotion-papaya-vitamin-e-100ml-copy",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/POMEGRANATE1.png?v=1793335566",
+        "originalPrice": null,
+        "currentPrice": "Rs 270",
+        "discount": null
+      },
+      {
+        "name": "FLORMAR BRONZER STICK TO GO",
+        "url": "https://www.rios.pk/products/flormar-contour-stick-copy",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/8682536098519_1.jpg?v=1793603414",
+        "originalPrice": null,
+        "currentPrice": "Rs 3,033",
+        "discount": null
+      },
+      {
+        "name": "BELLEZA PAJAMA SET F/SLV CREW NECK -61 BLACK WHITE FLOWER",
+        "url": "https://www.rios.pk/products/belleza-pajama-set-f-slv-crew-neck-61-black-white-flower",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/00061AI.jpg?v=1794285617",
+        "originalPrice": null,
+        "currentPrice": "Rs 4,500",
+        "discount": null
+      },
+      {
+        "name": "FLORMAR LIPSTICK INTENSE SHEER UP NEW",
+        "url": "https://www.rios.pk/products/flormar-sheer-up-new-lipstick-3g-copy",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/images_65a0f7df-1ebd-42a9-bb03-b63231d475c5.jpg?v=1793604545",
+        "originalPrice": null,
+        "currentPrice": "Rs 2,739",
+        "discount": null
+      },
+      {
+        "name": "ONLYAURA MAKEUP PUFF LOVE PUFF03",
+        "url": "https://www.rios.pk/products/onlyaura-makeup-puff-2-pcs-set-ff222-copy-1",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/4103698.webp?v=1793605410",
+        "originalPrice": null,
+        "currentPrice": "Rs 150",
+        "discount": null
+      },
+      {
+        "name": "NO!MO! WOMEN RAZOR HAIR BODY GUARD",
+        "url": "https://www.rios.pk/products/rivaj-flawless-smooth-shave-razor-pack-of-4-copy",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/razormockup_jpg.jpg?v=1792587189",
+        "originalPrice": null,
+        "currentPrice": "Rs 50",
+        "discount": null
+      },
+      {
+        "name": "BELLEZA PAJAMA SET F/SLV CREW NECK -67 PINK MAHROON FLOWER",
+        "url": "https://www.rios.pk/products/belleza-pajama-set-f-slv-crew-neck-67-pink-mahroon-flower",
+        "image": "https://cdn.shopify.com/s/files/1/0587/4797/7896/files/00067ai.jpg?v=1794285621",
+        "originalPrice": null,
+        "currentPrice": "Rs 4,500",
+        "discount": null
+      }
+    ],
+    "newArrivalsSourceUrl": "https://www.rios.pk/collections/new-arrival-2026",
+    "checkedAt": "2026-11-20T13:55:33.160Z",
+    "source": "auto",
+    "logo": "https://www.rios.pk/cdn/shop/files/RIOS_logo_1250x415_8f371aef-2af2-4bb1-bb78-8e1048561ffa.png?v=1789551150&width=951"
+  },
   "vegascosmetics": {
-    "status": null,
-    "live": null,
+    "status": "sale",
+    "live": {
+      "off": "r Brands Featured Brands Flat 70% off at The Balm Cosmetics Up to 60%…",
+      "ends": "Check site for current details",
+      "percent": 60
+    },
+    "sale": {
+      "headline": "70% off",
+      "sourceUrl": "https://www.vegas.pk/products/offer",
+      "products": [],
+      "productsFound": 0,
+      "note": "This brand's sale page doesn't publish product details in a way our automatic check can read. The sale is live — tap through to see everything on offer."
+    },
     "products": [
       {
         "name": "Absolut Repair Bundle Deal | Shampoo + Mask",
@@ -10010,9 +10877,9 @@
     "newArrival": false,
     "newArrivals": [],
     "newArrivalsSourceUrl": "https://vegascosmetics.pk/collections/all",
-    "checkedAt": "2026-11-20T09:51:22.952Z",
+    "checkedAt": "2026-11-20T13:55:37.538Z",
     "source": "auto",
-    "logo": "https://vegascosmetics.pk/cdn/shop/files/Untitled-1_32x32.jpg?v=1662969346"
+    "logo": "https://www.vegas.pk/imgs/theme/logo%20for%20web.png"
   },
   "cougar": {
     "logo": "https://cdn.shopify.com/oxygen-v2/48131/89657/185047/5091697/assets/Group-BhvqCM7d.svg"
@@ -10025,5 +10892,8 @@
   },
   "naheed": {
     "logo": "https://media.naheed.pk/logo/stores/1/websitelogo_comp.png"
+  },
+  "thebodyshop": {
+    "logo": "https://www.thebodyshop.pk/images/favicon.png"
   }
 }
