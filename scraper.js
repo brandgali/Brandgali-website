@@ -60,7 +60,7 @@ const BRANDS_DATA_PATH = path.join(__dirname, 'brands-data.js');
 const OUTPUT_PATH = path.join(__dirname, 'sales-status.json');
 
 const MAX_PRODUCTS = 8;       // how many products to show per brand on live-sales.html
-const NEW_ARRIVAL_DAYS = 10;   // a product counts as a "new arrival" if the brand published it within this many days
+const NEW_ARRIVAL_DAYS = 21;   // a product counts as a "new arrival" if the brand published it within this many days
 const REQUEST_TIMEOUT = 12000; // ms before giving up on a single page
 
 // Phrases that indicate an active sale. Checked case-insensitively unless
@@ -347,10 +347,14 @@ function buildProduct({ name, url, image, original, current, currency }){
   // A product is only kept if we genuinely read a name and a link for it.
   // Everything else is optional and simply omitted when missing.
   if(!name || !url) return null;
+  // Scraped data is untrusted: no HTML in names, and only real http(s) links/images are kept.
+  const httpOnly = (u) => { try{ const x = new URL(String(u || '')); return /^https?:$/.test(x.protocol) ? x.href : null; }catch(e){ return null; } };
+  const cleanName = decodeEntities(name).replace(/<[^>]*>/g, ' ').replace(/[<>]/g, '').replace(/\s+/g, ' ').trim();
+  if(!cleanName || !httpOnly(url)) return null;
   const p = {
-    name: decodeEntities(name).slice(0, 120),
-    url,
-    image: image || null,
+    name: cleanName.slice(0, 120),
+    url: httpOnly(url),
+    image: httpOnly(image),
     originalPrice: (Number(original) > Number(current)) ? formatPrice(original, currency) : null,
     currentPrice: formatPrice(current, currency),
     discount: discountLabel(original, current),
@@ -590,54 +594,69 @@ async function checkBrand(brand){
    the rest of the scraper (sale detection, sales-status.json) keeps
    working normally either way.
 ===================================================================== */
+const SITE_URL = 'https://www.brandgali.com';
+const escHtml = (t) => String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+const safeHttp = (u) => { try{ const x = new URL(String(u || '')); return /^https?:$/.test(x.protocol) ? x.href : ''; }catch(e){ return ''; } };
+
+// Sends one notification (push or email) to everyone tagged follow_<brandId>=true.
+// Uses OneSignal's current API first, and falls back to the older endpoint if the key is an older style.
+async function postOneSignal(channel, payload, apiKey){
+  const attempts = [
+    { url: `https://api.onesignal.com/notifications?c=${channel}`, auth: `Key ${apiKey}` },
+    { url: 'https://onesignal.com/api/v1/notifications', auth: `Basic ${apiKey}` },
+  ];
+  let last = null;
+  for(const at of attempts){
+    const res = await fetch(at.url, { method: 'POST', headers: { 'Content-Type': 'application/json; charset=utf-8', 'Authorization': at.auth }, body: JSON.stringify(payload) });
+    const data = await res.json().catch(() => ({}));
+    if(res.ok && !data.errors) return { ok: true, data };
+    last = { ok: false, status: res.status, data };
+    if(res.status !== 401 && res.status !== 403) break;   // only retry with the old style when the key was refused
+  }
+  return last;
+}
+
 async function sendSaleNotification(brand, snippet, landingUrl){
   const appId = process.env.ONESIGNAL_APP_ID;
   const apiKey = process.env.ONESIGNAL_API_KEY;
-
   if(!appId || !apiKey){
-    console.log(`  (sale email skipped for ${brand.id} — ONESIGNAL_APP_ID / ONESIGNAL_API_KEY not set)`);
+    console.log(`  (sale alerts skipped for ${brand.id} - ONESIGNAL_APP_ID / ONESIGNAL_API_KEY not set)`);
     return;
   }
-
-  const shopUrl = landingUrl || brand.url;
-  const bodyText = snippet ? snippet : 'A new sale just went live — check it out before it ends.';
+  // Scraped text is untrusted: strip tags and escape it before it goes into an email.
+  const cleanSnippet = String(snippet || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 160);
+  const bodyText = cleanSnippet || 'A new sale just went live - check it out before it ends.';
+  const pageUrl = `${SITE_URL}/brand.html?id=${encodeURIComponent(brand.id)}`;
+  const shopUrl = safeHttp(landingUrl) || safeHttp(brand.url) || pageUrl;
+  const filters = [{ field: 'tag', key: `follow_${brand.id}`, relation: '=', value: 'true' }];
 
   try{
-    const res = await fetch('https://onesignal.com/api/v1/notifications', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        'Authorization': `Basic ${apiKey}`,
-      },
-      body: JSON.stringify({
-        app_id: appId,
-        // Only reaches people tagged follow_<brandId> = 'true' - i.e.
-        // people who specifically tapped "Notify Me" on this brand while
-        // logged in. No `contents`/`headings` fields here on purpose -
-        // those are the push-notification fields; providing only
-        // email_subject/email_body sends this as an email, never a push.
-        filters: [{ field: 'tag', key: `follow_${brand.id}`, relation: '=', value: 'true' }],
-        channel_for_external_user_ids: 'email',
-        email_subject: `${brand.name}'s sale is live!`,
-        email_body: `
-          <div style="font-family:Arial,sans-serif;max-width:480px;margin:0 auto;">
-            <h2 style="color:#1B2A5E;">${brand.name}'s sale is live</h2>
-            <p style="color:#333;font-size:15px;line-height:1.5;">${bodyText}</p>
-            <p style="margin:24px 0;">
-              <a href="${shopUrl}" style="background:#F08A1E;color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:bold;">Shop The Sale &rarr;</a>
-            </p>
-            <p style="color:#999;font-size:12px;">You're getting this because you followed ${brand.name} on BrandGali. Unfollow any time from the brand's page.</p>
-          </div>`,
-      }),
-    });
-    const data = await res.json();
-    if(data.errors){
-      console.log(`  ⚠ sale email for ${brand.id} failed:`, JSON.stringify(data.errors));
-    } else {
-      console.log(`  📧 sale email sent for ${brand.id} (${data.recipients ?? 0} recipients)`);
-    }
+    // 1. browser / phone push notification
+    const push = await postOneSignal('push', {
+      app_id: appId, target_channel: 'push', filters,
+      headings: { en: `${brand.name}'s sale is live!` },
+      contents: { en: bodyText },
+      url: pageUrl,
+    }, apiKey);
+    console.log(push.ok ? `  🔔 push sent for ${brand.id} (${push.data.recipients ?? 0} recipients)` : `  ⚠ push for ${brand.id} failed: ${JSON.stringify(push.data && push.data.errors || push.status)}`);
+
+    // 2. email
+    const mail = await postOneSignal('email', {
+      app_id: appId, target_channel: 'email', filters,
+      email_subject: `${brand.name}'s sale is live!`,
+      email_body: `
+        <div style="font-family:Arial,sans-serif;max-width:480px;margin:0 auto;">
+          <h2 style="color:#1B2A5E;">${escHtml(brand.name)}'s sale is live</h2>
+          <p style="color:#333;font-size:15px;line-height:1.5;">${escHtml(bodyText)}</p>
+          <p style="margin:24px 0;">
+            <a href="${escHtml(pageUrl)}" style="background:#F08A1E;color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:bold;">See The Sale &rarr;</a>
+          </p>
+          <p style="color:#999;font-size:12px;">You're getting this because you followed ${escHtml(brand.name)} on BrandGali. Unfollow any time from the brand's page.</p>
+        </div>`,
+    }, apiKey);
+    console.log(mail.ok ? `  📧 email sent for ${brand.id} (${mail.data.recipients ?? 0} recipients)` : `  ⚠ email for ${brand.id} failed: ${JSON.stringify(mail.data && mail.data.errors || mail.status)}`);
   }catch(e){
-    console.log(`  ⚠ sale email for ${brand.id} errored:`, e.message);
+    console.log(`  ⚠ sale alerts for ${brand.id} errored:`, e.message);
   }
 }
 

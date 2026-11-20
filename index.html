@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -433,7 +435,7 @@ img{max-width:100%;display:block;}
     </section>
 
     <div class="al-card" style="margin:6px 16px 8px;">
-      <div class="row"><div class="ic"><i class="fa-solid fa-bell"></i></div><div><h4>Instant Morning Sale Alerts <span><i class="fa-solid fa-bolt"></i> Real-Time</span></h4><p>Receive an instant browser notification the minute Sapphire, Gul Ahmed, or your followed brands drop a sale.</p></div></div>
+      <div class="row"><div class="ic"><i class="fa-solid fa-bell"></i></div><div><h4>Instant Morning Sale Alerts <span><i class="fa-solid fa-bolt"></i> Real-Time</span></h4><p>Receive an instant browser notification and email the minute Sapphire, Gul Ahmed, or your followed brands drop a sale.</p></div></div>
       <button class="btn btn-block" id="turnOnAlerts" type="button"><i class="fa-solid fa-bolt"></i> Turn On Alerts</button>
     </div>
 
@@ -646,7 +648,7 @@ function renderPopularBrands(){
 
 function renderCategories(){
   const grid = document.getElementById('catGrid');
-  const icons = {'Clothing':'fa-shirt','Footwear':'fa-shoe-prints','Home Décor':'fa-couch','Lifestyle':'fa-star','Kitchen & Accessories':'fa-kitchen-set','Bags':'fa-bag-shopping'};
+  const icons = {'Clothing':'fa-shirt','Footwear':'fa-shoe-prints','Home Décor':'fa-couch','Lifestyle':'fa-star','Kitchen & Accessories':'fa-kitchen-set','Bags':'fa-bag-shopping','Cosmetics':'fa-spray-can-sparkles'};
   grid.innerHTML = CATEGORIES.map((cat, i) => {
     const count = BRANDS.filter(b => b.category === cat.name).length;
     const color = `var(--${CAT_COLORS[i % CAT_COLORS.length]})`;
@@ -810,8 +812,24 @@ function initHomeV2(){
   const upd = () => { document.getElementById('folCnt').textContent = getFollows().length; if(document.getElementById('followedPanel').style.display !== 'none') renderFollowedPanel(); };
   window.addEventListener('brandgali:followed', upd); upd();
   const ab = document.getElementById('turnOnAlerts');
-  const paint = () => { const on = getAccountEmail() && localStorage.getItem('brandgali_email_alerts') === 'yes'; ab.innerHTML = on ? '<i class="fa-solid fa-check"></i> Alerts Are On' : '<i class="fa-solid fa-bolt"></i> Turn On Alerts'; };
-  ab.addEventListener('click', () => { if(!getAccountEmail()){ window.dispatchEvent(new Event('brandgali:open-account')); return; } try{ localStorage.setItem('brandgali_email_alerts', 'yes'); }catch(e){} paint(); });
+  // "On" means the browser has really granted notification permission (not just a saved flag)
+  const pushOn = () => { const O = window.__oneSignalInstance; try{ return !!(O && O.Notifications && O.Notifications.permission === true); }catch(e){ return false; } };
+  const paint = () => {
+    const blocked = ('Notification' in window) && Notification.permission === 'denied';
+    ab.innerHTML = (getAccountEmail() && pushOn()) ? '<i class="fa-solid fa-check"></i> Alerts Are On'
+      : blocked ? '<i class="fa-solid fa-bell-slash"></i> Blocked - allow notifications in browser settings'
+      : '<i class="fa-solid fa-bolt"></i> Turn On Alerts';
+  };
+  ab.addEventListener('click', async () => {
+    if(!getAccountEmail()){ window.dispatchEvent(new Event('brandgali:open-account')); return; }
+    const O = window.__oneSignalInstance;
+    try{
+      await syncFollowIdentityToOneSignal(getAccountEmail());
+      if(O){ await O.Notifications.requestPermission(); try{ await O.User.PushSubscription.optIn(); }catch(e){} }
+    }catch(e){}
+    paint();
+  });
+  window.addEventListener('brandgali:onesignal-ready', paint);
   paint(); setTimeout(paint, 1500);
 }
 

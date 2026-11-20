@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -519,7 +521,7 @@ const BG_TABS = [['all','All','fa-store',()=>true],['featured','Featured','fa-st
 function bgChips(){
   return [['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
     .concat(CATEGORIES.map(c => ['cat:'+c.name, c.name, c.icon, b=>b.category===c.name]))
-    .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30],['stores','In-Store','fa-shop',b=>b.stores.length]]);
+    .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30]].concat(FEATURES.storeLocations ? [['stores','In-Store','fa-shop',b=>b.stores.length]] : []));
 }
 function renderFilters(){
   const row = document.getElementById('filterRow'); row.className = 'bg-filters';

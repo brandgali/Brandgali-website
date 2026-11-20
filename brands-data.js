@@ -47,6 +47,7 @@ const CATEGORIES = [
   { name: 'Lifestyle',             icon: 'fa-star' },
   { name: 'Kitchen & Accessories', icon: 'fa-kitchen-set' },
   { name: 'Bags',                  icon: 'fa-bag-shopping' },
+  { name: 'Cosmetics',             icon: 'fa-spray-can-sparkles' },
 ];
 
 const BRANDS = [
@@ -122,6 +123,16 @@ const BRANDS = [
   { id:'jafferjees', name:'Jafferjees', category:'Bags', url:'https://jafferjees.com/', initial:'J', color:'orange', featured:false },
   { id:'fiore',       name:'Fioré',      category:'Bags', url:'https://fioure.com/',     initial:'F', color:'navy',   featured:false }, // category not fully confirmed — check this is actually a bags brand
   { id:'obipelle',    name:'Obi Pelle',  category:'Bags', url:'https://obipelle.com/',    initial:'O', color:'teal',   featured:false }, // VERIFY category — "Pelle" is Italian for leather, reasonably confident but confirm
+  // ---- Cosmetics (alphabetical) ----
+  { id:'allurebeauty', name:'Allure Beauty', category:'Cosmetics', url:'https://allurebeauty.com.pk/', initial:'A', color:'orange', featured:false }, // VERIFY url
+  { id:'glowandglee', name:'Glow & Glee', category:'Cosmetics', url:'https://glowandglee.com/', initial:'G', color:'teal', featured:false }, // VERIFY url
+  { id:'inglot', name:'Inglot', category:'Cosmetics', url:'https://inglot.pk/', initial:'I', color:'navy', featured:false }, // VERIFY url
+  { id:'kikomilano', name:'KIKO Milano', category:'Cosmetics', url:'https://www.kikomilano.pk/', initial:'K', color:'orange', featured:true }, // VERIFY url
+  { id:'lusciouscosmetics', name:'Luscious Cosmetics', category:'Cosmetics', url:'https://lusciouscosmetics.pk/', initial:'L', color:'teal', featured:false }, // VERIFY url
+  { id:'makeupcity', name:'MakeupCity', category:'Cosmetics', url:'https://makeupcity.pk/', initial:'M', color:'navy', featured:false }, // VERIFY url
+  { id:'rios', name:'RIOS', category:'Cosmetics', url:'https://rios.com.pk/', initial:'R', color:'orange', featured:false }, // VERIFY url
+  { id:'thebodyshop', name:'The Body Shop', category:'Cosmetics', url:'https://www.thebodyshop.com.pk/', initial:'T', color:'teal', featured:true }, // VERIFY url
+  { id:'vegascosmetics', name:'Vegas Cosmetics', category:'Cosmetics', url:'https://vegascosmetics.pk/', initial:'V', color:'navy', featured:false }, // VERIFY url
 ];
 
 /* ---------- Shared helpers used by both pages ---------- */

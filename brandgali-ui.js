@@ -1,3 +1,12 @@
+/* =====================================================================
+   FEATURE SWITCHES - change false to true to bring a feature back.
+   Nothing is deleted; the code and data stay in place.
+     nearMe         the "Brands Near Me" section on the homepage + menu links
+     storeLocations the "Store Locations" list at the bottom of brand pages,
+                    the In-Store filters, and "physical stores" wording
+===================================================================== */
+var FEATURES = { nearMe: false, storeLocations: false };
+
 /* brandgali-ui.js - load AFTER brands-data.js on every page. Does not change your brand list. */
 
 /* =====================================================================
@@ -120,7 +129,18 @@ function priceSuspect(b){
   const nums = brandProducts(b).concat(b.products || [], b.newArrivalProducts || []).map(p => parsePKR(p.currentPrice)).filter(n => n > 0).sort((x, y) => x - y);
   return b.__ps = nums.length > 0 && nums[Math.floor(nums.length / 2)] < 150;
 }
+/* Everything the daily check scrapes is treated as untrusted text. */
+function safeUrl(v){ try{ const x = new URL(String(v || ''), location.href); return /^https?:$/.test(x.protocol) ? x.href : ''; }catch(e){ return ''; } }
+function escText(v){ return String(v == null ? '' : v).replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+function sanitizeProduct(p){
+  const q = { ...p };
+  ['name','fabric','color','category','description','currentPrice','originalPrice','discount'].forEach(k => { if(q[k] != null) q[k] = escText(q[k]); });
+  if(Array.isArray(q.sizes)) q.sizes = q.sizes.map(escText); else if(q.sizes != null) q.sizes = escText(q.sizes);
+  q.image = safeUrl(p.image); q.url = safeUrl(p.url);
+  return q;
+}
 function cleanPriced(b, p){
+  p = sanitizeProduct(p);
   if(priceSuspect(b)) return { ...p, currentPrice: null, originalPrice: null, discount: null };
   const a = parsePKR(p.currentPrice), o = parsePKR(p.originalPrice);
   return (o && a && o <= a) ? { ...p, originalPrice: null, discount: null } : p;
@@ -541,3 +561,59 @@ input,select,textarea{font-size:16px!important}
   }
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', buildDesktopNav); else buildDesktopNav();
 })();
+
+/* ---------- ticker speed: constant reading speed per device, whatever the content length ---------- */
+(function(){
+  function speedPxPerSec(){
+    const w = window.innerWidth;
+    return w >= 900 ? 52 : (w >= 600 ? 40 : 28);   // laptop / tablet / phone (pixels per second)
+  }
+  function setTickerSpeed(){
+    const track = document.getElementById('tickerTrack');
+    if(!track || !track.scrollWidth) return;
+    const distance = track.scrollWidth / 2;          // the track scrolls half its own width, then loops
+    const secs = Math.max(20, Math.round(distance / speedPxPerSec()));
+    track.style.animationDuration = secs + 's';
+  }
+  function init(){
+    const track = document.getElementById('tickerTrack'); if(!track) return;
+    new MutationObserver(setTickerSpeed).observe(track, { childList: true });
+    window.addEventListener('resize', setTickerSpeed);
+    window.addEventListener('load', setTickerSpeed);
+    setTickerSpeed(); setTimeout(setTickerSpeed, 1500);
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+
+/* ---------- sanitise sale text/links after the daily data loads ---------- */
+(function(){
+  const _ls = loadSalesStatus;
+  loadSalesStatus = async function(){
+    await _ls();
+    BRANDS.forEach(b => {
+      [b.sale, b.live].forEach(o => {
+        if(!o || typeof o !== 'object') return;
+        Object.keys(o).forEach(k => {
+          if(typeof o[k] !== 'string') return;
+          o[k] = /url$/i.test(k) ? safeUrl(o[k]) : escText(o[k]);
+        });
+      });
+      if(b.logo) b.logo = safeUrl(b.logo);
+    });
+  };
+})();
+
+/* ---------- feature switches in action ---------- */
+(function(){
+  const css = [];
+  if(!FEATURES.nearMe) css.push('#near-me,a[href$="#near-me"],a[href*="filter=stores"]{display:none!important}');
+  if(!FEATURES.storeLocations) css.push('.store-list,.stores-section,.store-locations{display:none!important}');
+  if(css.length){ const s = document.createElement('style'); s.textContent = css.join('\n'); document.head.appendChild(s); }
+})();
+
+/* ---------- cosmetics searches (only show when a brand really has them) ---------- */
+POP_CANDIDATES.push(
+  ['Lipstick','Cosmetics','fa-spray-can-sparkles','lipstick'],['Foundation','Cosmetics','fa-spray-can-sparkles','foundation'],
+  ['Skincare','Cosmetics','fa-spray-can-sparkles','skin'],['Mascara','Cosmetics','fa-spray-can-sparkles','mascara'],
+  ['Makeup Palette','Cosmetics','fa-spray-can-sparkles','palette']
+);

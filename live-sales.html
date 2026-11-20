@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -486,7 +488,7 @@ function wireDrawerAndSearch(){
 }
 
 
-const LIVE_FILTERS = [['all','All Sales','fa-fire'],['flat50','Flat 50% Off','fa-fire'],['off30','30%+ Off','fa-tag'],['under3k','Under PKR 3,000','fa-wallet'],['both','Online & In-Store','fa-shop']];
+const LIVE_FILTERS = [['all','All Sales','fa-fire'],['flat50','Flat 50% Off','fa-fire'],['off30','30%+ Off','fa-tag'],['under3k','Under PKR 3,000','fa-wallet']].concat(FEATURES.storeLocations ? [['both','Online & In-Store','fa-shop']] : []);
 let liveFilter = 'all', liveSort = 'featured';
 
 function saleCardHTML(b){
