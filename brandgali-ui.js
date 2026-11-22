@@ -626,3 +626,20 @@ POP_CANDIDATES.push(
   ['Skincare','Cosmetics','fa-spray-can-sparkles','skin'],['Mascara','Cosmetics','fa-spray-can-sparkles','mascara'],
   ['Makeup Palette','Cosmetics','fa-spray-can-sparkles','palette']
 );
+
+
+/* ---------- push diagnostics: open any page with #debug-push on the end to see what OneSignal is doing ---------- */
+(function(){
+  if(location.hash !== '#debug-push') return;
+  const report = () => {
+    const O = window.__oneSignalInstance;
+    let perm = 'n/a'; try{ perm = ('Notification' in window) ? Notification.permission : 'not supported in this browser'; }catch(e){}
+    alert('Push check\n' +
+      'OneSignal loaded: ' + (O ? 'yes' : 'NO (script blocked or still loading)') + '\n' +
+      'Init error: ' + (window.__oneSignalInitError || 'none') + '\n' +
+      'Page address: ' + location.origin + '\n' +
+      'Notification permission: ' + perm + '\n' +
+      'Signed in: ' + (getAccountEmail() ? 'yes' : 'no'));
+  };
+  window.addEventListener('load', () => setTimeout(report, 4000));
+})();

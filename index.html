@@ -26,9 +26,8 @@
 <script>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "1ce9cba4-d2b7-4c18-a568-ba3019f99988",
-    });
+    try{ await OneSignal.init({ appId: "1ce9cba4-d2b7-4c18-a568-ba3019f99988" }); }
+    catch(e){ window.__oneSignalInitError = (e && e.message) || String(e); console.error('OneSignal init failed:', e); }
     window.__oneSignalInstance = OneSignal;
     window.dispatchEvent(new Event('brandgali:onesignal-ready'));
   });
