@@ -643,3 +643,52 @@ POP_CANDIDATES.push(
   };
   window.addEventListener('load', () => setTimeout(report, 4000));
 })();
+
+/* =====================================================================
+   AUDIENCE (Women / Men / Kids), CATEGORY NAV, ROTATING SEARCH TEXT
+===================================================================== */
+
+// Which shoppers each brand serves. Clothing defaults to women + men; edit the lists below to fine-tune.
+const AUD_KIDS = new Set(['khaadi','jdot','gulahmed','sapphire','outfitters','limelight','alkaramstudio','beechtree','zellbury','charcoal','generation','cougar','bata','servis','stylo','borjan']);
+const AUD_OVERRIDES = { mariab: ['women'], sanasafinaz: ['women'], kikomilano: ['women'], inglot: ['women'], allurebeauty: ['women'], glowandglee: ['women'], lusciouscosmetics: ['women'], vegascosmetics: ['women'] };
+function audienceOf(b){
+  if(AUD_OVERRIDES[b.id]) return AUD_OVERRIDES[b.id];
+  const a = b.category === 'Clothing' ? ['women', 'men'] : (b.category === 'Footwear' ? ['women', 'men'] : (b.category === 'Bags' || b.category === 'Cosmetics' ? ['women'] : (b.category === 'Lifestyle' ? ['women', 'men'] : [])));
+  if(AUD_KIDS.has(b.id)) a.push('kids');
+  return a;
+}
+(function(){
+  const s = document.createElement('style');
+  s.textContent = `.cat-nav{display:flex;gap:4px;overflow-x:auto;padding:8px 14px;background:#fff;border-bottom:1px solid var(--line);scrollbar-width:none}.cat-nav::-webkit-scrollbar{display:none}
+.cat-nav a{flex:none;white-space:nowrap;padding:8px 13px;border-radius:999px;font:700 12.5px Inter,sans-serif;color:var(--navy)}.cat-nav a:hover{background:#F4EFE3}.cat-nav a.sale{color:#B45F06;background:#FDEBD3}
+.hd-search{display:flex;align-items:center;gap:10px;margin:10px 16px 6px;padding:12px 18px;border:1px solid #E7E2D6;border-radius:999px;background:#FAF7F0;color:#6B6F7D;font:500 14px Inter,sans-serif;cursor:text}.hd-search i{color:#1B2A5E}
+@media(min-width:900px){.hd-search{max-width:640px;margin:14px auto 6px}}
+body,.shell{background:#fff!important}
+@media(min-width:900px){.cat-nav{justify-content:center;gap:10px;padding:10px 32px}.cat-nav a{font-size:13.5px;letter-spacing:.4px;text-transform:uppercase}.dt-nav{display:none!important}}`;
+  document.head.appendChild(s);
+  const LINKS = [['Women','brands.html?aud=women'],['Men','brands.html?aud=men'],['Kids','brands.html?aud=kids'],['Beauty','brands.html?category=Cosmetics'],['Footwear','brands.html?category=Footwear'],
+    ['Home','brands.html?category=' + encodeURIComponent('Home Décor')],['Kitchen','brands.html?category=' + encodeURIComponent('Kitchen & Accessories')],['Bags','brands.html?category=Bags'],['Lifestyle','brands.html?category=Lifestyle'],
+    ['New In','brands.html?filter=new'],['Brands','brands.html'],['Sale','live-sales.html']];
+  function build(){
+    const top = document.querySelector('.topbar'); if(!top || document.querySelector('.cat-nav')) return;
+    const nav = document.createElement('nav'); nav.className = 'cat-nav';
+    nav.innerHTML = LINKS.map(l => `<a href="${l[1]}"${l[0] === 'Sale' ? ' class="sale"' : ''}>${l[0]}</a>`).join('');
+    top.insertAdjacentElement('afterend', nav);
+    const pill = document.createElement('div'); pill.className = 'hd-search';
+    pill.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i><span>Search for brands</span>';
+    pill.addEventListener('click', () => document.getElementById('searchBtn') && document.getElementById('searchBtn').click());
+    top.insertAdjacentElement('afterend', pill);   // order: header, search pill, category nav
+  }
+  // search box text that keeps changing: "Search for brands" -> categories -> styles
+  const TXT = ['Search for brands', 'Search for categories', 'Search for styles', 'Search by keywords', 'Search for lawn, sneakers, 30% off'];
+  function rotate(){
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % TXT.length;
+      const inp = document.getElementById('searchInput'); if(inp) inp.setAttribute('placeholder', TXT[i]);
+      const span = document.querySelector('.hd-search span'); if(span) span.textContent = TXT[i];
+    }, 3000);
+  }
+  function init(){ build(); rotate(); }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();

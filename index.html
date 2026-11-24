@@ -423,6 +423,7 @@ img{max-width:100%;display:block;}
     </div>
     <div class="fp" id="followedPanel" style="display:none;"></div>
     <div id="highStreet">
+    <div id="newHomeTop"></div>
     
 
     <section class="section" id="live-sales-section">
@@ -438,7 +439,8 @@ img{max-width:100%;display:block;}
       <button class="btn btn-block" id="turnOnAlerts" type="button"><i class="fa-solid fa-bolt"></i> Turn On Alerts</button>
     </div>
 
-    <section class="section">
+    <div id="newHomeRest"></div>
+    <section class="section" id="oldPopular">
       <div class="section-head">
         <h2><i class="fa-solid fa-star"></i>Today's Top Picks</h2>
         <a href="brands.html?filter=top" class="see-all">View All &rarr;</a>
@@ -538,6 +540,7 @@ img{max-width:100%;display:block;}
 
 <script src="brands-data.js"></script>
 <script src="brandgali-ui.js"></script>
+<script src="brandgali-home.js"></script>
 <script>
 
 function renderDrawerCategories(){
@@ -782,7 +785,7 @@ function wireNearMe(){
 function renderFollowedPanel(){
   const el = document.getElementById('followedPanel');
   const list = getFollows().map(id => BRANDS.find(b => b.id === id)).filter(Boolean);
-  const head = `<div class="section-head"><h2><i class="fa-solid fa-fire"></i>My Followed Deals <span class="pill">${list.length} brand${list.length === 1 ? '' : 's'} followed</span></h2><a href="live-sales.html" style="font-size:13px;font-weight:700;color:var(--navy);">View All &rarr;</a></div>`;
+  const head = `<button class="hm-tab" type="button" style="margin-bottom:12px" onclick="document.querySelector('.hs-tab[data-tab=all]').click()">&larr; Back to home</button><div class="section-head"><h2><i class="fa-solid fa-fire"></i>My Followed Deals <span class="pill">${list.length} brand${list.length === 1 ? '' : 's'} followed</span></h2><a href="live-sales.html" style="font-size:13px;font-weight:700;color:var(--navy);">View All &rarr;</a></div>`;
   if(!list.length){
     el.innerHTML = head + `<div class="fp-empty"><div style="font-size:40px;">&#128150;</div><h3>Your Followed Feed is Empty</h3><p>Follow brands to customize your high street and receive instant morning sale alerts.</p><button class="btn" id="followStarters" type="button">Follow Sapphire, Khaadi, J. &amp; Gul Ahmed</button><a class="btn2" href="brands.html">Browse All Brands</a></div>`;
     document.getElementById('followStarters').addEventListener('click', () => followBrands(BRANDS.filter(b => /sapphire|khaadi|junaid|^j\.?$|gul ?ahmed/i.test(b.name)).map(b => b.id)));
@@ -839,6 +842,7 @@ loadSalesStatus().then(() => {
   renderCategories();
   renderCollections();
   initHomeV2();
+  renderNewHome();
   renderAlerts();
   renderDrawerCategories();
   wireDrawerAndSearch();

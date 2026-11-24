@@ -1,0 +1,164 @@
+/* brandgali-home.js - the new homepage layout (hero banners, floating category tiles, sections).
+   Loaded by index.html after brandgali-ui.js. Image slots: see IMAGES-GUIDE.md */
+(function(){
+const css = `
+#oldPopular,#categories,#near-me,.hero{display:none!important}
+.hs-tabs{position:absolute;left:-9999px}
+#liveSalesRail{padding-top:2px}
+#live-sales-section .section-head h2{font:800 19px Poppins,sans-serif!important;text-transform:uppercase;letter-spacing:.4px}
+#live-sales-section .section-head h2 i{display:none}
+.hc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}
+.hc{display:block;color:var(--navy)}.hc-img{position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#EFEBE1}.hc-img img{width:100%;height:100%;object-fit:cover}
+.hc-img .off{position:absolute;left:8px;top:8px;background:#E8A33D;color:var(--navy);font:800 10.5px Inter,sans-serif;border-radius:7px;padding:4px 7px}
+.hc-n{font:600 13px/1.3 Inter,sans-serif;margin:9px 0 2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.hc-b{font-size:12px;color:var(--muted)}.hc-p{margin-top:3px;font-size:13px}
+.al-band{margin:34px 16px 6px!important;background:#FAF7F0!important;border:0!important;border-radius:28px!important;padding:26px!important}
+.al-band h4{font:800 20px Poppins,sans-serif!important}
+.hm-pills .chip.fol{background:#1B2A5E;color:#fff;border-color:#1B2A5E}
+.hm-hero{display:grid;gap:12px;padding:10px 16px 4px;grid-template-columns:1fr 1fr}
+.hb{position:relative;border-radius:22px;overflow:hidden;min-height:132px;padding:18px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;background-size:cover;background-position:center;text-shadow:0 1px 8px rgba(0,0,0,.25)}
+.hb.big{grid-column:1/-1;min-height:190px}.hb b{font:800 20px/1.15 Poppins,sans-serif}.hb small{font-size:12.5px;opacity:.95}
+.hb span{align-self:flex-start;margin-top:8px;background:#fff;color:var(--navy);border-radius:999px;padding:8px 14px;font:800 12px Inter,sans-serif;text-shadow:none}
+.hb.b1{background-image:url(images/hero-live.jpg),url(images/hero-live.svg),linear-gradient(135deg,#1B2A5E,#3A4F9A)}
+.hb.b2{background-image:url(images/hero-new.jpg),url(images/hero-new.svg),linear-gradient(135deg,#C9822B,#E8A33D)}
+.hb.b3{background-image:url(images/hero-sale.jpg),url(images/hero-sale.svg),linear-gradient(135deg,#2F7F63,#52B08C)}
+.ctiles{display:flex;gap:12px;overflow-x:auto;padding:14px 16px 8px;scrollbar-width:none}.ctiles::-webkit-scrollbar{display:none}
+.ct{flex:none;width:92px;text-align:center;background:#fff;border-radius:20px;box-shadow:0 8px 22px rgba(27,42,94,.10);padding:9px;color:var(--navy)}
+.ct-img{height:68px;border-radius:14px;background-size:cover;background-position:center;display:grid;place-items:center;font-size:24px;background-color:#F4EFE3}
+.ct b{display:block;font:700 12px Inter,sans-serif;margin-top:8px}
+.hm-pills{display:flex;gap:8px;overflow-x:auto;padding:8px 16px;scrollbar-width:none}.hm-pills::-webkit-scrollbar{display:none}
+.hm-pills .chip{flex:none;white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 15px;font:600 12.5px Inter,sans-serif;color:var(--navy);cursor:pointer}
+.hm-sec{padding:26px 16px 0}
+.hm-sh{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.hm-sh h2{font:800 19px Poppins,sans-serif;letter-spacing:.4px;color:var(--navy);text-transform:uppercase;margin:0}
+.hm-tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:700 12px Inter,sans-serif;color:var(--navy);cursor:pointer}.hm-tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.hm-sh .va{margin-left:auto;font:700 12px Inter,sans-serif;text-decoration:underline;color:var(--navy)}
+.bt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.bt{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px 8px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--navy)}
+.bt b{font:800 13px Poppins,sans-serif}.bt small{font-size:11px;color:var(--orange-deep);font-weight:700}.bt small.m{color:var(--muted)}
+.dod{display:grid;gap:12px}.dod-b{border-radius:22px;padding:22px;color:#fff;background:linear-gradient(135deg,#1B2A5E,#3A4F9A);display:flex;flex-direction:column;gap:8px;align-items:flex-start;justify-content:center;min-height:200px}
+.dod-b b{font:800 22px Poppins,sans-serif}.dod-b a{background:#E8A33D;color:var(--navy);border-radius:999px;padding:10px 18px;font:800 13px Inter,sans-serif}
+.dod .hc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){
+ #live-sales-section{max-width:1200px;margin-left:auto!important;margin-right:auto!important;padding:38px 32px 0!important}#live-sales-section .section-head h2{font-size:24px!important}
+ .hc-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 16px}.al-band{max-width:1136px;margin:44px auto 10px!important;padding:34px 44px!important}
+ .hm-hero{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;padding:18px 32px 4px;max-width:1200px;margin:0 auto}
+ .hb.big{grid-column:1;grid-row:1/3;min-height:340px}.hb{padding:26px}.hb b{font-size:26px}.hb.big b{font-size:34px}
+ .ctiles{max-width:1200px;margin:0 auto;padding:22px 32px 8px;overflow:visible;gap:16px}.ct{flex:1;width:auto}.ct-img{height:96px}.ct b{font-size:13px}
+ .hm-pills,.hm-sec{max-width:1200px;margin-left:auto;margin-right:auto}.hm-pills{padding:10px 32px;flex-wrap:wrap}.hm-sec{padding:38px 32px 0}.hm-sh h2{font-size:24px}
+ .bt-grid{grid-template-columns:repeat(6,1fr);gap:14px}.dod{grid-template-columns:1fr 2fr}.dod .hc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+`;
+const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+
+const TILES = [['Women','fa-person-dress','brands.html?aud=women','#E8EDF7'],['Men','fa-person','brands.html?aud=men','#E3EFE9'],['Kids','fa-child','brands.html?aud=kids','#FDF1DE'],
+  ['Beauty','fa-spray-can-sparkles','brands.html?category=Cosmetics','#F3E6F0'],['Footwear','fa-shoe-prints','brands.html?category=Footwear','#EDEFF5'],
+  ['Home Decor','fa-couch','brands.html?category=' + encodeURIComponent('Home Décor'),'#F4EFE3'],['Kitchen','fa-kitchen-set','brands.html?category=' + encodeURIComponent('Kitchen & Accessories'),'#E8F2EC'],
+  ['Bags','fa-bag-shopping','brands.html?category=Bags','#FBEAE0'],['Lifestyle','fa-star','brands.html?category=Lifestyle','#EEF0E2']];
+
+function allItems(){
+  const out = [], seen = new Set();
+  BRANDS.forEach(b => [brandProducts(b), b.newArrivalProducts || [], b.products || []].forEach((arr, src) => arr.forEach(p => {
+    if(!p || !p.name || !p.url || seen.has(p.url)) return; seen.add(p.url);
+    out.push({ b, p, src, off: productOffPct(cleanPriced(b, p)) || 0, aud: itemAud(b, p) });
+  })));
+  return out;
+}
+function itemAud(b, p){
+  const n = (p.name || '').toLowerCase();
+  if(/\b(kid|kids|boy|boys|girl|girls|baby|toddler|junior|infant)\b/.test(n)) return 'kids';
+  if(/\b(men|mens|men's|gents|polo|kurta|waistcoat)\b/.test(n) && !/\b(women|ladies)\b/.test(n)) return 'men';
+  if(/\b(women|ladies|lawn|dupatta|kurti|3 piece|2 piece|embroidered|co-ord|abaya|pret)\b/.test(n)) return 'women';
+  return audienceOf(b)[0] || 'women';
+}
+function homeCard(b, p){
+  p = cleanPriced(b, p); const key = b.id + '_h' + (++window.__PN); window.__PREG[key] = { b, p };
+  const off = productOffPct(p);
+  const price = p.currentPrice ? `<span class="p-now">${p.currentPrice}</span>${p.originalPrice ? `<span class="p-was">${p.originalPrice}</span>` : ''}` : '';
+  return `<a class="hc" href="#" data-open-product="${key}"><div class="hc-img">${p.image ? `<img loading="lazy" referrerpolicy="no-referrer" src="${p.image}" alt="" onerror="this.remove()">` : ''}${off ? `<span class="off">${off}% OFF</span>` : ''}</div><div class="hc-n">${p.name}</div><div class="hc-b">${b.name}</div><div class="hc-p">${price}</div></a>`;
+}
+function prodSection(host, title, items, link, tabbed){
+  if(items.length < 2) return;
+  const sec = document.createElement('section'); sec.className = 'hm-sec';
+  const tabs = tabbed ? ['women', 'men', 'kids'].filter(t => items.some(i => i.aud === t)) : [];
+  let cur = tabs[0]; const max = matchMedia('(min-width:900px)').matches ? 10 : 6;
+  sec.innerHTML = `<div class="hm-sh"><h2>${title}</h2>${tabs.map(t => `<button class="hm-tab" data-t="${t}" type="button">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}<a class="va" href="${link}">VIEW ALL</a></div><div class="hc-grid"></div>`;
+  const draw = () => {
+    const list = (cur ? items.filter(i => i.aud === cur) : items).slice(0, max);
+    sec.querySelector('.hc-grid').innerHTML = list.map(i => homeCard(i.b, i.p)).join('');
+    sec.querySelectorAll('.hm-tab').forEach(t => t.classList.toggle('on', t.dataset.t === cur));
+  };
+  sec.querySelectorAll('.hm-tab').forEach(t => t.addEventListener('click', () => { cur = t.dataset.t; draw(); }));
+  draw(); host.appendChild(sec);
+}
+function brandSection(host, title, list, link){
+  if(!list.length) return;
+  const sec = document.createElement('section'); sec.className = 'hm-sec';
+  sec.innerHTML = `<div class="hm-sh"><h2>${title}</h2><a class="va" href="${link}">VIEW ALL</a></div><div class="bt-grid">${list.slice(0, 6).map(b => { const p = getMaxDiscountPercent(b); return `<a class="bt" href="brand.html?id=${b.id}">${brandBadgeHTML(b, 64)}<b>${b.name}</b>${isSaleLive(b) && p ? `<small>Up to ${p}% off</small>` : `<small class="m">${b.category}</small>`}</a>`; }).join('')}</div>`;
+  host.appendChild(sec);
+}
+function catSection(host, items, title, cat, link, test){
+  const mine = items.filter(i => i.b.category === cat && (!test || test.test(i.p.name))).sort((a, b) => b.off - a.off);
+  if(mine.length >= 2) prodSection(host, title, mine, link, false);
+  else brandSection(host, title, BRANDS.filter(b => b.category === cat), link);
+}
+/* If a tile has no uploaded photo (images/cat-*.jpg), show a real product picture from that category.
+   These are the brands' own product images, linked straight from their sites (never copied or stored by us). */
+function applyTilePhotos(tiles, items){
+  const test = { Women: i => i.aud === 'women', Men: i => i.aud === 'men', Kids: i => i.aud === 'kids', Beauty: i => i.b.category === 'Cosmetics', Footwear: i => i.b.category === 'Footwear',
+    'Home Decor': i => i.b.category === 'Home Décor', Kitchen: i => i.b.category === 'Kitchen & Accessories', Bags: i => i.b.category === 'Bags', Lifestyle: i => i.b.category === 'Lifestyle' };
+  tiles.querySelectorAll('.ct').forEach(a => {
+    const k = a.dataset.k, box = a.querySelector('.ct-img'), probe = new Image();
+    probe.onload = () => { box.querySelector('i') && (box.querySelector('i').style.display = 'none'); };      // your own photo found
+    probe.onerror = () => {                                                                                      // none uploaded: use a product picture
+      const pick = items.filter(i => i.p.image && test[k] && test[k](i)).sort((x, y) => y.off - x.off)[0];
+      if(pick){ const img = safeUrl(pick.p.image); if(img){ box.style.backgroundImage = `url("${img}")`; const ic = box.querySelector('i'); if(ic) ic.style.display = 'none'; } }
+    };
+    probe.src = `images/cat-${k.toLowerCase().replace(/\s/g, '-')}.jpg`;
+  });
+}
+window.renderNewHome = function(){
+  const top = document.getElementById('newHomeTop'), rest = document.getElementById('newHomeRest'); if(!top || !rest) return;
+  top.innerHTML = ''; rest.innerHTML = '';
+  const live = BRANDS.filter(isSaleLive), news = BRANDS.filter(isNewArrival), maxOff = Math.max(0, ...BRANDS.map(b => getMaxDiscountPercent(b) || 0));
+  const hero = document.createElement('div'); hero.className = 'hm-hero';
+  hero.innerHTML = `<a class="hb big b1" href="live-sales.html"><b>${live.length} sales live now</b><small>Follow a brand and get alerted the minute its sale starts.</small><span>See live sales</span></a>
+    <a class="hb b2" href="brands.html?filter=new"><b>New in</b><small>${news.length} brand${news.length === 1 ? '' : 's'} with new arrivals</small></a>
+    <a class="hb b3" href="live-sales.html"><b>${maxOff ? 'Up to ' + maxOff + '% off' : 'Sale'}</b><small>Biggest discounts today</small></a>`;
+  top.appendChild(hero);
+  const tiles = document.createElement('div'); tiles.className = 'ctiles';
+  tiles.innerHTML = TILES.map(t => `<a class="ct" data-k="${t[0]}" href="${t[2]}"><div class="ct-img" style="background-image:url(images/cat-${t[0].toLowerCase().replace(/\s/g, '-')}.jpg);background-color:${t[3]}"><i class="fa-solid ${t[1]}"></i></div><b>${t[0]}</b></a>`).join('');
+  top.appendChild(tiles);
+  const pl = popularList(8), pills = document.createElement('div'); pills.className = 'hm-pills';
+  pills.innerHTML = '<span class="chip fol" id="folChip">&#9829; My Followed (' + getFollows().length + ')</span>' + pl.disc.concat(pl.items).map(s => `<span class="chip" data-q="${s[3]}">${s[0]}</span>`).join('');
+  pills.addEventListener('click', e => { const c = e.target.closest('.chip'); if(!c) return; if(c.id === 'folChip'){ const t = document.querySelector('.hs-tab[data-tab="fol"]'); if(t) t.click(); window.scrollTo(0, 0); } else openSearchWith(c.dataset.q); });
+  top.appendChild(pills);
+  const live2 = document.querySelector('#live-sales-section h2'); if(live2) live2.innerHTML = '<i class="fa-solid fa-fire"></i> BrandGali Live Sales';
+
+  const items = allItems();
+  applyTilePhotos(tiles, items);
+  const byOff = items.filter(i => i.off > 0).sort((a, b) => b.off - a.off);
+  prodSection(rest, 'Hot Sellers', byOff, 'live-sales.html', false);
+  brandSection(rest, 'Featured Brands', BRANDS.filter(b => b.featured), 'brands.html');
+  brandSection(rest, 'Trending Brands', live.slice().sort((a, b) => (getMaxDiscountPercent(b) || 0) - (getMaxDiscountPercent(a) || 0)), 'live-sales.html');
+  if(live.length){                       // Deal of the Day: rotates daily through the biggest live sales
+    const top8 = live.slice().sort((a, b) => (getMaxDiscountPercent(b) || 0) - (getMaxDiscountPercent(a) || 0)).slice(0, 8);
+    const b = top8[Math.floor(Date.now() / 864e5) % top8.length], mine = items.filter(i => i.b.id === b.id).slice(0, 3), pct = getMaxDiscountPercent(b);
+    const sec = document.createElement('section'); sec.className = 'hm-sec';
+    sec.innerHTML = `<div class="hm-sh"><h2>Deal of the Day</h2><a class="va" href="brand.html?id=${b.id}">VIEW ALL</a></div><div class="dod"><div class="dod-b">${brandBadgeHTML(b, 56)}<b>${b.name}</b><span>${pct ? 'Up to ' + pct + '% off' : 'Sale live now'}</span><a href="brand.html?id=${b.id}">Shop the sale</a></div><div class="hc-grid">${mine.map(i => homeCard(i.b, i.p)).join('')}</div></div>`;
+    rest.appendChild(sec);
+  }
+  prodSection(rest, 'Trending Now', items.slice().sort((a, b) => (a.src === 1 ? 0 : 1) - (b.src === 1 ? 0 : 1)), 'brands.html?filter=new', true);
+  prodSection(rest, 'Top Picks', byOff, 'live-sales.html', true);
+  catSection(rest, items, 'Beauty & Personal Care', 'Cosmetics', 'brands.html?category=Cosmetics');
+  const frag = items.filter(i => /perfume|fragrance|attar|mist|cologne|eau de/i.test(i.p.name));
+  prodSection(rest, 'Fragrances', frag, 'brands.html?category=Lifestyle', false);
+  catSection(rest, items, 'Footwear', 'Footwear', 'brands.html?category=Footwear');
+  catSection(rest, items, 'Home Decor', 'Home Décor', 'brands.html?category=' + encodeURIComponent('Home Décor'));
+  catSection(rest, items, 'Lifestyle', 'Lifestyle', 'brands.html?category=Lifestyle');
+  catSection(rest, items, 'Bags & Accessories', 'Bags', 'brands.html?category=Bags');
+  const al = document.querySelector('.al-card');
+  if(al){ al.classList.add('al-band'); rest.insertAdjacentElement('afterend', al);
+    const t = al.querySelector('h4'); if(t) t.textContent = "Follow a brand. We'll do the watching.";
+    const p = al.querySelector('p'); if(p) p.textContent = 'Push and email alerts the minute a sale starts. Unfollow any time.'; }
+};
+})();

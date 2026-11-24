@@ -513,12 +513,12 @@ function clearSpecialFilter(){
 
 
 let bgTab = activeSpecialFilter === 'recent' ? 'fresh' : activeSpecialFilter === 'new' ? 'new' : 'all';
-let bgChip = activeCategory !== 'All' ? 'cat:' + activeCategory : ({stores:'stores', top:'flat50'})[activeSpecialFilter] || null;
+let bgChip = new URLSearchParams(location.search).get('aud') ? 'aud:' + new URLSearchParams(location.search).get('aud') : activeCategory !== 'All' ? 'cat:' + activeCategory : ({stores:'stores', top:'flat50'})[activeSpecialFilter] || null;
 let bgSort = 'az';
 const pctOf = b => getMaxDiscountPercent(b) || 0;
 const BG_TABS = [['all','All','fa-store',()=>true],['featured','Featured','fa-star',b=>b.featured],['new','New Arrivals','fa-wand-magic-sparkles',isNewArrival],['fresh','Fresh Drops','fa-wand-magic-sparkles',b=>isRecentlyAdded(b)],['sale','On Sale','fa-fire',isSaleLive]];
 function bgChips(){
-  return [['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
+  return [['aud:women','Women','fa-person-dress',b=>audienceOf(b).includes('women')],['aud:men','Men','fa-person',b=>audienceOf(b).includes('men')],['aud:kids','Kids','fa-child',b=>audienceOf(b).includes('kids')],['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
     .concat(CATEGORIES.map(c => ['cat:'+c.name, c.name, c.icon, b=>b.category===c.name]))
     .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30]].concat(FEATURES.storeLocations ? [['stores','In-Store','fa-shop',b=>b.stores.length]] : []));
 }
