@@ -7,10 +7,6 @@ const css = `
 #liveSalesRail{padding-top:2px}
 #live-sales-section .section-head h2{font:800 19px Poppins,sans-serif!important;text-transform:uppercase;letter-spacing:.4px}
 #live-sales-section .section-head h2 i{display:none}
-.hc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}
-.hc{display:block;color:var(--navy)}.hc-img{position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#EFEBE1}.hc-img img{width:100%;height:100%;object-fit:cover}
-.hc-img .off{position:absolute;left:8px;top:8px;background:#E8A33D;color:var(--navy);font:800 10.5px Inter,sans-serif;border-radius:7px;padding:4px 7px}
-.hc-n{font:600 13px/1.3 Inter,sans-serif;margin:9px 0 2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.hc-b{font-size:12px;color:var(--muted)}.hc-p{margin-top:3px;font-size:13px}
 .al-band{margin:34px 16px 6px!important;background:#FAF7F0!important;border:0!important;border-radius:28px!important;padding:26px!important}
 .al-band h4{font:800 20px Poppins,sans-serif!important}
 .hm-pills .chip.fol{background:#1B2A5E;color:#fff;border-color:#1B2A5E}
@@ -40,7 +36,7 @@ const css = `
 .dod .hc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(min-width:900px){
  #live-sales-section{max-width:1200px;margin-left:auto!important;margin-right:auto!important;padding:38px 32px 0!important}#live-sales-section .section-head h2{font-size:24px!important}
- .hc-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 16px}.al-band{max-width:1136px;margin:44px auto 10px!important;padding:34px 44px!important}
+ .al-band{max-width:1136px;margin:44px auto 10px!important;padding:34px 44px!important}
  .hm-hero{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;padding:18px 32px 4px;max-width:1200px;margin:0 auto}
  .hb.big{grid-column:1;grid-row:1/3;min-height:340px}.hb{padding:26px}.hb b{font-size:26px}.hb.big b{font-size:34px}
  .ctiles{max-width:1200px;margin:0 auto;padding:22px 32px 8px;overflow:visible;gap:16px}.ct{flex:1;width:auto}.ct-img{height:96px}.ct b{font-size:13px}
@@ -49,6 +45,23 @@ const css = `
 }
 `;
 const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+const st2 = document.createElement('style'); st2.textContent = `
+.hm-hero{gap:8px!important;padding:8px 16px 2px!important}
+.hb{min-height:78px!important;padding:11px 14px!important;border-radius:16px!important;gap:2px!important}.hb.big{min-height:104px!important}
+.hb b{font-size:14.5px!important}.hb.big b{font-size:18px!important}.hb small{font-size:10.5px!important}.hb span{margin-top:5px!important;padding:5px 11px!important;font-size:10.5px!important}
+.ctiles{padding:10px 16px 4px!important}.ct{width:78px!important;padding:7px!important;border-radius:16px!important}.ct-img{height:54px!important;font-size:20px!important}.ct b{font-size:11px!important;margin-top:6px!important}
+.hm-sec{padding-top:20px!important}.hm-sh{margin-bottom:10px!important;flex-wrap:nowrap!important;gap:6px!important}.hm-sh h2{font-size:14.5px!important;white-space:nowrap}.hm-tab{padding:5px 9px!important;font-size:11px!important}.hm-sh .va{font-size:11px!important;white-space:nowrap}
+.bt-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px!important}.bt{padding:9px 4px!important;border-radius:16px!important;gap:4px!important}.bt b{font-size:11px!important}.bt small{font-size:9.5px!important}
+.dod{gap:8px!important}.dod-b{min-height:0!important;padding:14px!important;gap:5px!important;border-radius:18px!important;flex-direction:row!important;align-items:center!important;flex-wrap:wrap}.dod-b b{font-size:16px!important}.dod-b a{padding:7px 14px!important;font-size:12px!important;margin-left:auto}
+.dod .hc-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.al-band{margin:14px 16px 2px!important;padding:14px!important;border-radius:20px!important}.al-band h4{font-size:15px!important}.al-band p{font-size:12px!important;margin-top:2px!important}.al-band .ic{width:34px!important;height:34px!important}.al-band .btn{margin-top:8px!important;padding:10px!important;font-size:13px!important;min-height:0!important}
+@media(min-width:900px){
+ .hm-hero{gap:14px!important;padding:16px 32px 4px!important}.hb{min-height:104px!important;padding:20px!important}.hb.big{min-height:220px!important}.hb b{font-size:20px!important}.hb.big b{font-size:28px!important}.hb small{font-size:13px!important}
+ .ct{width:auto!important}.ct-img{height:84px!important}.ct b{font-size:13px!important}
+ .hm-sh h2{font-size:22px!important}.bt-grid{grid-template-columns:repeat(8,minmax(0,1fr))!important;gap:12px!important}.bt b{font-size:13px!important}
+ .dod{grid-template-columns:1fr 2fr!important}.dod-b{flex-direction:column!important;align-items:flex-start!important;min-height:190px!important}.dod-b a{margin-left:0!important}.dod .hc-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ .al-band{padding:20px 32px!important;max-width:1136px;margin:30px auto 6px!important}
+}`; document.head.appendChild(st2);
 
 const TILES = [['Women','fa-person-dress','brands.html?aud=women','#E8EDF7'],['Men','fa-person','brands.html?aud=men','#E3EFE9'],['Kids','fa-child','brands.html?aud=kids','#FDF1DE'],
   ['Beauty','fa-spray-can-sparkles','brands.html?category=Cosmetics','#F3E6F0'],['Footwear','fa-shoe-prints','brands.html?category=Footwear','#EDEFF5'],
@@ -63,27 +76,24 @@ function allItems(){
   })));
   return out;
 }
-function itemAud(b, p){
-  const n = (p.name || '').toLowerCase();
-  if(/\b(kid|kids|boy|boys|girl|girls|baby|toddler|junior|infant)\b/.test(n)) return 'kids';
-  if(/\b(men|mens|men's|gents|polo|kurta|waistcoat)\b/.test(n) && !/\b(women|ladies)\b/.test(n)) return 'men';
-  if(/\b(women|ladies|lawn|dupatta|kurti|3 piece|2 piece|embroidered|co-ord|abaya|pret)\b/.test(n)) return 'women';
-  return audienceOf(b)[0] || 'women';
-}
-function homeCard(b, p){
-  p = cleanPriced(b, p); const key = b.id + '_h' + (++window.__PN); window.__PREG[key] = { b, p };
-  const off = productOffPct(p);
-  const price = p.currentPrice ? `<span class="p-now">${p.currentPrice}</span>${p.originalPrice ? `<span class="p-was">${p.originalPrice}</span>` : ''}` : '';
-  return `<a class="hc" href="#" data-open-product="${key}"><div class="hc-img">${p.image ? `<img loading="lazy" referrerpolicy="no-referrer" src="${p.image}" alt="" onerror="this.remove()">` : ''}${off ? `<span class="off">${off}% OFF</span>` : ''}</div><div class="hc-n">${p.name}</div><div class="hc-b">${b.name}</div><div class="hc-p">${price}</div></a>`;
+const COLORS = /\b(black|white|blue|navy|red|green|grey|gray|beige|brown|pink|yellow|orange|purple|maroon|olive|cream|ivory|tan|khaki|mustard|teal|multi|charcoal|camel|burgundy|golden|silver|peach|mint|lilac|sky|off)\b/g;
+const baseName = n => String(n || '').toLowerCase().replace(/\s[-–|].*$/, '').replace(COLORS, '').replace(/\s+/g, ' ').trim();
+// Shows a MIX: one product per style (not the same item in five colours), taking turns between brands.
+function diversify(list, limit){
+  const seen = new Set(), byBrand = new Map();
+  list.forEach(i => { const k = i.b.id + '|' + baseName(i.p.name); if(seen.has(k)) return; seen.add(k); if(!byBrand.has(i.b.id)) byBrand.set(i.b.id, []); byBrand.get(i.b.id).push(i); });
+  const q = [...byBrand.values()], out = [];
+  while(out.length < limit && q.some(x => x.length)) q.forEach(x => { if(x.length && out.length < limit) out.push(x.shift()); });
+  return out;
 }
 function prodSection(host, title, items, link, tabbed){
   if(items.length < 2) return;
   const sec = document.createElement('section'); sec.className = 'hm-sec';
   const tabs = tabbed ? ['women', 'men', 'kids'].filter(t => items.some(i => i.aud === t)) : [];
-  let cur = tabs[0]; const max = matchMedia('(min-width:900px)').matches ? 10 : 6;
+  let cur = tabs[0]; const max = matchMedia('(min-width:900px)').matches ? 12 : 8;
   sec.innerHTML = `<div class="hm-sh"><h2>${title}</h2>${tabs.map(t => `<button class="hm-tab" data-t="${t}" type="button">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}<a class="va" href="${link}">VIEW ALL</a></div><div class="hc-grid"></div>`;
   const draw = () => {
-    const list = (cur ? items.filter(i => i.aud === cur) : items).slice(0, max);
+    const list = diversify(cur ? items.filter(i => i.aud === cur) : items, max);
     sec.querySelector('.hc-grid').innerHTML = list.map(i => homeCard(i.b, i.p)).join('');
     sec.querySelectorAll('.hm-tab').forEach(t => t.classList.toggle('on', t.dataset.t === cur));
   };
@@ -93,24 +103,29 @@ function prodSection(host, title, items, link, tabbed){
 function brandSection(host, title, list, link){
   if(!list.length) return;
   const sec = document.createElement('section'); sec.className = 'hm-sec';
-  sec.innerHTML = `<div class="hm-sh"><h2>${title}</h2><a class="va" href="${link}">VIEW ALL</a></div><div class="bt-grid">${list.slice(0, 6).map(b => { const p = getMaxDiscountPercent(b); return `<a class="bt" href="brand.html?id=${b.id}">${brandBadgeHTML(b, 64)}<b>${b.name}</b>${isSaleLive(b) && p ? `<small>Up to ${p}% off</small>` : `<small class="m">${b.category}</small>`}</a>`; }).join('')}</div>`;
+  sec.innerHTML = `<div class="hm-sh"><h2>${title}</h2><a class="va" href="${link}">VIEW ALL</a></div><div class="bt-grid">${list.slice(0, matchMedia('(min-width:900px)').matches ? 8 : 8).map(b => { const p = getMaxDiscountPercent(b); return `<a class="bt" href="brand.html?id=${b.id}">${brandBadgeHTML(b, 44)}<b>${b.name}</b>${isSaleLive(b) && p ? `<small>Up to ${p}% off</small>` : `<small class="m">${b.category}</small>`}</a>`; }).join('')}</div>`;
   host.appendChild(sec);
 }
-function catSection(host, items, title, cat, link, test){
-  const mine = items.filter(i => i.b.category === cat && (!test || test.test(i.p.name))).sort((a, b) => b.off - a.off);
+function catSection(host, items, title, cat, link, test, exclude){
+  const mine = items.filter(i => i.b.category === cat && (!test || test.test(i.p.name)) && !(exclude && exclude.test(i.p.name))).sort((a, b) => b.off - a.off);
   if(mine.length >= 2) prodSection(host, title, mine, link, false);
   else brandSection(host, title, BRANDS.filter(b => b.category === cat), link);
 }
 /* If a tile has no uploaded photo (images/cat-*.jpg), show a real product picture from that category.
    These are the brands' own product images, linked straight from their sites (never copied or stored by us). */
 function applyTilePhotos(tiles, items){
-  const test = { Women: i => i.aud === 'women', Men: i => i.aud === 'men', Kids: i => i.aud === 'kids', Beauty: i => i.b.category === 'Cosmetics', Footwear: i => i.b.category === 'Footwear',
-    'Home Decor': i => i.b.category === 'Home Décor', Kitchen: i => i.b.category === 'Kitchen & Accessories', Bags: i => i.b.category === 'Bags', Lifestyle: i => i.b.category === 'Lifestyle' };
+  const CLOTH = /kurta|shirt|frock|suit|dress|shalwar|kameez|trouser|jeans|jacket|tee|polo|hoodie|sweat|shorts|pants|tunic|kurti|abaya|coat|gown|lawn|co-ord|cardigan|top\b/i;
+  const HOME = /cushion|vase|lamp|rug|curtain|bed ?sheet|decor|frame|mirror|candle|throw|blanket|towel|pillow|sofa|table|chair|planter|clock|duvet|quilt|comforter|basket|shelf|light/i;
+  const BAG = /\b(bag|tote|backpack|clutch|purse|satchel|wallet|handbag)\b/i;
+  const test = { Women: i => i.aud === 'women' && i.b.category === 'Clothing' && CLOTH.test(i.p.name), Men: i => i.aud === 'men' && i.b.category === 'Clothing' && CLOTH.test(i.p.name),
+    Kids: i => i.aud === 'kids' && i.b.category === 'Clothing' && CLOTH.test(i.p.name) && !BAD_ITEMS.test(i.p.name), Beauty: i => i.b.category === 'Cosmetics', Footwear: i => i.b.category === 'Footwear',
+    'Home Decor': i => i.b.category === 'Home Décor' && !BAD_ITEMS.test(i.p.name) && HOME.test(i.p.name), Kitchen: i => i.b.category === 'Kitchen & Accessories' && !BAD_ITEMS.test(i.p.name),
+    Bags: i => BAG.test(i.p.name) || i.b.category === 'Bags', Lifestyle: i => i.b.category === 'Lifestyle' };
   tiles.querySelectorAll('.ct').forEach(a => {
     const k = a.dataset.k, box = a.querySelector('.ct-img'), probe = new Image();
     probe.onload = () => { box.querySelector('i') && (box.querySelector('i').style.display = 'none'); };      // your own photo found
     probe.onerror = () => {                                                                                      // none uploaded: use a product picture
-      const pick = items.filter(i => i.p.image && test[k] && test[k](i)).sort((x, y) => y.off - x.off)[0];
+      const pool = items.filter(i => i.p.image && test[k] && test[k](i)).sort((x, y) => y.off - x.off).slice(0, 6), pick = pool[Math.floor(Date.now() / 864e5) % (pool.length || 1)];
       if(pick){ const img = safeUrl(pick.p.image); if(img){ box.style.backgroundImage = `url("${img}")`; const ic = box.querySelector('i'); if(ic) ic.style.display = 'none'; } }
     };
     probe.src = `images/cat-${k.toLowerCase().replace(/\s/g, '-')}.jpg`;
@@ -148,12 +163,12 @@ window.renderNewHome = function(){
     rest.appendChild(sec);
   }
   prodSection(rest, 'Trending Now', items.slice().sort((a, b) => (a.src === 1 ? 0 : 1) - (b.src === 1 ? 0 : 1)), 'brands.html?filter=new', true);
-  prodSection(rest, 'Top Picks', byOff, 'live-sales.html', true);
+  prodSection(rest, 'Top Picks', items.filter(i => i.off > 0).sort((a, b) => (parsePKR(b.p.originalPrice) - parsePKR(b.p.currentPrice)) - (parsePKR(a.p.originalPrice) - parsePKR(a.p.currentPrice))), 'live-sales.html', true);
   catSection(rest, items, 'Beauty & Personal Care', 'Cosmetics', 'brands.html?category=Cosmetics');
   const frag = items.filter(i => /perfume|fragrance|attar|mist|cologne|eau de/i.test(i.p.name));
   prodSection(rest, 'Fragrances', frag, 'brands.html?category=Lifestyle', false);
   catSection(rest, items, 'Footwear', 'Footwear', 'brands.html?category=Footwear');
-  catSection(rest, items, 'Home Decor', 'Home Décor', 'brands.html?category=' + encodeURIComponent('Home Décor'));
+  catSection(rest, items, 'Home Decor', 'Home Décor', 'brands.html?category=' + encodeURIComponent('Home Décor'), null, BAD_ITEMS);
   catSection(rest, items, 'Lifestyle', 'Lifestyle', 'brands.html?category=Lifestyle');
   catSection(rest, items, 'Bags & Accessories', 'Bags', 'brands.html?category=Bags');
   const al = document.querySelector('.al-card');

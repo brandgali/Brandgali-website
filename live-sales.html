@@ -417,7 +417,7 @@ img{max-width:100%;display:block;}
 <a href="index.html" class=""><i class="fa-solid fa-house"></i>Home</a>
 <a href="live-sales.html" class="active"><i class="fa-solid fa-fire"></i>Live Sales</a>
 <a href="brands.html" class=""><i class="fa-solid fa-shop"></i>Brands</a>
-<a href="index.html#categories" class=""><i class="fa-solid fa-table-cells"></i>Categories</a>
+<a href="brands.html?view=categories" class=""><i class="fa-solid fa-table-cells"></i>Categories</a>
 <a href="#" class="" id="moreNavBtn"><i class="fa-solid fa-bars"></i>More</a>
 </nav>
 </div>
@@ -487,12 +487,13 @@ function wireDrawerAndSearch(){
 }
 
 
-const LIVE_FILTERS = [['all','All Sales','fa-fire'],['flat50','Flat 50% Off','fa-fire'],['off30','30%+ Off','fa-tag'],['under3k','Under PKR 3,000','fa-wallet']].concat(FEATURES.storeLocations ? [['both','Online & In-Store','fa-shop']] : []);
-let liveFilter = 'all', liveSort = 'featured';
+const LIVE_FILTERS = [['aud:women','Women','fa-person-dress'],['aud:men','Men','fa-person'],['aud:kids','Kids','fa-child'],['all','All Sales','fa-fire'],['flat50','Flat 50% Off','fa-fire'],['off30','30%+ Off','fa-tag'],['under3k','Under PKR 3,000','fa-wallet']].concat(FEATURES.storeLocations ? [['both','Online & In-Store','fa-shop']] : []);
+let liveFilter = new URLSearchParams(location.search).get('aud') ? 'aud:' + new URLSearchParams(location.search).get('aud') : 'all', liveSort = 'featured';
 
 function saleCardHTML(b){
   const sale = b.sale || {};
-  const products = brandProducts(b);
+  const aud = liveFilter.startsWith('aud:') ? liveFilter.slice(4) : null;
+  const products = uniqueStyles(brandProducts(b).filter(p => !aud || itemAud(b, p) === aud));
   const headline = sale.headline || (b.live && b.live.off) || 'Sale live now';
   const shopUrl = sale.sourceUrl || b.url;
   const body = products.length
@@ -513,6 +514,7 @@ function saleCardHTML(b){
     </div></article>`;
 }
 function liveMatches(b, f){
+  if(f.startsWith('aud:')) return brandServes(b, f.slice(4));
   const pct = getMaxDiscountPercent(b) || 0;
   if(f === 'flat50') return pct >= 50;
   if(f === 'off30') return pct >= 30;

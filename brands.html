@@ -420,7 +420,7 @@ img{max-width:100%;display:block;}
 <a href="index.html" class=""><i class="fa-solid fa-house"></i>Home</a>
 <a href="live-sales.html" class=""><i class="fa-solid fa-fire"></i>Live Sales</a>
 <a href="brands.html" class="active"><i class="fa-solid fa-shop"></i>Brands</a>
-<a href="index.html#categories" class=""><i class="fa-solid fa-table-cells"></i>Categories</a>
+<a href="brands.html?view=categories" class=""><i class="fa-solid fa-table-cells"></i>Categories</a>
 <a href="#" class="" id="moreNavBtn"><i class="fa-solid fa-bars"></i>More</a>
 </nav>
 </div>
@@ -518,7 +518,7 @@ let bgSort = 'az';
 const pctOf = b => getMaxDiscountPercent(b) || 0;
 const BG_TABS = [['all','All','fa-store',()=>true],['featured','Featured','fa-star',b=>b.featured],['new','New Arrivals','fa-wand-magic-sparkles',isNewArrival],['fresh','Fresh Drops','fa-wand-magic-sparkles',b=>isRecentlyAdded(b)],['sale','On Sale','fa-fire',isSaleLive]];
 function bgChips(){
-  return [['aud:women','Women','fa-person-dress',b=>audienceOf(b).includes('women')],['aud:men','Men','fa-person',b=>audienceOf(b).includes('men')],['aud:kids','Kids','fa-child',b=>audienceOf(b).includes('kids')],['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
+  return [['aud:women','Women','fa-person-dress',b=>brandServes(b,'women')],['aud:men','Men','fa-person',b=>brandServes(b,'men')],['aud:kids','Kids','fa-child',b=>brandServes(b,'kids')],['under3k','Under PKR 3,000','fa-wallet',b=>brandHasItemUnder(b,3000)]]
     .concat(CATEGORIES.map(c => ['cat:'+c.name, c.name, c.icon, b=>b.category===c.name]))
     .concat([['flat50','Flat 50%','fa-burst',b=>pctOf(b)>=50],['off30','30%+ Off','fa-tag',b=>pctOf(b)>=30]].concat(FEATURES.storeLocations ? [['stores','In-Store','fa-shop',b=>b.stores.length]] : []));
 }
@@ -528,8 +528,8 @@ function renderFilters(){
   row.innerHTML = `<div class="bg-scroll">${BG_TABS.map(t => `<button class="filter-chip${t[0]===bgTab?' active':''}" data-tab="${t[0]}"><i class="fa-solid ${t[2]}"></i> ${t[1]} (${BRANDS.filter(t[3]).length})</button>`).join('')}<span style="width:1px;background:var(--line);flex-shrink:0;margin:4px 2px;"></span>${chips.map(c => `<button class="filter-chip${c[0]===bgChip?' active':''}" data-chip="${c[0]}"><i class="fa-solid ${c[2]}"></i> ${c[1]}${c[0].startsWith('cat:') ? ' (' + BRANDS.filter(c[3]).length + ')' : ''}</button>`).join('')}</div>
     <div class="bg-sort"><label>Sort By: <select id="bgSort"><option value="az">Brand A-Z</option><option value="za">Brand Z-A</option><option value="discount">Highest Discount</option><option value="dlow">Lowest Discount First</option><option value="sale">On Sale First</option></select></label></div>`;
   document.getElementById('bgSort').value = bgSort;
-  row.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { bgTab = b.dataset.tab; renderFilters(); renderGrid(); }));
-  row.querySelectorAll('[data-chip]').forEach(b => b.addEventListener('click', () => { bgChip = bgChip === b.dataset.chip ? null : b.dataset.chip; renderFilters(); renderGrid(); }));
+  row.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { bgTab = b.dataset.tab; bgChip = null; renderFilters(); renderGrid(); }));
+  row.querySelectorAll('[data-chip]').forEach(b => b.addEventListener('click', () => { bgChip = bgChip === b.dataset.chip ? null : b.dataset.chip; bgTab = 'all'; renderFilters(); renderGrid(); }));
   document.getElementById('bgSort').addEventListener('change', e => { bgSort = e.target.value; renderGrid(); });
 }
 function renderGrid(){
@@ -548,9 +548,17 @@ function renderGrid(){
   refreshNotifyButtonsUI();
 }
 
+function renderCategoriesView(){
+  const tint = ['#E8EDF7', '#E3EFE9', '#FDF1DE', '#F3E6F0', '#EDEFF5', '#F4EFE3', '#E8F2EC', '#FBEAE0', '#EEF0E2'];
+  const aud = [['Women', 'fa-person-dress', 'brands.html?aud=women', BRANDS.filter(x => brandServes(x, 'women')).length], ['Men', 'fa-person', 'brands.html?aud=men', BRANDS.filter(x => brandServes(x, 'men')).length], ['Kids', 'fa-child', 'brands.html?aud=kids', BRANDS.filter(x => brandServes(x, 'kids')).length]];
+  const cats = CATEGORIES.map(c => [c.name, c.icon, 'brands.html?category=' + encodeURIComponent(c.name), BRANDS.filter(x => x.category === c.name).length]);
+  document.querySelector('#main > section.section').innerHTML = '<div class="section-head"><h2><i class="fa-solid fa-table-cells"></i>All Categories</h2></div><div class="cg-grid">' +
+    aud.concat(cats).map((c, i) => `<a class="cg" href="${c[2]}"><div class="cg-i" style="background:${tint[i % tint.length]}"><i class="fa-solid ${c[1]}"></i></div><b>${c[0]}</b><small>${c[3]} brand${c[3] === 1 ? '' : 's'}</small></a>`).join('') + '</div>';
+}
 loadSalesStatus().then(() => {
-  renderFilters();
-  renderGrid();
+  if(new URLSearchParams(location.search).get('view') === 'categories'){ renderCategoriesView(); }
+  else { renderFilters();
+  renderGrid(); }
   renderDrawerCategories();
   wireDrawerAndSearch();
   wireNotifyButtons();

@@ -375,7 +375,7 @@ loadSalesStatus = async function(){
 /* ---------- sort for product grids (brand page) ---------- */
 function initProductSort(){
   const grids = document.querySelectorAll('#brandContent .product-grid');
-  const n = document.querySelectorAll('#brandContent .p-card').length;
+  const n = document.querySelectorAll('#brandContent .hc').length;
   if(!grids.length || n < 2) return;
   grids[0].insertAdjacentHTML('beforebegin', `<div class="bg-sort" style="justify-content:space-between;"><span style="color:var(--navy);">${n} item${n === 1 ? '' : 's'}</span><label>Sort By: <select id="prodSort"><option value="def">Featured First</option><option value="plow">Lowest Price First</option><option value="phigh">Highest Price First</option><option value="dhigh">Highest Discount First</option><option value="dlow">Lowest Discount First</option></select></label></div>`);
   document.getElementById('prodSort').addEventListener('change', e => {
@@ -692,3 +692,81 @@ body,.shell{background:#fff!important}
   function init(){ build(); rotate(); }
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
+
+
+/* =====================================================================
+   v3: compact tiles everywhere, new colour scheme, audience filtering
+===================================================================== */
+const BAD_ITEMS = /feeding|bottle|baby|sipper|pacifier|diaper|feeder|nipple|teether/i;
+function itemAud(b, p){
+  const n = (p.name || '').toLowerCase();
+  if(/\b(kid|kids|boy|boys|girl|girls|baby|toddler|junior|infant)\b/.test(n)) return 'kids';
+  if(/\b(men|mens|men's|gents|polo|kurta|waistcoat)\b/.test(n) && !/\b(women|ladies)\b/.test(n)) return 'men';
+  if(/\b(women|ladies|lawn|dupatta|kurti|3 piece|2 piece|embroidered|co-ord|abaya|pret)\b/.test(n)) return 'women';
+  return audienceOf(b)[0] || 'women';
+}
+// A brand "serves" Women / Men / Kids if its own products say so; with no product data it falls back to the brand's tags.
+function brandServes(b, aud){
+  const ps = allProductsOf(b);
+  if(ps.length) return ps.some(p => itemAud(b, p) === aud);
+  return audienceOf(b).includes(aud);
+}
+// One compact product tile used on every page (home, live sales, brand pages).
+function homeCard(b, p){
+  p = cleanPriced(b, p); const key = b.id + '_h' + (++window.__PN); window.__PREG[key] = { b, p };
+  const off = productOffPct(p);
+  const price = p.currentPrice ? `<span class="p-now">${p.currentPrice}</span>${p.originalPrice ? `<span class="p-was">${p.originalPrice}</span>` : ''}` : '';
+  return `<a class="hc" href="#" data-open-product="${key}" data-idx="${window.__PN}" data-price="${parsePKR(p.currentPrice) || ''}" data-off="${off || 0}"><div class="hc-img">${p.image ? `<img loading="lazy" referrerpolicy="no-referrer" src="${p.image}" alt="" onerror="this.remove()">` : ''}${off ? `<span class="off">${off}% OFF</span>` : ''}</div><div class="hc-n">${p.name}</div><div class="hc-b">${b.name}</div><div class="hc-p">${price}</div></a>`;
+}
+productCardHTML = function(b, p){ return homeCard(b, p); };
+
+(function(){
+  const s = document.createElement('style'); s.textContent = `
+:root{--line:#E7E2D6;--muted:#5B6070;--cream:#FAF7F0}
+/* product tiles: 4 across on phones, more on bigger screens */
+.product-grid,.hc-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px 8px!important}
+.hc{display:block;color:var(--navy);min-width:0}.hc-img{position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:#EFEBE1}.hc-img img{width:100%;height:100%;object-fit:cover}
+.hc-img .off{position:absolute;left:4px;top:4px;background:#E8A33D;color:#1B2A5E;font:800 8.5px Inter,sans-serif;border-radius:5px;padding:2px 4px}
+.hc-n{font:600 11px/1.25 Inter,sans-serif;margin:6px 0 1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hc-b{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hc-p{margin-top:2px;font-size:10.5px;line-height:1.3}.hc-p .p-was{display:block;margin:0;font-size:9.5px}
+@media(min-width:600px) and (max-width:899px){.product-grid,.hc-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}
+@media(min-width:900px){.product-grid,.hc-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:20px 14px!important}.hc-n{font-size:13px}.hc-b{font-size:12px}.hc-p{font-size:13px}.hc-img .off{font-size:10.5px;padding:3px 6px}}
+/* brand tiles: 3 across on phones */
+.bgrid2{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;grid-auto-rows:auto!important}
+.bc2{min-height:0!important;padding:10px 7px!important;gap:6px!important;align-items:center;text-align:center;border-radius:16px!important}
+.bc2-tags{min-height:0!important;justify-content:center}.bc2-tag{font-size:8.5px!important;padding:2px 6px!important}
+.bc2-top{flex-direction:column!important;min-height:0!important;gap:5px!important}.bc2-name{width:100%}
+.bc2-name b{font-size:12px!important;-webkit-line-clamp:2}.bc2-name small{font-size:10px!important;display:block}
+.bc2-chips{display:none!important}.bc2-actions{width:100%;gap:5px!important;margin-top:auto}
+.bc2-btn{padding:7px 4px!important;font-size:10.5px!important;border-radius:9px!important}.bc2 .notify-btn{padding:6px 4px!important;font-size:10.5px!important;border-radius:9px!important}
+@media(min-width:600px) and (max-width:899px){.bgrid2{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+@media(min-width:900px){.bgrid2{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:14px!important}.bc2-name b{font-size:14px!important}.bc2-btn,.bc2 .notify-btn{font-size:12px!important}}
+/* live-sales rail on the homepage: white cards, 3 across */
+.lv-card{flex:0 0 calc((100% - 16px)/3)!important;max-width:none!important;background:#fff;border:1px solid #E7E2D6;border-radius:18px;text-align:center}
+.lv-top{height:auto!important;background:#FAF7F0!important;padding:10px 6px 8px;display:flex!important;flex-direction:column;align-items:center;gap:6px}.lv-view{display:none!important}
+.lv-top .brand-badge,.lv-top img{width:44px!important;height:44px!important;font-size:15px!important}
+.lv-off{position:static!important;background:#E8A33D!important;color:#1B2A5E!important;font:800 9.5px Inter,sans-serif!important;padding:3px 7px!important;border-radius:7px!important}
+.lv-body{padding:8px!important}.lv-body b{font-size:12px!important;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lv-body small,.lv-body>div:not(.card-actions){display:none!important}
+.lv-body .card-actions{flex-direction:column!important;gap:5px!important;margin-top:6px!important}.lv-body .btn{font-size:10.5px!important;padding:7px 4px!important;border-radius:9px!important;min-height:0!important}.lv-body .notify-btn{font-size:10.5px!important;padding:6px 4px!important;border-radius:9px!important;justify-content:center}
+@media(min-width:900px){.rail{grid-auto-columns:calc((100% - 60px)/6)!important}.lv-card{flex:none!important}}
+/* curated collections: 2 across on phones */
+.collections{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important}
+.collection{min-height:84px!important;padding:12px!important}.collection h3{font-size:14px!important;margin:6px 0 2px!important}.collection small{font-size:9px!important;padding:3px 6px!important}.collection p,.collection .count-line{font-size:9.5px!important}
+@media(min-width:900px){.collections{grid-template-columns:repeat(4,minmax(0,1fr))!important}.collection{min-height:130px!important}.collection h3{font-size:19px!important}}
+/* categories page */
+.cg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.cg{background:#fff;border:1px solid #E7E2D6;border-radius:18px;padding:14px 8px;text-align:center;color:#1B2A5E;display:flex;flex-direction:column;align-items:center;gap:6px;box-shadow:0 6px 16px rgba(27,42,94,.06)}
+.cg-i{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:22px}.cg b{font:800 12.5px Poppins,sans-serif}.cg small{font-size:10.5px;color:#5B6070}
+@media(min-width:600px){.cg-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(min-width:900px){.cg-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}}
+`; document.head.appendChild(s);
+})();
+
+
+/* one tile per style: hides repeats of the same item in other colours */
+function uniqueStyles(list){
+  const seen = new Set();
+  return list.filter(p => {
+    const k = String(p.name || '').toLowerCase().replace(/\s[-–|].*$/, '').replace(/\b(black|white|blue|navy|red|green|grey|gray|beige|brown|pink|yellow|orange|purple|maroon|olive|cream|ivory|tan|khaki|mustard|teal|multi|charcoal|camel|burgundy|golden|silver|peach|mint|lilac|sky|off)\b/g, '').replace(/\s+/g, ' ').trim();
+    if(seen.has(k)) return false; seen.add(k); return true;
+  });
+}
