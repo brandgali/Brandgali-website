@@ -50,6 +50,7 @@ const st2 = document.createElement('style'); st2.textContent = `
 .hb{min-height:78px!important;padding:11px 14px!important;border-radius:16px!important;gap:2px!important}.hb.big{min-height:104px!important}
 .hb b{font-size:14.5px!important}.hb.big b{font-size:18px!important}.hb small{font-size:10.5px!important}.hb span{margin-top:5px!important;padding:5px 11px!important;font-size:10.5px!important}
 .ctiles{padding:10px 16px 4px!important}.ct{width:78px!important;padding:7px!important;border-radius:16px!important}.ct-img{height:54px!important;font-size:20px!important}.ct b{font-size:11px!important;margin-top:6px!important}
+#live-sales-section .section-head h2{font:800 14.5px Poppins,sans-serif!important;letter-spacing:.4px!important}#live-sales-section .section-head a{font-size:11px!important}
 .hm-sec{padding-top:20px!important}.hm-sh{margin-bottom:10px!important;flex-wrap:nowrap!important;gap:6px!important}.hm-sh h2{font-size:14.5px!important;white-space:nowrap}.hm-tab{padding:5px 9px!important;font-size:11px!important}.hm-sh .va{font-size:11px!important;white-space:nowrap}
 .bt-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px!important}.bt{padding:9px 4px!important;border-radius:16px!important;gap:4px!important}.bt b{font-size:11px!important}.bt small{font-size:9.5px!important}
 .dod{gap:8px!important}.dod-b{min-height:0!important;padding:14px!important;gap:5px!important;border-radius:18px!important;flex-direction:row!important;align-items:center!important;flex-wrap:wrap}.dod-b b{font-size:16px!important}.dod-b a{padding:7px 14px!important;font-size:12px!important;margin-left:auto}
@@ -58,11 +59,13 @@ const st2 = document.createElement('style'); st2.textContent = `
 @media(min-width:900px){
  .hm-hero{gap:14px!important;padding:16px 32px 4px!important}.hb{min-height:104px!important;padding:20px!important}.hb.big{min-height:220px!important}.hb b{font-size:20px!important}.hb.big b{font-size:28px!important}.hb small{font-size:13px!important}
  .ct{width:auto!important}.ct-img{height:84px!important}.ct b{font-size:13px!important}
- .hm-sh h2{font-size:22px!important}.bt-grid{grid-template-columns:repeat(8,minmax(0,1fr))!important;gap:12px!important}.bt b{font-size:13px!important}
+ #live-sales-section .section-head h2{font-size:22px!important}.hm-sh h2{font-size:22px!important}.bt-grid{grid-template-columns:repeat(8,minmax(0,1fr))!important;gap:12px!important}.bt b{font-size:13px!important}
  .dod{grid-template-columns:1fr 2fr!important}.dod-b{flex-direction:column!important;align-items:flex-start!important;min-height:190px!important}.dod-b a{margin-left:0!important}.dod .hc-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
  .al-band{padding:20px 32px!important;max-width:1136px;margin:30px auto 6px!important}
 }`; document.head.appendChild(st2);
 
+const HOME_OK = /cushion|vase|lamp|rug|carpet|curtain|bed ?sheet|comforter|quilt|duvet|pillow|decor|frame|mirror|candle|throw|blanket|towel|sofa|table|chair|stool|planter|clock|basket|shelf|wall|light|bed\b|mattress|wardrobe|dinner|plate|mug|bowl|jar|tray|organi[sz]er|storage box|diffuser/i;
+const NOT_HOME = new RegExp(BAD_ITEMS.source + '|unstitched|\\bsuit\\b|kurta|shirt|lawn|dress|shalwar|dupatta|frock|trouser|storage bag', 'i');
 const TILES = [['Women','fa-person-dress','brands.html?aud=women','#E8EDF7'],['Men','fa-person','brands.html?aud=men','#E3EFE9'],['Kids','fa-child','brands.html?aud=kids','#FDF1DE'],
   ['Beauty','fa-spray-can-sparkles','brands.html?category=Cosmetics','#F3E6F0'],['Footwear','fa-shoe-prints','brands.html?category=Footwear','#EDEFF5'],
   ['Home Decor','fa-couch','brands.html?category=' + encodeURIComponent('Home Décor'),'#F4EFE3'],['Kitchen','fa-kitchen-set','brands.html?category=' + encodeURIComponent('Kitchen & Accessories'),'#E8F2EC'],
@@ -115,11 +118,10 @@ function catSection(host, items, title, cat, link, test, exclude){
    These are the brands' own product images, linked straight from their sites (never copied or stored by us). */
 function applyTilePhotos(tiles, items){
   const CLOTH = /kurta|shirt|frock|suit|dress|shalwar|kameez|trouser|jeans|jacket|tee|polo|hoodie|sweat|shorts|pants|tunic|kurti|abaya|coat|gown|lawn|co-ord|cardigan|top\b/i;
-  const HOME = /cushion|vase|lamp|rug|curtain|bed ?sheet|decor|frame|mirror|candle|throw|blanket|towel|pillow|sofa|table|chair|planter|clock|duvet|quilt|comforter|basket|shelf|light/i;
-  const BAG = /\b(bag|tote|backpack|clutch|purse|satchel|wallet|handbag)\b/i;
+    const BAG = /\b(bag|tote|backpack|clutch|purse|satchel|wallet|handbag)\b/i;
   const test = { Women: i => i.aud === 'women' && i.b.category === 'Clothing' && CLOTH.test(i.p.name), Men: i => i.aud === 'men' && i.b.category === 'Clothing' && CLOTH.test(i.p.name),
     Kids: i => i.aud === 'kids' && i.b.category === 'Clothing' && CLOTH.test(i.p.name) && !BAD_ITEMS.test(i.p.name), Beauty: i => i.b.category === 'Cosmetics', Footwear: i => i.b.category === 'Footwear',
-    'Home Decor': i => i.b.category === 'Home Décor' && !BAD_ITEMS.test(i.p.name) && HOME.test(i.p.name), Kitchen: i => i.b.category === 'Kitchen & Accessories' && !BAD_ITEMS.test(i.p.name),
+    'Home Decor': i => i.b.category === 'Home Décor' && !NOT_HOME.test(i.p.name) && HOME_OK.test(i.p.name), Kitchen: i => i.b.category === 'Kitchen & Accessories' && !BAD_ITEMS.test(i.p.name),
     Bags: i => BAG.test(i.p.name) || i.b.category === 'Bags', Lifestyle: i => i.b.category === 'Lifestyle' };
   tiles.querySelectorAll('.ct').forEach(a => {
     const k = a.dataset.k, box = a.querySelector('.ct-img'), probe = new Image();
@@ -152,7 +154,7 @@ window.renderNewHome = function(){
   const items = allItems();
   applyTilePhotos(tiles, items);
   const byOff = items.filter(i => i.off > 0).sort((a, b) => b.off - a.off);
-  prodSection(rest, 'Hot Sellers', byOff, 'live-sales.html', false);
+  prodSection(rest, 'Hot Sellers', byOff, 'live-sales.html', true);
   brandSection(rest, 'Featured Brands', BRANDS.filter(b => b.featured), 'brands.html');
   brandSection(rest, 'Trending Brands', live.slice().sort((a, b) => (getMaxDiscountPercent(b) || 0) - (getMaxDiscountPercent(a) || 0)), 'live-sales.html');
   if(live.length){                       // Deal of the Day: rotates daily through the biggest live sales
@@ -165,10 +167,10 @@ window.renderNewHome = function(){
   prodSection(rest, 'Trending Now', items.slice().sort((a, b) => (a.src === 1 ? 0 : 1) - (b.src === 1 ? 0 : 1)), 'brands.html?filter=new', true);
   prodSection(rest, 'Top Picks', items.filter(i => i.off > 0).sort((a, b) => (parsePKR(b.p.originalPrice) - parsePKR(b.p.currentPrice)) - (parsePKR(a.p.originalPrice) - parsePKR(a.p.currentPrice))), 'live-sales.html', true);
   catSection(rest, items, 'Beauty & Personal Care', 'Cosmetics', 'brands.html?category=Cosmetics');
-  const frag = items.filter(i => /perfume|fragrance|attar|mist|cologne|eau de/i.test(i.p.name));
+  const frag = items.filter(i => ['Cosmetics', 'Lifestyle'].includes(i.b.category) && /\b(perfume|fragrance|attar|cologne|parfum|body mist|eau de (parfum|toilette))\b/i.test(i.p.name));
   prodSection(rest, 'Fragrances', frag, 'brands.html?category=Lifestyle', false);
   catSection(rest, items, 'Footwear', 'Footwear', 'brands.html?category=Footwear');
-  catSection(rest, items, 'Home Decor', 'Home Décor', 'brands.html?category=' + encodeURIComponent('Home Décor'), null, BAD_ITEMS);
+  catSection(rest, items, 'Home Decor', 'Home Décor', 'brands.html?category=' + encodeURIComponent('Home Décor'), HOME_OK, NOT_HOME);
   catSection(rest, items, 'Lifestyle', 'Lifestyle', 'brands.html?category=Lifestyle');
   catSection(rest, items, 'Bags & Accessories', 'Bags', 'brands.html?category=Bags');
   const al = document.querySelector('.al-card');

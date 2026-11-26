@@ -542,7 +542,7 @@ function renderGrid(){
   else list.sort((a, b) => a.name.localeCompare(b.name));
   document.getElementById('brandCount').textContent = `${list.length} brand${list.length === 1 ? '' : 's'}`;
   const h = document.querySelector('#main .section-head h2');
-  if(h) h.innerHTML = bgChip && bgChip.startsWith('cat:') ? `<i class="fa-solid fa-shop"></i>${bgChip.slice(4)} Brands` : '<i class="fa-solid fa-shop"></i>All Brands';
+  if(h) h.innerHTML = bgChip && bgChip.startsWith('cat:') ? `<i class="fa-solid fa-shop"></i>${bgChip.slice(4)} Brands` : (bgChip && bgChip.startsWith('aud:') ? `<i class="fa-solid fa-shop"></i>${({women:"Women's",men:"Men's",kids:"Kids'"})[bgChip.slice(4)]} Brands` : '<i class="fa-solid fa-shop"></i>All Brands');
   const grid = document.getElementById('brandGrid'); grid.className = 'bgrid2';
   grid.innerHTML = list.length ? list.map(brandCardV2HTML).join('') : '<p class="empty-note" style="grid-column:1/-1;">No brands match these filters yet.</p>';
   refreshNotifyButtonsUI();
@@ -553,7 +553,7 @@ function renderCategoriesView(){
   const aud = [['Women', 'fa-person-dress', 'brands.html?aud=women', BRANDS.filter(x => brandServes(x, 'women')).length], ['Men', 'fa-person', 'brands.html?aud=men', BRANDS.filter(x => brandServes(x, 'men')).length], ['Kids', 'fa-child', 'brands.html?aud=kids', BRANDS.filter(x => brandServes(x, 'kids')).length]];
   const cats = CATEGORIES.map(c => [c.name, c.icon, 'brands.html?category=' + encodeURIComponent(c.name), BRANDS.filter(x => x.category === c.name).length]);
   document.querySelector('#main > section.section').innerHTML = '<div class="section-head"><h2><i class="fa-solid fa-table-cells"></i>All Categories</h2></div><div class="cg-grid">' +
-    aud.concat(cats).map((c, i) => `<a class="cg" href="${c[2]}"><div class="cg-i" style="background:${tint[i % tint.length]}"><i class="fa-solid ${c[1]}"></i></div><b>${c[0]}</b><small>${c[3]} brand${c[3] === 1 ? '' : 's'}</small></a>`).join('') + '</div>';
+    cats.map((c, i) => `<a class="cg" href="${c[2]}"><div class="cg-i" style="background:${tint[i % tint.length]}"><i class="fa-solid ${c[1]}"></i></div><b>${c[0]}</b><small>${c[3]} brand${c[3] === 1 ? '' : 's'}</small></a>`).join('') + '</div>';
 }
 loadSalesStatus().then(() => {
   if(new URLSearchParams(location.search).get('view') === 'categories'){ renderCategoriesView(); }

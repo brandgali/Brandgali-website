@@ -650,10 +650,10 @@ POP_CANDIDATES.push(
 
 // Which shoppers each brand serves. Clothing defaults to women + men; edit the lists below to fine-tune.
 const AUD_KIDS = new Set(['khaadi','jdot','gulahmed','sapphire','outfitters','limelight','alkaramstudio','beechtree','zellbury','charcoal','generation','cougar','bata','servis','stylo','borjan']);
-const AUD_OVERRIDES = { mariab: ['women'], sanasafinaz: ['women'], kikomilano: ['women'], inglot: ['women'], allurebeauty: ['women'], glowandglee: ['women'], lusciouscosmetics: ['women'], vegascosmetics: ['women'] };
+const AUD_OVERRIDES = { saeedghani: ['women', 'men'], hemaniherbals: ['women', 'men'], thebodyshop: ['women', 'men'], mariab: ['women'], sanasafinaz: ['women'], kikomilano: ['women'], inglot: ['women'], allurebeauty: ['women'], glowandglee: ['women'], lusciouscosmetics: ['women'], vegascosmetics: ['women'] };
 function audienceOf(b){
   if(AUD_OVERRIDES[b.id]) return AUD_OVERRIDES[b.id];
-  const a = b.category === 'Clothing' ? ['women', 'men'] : (b.category === 'Footwear' ? ['women', 'men'] : (b.category === 'Bags' || b.category === 'Cosmetics' ? ['women'] : (b.category === 'Lifestyle' ? ['women', 'men'] : [])));
+  const a = b.category === 'Clothing' ? ['women', 'men'] : (b.category === 'Footwear' ? ['women', 'men'] : (b.category === 'Bags' || b.category === 'Cosmetics' ? ['women'] : []));
   if(AUD_KIDS.has(b.id)) a.push('kids');
   return a;
 }
@@ -697,19 +697,21 @@ body,.shell{background:#fff!important}
 /* =====================================================================
    v3: compact tiles everywhere, new colour scheme, audience filtering
 ===================================================================== */
-const BAD_ITEMS = /feeding|bottle|baby|sipper|pacifier|diaper|feeder|nipple|teether/i;
+const BAD_ITEMS = /feeding|bottle|baby|sipper|pacifier|diaper|feeder|nipple|teether|breast|milk storage|nursing|maternity/i;
+const APPAREL_CATS = new Set(['Clothing', 'Footwear', 'Bags', 'Cosmetics', 'Lifestyle']);   // only these can be Women / Men / Kids
 function itemAud(b, p){
+  if(!APPAREL_CATS.has(b.category)) return 'none';      // home decor, kitchen etc. are never Women/Men/Kids
   const n = (p.name || '').toLowerCase();
   if(/\b(kid|kids|boy|boys|girl|girls|baby|toddler|junior|infant)\b/.test(n)) return 'kids';
   if(/\b(men|mens|men's|gents|polo|kurta|waistcoat)\b/.test(n) && !/\b(women|ladies)\b/.test(n)) return 'men';
   if(/\b(women|ladies|lawn|dupatta|kurti|3 piece|2 piece|embroidered|co-ord|abaya|pret)\b/.test(n)) return 'women';
-  return audienceOf(b)[0] || 'women';
+  return audienceOf(b)[0] || 'none';
 }
 // A brand "serves" Women / Men / Kids if its own products say so; with no product data it falls back to the brand's tags.
 function brandServes(b, aud){
-  const ps = allProductsOf(b);
-  if(ps.length) return ps.some(p => itemAud(b, p) === aud);
-  return audienceOf(b).includes(aud);
+  // by the brand's type (women's clothing, footwear, bags, beauty...) OR any of its products clearly being for that group
+  if(audienceOf(b).includes(aud)) return true;
+  return APPAREL_CATS.has(b.category) && allProductsOf(b).some(p => itemAud(b, p) === aud && /\b(men|mens|women|ladies|kids?|boys?|girls?|baby)\b|kurta|lawn|polo|frock/i.test(p.name || ''));
 }
 // One compact product tile used on every page (home, live sales, brand pages).
 function homeCard(b, p){
@@ -770,3 +772,18 @@ function uniqueStyles(list){
     if(seen.has(k)) return false; seen.add(k); return true;
   });
 }
+
+
+/* v3.1: bigger logo, slimmer search + sort controls */
+(function(){
+  const s = document.createElement('style'); s.textContent = `
+.logo-link img{height:46px!important;width:auto!important}.topbar{height:68px!important}
+@media(min-width:900px){.logo-link img{height:58px!important}.topbar{height:84px!important}}
+.search-inline{display:flex!important;align-items:center;gap:10px;padding:0 16px!important;height:44px!important;border-radius:999px!important;background:#FAF7F0!important;border:1px solid #E7E2D6!important;margin-bottom:12px!important}
+.search-inline input{font-size:16px!important;padding:0!important;height:100%!important;background:transparent!important;border:0!important;box-shadow:none!important;min-width:0}
+.search-inline i{font-size:14px;color:#1B2A5E}
+.qf-sort,.bg-sort{font-size:12px!important}.qf-sort label,.bg-sort label{font-size:12px!important;display:flex;align-items:center;gap:0}
+.qf-sort select,.bg-sort select{font-size:16px!important;transform:scale(.78);transform-origin:right center;margin-left:-34px;padding:8px 10px!important;max-width:60vw}
+.qf-sort b{font-size:12px!important}
+`; document.head.appendChild(s);
+})();

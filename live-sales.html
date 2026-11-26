@@ -390,7 +390,7 @@ img{max-width:100%;display:block;}
       <p style="font-size:12.5px;color:var(--muted);margin:-6px 0 16px;">Checked automatically every day. Real products only - nothing here is ever invented.</p>
       <div class="search-inline">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="liveSearchInput" placeholder="Search live sales - brand, category, or an item like 'polo'...">
+        <input type="text" id="liveSearchInput" placeholder="Search live sales...">
       </div>
       <div class="qf-card">
         <div class="qf-title"><i class="fa-solid fa-filter"></i> QUICK DEAL FILTERS:</div>
@@ -493,7 +493,8 @@ let liveFilter = new URLSearchParams(location.search).get('aud') ? 'aud:' + new 
 function saleCardHTML(b){
   const sale = b.sale || {};
   const aud = liveFilter.startsWith('aud:') ? liveFilter.slice(4) : null;
-  const products = uniqueStyles(brandProducts(b).filter(p => !aud || itemAud(b, p) === aud));
+  let products = uniqueStyles(brandProducts(b).filter(p => !aud || itemAud(b, p) === aud));
+  if(aud && !products.length) products = uniqueStyles(brandProducts(b));   // brand is relevant but none of its sale items are labelled: show them all
   const headline = sale.headline || (b.live && b.live.off) || 'Sale live now';
   const shopUrl = sale.sourceUrl || b.url;
   const body = products.length
