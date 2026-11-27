@@ -672,7 +672,10 @@ body,.shell{background:#fff!important}
   function build(){
     const top = document.querySelector('.topbar'); if(!top || document.querySelector('.cat-nav')) return;
     const nav = document.createElement('nav'); nav.className = 'cat-nav';
-    nav.innerHTML = LINKS.map(l => `<a href="${l[1]}"${l[0] === 'Sale' ? ' class="sale"' : ''}>${l[0]}</a>`).join('');
+    // On the Live Sales page the top menu FILTERS live sales; everywhere else it opens the matching brands list.
+    const onLive = /live-sales/.test(location.pathname);
+    const go = href => (onLive && /^brands\.html\?(aud|category)=/.test(href)) ? href.replace('brands.html', 'live-sales.html') : href;
+    nav.innerHTML = LINKS.map(l => `<a href="${go(l[1])}"${l[0] === 'Sale' ? ' class="sale"' : ''}>${l[0]}</a>`).join('');
     top.insertAdjacentElement('afterend', nav);
     const pill = document.createElement('div'); pill.className = 'hd-search';
     pill.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i><span>Search for brands</span>';

@@ -488,7 +488,9 @@ function wireDrawerAndSearch(){
 
 
 const LIVE_FILTERS = [['aud:women','Women','fa-person-dress'],['aud:men','Men','fa-person'],['aud:kids','Kids','fa-child'],['all','All Sales','fa-fire'],['flat50','Flat 50% Off','fa-fire'],['off30','30%+ Off','fa-tag'],['under3k','Under PKR 3,000','fa-wallet']].concat(FEATURES.storeLocations ? [['both','Online & In-Store','fa-shop']] : []);
-let liveFilter = new URLSearchParams(location.search).get('aud') ? 'aud:' + new URLSearchParams(location.search).get('aud') : 'all', liveSort = 'featured';
+LIVE_FILTERS.push(...CATEGORIES.map(c => ['cat:' + c.name, c.name, c.icon]));   // category chips: Footwear, Home Decor, ...
+const _q = new URLSearchParams(location.search);
+let liveFilter = _q.get('aud') ? 'aud:' + _q.get('aud') : (_q.get('category') ? 'cat:' + _q.get('category') : 'all'), liveSort = 'featured';
 
 function saleCardHTML(b){
   const sale = b.sale || {};
@@ -515,6 +517,7 @@ function saleCardHTML(b){
     </div></article>`;
 }
 function liveMatches(b, f){
+  if(f.startsWith('cat:')) return b.category === f.slice(4);
   if(f.startsWith('aud:')) return brandServes(b, f.slice(4));
   const pct = getMaxDiscountPercent(b) || 0;
   if(f === 'flat50') return pct >= 50;
@@ -528,6 +531,7 @@ function renderLiveFilters(){
   const base = BRANDS.filter(b => b.status === 'sale');
   row.innerHTML = LIVE_FILTERS.map(f => `<button class="filter-chip${f[0] === liveFilter ? ' active' : ''}" data-filter="${f[0]}"><i class="fa-solid ${f[2]}"></i> ${f[1]}</button>`).join('');
   row.querySelectorAll('.filter-chip').forEach(btn => btn.addEventListener('click', () => { liveFilter = btn.dataset.filter; renderLiveFilters(); renderLiveSalesPage(); }));
+  const on = row.querySelector('.active'); if(on) row.scrollLeft = Math.max(0, on.offsetLeft - 16);   // bring the selected chip into view
 }
 function renderLiveSalesPage(){
   let list = BRANDS.filter(b => b.status === 'sale' && liveMatches(b, liveFilter));
