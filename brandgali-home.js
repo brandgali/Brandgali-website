@@ -143,7 +143,7 @@ window.renderNewHome = function(){
     <a class="hb b3" href="live-sales.html"><b>${maxOff ? 'Up to ' + maxOff + '% off' : 'Sale'}</b><small>Biggest discounts today</small></a>`;
   top.appendChild(hero);
   const tiles = document.createElement('div'); tiles.className = 'ctiles';
-  tiles.innerHTML = TILES.map(t => `<a class="ct" data-k="${t[0]}" href="${t[2]}"><div class="ct-img" style="background-image:url(images/cat-${t[0].toLowerCase().replace(/\s/g, '-')}.jpg);background-color:${t[3]}"><i class="fa-solid ${t[1]}"></i></div><b>${t[0]}</b></a>`).join('');
+  tiles.innerHTML = TILES.map(t => `<a class="ct" data-k="${t[0]}" href="${t[2]}"><div class="ct-img" style="background-image:url(images/cat-${t[0].toLowerCase().replace(/\s/g, '-')}.jpg);background-color:#fff"><i class="fa-solid ${t[1]}"></i></div><b>${t[0]}</b></a>`).join('');
   top.appendChild(tiles);
   const pl = popularList(8), pills = document.createElement('div'); pills.className = 'hm-pills';
   pills.innerHTML = '<span class="chip fol" id="folChip">&#9829; My Followed (' + getFollows().length + ')</span>' + pl.disc.concat(pl.items).map(s => `<span class="chip" data-q="${s[3]}">${s[0]}</span>`).join('');
