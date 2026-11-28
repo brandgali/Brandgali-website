@@ -810,7 +810,7 @@ accountLoggedInHTML = function(email){
     <div class="acc2-card acc2-prof" style="margin-top:14px"><div class="acc2-av">${name.charAt(0).toUpperCase()}</div><div style="min-width:0"><b>${name}</b><small>${em}</small></div></div>
     <div class="acc2-sec">SALE ALERTS</div>
     <div class="acc2-card">
-      <div class="acc2-row"><div><span>Push notifications</span><small>When a brand you follow goes on sale</small></div><label class="acc2-sw"><input type="checkbox" id="acc2Push"><span></span></label></div>
+      <div class="acc2-row"><div><span>Push notifications</span><small>When a brand you follow goes on sale</small>${iosHintHTML()}</div><label class="acc2-sw"><input type="checkbox" id="acc2Push"><span></span></label></div>
       <div class="acc2-row"><div><span>Email alerts</span><small>Sale alerts sent to ${em}</small></div><label class="acc2-sw"><input type="checkbox" id="acc2Mail"><span></span></label></div>
       <a class="acc2-row" href="index.html?followed=1"><span>Brands I follow</span><span class="acc2-r">${n}<i class="fa-solid fa-chevron-right"></i></span></a>
     </div>
@@ -832,13 +832,25 @@ function wireAcc2(){
   try{ mail.checked = localStorage.getItem('brandgali_email_alerts') !== 'no'; }catch(e){ mail.checked = true; }
   push.addEventListener('change', async () => {
     const o = O();
+    const fail = (msg) => { push.checked = false; alert(msg); };
     try{
-      if(push.checked){
-        if(('Notification' in window) && Notification.permission === 'denied'){ push.checked = false; alert('Notifications are blocked for this site. Allow them in your browser or phone settings, then try again.'); return; }
-        if(o){ await o.Notifications.requestPermission(); try{ await o.User.PushSubscription.optIn(); }catch(e){} }
-        push.checked = ('Notification' in window) && Notification.permission === 'granted';
-      } else if(o){ await o.User.PushSubscription.optOut(); }
-    }catch(e){ push.checked = !push.checked; }
+      if(!push.checked){ if(o) await o.User.PushSubscription.optOut(); return; }
+      const ios = /iPhone|iPad|iPod/.test(navigator.userAgent), standalone = window.navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
+      if(!('Notification' in window)){
+        return fail(ios ? 'On iPhone, notifications only work when BrandGali is added to your Home Screen. Tap Share, then Add to Home Screen, open BrandGali from there, and try again.' : 'This browser does not support notifications. Try Chrome, Edge or Safari on your phone or laptop.');
+      }
+      if(ios && !standalone) return fail('On iPhone, notifications only work from the Home Screen app. Tap Share, then Add to Home Screen, open BrandGali from the new icon, and try again.');
+      if(Notification.permission === 'denied') return fail('Notifications are blocked for BrandGali. Allow them in your phone or browser settings (Settings > Notifications > BrandGali), then try again.');
+      if(!o) return fail('Notifications are still starting up. Please wait a few seconds and try again.');
+      if(window.__oneSignalInitError) return fail('Notifications could not start (' + window.__oneSignalInitError + '). Please contact info@brandgali.com.');
+      const res = await o.Notifications.requestPermission();                    // shows the browser's Allow / Block box
+      try{ await o.User.PushSubscription.optIn(); }catch(e){}
+      const granted = res === true || res === 'granted' || Notification.permission === 'granted';
+      if(!granted) return fail('Permission was not granted, so notifications are still off.');
+      push.checked = true;
+    }catch(e){
+      fail('Could not turn on notifications: ' + ((e && e.message) || e));
+    }
   });
   mail.addEventListener('change', async () => {
     const o = O(), email = getAccountEmail();
@@ -888,4 +900,28 @@ function wireAcc2(){
 .acc2-logout{display:block;width:calc(100% - 32px);margin:20px 16px 0;padding:17px;border-radius:20px;border:1px solid #E7E2D6;background:#FDFBF6;font:700 16px Inter,sans-serif;color:#1B2A5E;cursor:pointer}
 .acc2-del{display:block;margin:20px auto 8px;background:none;border:0;color:#B3261E;font:700 15px Inter,sans-serif;cursor:pointer}
 `; document.head.appendChild(s);
+})();
+
+
+/* ---------- small "add to Home Screen" tip, shown only to iPhone/iPad visitors who opened the site in Safari ---------- */
+function isIosBrowserTab(){
+  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const standalone = navigator.standalone === true || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  return ios && !standalone;
+}
+function iosHintHTML(){
+  if(!isIosBrowserTab()) return '';
+  return `<div class="ios-hint"><a href="#" class="ios-hint-link">iPhone? Add to Home Screen for alerts <span class="ios-ch">&rsaquo;</span></a>
+    <ol class="ios-hint-steps" hidden><li>Open brandgali.com in <b>Safari</b>.</li><li>Tap <b>Share</b> (the square with an arrow), then <b>Add to Home Screen</b>.</li><li>Open <b>BrandGali</b> from your Home Screen, sign in and switch on <b>Push notifications</b>.</li></ol></div>`;
+}
+document.addEventListener('click', e => {
+  const l = e.target.closest('.ios-hint-link'); if(!l) return;
+  e.preventDefault(); e.stopPropagation();
+  const ol = l.parentElement.querySelector('.ios-hint-steps'); ol.hidden = !ol.hidden; l.classList.toggle('open', !ol.hidden);
+});
+(function(){
+  const s = document.createElement('style'); s.textContent = `
+.ios-hint{margin-top:6px;font:500 11.5px/1.35 Inter,sans-serif;color:#5B6070;text-align:left}
+.ios-hint-link{color:#B45F06;font-weight:600;font-size:11.5px;text-decoration:none}.ios-ch{display:inline-block;transition:.2s}.ios-hint-link.open .ios-ch{transform:rotate(90deg)}
+.ios-hint-steps{margin:6px 0 0;padding-left:17px;font-weight:400}.ios-hint-steps li{margin:2px 0}`; document.head.appendChild(s);
 })();

@@ -177,6 +177,7 @@ window.renderNewHome = function(){
   const al = document.querySelector('.al-card');
   if(al){ al.classList.add('al-band'); rest.insertAdjacentElement('afterend', al);
     const t = al.querySelector('h4'); if(t) t.textContent = "Follow a brand. We'll do the watching.";
-    const p = al.querySelector('p'); if(p) p.textContent = 'Push and email alerts the minute a sale starts. Unfollow any time.'; }
+    const p = al.querySelector('p'); if(p) p.textContent = 'Push and email alerts the minute a sale starts. Unfollow any time.';
+    if(!al.querySelector('.ios-hint')) al.insertAdjacentHTML('beforeend', iosHintHTML()); }
 };
 })();
