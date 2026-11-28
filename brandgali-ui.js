@@ -343,7 +343,13 @@ document.addEventListener('click', function(e){
 const _refreshNotify = refreshNotifyButtonsUI;
 refreshNotifyButtonsUI = async function(){
   await _refreshNotify();
-  try{ const a = getFollows(); document.querySelectorAll('.notify-btn.following[data-notify-brand]').forEach(b => { if(a.indexOf(b.dataset.notifyBrand) < 0) a.push(b.dataset.notifyBrand); }); localStorage.setItem('brandgali_follows', JSON.stringify(a)); window.dispatchEvent(new Event('brandgali:followed')); }catch(e){}
+  try{
+    // Tell the rest of the page the follow list changed ONLY when it really did. (Announcing it every time
+    // made the Followed list re-draw itself forever, which froze the page.)
+    const a = getFollows(), before = JSON.stringify(a.slice().sort());
+    document.querySelectorAll('.notify-btn.following[data-notify-brand]').forEach(b => { if(a.indexOf(b.dataset.notifyBrand) < 0) a.push(b.dataset.notifyBrand); });
+    if(JSON.stringify(a.slice().sort()) !== before){ localStorage.setItem('brandgali_follows', JSON.stringify(a)); window.dispatchEvent(new Event('brandgali:followed')); }
+  }catch(e){}
 };
 
 /* ---------- shared card pieces ---------- */
