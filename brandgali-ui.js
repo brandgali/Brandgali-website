@@ -790,3 +790,96 @@ function uniqueStyles(list){
 .qf-sort b{font-size:12px!important}
 `; document.head.appendChild(s);
 })();
+
+/* =====================================================================
+   ACCOUNT PAGE (signed-in view): profile, sale-alert switches, links, log out, delete account
+===================================================================== */
+accountLoggedInHTML = function(email){
+  const auth = getFirebaseAuth(), u = auth && auth.currentUser;
+  const name = escText((u && u.displayName) || email.split('@')[0].replace(/[._\d-]+/g, ' ').trim().replace(/\b\w/g, c => c.toUpperCase()) || email);
+  const em = escText(email), n = getFollows().length;
+  const row = (t, href, id) => `<a class="acc2-row" ${id ? `id="${id}"` : ''} href="${href}"><span>${t}</span><i class="fa-solid fa-chevron-right"></i></a>`;
+  return `<div class="acc2">
+    <div class="acc2-head"><button class="acc2-back" id="acc2Back" type="button" aria-label="Back"><i class="fa-solid fa-chevron-left"></i></button><h2>Account</h2></div>
+    <div class="acc2-card acc2-prof" style="margin-top:14px"><div class="acc2-av">${name.charAt(0).toUpperCase()}</div><div style="min-width:0"><b>${name}</b><small>${em}</small></div></div>
+    <div class="acc2-sec">SALE ALERTS</div>
+    <div class="acc2-card">
+      <div class="acc2-row"><div><span>Push notifications</span><small>When a brand you follow goes on sale</small></div><label class="acc2-sw"><input type="checkbox" id="acc2Push"><span></span></label></div>
+      <div class="acc2-row"><div><span>Email alerts</span><small>Sale alerts sent to ${em}</small></div><label class="acc2-sw"><input type="checkbox" id="acc2Mail"><span></span></label></div>
+      <a class="acc2-row" href="index.html?followed=1"><span>Brands I follow</span><span class="acc2-r">${n}<i class="fa-solid fa-chevron-right"></i></span></a>
+    </div>
+    <div class="acc2-sec">BRANDGALI</div>
+    <div class="acc2-card">
+      <button class="acc2-row" id="acc2Share" type="button"><span>Tell a friend about BrandGali</span><i class="fa-solid fa-chevron-right"></i></button>
+      ${row('About BrandGali', 'about.html')}${row('List your brand', 'partner.html')}${row('Privacy policy', 'privacy.html')}${row('Contact support', 'mailto:info@brandgali.com')}
+    </div>
+    <button class="acc2-logout" id="accountLogoutBtn" type="button">Log out</button>
+    <button class="acc2-del" id="acc2Delete" type="button">Delete account</button>
+  </div>`;
+};
+function wireAcc2(){
+  if(!document.getElementById('acc2Back')) return;
+  const O = () => window.__oneSignalInstance;
+  document.getElementById('acc2Back').addEventListener('click', () => document.getElementById('accountClose') && document.getElementById('accountClose').click());
+  const push = document.getElementById('acc2Push'), mail = document.getElementById('acc2Mail');
+  try{ push.checked = ('Notification' in window) && Notification.permission === 'granted' && !(O() && O().User.PushSubscription.optedIn === false); }catch(e){}
+  try{ mail.checked = localStorage.getItem('brandgali_email_alerts') !== 'no'; }catch(e){ mail.checked = true; }
+  push.addEventListener('change', async () => {
+    const o = O();
+    try{
+      if(push.checked){
+        if(('Notification' in window) && Notification.permission === 'denied'){ push.checked = false; alert('Notifications are blocked for this site. Allow them in your browser or phone settings, then try again.'); return; }
+        if(o){ await o.Notifications.requestPermission(); try{ await o.User.PushSubscription.optIn(); }catch(e){} }
+        push.checked = ('Notification' in window) && Notification.permission === 'granted';
+      } else if(o){ await o.User.PushSubscription.optOut(); }
+    }catch(e){ push.checked = !push.checked; }
+  });
+  mail.addEventListener('change', async () => {
+    const o = O(), email = getAccountEmail();
+    try{ localStorage.setItem('brandgali_email_alerts', mail.checked ? 'yes' : 'no'); }catch(e){}
+    try{ if(o && email){ mail.checked ? await o.User.addEmail(email) : await o.User.removeEmail(email); } }catch(e){}
+  });
+  document.getElementById('acc2Share').addEventListener('click', async () => {
+    const data = { title: 'BrandGali', text: 'Never miss a sale again - every Pakistani brand, one gali. Get alerts the minute a sale starts.', url: 'https://www.brandgali.com' };
+    try{ if(navigator.share){ await navigator.share(data); return; } }catch(e){ return; }
+    try{ await navigator.clipboard.writeText(data.url); alert('Link copied: ' + data.url); }catch(e){ window.open('https://wa.me/?text=' + encodeURIComponent(data.text + ' ' + data.url), '_blank'); }
+  });
+  document.getElementById('acc2Delete').addEventListener('click', async () => {
+    if(!confirm('Delete your BrandGali account? Your followed brands and alerts will be removed. This cannot be undone.')) return;
+    const auth = getFirebaseAuth(), u = auth && auth.currentUser;
+    try{
+      await u.delete();
+      try{ localStorage.removeItem('brandgali_follows'); localStorage.removeItem('brandgali_email_alerts'); }catch(e){}
+      try{ if(O()) await O().logout(); }catch(e){}
+      document.getElementById('accountClose') && document.getElementById('accountClose').click();
+      alert('Your account has been deleted.');
+      location.reload();
+    }catch(err){
+      alert(err && err.code === 'auth/requires-recent-login' ? 'For your security, please log out, sign in again, then delete your account.' : 'Sorry, the account could not be deleted. Please try again or contact info@brandgali.com.');
+    }
+  });
+}
+(function(){
+  const _w = wireAccountModalBodyEvents; wireAccountModalBodyEvents = function(){ _w(); wireAcc2(); };
+  const _r = refreshAccountModalUI;
+  refreshAccountModalUI = async function(e){ await _r(e); const m = document.getElementById('accountModal'); if(m) m.classList.toggle('is-acc2', !!document.getElementById('acc2Back')); };
+  const s = document.createElement('style'); s.textContent = `
+.account-modal.is-acc2{position:fixed!important;inset:0!important;top:0!important;bottom:0!important;transform:none!important;max-width:none!important;max-height:none!important;height:100%!important;border-radius:0!important;padding:0!important;background:#F7F3EA!important;overflow:auto;margin:0!important}
+.account-modal.is-acc2 #accountClose{display:none!important}
+@media(min-width:700px){.account-modal.is-acc2{inset:auto!important;top:50%!important;left:50%!important;bottom:auto!important;right:auto!important;width:480px!important;height:min(92vh,860px)!important;transform:translate(-50%,-50%)!important;border-radius:26px!important}}
+.acc2{font-family:Inter,sans-serif;color:#1B2A5E;padding-bottom:24px}
+.acc2-head{position:sticky;top:0;background:#fff;padding:12px 16px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #EADFC9;z-index:3}
+.acc2-head h2{font:800 24px Poppins,sans-serif;margin:0}.acc2-back{width:46px;height:46px;border-radius:50%;border:0;background:#F4EFE3;color:#1B2A5E;font-size:18px;cursor:pointer}
+.acc2-card{background:#FDFBF6;border:1px solid #E7E2D6;border-radius:22px;margin:0 16px;overflow:hidden}
+.acc2-prof{display:flex;align-items:center;gap:16px;padding:18px 20px}.acc2-prof b{display:block;font:800 18px Poppins,sans-serif}.acc2-prof small{display:block;color:#6B6F7D;font-size:14px;overflow:hidden;text-overflow:ellipsis}
+.acc2-av{width:68px;height:68px;border-radius:50%;background:#F5A623;display:grid;place-items:center;font:800 28px Poppins,sans-serif;color:#1B2A5E;flex:none}
+.acc2-sec{font:800 12px Inter,sans-serif;letter-spacing:1px;color:#6B6F7D;margin:24px 22px 8px}
+.acc2-row{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:18px 20px;border:0;border-bottom:1px solid #E7E2D6;background:none;text-align:left;font:700 16px Inter,sans-serif;color:#1B2A5E;cursor:pointer;box-sizing:border-box;text-decoration:none}
+.acc2-row:last-child{border-bottom:0}.acc2-row small{display:block;font:400 13px Inter,sans-serif;color:#6B6F7D;margin-top:3px}.acc2-row i{color:#6B6F7D;font-size:14px}.acc2-r{display:flex;align-items:center;gap:14px;color:#6B6F7D;font-weight:500}
+.acc2-sw{position:relative;width:52px;height:30px;flex:none}.acc2-sw input{opacity:0;position:absolute;inset:0;width:100%!important;height:100%!important;margin:0;z-index:2;cursor:pointer}
+.acc2-sw span{position:absolute;inset:0;background:#CFCBC0;border-radius:99px;transition:.2s}.acc2-sw span:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.acc2-sw input:checked+span{background:#1D7F63}.acc2-sw input:checked+span:after{left:25px}
+.acc2-logout{display:block;width:calc(100% - 32px);margin:20px 16px 0;padding:17px;border-radius:20px;border:1px solid #E7E2D6;background:#FDFBF6;font:700 16px Inter,sans-serif;color:#1B2A5E;cursor:pointer}
+.acc2-del{display:block;margin:20px auto 8px;background:none;border:0;color:#B3261E;font:700 15px Inter,sans-serif;cursor:pointer}
+`; document.head.appendChild(s);
+})();

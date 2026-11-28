@@ -173,6 +173,7 @@ window.renderNewHome = function(){
   catSection(rest, items, 'Home Decor', 'Home Décor', 'brands.html?category=' + encodeURIComponent('Home Décor'), HOME_OK, NOT_HOME);
   catSection(rest, items, 'Lifestyle', 'Lifestyle', 'brands.html?category=Lifestyle');
   catSection(rest, items, 'Bags & Accessories', 'Bags', 'brands.html?category=Bags');
+  if(new URLSearchParams(location.search).get('followed')){ const ft = document.querySelector('.hs-tab[data-tab="fol"]'); if(ft) ft.click(); }   // arriving from Account > Brands I follow
   const al = document.querySelector('.al-card');
   if(al){ al.classList.add('al-band'); rest.insertAdjacentElement('afterend', al);
     const t = al.querySelector('h4'); if(t) t.textContent = "Follow a brand. We'll do the watching.";
